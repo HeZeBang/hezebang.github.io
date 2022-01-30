@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-CN">
   <head>
   <meta charset="UTF-8">
   <meta 
@@ -17,7 +17,7 @@
     content="蛤?">
   <link 
     rel="icon" 
-    href="https://hezebang.github.io/img/zambar.png">
+    href="/img/zambar.png">
   <title>归档</title>
   
     
@@ -33,7 +33,7 @@
     
       <meta 
         property="og:img" 
-        content="https://demo.theme-kaze.top/img/Kaze.png">
+        content="/img/zambar.png">
     
     
       <meta 
@@ -67,6 +67,37 @@
     }
   </script>
   
+    
+      
+      
+      
+      
+        
+        
+        
+        <script>
+          function prismThemeChange() {
+            if(document.getElementById('theme-color').dataset.mode === 'dark') {
+              if(document.querySelector('[data-prism]')) {
+                changeCSS('/js/lib/prism/prism-tomorrow.min.css', '[data-prism]', 'prism-tomorrow');
+              } else {
+                loadCSS('/js/lib/prism/prism-tomorrow.min.css', 'prism', 'prism-tomorrow');
+              }
+            } else {
+              if(document.querySelector('[data-prism]')) {
+                changeCSS('/js/lib/prism/prism.min.css', '[data-prism]', 'prism');
+              } else {
+                loadCSS('/js/lib/prism/prism.min.css', 'prism', 'prism');
+              }
+            }
+          }
+          prismThemeChange()
+        </script>
+      
+      
+        
+        <link rel="stylesheet" href="/js/lib/prism/prism-line-numbers.min.css">
+      
     
   
   <script>
@@ -107,15 +138,18 @@
         localStorage.removeItem('user-color-scheme');
         document.getElementById('theme-color').content = themeColor[setting];
         document.getElementById('theme-color').dataset.mode = setting;
+        prismThemeChange();
       } else if(reverseDarkList[setting]) {
         document.documentElement.setAttribute('data-user-color-scheme', setting);
         document.getElementById('theme-color').content = themeColor[setting];
         document.getElementById('theme-color').dataset.mode = setting;
+        prismThemeChange();
       } else {
         document.documentElement.removeAttribute('data-user-color-scheme');
         localStorage.removeItem('user-color-scheme');
         document.getElementById('theme-color').content = themeColor[getCssMediaQuery()];
         document.getElementById('theme-color').dataset.mode = getCssMediaQuery();
+        prismThemeChange();
       }
     };
     setDarkmode();
@@ -157,7 +191,7 @@
           class="navbar-logo-img"
           width="32"
           height="32"
-          src="https://hezebang.github.io/img/zambar.png" 
+          src="/img/zambar.png" 
           alt="blog logo">
       
       <span class="navbar-logo-dsc">糌粑的小站</span>
@@ -259,6 +293,54 @@
           <div class="archive-timeline-post-date">2022-01-30</div>
           <div class="archive-timeline-post-content">
             <a 
+              href="/2022/01/30/synthv/scripting/tutorial-A%20Minimal%20Example/"
+              class="archive-timeline-post-item">
+              教程：一个最小的示例 | tutorial-A Minimal Example
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+    <div class="archive-timeline-item">
+      <div class="archive-timeline-post">
+        <div class="card card-content">
+          <div class="archive-timeline-post-date">2022-01-30</div>
+          <div class="archive-timeline-post-content">
+            <a 
+              href="/2022/01/30/synthv/scripting/Track/"
+              class="archive-timeline-post-item">
+              轨道 | Track
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+    <div class="archive-timeline-item">
+      <div class="archive-timeline-post">
+        <div class="card card-content">
+          <div class="archive-timeline-post-date">2022-01-30</div>
+          <div class="archive-timeline-post-content">
+            <a 
+              href="/2022/01/30/synthv/scripting/index/"
+              class="archive-timeline-post-item">
+              Synthesizer V Studio 脚本手册 | Synthesizer V Studio Scripting Manual
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+    <div class="archive-timeline-item">
+      <div class="archive-timeline-post">
+        <div class="card card-content">
+          <div class="archive-timeline-post-date">2022-01-30</div>
+          <div class="archive-timeline-post-content">
+            <a 
               href="/2022/01/30/hello-world/"
               class="archive-timeline-post-item">
               Hello World
@@ -275,31 +357,31 @@
               <div class="card card-author">
                 
   <img 
-    src="https://demo.theme-kaze.top/img/Kaze.png" 
+    src="/img/zambar.png" 
     class="author-img"
     width="88"
     height="88"
     alt="author avatar">
 
 <p class="author-name">HeZAMBAR</p>
-<p class="author-description">designed by theme-kaze</p>
+<p class="author-description">无聊会写点代码，喜欢虚拟歌姬</p>
 <div class="author-message">
   <a 
     class="author-posts-count" 
     href="/archives">
-    <span>1</span>
+    <span>4</span>
     <span>文章</span>
   </a>
   <a 
     class="author-categories-count" 
     href="/categories">
-    <span>0</span>
+    <span>3</span>
     <span>分类</span>
   </a>
   <a 
     class="author-tags-count" 
     href="/tags">
-    <span>0</span>
+    <span>4</span>
     <span>标签</span>
   </a>
 </div>
@@ -319,6 +401,27 @@
   </div>
   <div class="categories-list">
     
+      <a href="/categories/SV-Scripting/">
+        <div class="categories-list-item">
+          SV-Scripting
+          <span class="categories-list-item-badge">3</span>
+        </div>
+      </a>
+    
+      <a href="/categories/SV-Scripting/Classes/">
+        <div class="categories-list-item">
+          SV-Scripting/Classes
+          <span class="categories-list-item-badge">1</span>
+        </div>
+      </a>
+    
+      <a href="/categories/SV-Scripting/Tutorial/">
+        <div class="categories-list-item">
+          SV-Scripting/Tutorial
+          <span class="categories-list-item-badge">1</span>
+        </div>
+      </a>
+    
   </div>
 </div>
   </article>
@@ -332,6 +435,30 @@
     </i>热门标签
   </div>
   <div class="tags-list">
+    
+      <a 
+        href="/tags/Scripting/" 
+        title="Scripting">
+        <div class="tags-list-item">Scripting</div>
+      </a>
+    
+      <a 
+        href="/tags/SynthV/" 
+        title="SynthV">
+        <div class="tags-list-item">SynthV</div>
+      </a>
+    
+      <a 
+        href="/tags/Example/" 
+        title="Example">
+        <div class="tags-list-item">Example</div>
+      </a>
+    
+      <a 
+        href="/tags/Track/" 
+        title="Track">
+        <div class="tags-list-item">Track</div>
+      </a>
     
   </div>
 </div>
@@ -356,12 +483,24 @@
         
       
     
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
     
       <a 
         href="/archives/2022" 
         class="archive-card-list-item">
         2022
-        <span class="archive-card-list-item-badge">1</span>
+        <span class="archive-card-list-item-badge">4</span>
       </a>
     
   </div>
@@ -384,6 +523,21 @@
     </i>最近文章
   </div>
   <div class="recent-posts-list">
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2022-01-30</div>
+        <a href="/2022/01/30/synthv/scripting/tutorial-A%20Minimal%20Example/"><div class="recent-posts-item-content">教程：一个最小的示例 | tutorial-A Minimal Example</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2022-01-30</div>
+        <a href="/2022/01/30/synthv/scripting/Track/"><div class="recent-posts-item-content">轨道 | Track</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2022-01-30</div>
+        <a href="/2022/01/30/synthv/scripting/index/"><div class="recent-posts-item-content">Synthesizer V Studio 脚本手册 | Synthesizer V Studio Scripting Manual</div></a>
+      </div>
     
       <div class="recent-posts-item">
         <div class="recent-posts-item-title">2022-01-30</div>
@@ -413,12 +567,24 @@
         
       
     
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
     
       <a 
         href="/archives/2022" 
         class="archive-card-list-item">
         2022
-        <span class="archive-card-list-item-badge">1</span>
+        <span class="archive-card-list-item-badge">4</span>
       </a>
     
   </div>
@@ -439,7 +605,7 @@
         <span>
           Copyright ©
           
-            2020 -
+            2021 -
           
           2022
         </span>
