@@ -18,12 +18,12 @@
   <link 
     rel="icon" 
     href="/img/zambar.png">
-  <title>install-synthv-on-linux</title>
+  <title>在Linux中安装Synthesiszer V</title>
   
     
       <meta 
         property="og:title" 
-        content="install-synthv-on-linux">
+        content="在Linux中安装Synthesiszer V">
     
     
       <meta 
@@ -38,7 +38,7 @@
     
       <meta 
         property="og:img" 
-        content="蛤?">
+        content="&lt;p&gt;虽然知道没什么人用但是填个坑就对了（&lt;/p&gt;">
     
     
       <meta 
@@ -54,6 +54,14 @@
         property="og:article:author" 
         content="HeZAMBAR">
       
+        
+          <meta 
+            property="og:article:tag" 
+            content="SynthV">
+        
+          <meta 
+            property="og:article:tag" 
+            content="linux">
         
       
     
@@ -298,7 +306,7 @@
 <article class="card card-content">
   <header>
     <h1 class="post-title">
-      install-synthv-on-linux
+      在Linux中安装Synthesiszer V
     </h1>
   </header>
   <div class="post-meta post-show-meta">
@@ -312,17 +320,48 @@
     
     
       <span class="dot"></span>
-      <span>606 字</span>
+      <span>805 字</span>
     
   </div>
+  
+    <div 
+      class="post-meta post-show-meta" 
+      style="margin-top: -10px;">
+      <div style="display: flex; align-items: center;">
+        <i 
+          class="iconfont icon-biaoqian" 
+          style="margin-right: 2px; font-size: 1.15rem;">
+        </i>
+        
+          
+          <a 
+            href="/tags/SynthV/" 
+            class="post-meta-link">
+            SynthV
+          </a>
+        
+          
+            <span class="dot"></span>
+          
+          <a 
+            href="/tags/linux/" 
+            class="post-meta-link">
+            linux
+          </a>
+        
+      </div>
+    </div>
   
   </header>
   <div 
     id="section" 
     class="post-content">
-    <h1 id="在Linux中安装Synthesiszer-V"><a href="#在Linux中安装Synthesiszer-V" class="headerlink" title="在Linux中安装Synthesiszer V"></a>在Linux中安装Synthesiszer V</h1><div class="post-note note-warning"><p>请注意，只有部分发行版满足Synthesizer V <strong>最新版</strong> 的最小运行要求 <del>(但官方似乎并没有给出详细的要求文档)**</del></p><p>具体体现在：<code>GLIBC</code> 需要 <code>GLIBC_2.30</code> 版本及以上（图在<a href="">下文</a>）</p><p>我的备用机使用的是 <strong>Deepin 20.4</strong> ，它只有 <code>GLIBC_2.29</code>，因而只能用1.2.4的旧版（估计也没人愿意使用这个很多声库都不支持的版本了）</p><p>所以本文将在 <strong>Ubuntu-20.04.3-desktop (amd64, LIVE)</strong> 的虚拟机上再现安装过程</p></div>
+    <p>虽然知道没什么人用但是填个坑就对了（</p>
+<span id="more"></span>
 
-<h2 id="1-下载安装包（-zip）"><a href="#1-下载安装包（-zip）" class="headerlink" title="1.下载安装包（.zip）"></a>1.下载安装包（.zip）</h2><h3 id="Basic版本"><a href="#Basic版本" class="headerlink" title="Basic版本"></a>Basic版本</h3><ul>
+<div class="post-note note-warning"><p>请注意，只有部分发行版满足Synthesizer V <strong>最新版</strong> 的最小运行要求 <del>(但官方似乎并没有给出详细的要求文档)</del></p><p>具体体现在：<code>GLIBC</code> 需要 <code>GLIBC_2.30</code> 版本及以上（图在<a href="#%E9%83%A8%E5%88%86%E8%BF%90%E8%A1%8C%E5%A4%B1%E8%B4%A5%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88">下文</a>）</p><p>我的备用机使用的是 <strong>Deepin 20.4</strong> ，它只有 <code>GLIBC_2.29</code>，因而只能用1.2.4的旧版（估计也没人愿意使用这个很多声库都不支持的版本了）</p><p>所以本文将在 <strong>Ubuntu-20.04.3-desktop (amd64, LIVE)</strong> 的虚拟机上再现安装过程</p></div>
+
+<h2 id="0x00-下载安装包（-zip）"><a href="#0x00-下载安装包（-zip）" class="headerlink" title="0x00 下载安装包（.zip）"></a>0x00 下载安装包（.zip）</h2><h3 id="Basic版本"><a href="#Basic版本" class="headerlink" title="Basic版本"></a>Basic版本</h3><ul>
 <li><a target="_blank" rel="noopener" href="https://dreamtonics.com/synthesizerv/#syn-studio">SynthV官网入口</a> 或 <a target="_blank" rel="noopener" href="https://resource.dreamtonics.com/download/Synthesizer%20V%20Studio%20Basic/">D社资源站（官方）</a></li>
 <li><a target="_blank" rel="noopener" href="https://synthesizer-v-r2-docs.vercel.app/docs/download/editor">SVR2Doc站（国内）</a>（感谢磷元素佬和时忽Entropy提供的Docs站和下载服务！！！佬佬佬%%%）<h3 id="Pro版本-x2F-Basic版本"><a href="#Pro版本-x2F-Basic版本" class="headerlink" title="Pro版本&#x2F;Basic版本"></a>Pro版本&#x2F;Basic版本</h3></li>
 <li>Pro版本需要购买后发送下载链接</li>
@@ -330,27 +369,31 @@
 <li><a target="_blank" rel="noopener" href="https://www.ah-soft.net/shopdetail/000000001193/ct120/page1/order/">AHS</a>和<a target="_blank" rel="noopener" href="https://www.anicute.com/product/d3c64666-9436-49ac-acef-196f7bf3ffaa">AniCUTE</a>未知</li>
 </ul>
 <p><em>P.S. 本文以Basic版本1.5.0为例，Pro版本应该差不多（吧？）</em></p>
-<h2 id="2-解压和运行"><a href="#2-解压和运行" class="headerlink" title="2.解压和运行"></a>2.解压和运行</h2><h3 id="打开终端，cd到你的下载目录并解压"><a href="#打开终端，cd到你的下载目录并解压" class="headerlink" title="打开终端，cd到你的下载目录并解压"></a>打开终端，cd到你的下载目录并解压</h3><pre class="line-numbers language-none"><code class="language-none">cd Downloads&#x2F;
+<h2 id="0x01-解压和运行"><a href="#0x01-解压和运行" class="headerlink" title="0x01 解压和运行"></a>0x01 解压和运行</h2><h3 id="打开终端，cd到你的下载目录并解压"><a href="#打开终端，cd到你的下载目录并解压" class="headerlink" title="打开终端，cd到你的下载目录并解压"></a>打开终端，cd到你的下载目录并解压</h3><pre class="line-numbers language-none"><code class="language-none">cd Downloads&#x2F;
 unzip svstudio-basic-linux64-1.5.0.zip
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<p><img src="/" alt="cdandunzip" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="/" class="lozad post-image"></p>
-<h3 id="部分发行版需要加权"><a href="#部分发行版需要加权" class="headerlink" title="部分发行版需要加权"></a>部分发行版需要加权</h3><pre class="line-numbers language-none"><code class="language-none">sudo chmod -R a+rw &quot;Synthesizer V Studio Basic&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><em>-R：递归设置每一个子文件</em></p>
-<p><img src="/" alt="chmod" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="/" class="lozad post-image"></p>
+<p><img src="/../img/VirtualBox_Ubuntu_01_02_2022_21_37_49.png" alt="cdandunzip" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="/../img/VirtualBox_Ubuntu_01_02_2022_21_37_49.png" class="lozad post-image"></p>
+<div class="post-note note-info"><p>部分发行版可能需要加权</p><pre class="line-numbers language-none"><code class="language-none">sudo chmod -R a+rw &quot;Synthesizer V Studio Basic&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><em>-R：递归设置每一个子文件</em></p></div>
+
 <h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><pre class="line-numbers language-none"><code class="language-none">cd &quot;Synthesizer V Studio Basic&quot;
 .&#x2F;synthv-studio<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<p><img src="/" alt="运行" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="/" class="lozad post-image"></p>
-<p><img src="/" alt="运行成功" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="/" class="lozad post-image"></p>
-<div class="post-note note-info"><p>####部分运行失败的解决方案</p></div>
+<p><img src="/../img/VirtualBox_Ubuntu_01_02_2022_21_41_04.png" alt="运行" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="/../img/VirtualBox_Ubuntu_01_02_2022_21_41_04.png" class="lozad post-image"></p>
+<p><img src="/../img/VirtualBox_Ubuntu_01_02_2022_21_40_47.png" alt="运行成功" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="/../img/VirtualBox_Ubuntu_01_02_2022_21_40_47.png" class="lozad post-image"></p>
+<div class="post-note note-info"><h4 id="部分运行失败的解决方案"><a href="#部分运行失败的解决方案" class="headerlink" title="部分运行失败的解决方案"></a>部分运行失败的解决方案</h4><p>1.提示找不到共享库</p><p><img src="/../img/VirtualBox_Deepin%20Linux_01_02_2022_20_49_29.png" alt="errlib" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="/../img/VirtualBox_Deepin%20Linux_01_02_2022_20_49_29.png" class="lozad post-image"></p><p>可能是没有安装curl<br>终端输入以下内容即可</p><pre class="line-numbers language-none"><code class="language-none">sudo apt-get update
+sudo apt-get -f install
+sudo apt-get install libcurl4-openssl-dev
+sudo apt-get install curl<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>2.提示内核&#x2F;glibc等版本过低</p><p><img src="/../img/VirtualBox_Deepin%20Linux_01_02_2022_20_49_46.png" alt="errver" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="/../img/VirtualBox_Deepin%20Linux_01_02_2022_20_49_46.png" class="lozad post-image"></p><p><strong>换个系统&#x2F;发行版</strong> 吧！可以去百度搜索如何更新，但是涉及到这一块升级要谨慎，很有可能一个差错（甚至没有差错）就再也无法启动了。（狗头）</p></div>
 
-<h2 id="3-打包与封装图标"><a href="#3-打包与封装图标" class="headerlink" title="3.打包与封装图标"></a>3.打包与封装图标</h2><p>由于SV Studio在linux是解压直接运行式的（类似于Firefox），我们最好把它打包到系统安装目录并且发送一个图标到桌面</p>
+<h2 id="0x02-打包与封装图标"><a href="#0x02-打包与封装图标" class="headerlink" title="0x02 打包与封装图标"></a>0x02 打包与封装图标</h2><p>由于SV Studio在linux是解压直接运行式的（类似于Firefox），我们最好把它打包到系统软件目录并且发送一个图标到桌面</p>
 <h3 id="移动到-x2F-usr-x2F-local并改名"><a href="#移动到-x2F-usr-x2F-local并改名" class="headerlink" title="移动到&#x2F;usr&#x2F;local并改名"></a>移动到&#x2F;usr&#x2F;local并改名</h3><pre class="line-numbers language-none"><code class="language-none">sudo mv &quot;Synthesizer V Studio Basic&quot;&#x2F; &#x2F;usr&#x2F;local&#x2F;svstudio&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="创建图标"><a href="#创建图标" class="headerlink" title="创建图标"></a>创建图标</h3><p>下载图标文件</p>
-<pre class="line-numbers language-none"><code class="language-none">sudo wget -P &#x2F;usr&#x2F;local&#x2F;svstudio %% <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><em>资源来自SV官群！</em></p>
+<h3 id="创建图标"><a href="#创建图标" class="headerlink" title="创建图标"></a>创建图标</h3><p>下载图标文件<br><img src="/../img/SVAlive.png" alt="SVAlive" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="/../img/SVAlive.png" class="lozad post-image"></p>
+<pre class="line-numbers language-none"><code class="language-none">sudo wget -P &#x2F;usr&#x2F;local&#x2F;svstudio https:&#x2F;&#x2F;hezebang.github.io&#x2F;img&#x2F;SVAlive.png<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<div class="post-note note-info"><p>P.S. 你甚至可以下载隐卫麻麻制作的镀金图片！只需要下载<a href="https://hezebang.github.io/img/SVGolden.png">https://hezebang.github.io/img/SVGolden.png</a> 即可~记住后面的文件名也要换哦（麻麻狗头）</p><p><strong>图标资源来自SV官群,感谢麻麻制作的图标！</strong></p></div>
+
 <p>在终端中输入以下命令新建启动菜单图标</p>
 <pre class="line-numbers language-none"><code class="language-none">sudo nano &#x2F;usr&#x2F;share&#x2F;applications&#x2F;svstudio.desktop<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -358,21 +401,20 @@ unzip svstudio-basic-linux64-1.5.0.zip
 <pre class="line-numbers language-none"><code class="language-none">[Desktop Entry]
 Comment&#x3D;a high-quality singing synthesis software
 Exec&#x3D;&#x2F;usr&#x2F;local&#x2F;svstudio&#x2F;synthv-studio
-GenericName&#x3D;Hybrid sample-based&#x2F;AI voice synthesizer
 Icon&#x3D;&#x2F;usr&#x2F;local&#x2F;svstudio&#x2F;SVAlive.png
 MimeType&#x3D;application&#x2F;tup;
 Name&#x3D;Synthesizer V Studio Basic
-NoDisplay&#x3D;false
-Path[$e]&#x3D;
-StartupNotify&#x3D;true
-Terminal&#x3D;0
-TerminalOptions&#x3D;
-Type&#x3D;Application;Audio;
-X-KDE-SubstituteUID&#x3D;false
-X-KDE-Username&#x3D;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><em>修改自SV论坛，Pro版本在Name行改为Pro即可</em></p>
-<p>再复制到桌面</p>
-<pre class="line-numbers language-none"><code class="language-none">cp &#x2F;usr&#x2F;share&#x2F;applications&#x2F;svstudio.desktop ~&#x2F;Desktop&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+Terminal&#x3D;false
+Type&#x3D;Application;Audio;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>Pro版本把<code>Name</code>改为<code>……Pro</code>即可，图标可以自定义</p>
+</blockquote>
+<p>按<code>Ctrl</code> + <code>X</code>退出，是否保存按 <code>y</code> 确认</p>
+<h3 id="再复制到桌面，加权"><a href="#再复制到桌面，加权" class="headerlink" title="再复制到桌面，加权"></a>再复制到桌面，加权</h3><pre class="line-numbers language-none"><code class="language-none">cp &#x2F;usr&#x2F;share&#x2F;applications&#x2F;svstudio.desktop ~&#x2F;Desktop&#x2F;
+chmod +x ~&#x2F;Desktop&#x2F;svstudio.desktop<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h2 id="0x03-大功告成"><a href="#0x03-大功告成" class="headerlink" title="0x03 大功告成"></a>0x03 大功告成</h2><p><img src="/../img/VirtualBox_Ubuntu_01_02_2022_23_26_01.png" alt="alldone" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="/../img/VirtualBox_Ubuntu_01_02_2022_23_26_01.png" class="lozad post-image"></p>
 
   </div>
   <div>
@@ -429,7 +471,7 @@ X-KDE-Username&#x3D;<span aria-hidden="true" class="line-numbers-rows"><span></s
     style="padding-right: 2px;">
   </i>目录
 </div>
-<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9C%A8Linux%E4%B8%AD%E5%AE%89%E8%A3%85Synthesiszer-V"><span class="toc-number">1.</span> <span class="toc-text">在Linux中安装Synthesiszer V</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%8C%85%EF%BC%88-zip%EF%BC%89"><span class="toc-number">1.1.</span> <span class="toc-text">1.下载安装包（.zip）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Basic%E7%89%88%E6%9C%AC"><span class="toc-number">1.1.1.</span> <span class="toc-text">Basic版本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pro%E7%89%88%E6%9C%AC-x2F-Basic%E7%89%88%E6%9C%AC"><span class="toc-number">1.1.2.</span> <span class="toc-text">Pro版本&#x2F;Basic版本</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E8%A7%A3%E5%8E%8B%E5%92%8C%E8%BF%90%E8%A1%8C"><span class="toc-number">1.2.</span> <span class="toc-text">2.解压和运行</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%93%E5%BC%80%E7%BB%88%E7%AB%AF%EF%BC%8Ccd%E5%88%B0%E4%BD%A0%E7%9A%84%E4%B8%8B%E8%BD%BD%E7%9B%AE%E5%BD%95%E5%B9%B6%E8%A7%A3%E5%8E%8B"><span class="toc-number">1.2.1.</span> <span class="toc-text">打开终端，cd到你的下载目录并解压</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E5%88%86%E5%8F%91%E8%A1%8C%E7%89%88%E9%9C%80%E8%A6%81%E5%8A%A0%E6%9D%83"><span class="toc-number">1.2.2.</span> <span class="toc-text">部分发行版需要加权</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C"><span class="toc-number">1.2.3.</span> <span class="toc-text">运行</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%89%93%E5%8C%85%E4%B8%8E%E5%B0%81%E8%A3%85%E5%9B%BE%E6%A0%87"><span class="toc-number">1.3.</span> <span class="toc-text">3.打包与封装图标</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E5%88%B0-x2F-usr-x2F-local%E5%B9%B6%E6%94%B9%E5%90%8D"><span class="toc-number">1.3.1.</span> <span class="toc-text">移动到&#x2F;usr&#x2F;local并改名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%9B%BE%E6%A0%87"><span class="toc-number">1.3.2.</span> <span class="toc-text">创建图标</span></a></li></ol></li></ol></li></ol>
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#0x00-%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%8C%85%EF%BC%88-zip%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">0x00 下载安装包（.zip）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Basic%E7%89%88%E6%9C%AC"><span class="toc-number">1.1.</span> <span class="toc-text">Basic版本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pro%E7%89%88%E6%9C%AC-x2F-Basic%E7%89%88%E6%9C%AC"><span class="toc-number">1.2.</span> <span class="toc-text">Pro版本&#x2F;Basic版本</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x01-%E8%A7%A3%E5%8E%8B%E5%92%8C%E8%BF%90%E8%A1%8C"><span class="toc-number">2.</span> <span class="toc-text">0x01 解压和运行</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%93%E5%BC%80%E7%BB%88%E7%AB%AF%EF%BC%8Ccd%E5%88%B0%E4%BD%A0%E7%9A%84%E4%B8%8B%E8%BD%BD%E7%9B%AE%E5%BD%95%E5%B9%B6%E8%A7%A3%E5%8E%8B"><span class="toc-number">2.1.</span> <span class="toc-text">打开终端，cd到你的下载目录并解压</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C"><span class="toc-number">2.2.</span> <span class="toc-text">运行</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%83%A8%E5%88%86%E8%BF%90%E8%A1%8C%E5%A4%B1%E8%B4%A5%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">2.2.1.</span> <span class="toc-text">部分运行失败的解决方案</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x02-%E6%89%93%E5%8C%85%E4%B8%8E%E5%B0%81%E8%A3%85%E5%9B%BE%E6%A0%87"><span class="toc-number">3.</span> <span class="toc-text">0x02 打包与封装图标</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E5%88%B0-x2F-usr-x2F-local%E5%B9%B6%E6%94%B9%E5%90%8D"><span class="toc-number">3.1.</span> <span class="toc-text">移动到&#x2F;usr&#x2F;local并改名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%9B%BE%E6%A0%87"><span class="toc-number">3.2.</span> <span class="toc-text">创建图标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%8D%E5%A4%8D%E5%88%B6%E5%88%B0%E6%A1%8C%E9%9D%A2%EF%BC%8C%E5%8A%A0%E6%9D%83"><span class="toc-number">3.3.</span> <span class="toc-text">再复制到桌面，加权</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x03-%E5%A4%A7%E5%8A%9F%E5%91%8A%E6%88%90"><span class="toc-number">4.</span> <span class="toc-text">0x03 大功告成</span></a></li></ol>
 </div></main>
             <aside class="left-column">
               
@@ -460,7 +502,7 @@ X-KDE-Username&#x3D;<span aria-hidden="true" class="line-numbers-rows"><span></s
   <a 
     class="author-tags-count" 
     href="/tags">
-    <span>4</span>
+    <span>5</span>
     <span>标签</span>
   </a>
 </div>
@@ -493,7 +535,7 @@ X-KDE-Username&#x3D;<span aria-hidden="true" class="line-numbers-rows"><span></s
     style="padding-right: 2px;">
   </i>目录
 </div>
-<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9C%A8Linux%E4%B8%AD%E5%AE%89%E8%A3%85Synthesiszer-V"><span class="toc-number">1.</span> <span class="toc-text">在Linux中安装Synthesiszer V</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%8C%85%EF%BC%88-zip%EF%BC%89"><span class="toc-number">1.1.</span> <span class="toc-text">1.下载安装包（.zip）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Basic%E7%89%88%E6%9C%AC"><span class="toc-number">1.1.1.</span> <span class="toc-text">Basic版本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pro%E7%89%88%E6%9C%AC-x2F-Basic%E7%89%88%E6%9C%AC"><span class="toc-number">1.1.2.</span> <span class="toc-text">Pro版本&#x2F;Basic版本</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E8%A7%A3%E5%8E%8B%E5%92%8C%E8%BF%90%E8%A1%8C"><span class="toc-number">1.2.</span> <span class="toc-text">2.解压和运行</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%93%E5%BC%80%E7%BB%88%E7%AB%AF%EF%BC%8Ccd%E5%88%B0%E4%BD%A0%E7%9A%84%E4%B8%8B%E8%BD%BD%E7%9B%AE%E5%BD%95%E5%B9%B6%E8%A7%A3%E5%8E%8B"><span class="toc-number">1.2.1.</span> <span class="toc-text">打开终端，cd到你的下载目录并解压</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E5%88%86%E5%8F%91%E8%A1%8C%E7%89%88%E9%9C%80%E8%A6%81%E5%8A%A0%E6%9D%83"><span class="toc-number">1.2.2.</span> <span class="toc-text">部分发行版需要加权</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C"><span class="toc-number">1.2.3.</span> <span class="toc-text">运行</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%89%93%E5%8C%85%E4%B8%8E%E5%B0%81%E8%A3%85%E5%9B%BE%E6%A0%87"><span class="toc-number">1.3.</span> <span class="toc-text">3.打包与封装图标</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E5%88%B0-x2F-usr-x2F-local%E5%B9%B6%E6%94%B9%E5%90%8D"><span class="toc-number">1.3.1.</span> <span class="toc-text">移动到&#x2F;usr&#x2F;local并改名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%9B%BE%E6%A0%87"><span class="toc-number">1.3.2.</span> <span class="toc-text">创建图标</span></a></li></ol></li></ol></li></ol>
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#0x00-%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%8C%85%EF%BC%88-zip%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">0x00 下载安装包（.zip）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Basic%E7%89%88%E6%9C%AC"><span class="toc-number">1.1.</span> <span class="toc-text">Basic版本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pro%E7%89%88%E6%9C%AC-x2F-Basic%E7%89%88%E6%9C%AC"><span class="toc-number">1.2.</span> <span class="toc-text">Pro版本&#x2F;Basic版本</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x01-%E8%A7%A3%E5%8E%8B%E5%92%8C%E8%BF%90%E8%A1%8C"><span class="toc-number">2.</span> <span class="toc-text">0x01 解压和运行</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%93%E5%BC%80%E7%BB%88%E7%AB%AF%EF%BC%8Ccd%E5%88%B0%E4%BD%A0%E7%9A%84%E4%B8%8B%E8%BD%BD%E7%9B%AE%E5%BD%95%E5%B9%B6%E8%A7%A3%E5%8E%8B"><span class="toc-number">2.1.</span> <span class="toc-text">打开终端，cd到你的下载目录并解压</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C"><span class="toc-number">2.2.</span> <span class="toc-text">运行</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%83%A8%E5%88%86%E8%BF%90%E8%A1%8C%E5%A4%B1%E8%B4%A5%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">2.2.1.</span> <span class="toc-text">部分运行失败的解决方案</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x02-%E6%89%93%E5%8C%85%E4%B8%8E%E5%B0%81%E8%A3%85%E5%9B%BE%E6%A0%87"><span class="toc-number">3.</span> <span class="toc-text">0x02 打包与封装图标</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E5%88%B0-x2F-usr-x2F-local%E5%B9%B6%E6%94%B9%E5%90%8D"><span class="toc-number">3.1.</span> <span class="toc-text">移动到&#x2F;usr&#x2F;local并改名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%9B%BE%E6%A0%87"><span class="toc-number">3.2.</span> <span class="toc-text">创建图标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%8D%E5%A4%8D%E5%88%B6%E5%88%B0%E6%A1%8C%E9%9D%A2%EF%BC%8C%E5%8A%A0%E6%9D%83"><span class="toc-number">3.3.</span> <span class="toc-text">再复制到桌面，加权</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x03-%E5%A4%A7%E5%8A%9F%E5%91%8A%E6%88%90"><span class="toc-number">4.</span> <span class="toc-text">0x03 大功告成</span></a></li></ol>
       </div>
     </article>
   
@@ -544,15 +586,21 @@ X-KDE-Username&#x3D;<span aria-hidden="true" class="line-numbers-rows"><span></s
   <div class="tags-list">
     
       <a 
+        href="/tags/SynthV/" 
+        title="SynthV">
+        <div class="tags-list-item">SynthV</div>
+      </a>
+    
+      <a 
         href="/tags/Scripting/" 
         title="Scripting">
         <div class="tags-list-item">Scripting</div>
       </a>
     
       <a 
-        href="/tags/SynthV/" 
-        title="SynthV">
-        <div class="tags-list-item">SynthV</div>
+        href="/tags/linux/" 
+        title="linux">
+        <div class="tags-list-item">linux</div>
       </a>
     
       <a 
@@ -585,7 +633,7 @@ X-KDE-Username&#x3D;<span aria-hidden="true" class="line-numbers-rows"><span></s
     style="padding-right: 2px;">
   </i>目录
 </div>
-<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9C%A8Linux%E4%B8%AD%E5%AE%89%E8%A3%85Synthesiszer-V"><span class="toc-number">1.</span> <span class="toc-text">在Linux中安装Synthesiszer V</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%8C%85%EF%BC%88-zip%EF%BC%89"><span class="toc-number">1.1.</span> <span class="toc-text">1.下载安装包（.zip）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Basic%E7%89%88%E6%9C%AC"><span class="toc-number">1.1.1.</span> <span class="toc-text">Basic版本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pro%E7%89%88%E6%9C%AC-x2F-Basic%E7%89%88%E6%9C%AC"><span class="toc-number">1.1.2.</span> <span class="toc-text">Pro版本&#x2F;Basic版本</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E8%A7%A3%E5%8E%8B%E5%92%8C%E8%BF%90%E8%A1%8C"><span class="toc-number">1.2.</span> <span class="toc-text">2.解压和运行</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%93%E5%BC%80%E7%BB%88%E7%AB%AF%EF%BC%8Ccd%E5%88%B0%E4%BD%A0%E7%9A%84%E4%B8%8B%E8%BD%BD%E7%9B%AE%E5%BD%95%E5%B9%B6%E8%A7%A3%E5%8E%8B"><span class="toc-number">1.2.1.</span> <span class="toc-text">打开终端，cd到你的下载目录并解压</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E5%88%86%E5%8F%91%E8%A1%8C%E7%89%88%E9%9C%80%E8%A6%81%E5%8A%A0%E6%9D%83"><span class="toc-number">1.2.2.</span> <span class="toc-text">部分发行版需要加权</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C"><span class="toc-number">1.2.3.</span> <span class="toc-text">运行</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%89%93%E5%8C%85%E4%B8%8E%E5%B0%81%E8%A3%85%E5%9B%BE%E6%A0%87"><span class="toc-number">1.3.</span> <span class="toc-text">3.打包与封装图标</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E5%88%B0-x2F-usr-x2F-local%E5%B9%B6%E6%94%B9%E5%90%8D"><span class="toc-number">1.3.1.</span> <span class="toc-text">移动到&#x2F;usr&#x2F;local并改名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%9B%BE%E6%A0%87"><span class="toc-number">1.3.2.</span> <span class="toc-text">创建图标</span></a></li></ol></li></ol></li></ol>
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#0x00-%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%8C%85%EF%BC%88-zip%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">0x00 下载安装包（.zip）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Basic%E7%89%88%E6%9C%AC"><span class="toc-number">1.1.</span> <span class="toc-text">Basic版本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pro%E7%89%88%E6%9C%AC-x2F-Basic%E7%89%88%E6%9C%AC"><span class="toc-number">1.2.</span> <span class="toc-text">Pro版本&#x2F;Basic版本</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x01-%E8%A7%A3%E5%8E%8B%E5%92%8C%E8%BF%90%E8%A1%8C"><span class="toc-number">2.</span> <span class="toc-text">0x01 解压和运行</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%93%E5%BC%80%E7%BB%88%E7%AB%AF%EF%BC%8Ccd%E5%88%B0%E4%BD%A0%E7%9A%84%E4%B8%8B%E8%BD%BD%E7%9B%AE%E5%BD%95%E5%B9%B6%E8%A7%A3%E5%8E%8B"><span class="toc-number">2.1.</span> <span class="toc-text">打开终端，cd到你的下载目录并解压</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C"><span class="toc-number">2.2.</span> <span class="toc-text">运行</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%83%A8%E5%88%86%E8%BF%90%E8%A1%8C%E5%A4%B1%E8%B4%A5%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">2.2.1.</span> <span class="toc-text">部分运行失败的解决方案</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x02-%E6%89%93%E5%8C%85%E4%B8%8E%E5%B0%81%E8%A3%85%E5%9B%BE%E6%A0%87"><span class="toc-number">3.</span> <span class="toc-text">0x02 打包与封装图标</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E5%88%B0-x2F-usr-x2F-local%E5%B9%B6%E6%94%B9%E5%90%8D"><span class="toc-number">3.1.</span> <span class="toc-text">移动到&#x2F;usr&#x2F;local并改名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%9B%BE%E6%A0%87"><span class="toc-number">3.2.</span> <span class="toc-text">创建图标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%8D%E5%A4%8D%E5%88%B6%E5%88%B0%E6%A1%8C%E9%9D%A2%EF%BC%8C%E5%8A%A0%E6%9D%83"><span class="toc-number">3.3.</span> <span class="toc-text">再复制到桌面，加权</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x03-%E5%A4%A7%E5%8A%9F%E5%91%8A%E6%88%90"><span class="toc-number">4.</span> <span class="toc-text">0x03 大功告成</span></a></li></ol>
     </article>
   
   
@@ -601,7 +649,7 @@ X-KDE-Username&#x3D;<span aria-hidden="true" class="line-numbers-rows"><span></s
     
       <div class="recent-posts-item">
         <div class="recent-posts-item-title">2022-02-01</div>
-        <a href="/install-synthv-on-linux/"><div class="recent-posts-item-content">install-synthv-on-linux</div></a>
+        <a href="/install-synthv-on-linux/"><div class="recent-posts-item-content">在Linux中安装Synthesiszer V</div></a>
       </div>
     
       <div class="recent-posts-item">
