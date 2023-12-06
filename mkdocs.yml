@@ -1,0 +1,75 @@
+site_name: ZAMBAR's Website
+theme:
+  name: material
+  logo: assets/zambar.png
+  favicon: assets/zambar.png
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      primary: white
+      toggle:
+        icon: material/weather-sunny
+        name: Light Mode Enabled
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      toggle:
+        icon: material/weather-night
+        name: Dark Mode Enabled
+  
+  font:
+    text: Inter
+    
+  features:
+    - navigation.tabs
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
+
+plugins:
+  - tags
+  - blog
+  - search  # Material for MkDocs search plugin
+  - obsidian-support
+  - mkdocs-pdf
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.smartsymbols
+  - attr_list
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/HeZeBang
+    - icon: fontawesome/brands/zhihu
+      link: https://www.zhihu.com/people/ZAMBAR
+    - icon : fontawesome/brands/bilibili
+      link: https://space.bilibili.com/156494172
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<email-address>
