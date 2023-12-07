@@ -3,11 +3,16 @@ share: true
 ---
 
 
-<span class="md-tag"></span>## 一、基本概念
-<span class="md-tag"></span>### 原函数
-> [!definition]<span class="md-tag">原函数</span>> 设 $f(x): I \rightarrow \mathrm{R}$, 若 $\exists F(x)$ 使得 $F^{\prime}(x)=f(x)(\forall x \in I)$, 则称 $F(x)$ 是 $f(x)$ 在 $I$ 上的一个**原函数**.
-<span class="md-tag"></span>#### 全体原函数
-> [!theorem]<span class="md-tag">全体原函数</span>> 设 $F(x)$ 是 $f(x)$ 在 $I$ 上的一个原函数, 则 $F(x)+C(C$ 为任意常数)为 $f(x)$ 在 $I$ 上的**全体原函数**.
+
+### 一、基本概念
+
+#### 原函数
+> [!definition]<span class="md-tag">原函数</span>
+> 设 $f(x): I \rightarrow \mathrm{R}$, 若 $\exists F(x)$ 使得 $F^{\prime}(x)=f(x)(\forall x \in I)$, 则称 $F(x)$ 是 $f(x)$ 在 $I$ 上的一个**原函数**.
+
+##### 全体原函数
+> [!theorem]<span class="md-tag">全体原函数</span>
+> 设 $F(x)$ 是 $f(x)$ 在 $I$ 上的一个原函数, 则 $F(x)+C(C$ 为任意常数)为 $f(x)$ 在 $I$ 上的**全体原函数**.
 
 > ***Proof:***
 > $(F(x)+c)^{\prime}=F^{\prime}(x):=f(x)$
@@ -15,20 +20,24 @@ share: true
 > $\therefore G^{\prime}(x)=f(x)=F^{\prime}(x) \quad(x \in I)$
 > 
 > $\xRightarrow{\exists C \in \mathbb{R}}\quad G(x)=F(x)+C$
-<span class="md-tag"></span>### 不定积分
-> [!definition]<span class="md-tag">不定积分</span>> 设 $f(x)$ 存在原函数, 则 $f(x)$ 的全体原函数称为 $f(x)$ 的**不定积分**, 记作 $$\displaystyle \int f(x) \mathrm{d} x$$
+
+#### 不定积分
+> [!definition]<span class="md-tag">不定积分</span>
+> 设 $f(x)$ 存在原函数, 则 $f(x)$ 的全体原函数称为 $f(x)$ 的**不定积分**, 记作 $$\displaystyle \int f(x) \mathrm{d} x$$
 
 - $\displaystyle \int$ 一不定积分号
 - $f(x)$ 一被积函数
 - $x$ 一积分变量
-<span class="md-tag"></span>#### 被积表达式
+
+##### 被积表达式
 
 > [!theorem] 被积表达式
 > 设 $F(x)$ 是 $f(x)$ 在 $I$ 上的一个原函数, 则
 > $$
 > \int f(x) \mathrm{d} x=F(x)+C \text {. }
 > $$
-<span class="md-tag"></span>#### 不定积分与微分运算互逆
+
+##### 不定积分与微分运算互逆
 
 > [!theorem] 不定积分与微分运算互逆
 > 即：左边不积分$=$右边求导数
@@ -38,7 +47,8 @@ share: true
 > 即: $$\displaystyle \int d(f(x)+C)=f(x)+C$$
 > 若 $f$ 存在原函数, 则 $$\left(\int f(x) d x\right)^{\prime}=f(x)$$
 > 即: $$d \int f(x) d x=f(x) d x$$
-<span class="md-tag"></span>#### 不定积分的线性运算
+
+##### 不定积分的线性运算
 > [!theorem] 线性运算
 > 若 $f, g$ 在 $I$ 上存在原函数, 则对任意 $a \in \mathbf{R}$ 有
 > $$
@@ -46,7 +56,8 @@ share: true
 > \int a f(x) \mathrm{d} x=a \int f(x) \mathrm{d} x \
 > \int[f(x) \pm g(x)] \mathrm{d} x=\int f(x) \mathrm{d} x \pm \int g(x) \mathrm{d} x
 > \end{gathered}
-> $$<span class="md-tag"></span>### 不定积分表
+> $$
+#### 不定积分表
 1. $\displaystyle \int k \mathrm{~d} x=k x+C\quad\left(\int 0 \mathrm{~d} x=C\right)$;
 
 2. $\displaystyle \int x^\alpha \mathrm{d} x=\frac{1}{\alpha+1} x^{\alpha+1}+C \quad(\alpha \neq-1)$;
@@ -91,11 +102,13 @@ share: true
 12. $\displaystyle \int \frac{\mathrm{d} x}{\sqrt{a^2-x^2}}=\arcsin \frac{x}{a}+C(a>0)$;
     
 13. $\displaystyle \int \frac{\mathrm{d} x}{\sqrt{x^2 \pm a^2}}=\ln \left|x+\sqrt{x^2 \pm a^2}\right|+C$.
-<span class="md-tag"></span>#### 补充不定积分
+
+##### 补充不定积分
 
 -  $\int \tan(x) \mathrm d x=\ln(\cos(x))$
 - 
-<span class="md-tag"></span>#### 例题
+
+##### 例题
 > [!example]
 > 例1 求 $\displaystyle \int\left(\frac{1}{\sqrt{x}}-\frac{1}{\sqrt{1-x^2}}\right) \mathrm{d} x$
 
@@ -130,9 +143,12 @@ share: true
 > & =-\frac{1}{x}-\arctan x+C&
 > \end{flalign}
 > $$
-<span class="md-tag"></span>## 二、换元积分法
-<span class="md-tag"></span>### 第一代换法 / 凑微分法
-> [!theorem]<span class="md-tag">凑微分法</span>> 若 $\displaystyle \int f(u) \mathrm{d} u=F(u)+C$, 而 $\varphi(x)$ 可导, 则
+
+### 二、换元积分法
+
+#### 第一代换法 / 凑微分法
+> [!theorem]<span class="md-tag">凑微分法</span>
+> 若 $\displaystyle \int f(u) \mathrm{d} u=F(u)+C$, 而 $\varphi(x)$ 可导, 则
 > $$
 > \int f(\varphi(x)) \textcolor{orange}{\varphi^{\prime}(x) \mathrm{d} x}=F(\varphi(x))+C,
 > $$
@@ -156,7 +172,8 @@ share: true
 	&\xlongequal{\text{回代}}F(\textcolor{orange}{\varphi(x)})+C .
 	\end{flalign}
 	$$
-<span class="md-tag"></span>#### 例题
+
+##### 例题
 > [!example]
 > 例4 求下列不定积分
 > 1. $\displaystyle \int \tan x d x$
@@ -292,11 +309,13 @@ $$
 > 由于 $\lim _{x \rightarrow 0} F^{\prime}(x)=\lim _{x \rightarrow 0} f(x)=f(0)=1$
 > 又$\because F(x)$ 在 $x=0$ 连续：
 > $\Rightarrow F^{\prime}(0)=f(0)=1$ （运用<span class="md-tag">导数极限定理:</span>导函数极限->导数极限）
-<span class="md-tag"></span>### 第二代换法/换元积分法
+
+#### 第二代换法/换元积分法
 
 已知右端求左端积分为第一代换法; 已知左端, 能否求右端积分呢? 此即下面的第二换元法.
 
-> [!theorem]<span class="md-tag">换元积分法</span>> 若 $\displaystyle \int f(\varphi(t)) \varphi^{\prime}(t) \mathrm{d} t=G(t)+C$, 又 $x=\varphi(t)$, 且 $\varphi^{\prime}(t) \neq 0$, 则
+> [!theorem]<span class="md-tag">换元积分法</span>
+> 若 $\displaystyle \int f(\varphi(t)) \varphi^{\prime}(t) \mathrm{d} t=G(t)+C$, 又 $x=\varphi(t)$, 且 $\varphi^{\prime}(t) \neq 0$, 则
 > $$
 > \int f(x) \mathrm{d} x=G\left(\varphi^{-1}(x)\right)+C
 > $$
@@ -314,8 +333,10 @@ $$
 > &=\textcolor{Cyan}{f(\varphi(t)) \varphi^{\prime}(t)} \cdot \frac{1}{\varphi^{\prime}(t)}=f(\varphi(t))\\\\\\\\&=f(x)&
 > \end{flalign}
 > $$
-<span class="md-tag"></span>#### 例题
-<span class="md-tag"></span>#####<span class="md-tag">三角代换</span>去根号
+
+##### 例题
+
+######<span class="md-tag">三角代换</span>去根号
 
 > [!tip] 含无理式 $\sqrt{a^2-x^2}, \sqrt{x^2+a^2}$ 和 $\sqrt{x^2-a^2}$ 时, 可采用 $x=a \sin t, x=a \tan t$ 和 $x=a \sec t$ 等三角代换去根号.
 
@@ -387,7 +408,10 @@ $$
 >
 >***Tip***
 >上述例子很好地说明了原函数可不唯一（$C$不同）
-<span class="md-tag"></span>#####<span class="md-tag">倒数代换</span>> [!tip] 分母含因子 $x$ 时, 可用倒代换 $x=1 / t$.
+
+######<span class="md-tag">倒数代换</span>
+
+> [!tip] 分母含因子 $x$ 时, 可用倒代换 $x=1 / t$.
 
 > [!example]
 > 例9 求 $\displaystyle \int \frac{\mathrm{d} x}{x \sqrt{x^2+x+1}}$.
@@ -402,9 +426,11 @@ $$
 > & =-\ln \left|\frac{1}{x}+\frac{1}{2}+\frac{\sqrt{x^2+x+1}}{x}\right|+C&
 > \end{flalign}
 > $$
-<span class="md-tag"></span>## 三、分部积分法
 
-> [!theorem]<span class="md-tag">分部积分法</span>> 若 $u^{\prime}(x), v^{\prime}(x)$ 连续, 则
+### 三、分部积分法
+
+> [!theorem]<span class="md-tag">分部积分法</span>
+> 若 $u^{\prime}(x), v^{\prime}(x)$ 连续, 则
 > $$
 > \int u(x) v^{\prime}(x) \mathrm{d} x=u(x) v(x)-\int v(x) u^{\prime}(x) \mathrm{d} x .
 > $$
@@ -422,7 +448,8 @@ $$
 > & \text { 即: } \int u(x) d v(x)=u(x) v(x)-\int v(x) d u(x)&
 > \end{flalign}
 $$
-<span class="md-tag"></span>#### 例题
+
+##### 例题
 
 > [!example]
 例 10 求 $\displaystyle \int \ln x \mathrm{~d} x$.

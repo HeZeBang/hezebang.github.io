@@ -21,7 +21,8 @@ share: true
 > 适用于 Boqing Xue's **Linear Algebra** *2023 Fall*
 > 
 > ***Written by ZAMBAR***
-<span class="md-tag"></span>Chap.00
+
+# Chap.00
 
 > If $A\neq 0$ Then $A^TA\neq0$
 
@@ -54,7 +55,8 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 15. $\text{nullity}(A) = 0$.
 16. $\text{Null}(A)^⊥ = \mathbb{R} ^n$.
 17. $\text{Row}(A)^⊥ = {0}$.
-<span class="md-tag"></span>Chap.01 Systems of Linear Equations and Matrices
+
+# Chap.01 Systems of Linear Equations and Matrices
 
 > [!definition]
 > linear system; homogeneous linear system; solution; general solution; consistent/inconsistent; augmented matrix; coefficient matrix.
@@ -350,7 +352,8 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 > $$
 > 
 > Evaluate $A^{-1}$ and $A^{-1}B$.
-<span class="md-tag"></span>Chap.02 Euclidean Vector Spaces
+
+# Chap.02 Euclidean Vector Spaces
 
 > [!definition]
 > n-space; vector; addition; scalar multiplication; linear combination; norm; distance; unit vector; dot product; orthogonality; orthogonal projection; line and plane; cross product; triple product
@@ -934,7 +937,8 @@ $$
 > \end{bmatrix}
 > $$
 > Let $v = (0, 1, 2, 0) \in \mathbb{R}^4$. Find $\text{proj}_v x$, the orthogonal projection of $x$ on $v$.
-<span class="md-tag"></span>Chap.03 General Vector Spaces
+
+# Chap.03 General Vector Spaces
 
 > [!definition]
 > Vector space; subspace.
@@ -991,7 +995,8 @@ $$
 - $\text{If } \lambda \mathbf v = 0\text{, then } \lambda = 0 \text{ or } \mathbf v = \mathbf 0$
 
 ---
-<span class="md-tag"></span>## 子空间
+
+### 子空间
 
 **成立：** 子空间成立只需要考虑 **对加法/数乘封闭**
 
@@ -1013,16 +1018,20 @@ $$
 
 > [!definition]
 > Linear dependence/independence; linear combination; span; basis; dimension.
-<span class="md-tag"></span>## 线性组合
+
+### 线性组合
 
 略
-<span class="md-tag"></span>## 线性相关/无关
+
+### 线性相关/无关
 
 > 当v1, . . . , vr满足何种条件时，这样的线性组合表示是唯一的？
 
 判断给定的一组向量是否线性无关<=>$\sum k_{i}\mathbf v_{i}=\mathbf 0\text{ if and only if }k_{i}=0$<=>$[\mathbf v_{1}|\dots|\mathbf v_{n}]=A\mathbf x=\mathbf 0\text{ only trivival solution}$<=>$A \text{ is invertible}$<=>$\textcolor{orange}{\det(A)\ne0}$
-<span class="md-tag"></span>## 线性张成
-<span class="md-tag"></span>## 基底
+
+### 线性张成
+
+### 基底
 
 - 1. S张成V ；
 - 2. S线性无关，
@@ -1030,7 +1039,8 @@ $$
 定义中的(1)指出S中的向量足够多，而(2)指出S中没有冗余的向量
 
 性质
-<span class="md-tag"></span>## 标准基
+
+### 标准基
 
 在F-线性空间Mm×n(F)中取集合{Eij : 1 ≤ i ≤ m, 1 ≤ j ≤ n}，其中Eij 表示第i行、第j列的元素为1，其余元素为0的矩阵. 它们构成一组基，称为Mm×n(F)的标准基.
 
@@ -1038,48 +1048,55 @@ $$
 > Row/Column/Null space of a matrix; rank; nullity
 
 在线性代数中，矩阵的行空间、列空间和零空间是与矩阵相关的一些基本概念，而秩和零度是描述这些空间维数的量。
-<span class="md-tag"></span>## 行空间
+
+### 行空间
 
 **定义**: 矩阵的行空间是其所有**行向量的线性组合所构成的空间**。对于一个矩阵$A$，其行空间通常表示为 Row(A) 或$\text{span}(\text{rows of } A)$。
 
 如果矩阵$A$是一个$m \times n$矩阵，那么行空间是$\mathbb{R}^n$中的一个子空间。
 
 **基**: 把矩阵$A$行简化（使用行简化阶梯形或最简行阶梯形），不为零的行将形成行空间的一个基。
-<span class="md-tag"></span>## 列空间
+
+### 列空间
 
 **定义**: 矩阵的列空间是其所有列向量的线性组合所构成的空间。对于一个矩阵$A$，其列空间通常表示为 Col(A) 或$\text{span}(\text{columns of } A)$。
 
 列空间也被称为矩阵的值域或范围，是$\mathbb{R}^m$中的一个子空间。
 
 **基**: 通过观察矩阵$A$的行简化形式，可以确定哪些列包含了领导1（即在每个行最左非零项），这些列在原矩阵$A$中对应的列向量将构成列空间的一个基。
-<span class="md-tag"></span>## 零空间（Null Space）
+
+### 零空间（Null Space）
 
 **定义**: 矩阵$A$的零空间是所有满足$A \mathbf{x} = \mathbf{0}$的向量$\mathbf{x}$的集合，通常表示为 Null(A)。
 
 零空间即解空间，表示了线性系统$Ax=0$的所有解。零空间是$\mathbb{R}^n$的一个子空间。
 
 **基**: 要找到零空间的基，需解齐次方程$A \mathbf{x} = \mathbf{0}$，并找出自由变量对应的参数向量，这些参数向量就构成了零空间的基。
-<span class="md-tag"></span>### **找基**
+
+#### **找基**
 **RREF**的**主1**的行向量张成RREF矩阵R的行空间的一组基底
 =>==组成A行空间的一组基底==
 
 **RREF**的**主1**的列向量张成RREF矩阵R的列向量的基底
 =>**对应原来的**A的列组成A列空间的一组基底
-<span class="md-tag"></span>## 秩（Rank）
+
+### 秩（Rank）
 
 **定义**: 矩阵$A$的秩是其行空间（等价地，列空间）的维数，表示为 rank(A)。
 
 秩也可以看作是线性独立的行或列的最大数目，给出了矩阵可以“表示”多少维度空间。
 
 **公式**: 如果$A$是一个$m \times n$矩阵，那么$\text{rank}(A) = \text{dimension of Row}(A) = \text{dimension of Col}(A)$
-<span class="md-tag"></span>## 零度（Nullity）
+
+### 零度（Nullity）
 
 **定义**: 矩阵$A$的零度是其零空间的维数，表示为 nullity(A)。
 
 零度给出了线性系统$A\mathbf{x}=\mathbf{0}$解的“自由度”。
 
 **公式**: 对于一个$m \times n$矩阵$A$，$\text{nullity}(A) = \text{dimension of Null}(A)$
-<span class="md-tag"></span>## 秩-零度定理（Rank-Nullity Theorem）
+
+### 秩-零度定理（Rank-Nullity Theorem）
 
 $$\text{rank}(A) + \text{nullity}(A) = n$$
 
