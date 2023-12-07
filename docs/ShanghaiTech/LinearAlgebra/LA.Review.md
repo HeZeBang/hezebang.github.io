@@ -22,7 +22,7 @@ share: true
 > 
 > ***Written by ZAMBAR***
 
-# Chap.00
+/#Obsidian_ /Chap.00
 
 > If $A\neq 0$ Then $A^TA\neq0$
 
@@ -56,7 +56,7 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 16. $\text{Null}(A)^⊥ = \mathbb{R} ^n$.
 17. $\text{Row}(A)^⊥ = {0}$.
 
-# Chap.01 Systems of Linear Equations and Matrices
+/#Obsidian_ /Chap.01 Systems of Linear Equations and Matrices
 
 > [!definition]
 > linear system; homogeneous linear system; solution; general solution; consistent/inconsistent; augmented matrix; coefficient matrix.
@@ -95,11 +95,11 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
    $$\vdots$$
    $$a_{m1}x_1 + a_{m2}x_2 + \ldots + a_{mn}x_n = b_m$$
    对应的增广矩阵为：
-   $$[A | B] = \begin{bmatrix} a_{11} & a_{12} & \ldots & a_{1n} & | & b_1 \\ a_{21} & a_{22} & \ldots & a_{2n} & | & b_2 \\ \vdots & \vdots & \ddots & \vdots & | & \vdots \\ a_{m1} & a_{m2} & \ldots & a_{mn} & | & b_m \end{bmatrix}$$
+   $$[A | B] = \begin{bmatrix} a_{11} & a_{12} & \ldots & a_{1n} & | & b_1 /\\\\\\\\/ a_{21} & a_{22} & \ldots & a_{2n} & | & b_2 /\\\\\\\\/ \vdots & \vdots & \ddots & \vdots & | & \vdots /\\\\\\\\/ a_{m1} & a_{m2} & \ldots & a_{mn} & | & b_m \end{bmatrix}$$
 
 7. **系数矩阵（Coefficient Matrix）：**
    系数矩阵是线性系统中由所有系数构成的矩阵。对于上述线性系统，系数矩阵为：
-   $$A = \begin{bmatrix} a_{11} & a_{12} & \ldots & a_{1n} \\ a_{21} & a_{22} & \ldots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \ldots & a_{mn} \end{bmatrix}$$
+   $$A = \begin{bmatrix} a_{11} & a_{12} & \ldots & a_{1n} /\\\\\\\\/ a_{21} & a_{22} & \ldots & a_{2n} /\\\\\\\\/ \vdots & \vdots & \ddots & \vdots /\\\\\\\\/ a_{m1} & a_{m2} & \ldots & a_{mn} \end{bmatrix}$$
 
 这些概念对于理解和解决线性系统问题非常重要。增广矩阵和系数矩阵的使用使得线性系统的处理更加方便。
 
@@ -209,7 +209,7 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 	- 对角矩阵（Diagonal Matrix）：
 	  1. **对角矩阵的逆：**
    如果 $D$ 是一个对角矩阵，其中对角线上的元素 $d_{ii} \neq 0$，那么其逆矩阵为：
-   $$ D^{-1} = \begin{bmatrix} \frac{1}{d_{11}} & 0 & \cdots & 0 \\ 0 & \frac{1}{d_{22}} & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & \frac{1}{d_{nn}} \end{bmatrix} $$
+   $$ D^{-1} = \begin{bmatrix} \frac{1}{d_{11}} & 0 & \cdots & 0 /\\\\\\\\/ 0 & \frac{1}{d_{22}} & \cdots & 0 /\\\\\\\\/ \vdots & \vdots & \ddots & \vdots /\\\\\\\\/ 0 & 0 & \cdots & \frac{1}{d_{nn}} \end{bmatrix} $$
 		2. **对角矩阵的行列式：**
    对角矩阵的行列式等于其主对角线上的元素的乘积：
    $$ \text{det}(D) = d_{11} \cdot d_{22} \cdot \ldots \cdot d_{nn} $$
@@ -301,9 +301,9 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 > 
 > $$
 > \begin{cases}
-> x_1 + 3x_2 - 2x_3 + 2x_5 = 0 \\
-> 2x_1 + 6x_2 - 5x_3 - 2x_4 + 4x_5 - 3x_6 = -1 \\
-> 5x_3 + 10x_4 + 15x_6 = 5 \\
+> x_1 + 3x_2 - 2x_3 + 2x_5 = 0 /\\\\\\\\/
+> 2x_1 + 6x_2 - 5x_3 - 2x_4 + 4x_5 - 3x_6 = -1 /\\\\\\\\/
+> 5x_3 + 10x_4 + 15x_6 = 5 /\\\\\\\\/
 > 2x_1 + 6x_2 + 8x_4 + 4x_5 + 18x_6 = 6
 > \end{cases}
 > $$
@@ -319,8 +319,8 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 > 
 > $$
 > \begin{cases}
-> -2x + y + z = -2 \\
-> x - 2y + z = a \\
+> -2x + y + z = -2 /\\\\\\\\/
+> x - 2y + z = a /\\\\\\\\/
 > x + y + (b - 2)z = a
 > \end{cases}
 > $$
@@ -337,23 +337,23 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 > 
 > $$ A =
 > \begin{bmatrix}
-> 1 & 2 & 3 \\
-> 2 & 5 & 3 \\
+> 1 & 2 & 3 /\\\\\\\\/
+> 2 & 5 & 3 /\\\\\\\\/
 > 1 & 0 & 8
 > \end{bmatrix}
 > $$
 > 
 > $$ B =
 > \begin{bmatrix}
-> -1 & 0 & 1 \\
-> 1 & 2 & -2 \\
+> -1 & 0 & 1 /\\\\\\\\/
+> 1 & 2 & -2 /\\\\\\\\/
 > 0 & 3 & 2
 > \end{bmatrix}
 > $$
 > 
 > Evaluate $A^{-1}$ and $A^{-1}B$.
 
-# Chap.02 Euclidean Vector Spaces
+/#Obsidian_ /Chap.02 Euclidean Vector Spaces
 
 > [!definition]
 > n-space; vector; addition; scalar multiplication; linear combination; norm; distance; unit vector; dot product; orthogonality; orthogonal projection; line and plane; cross product; triple product
@@ -364,13 +364,13 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
    - **阐释：** n-空间是具有n个实数的集合，通常用$\mathbb{R}^n$表示。每个元素是n维向量。
 
 2. **向量（Vector）：**
-   - **阐释：** 向量是n个有序实数的组合，通常表示为 $\mathbf{v} = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix}$。向量可以在n-空间中表示一个点或一个方向。
+   - **阐释：** 向量是n个有序实数的组合，通常表示为 $\mathbf{v} = \begin{bmatrix} v_1 /\\\\\\\\/ v_2 /\\\\\\\\/ \vdots /\\\\\\\\/ v_n \end{bmatrix}$。向量可以在n-空间中表示一个点或一个方向。
 
 3. **加法（Addition）：**
-   - **阐释：** 向量加法是指对应元素相加，例如 $\mathbf{u} + \mathbf{v} = \begin{bmatrix} u_1 + v_1 \\ u_2 + v_2 \\ \vdots \\ u_n + v_n \end{bmatrix}$。
+   - **阐释：** 向量加法是指对应元素相加，例如 $\mathbf{u} + \mathbf{v} = \begin{bmatrix} u_1 + v_1 /\\\\\\\\/ u_2 + v_2 /\\\\\\\\/ \vdots /\\\\\\\\/ u_n + v_n \end{bmatrix}$。
 
 4. **标量乘法（Scalar Multiplication）：**
-   - **阐释：** 标量乘法是指将向量的每个元素乘以一个实数，例如 $c \cdot \mathbf{v} = \begin{bmatrix} c \cdot v_1 \\ c \cdot v_2 \\ \vdots \\ c \cdot v_n \end{bmatrix}$。
+   - **阐释：** 标量乘法是指将向量的每个元素乘以一个实数，例如 $c \cdot \mathbf{v} = \begin{bmatrix} c \cdot v_1 /\\\\\\\\/ c \cdot v_2 /\\\\\\\\/ \vdots /\\\\\\\\/ c \cdot v_n \end{bmatrix}$。
 
 5. **线性组合（Linear Combination）：**
    - **阐释：** 线性组合是指通过对向量进行加法和标量乘法操作得到的结果，如 $c_1 \cdot \mathbf{v}_1 + c_2 \cdot \mathbf{v}_2 + \ldots + c_k \cdot \mathbf{v}_k$。
@@ -399,7 +399,7 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 
 13. **叉积（Cross Product）：**
     - **阐释：** 三维空间中，两个向量的叉积是一个与这两个向量都垂直的向量，其大小由平行四边形的面积表示，方向由右手定则确定。
-    - Notational trick: 得到的是向量 $$(v_{1},v_{2},v_{3})\times(w_{1},w_{2},w_{3})=\begin{vmatrix}\hat i & \hat j & \hat k\\v_{1} & v_{2} & v_{3}\\w_{1} & w_{2} & w_{3}\end{vmatrix} $$
+    - Notational trick: 得到的是向量 $$(v_{1},v_{2},v_{3})\times(w_{1},w_{2},w_{3})=\begin{vmatrix}\hat i & \hat j & \hat k/\\\\\\\\/v_{1} & v_{2} & v_{3}/\\\\\\\\/w_{1} & w_{2} & w_{3}\end{vmatrix} $$
 
 > [!definition]
 > determinant; minor; cofactor; adjunct(adjunct).
@@ -526,15 +526,15 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 	$$
 	\mathbf{u} \times \mathbf{v} =
 	\begin{pmatrix}
-	\begin{vmatrix} u_2 & u_3 \\ v_2 & v_3 \end{vmatrix} , & 
-	\begin{vmatrix} u_3 & u_1 \\ v_3 & v_1 \end{vmatrix} , & 
-	\begin{vmatrix} u_1 & u_2 \\ v_1 & v_2 \end{vmatrix}
+	\begin{vmatrix} u_2 & u_3 /\\\\\\\\/ v_2 & v_3 \end{vmatrix} , & 
+	\begin{vmatrix} u_3 & u_1 /\\\\\\\\/ v_3 & v_1 \end{vmatrix} , & 
+	\begin{vmatrix} u_1 & u_2 /\\\\\\\\/ v_1 & v_2 \end{vmatrix}
 	\end{pmatrix}
 	$$
 
 	- **Gou-Gu Theorem:**
 Suppose that $\mathbf{u} = (u_1, u_2, u_3)$ and $\mathbf{v} = (v_1, v_2, v_3)$. Then,
-$$ \lVert \mathbf{u} \times \mathbf{v} \rVert^2 = \begin{vmatrix} u_2 & u_3 \\ v_2 & v_3 \end{vmatrix}^2 + \begin{vmatrix} u_3 & u_1 \\ v_3 & v_1 \end{vmatrix}^2 + \begin{vmatrix} u_1 & u_2 \\ v_1 & v_2 \end{vmatrix}^2 $$
+$$ \lVert \mathbf{u} \times \mathbf{v} \rVert^2 = \begin{vmatrix} u_2 & u_3 /\\\\\\\\/ v_2 & v_3 \end{vmatrix}^2 + \begin{vmatrix} u_3 & u_1 /\\\\\\\\/ v_3 & v_1 \end{vmatrix}^2 + \begin{vmatrix} u_1 & u_2 /\\\\\\\\/ v_1 & v_2 \end{vmatrix}^2 $$
 $$ = \lVert \text{proj}_{\text{yOz}}(\mathbf{u}) \times \text{proj}_{\text{yOz}}(\mathbf{v}) \rVert^2 + $$$$\lVert \text{proj}_{\text{xOz}}(\mathbf{u}) \times \text{proj}_{\text{xOz}}(\mathbf{v}) \rVert^2 + \lVert \text{proj}_{\text{xOz}}(\mathbf{u}) \times \text{proj}_{\text{xOz}}(\mathbf{v}) \rVert^2 $$
 Here, $\text{proj}_{\text{yOz}}(\mathbf{u})$ is the projection of $\mathbf{u}$ onto the $yOz$-plane, and the other notations are similar.
 
@@ -547,8 +547,8 @@ Here, $\text{proj}_{\text{yOz}}(\mathbf{u})$ is the projection of $\mathbf{u}$ o
 		- Suppose that
 		$$ \mathbf{u} = (u_1, u_2, u_3), \; \mathbf{v} = (v_1, v_2, v_3), \;\mathbf{w} = (w_1, w_2, w_3). $$
 		Then the scalar triple product
-		$$ \mathbf{u} \cdot (\mathbf{v} \times \mathbf{w}) = \begin{vmatrix} u_1 & u_2 & u_3 \\ v_1 & v_2 & v_3 \\ w_1 & w_2 & w_3 \end{vmatrix} $$
-		$$ = u_1 \begin{vmatrix} v_2 & v_3 \\ w_2 & w_3 \end{vmatrix} - u_2 \begin{vmatrix} v_1 & v_3 \\ w_1 & w_3 \end{vmatrix} + u_3 \begin{vmatrix} v_1 & v_2 \\ w_1 & w_2 \end{vmatrix} $$
+		$$ \mathbf{u} \cdot (\mathbf{v} \times \mathbf{w}) = \begin{vmatrix} u_1 & u_2 & u_3 /\\\\\\\\/ v_1 & v_2 & v_3 /\\\\\\\\/ w_1 & w_2 & w_3 \end{vmatrix} $$
+		$$ = u_1 \begin{vmatrix} v_2 & v_3 /\\\\\\\\/ w_2 & w_3 \end{vmatrix} - u_2 \begin{vmatrix} v_1 & v_3 /\\\\\\\\/ w_1 & w_3 \end{vmatrix} + u_3 \begin{vmatrix} v_1 & v_2 /\\\\\\\\/ w_1 & w_2 \end{vmatrix} $$
 		$$ = u_1v_2w_3 + u_2v_3w_1 + u_3v_1w_2 - $$$$u_3v_2w_1 - u_2v_1w_3 - u_1v_3w_2. $$
 	- **Proposition:**
 		1. $\lvert (\mathbf{a} \times \mathbf{b}) \cdot \mathbf{c} \rvert$ is the volume of the parallelepiped determined by $\mathbf{a}, \mathbf{b}, \mathbf{c}$.
@@ -569,21 +569,21 @@ Here, $\text{proj}_{\text{yOz}}(\mathbf{u})$ is the projection of $\mathbf{u}$ o
 **定理：在 $\mathbb{R}^3$ 中的直线和平面方程**
 
 1. **直线的参数方程：**
-   - **公式：** 一条通过点 $(x_0, y_0, z_0)$ 且方向向量为 $\mathbf{v} = \begin{bmatrix} a \\ b \\ c \end{bmatrix}$ 的直线的参数方程可以表示为：
+   - **公式：** 一条通过点 $(x_0, y_0, z_0)$ 且方向向量为 $\mathbf{v} = \begin{bmatrix} a /\\\\\\\\/ b /\\\\\\\\/ c \end{bmatrix}$ 的直线的参数方程可以表示为：
      $$ \begin{cases}
-         x = x_0 + at \\
-         y = y_0 + bt \\
+         x = x_0 + at /\\\\\\\\/
+         y = y_0 + bt /\\\\\\\\/
          z = z_0 + ct
        \end{cases} $$
    - **几何意义：** 直线上的每个点都可以通过参数 $t$ 来表示，表示了直线上的点沿着方向向量的运动。
 
 2. **直线的对称式方程：**
-   - **公式：** 一条通过点 $(x_0, y_0, z_0)$ 且方向向量为 $\mathbf{v} = \begin{bmatrix} a \\ b \\ c \end{bmatrix}$ 的直线的对称式方程为：
+   - **公式：** 一条通过点 $(x_0, y_0, z_0)$ 且方向向量为 $\mathbf{v} = \begin{bmatrix} a /\\\\\\\\/ b /\\\\\\\\/ c \end{bmatrix}$ 的直线的对称式方程为：
      $$ \frac{x - x_0}{a} = \frac{y - y_0}{b} = \frac{z - z_0}{c} $$
    - **几何意义：** 对称式方程表示了直线上的任意一点到起点的距离与方向向量的比例相等。
 
 3. **平面的点法式方程：**
-   - **公式：** 一个过点 $(x_0, y_0, z_0)$ 且法向量为 $\mathbf{n} = \begin{bmatrix} A \\ B \\ C \end{bmatrix}$ 的平面的点法式方程为：
+   - **公式：** 一个过点 $(x_0, y_0, z_0)$ 且法向量为 $\mathbf{n} = \begin{bmatrix} A /\\\\\\\\/ B /\\\\\\\\/ C \end{bmatrix}$ 的平面的点法式方程为：
      $$ A(x - x_0) + B(y - y_0) + C(z - z_0) = 0 $$
    - **几何意义：** 平面上的每个点满足点法式方程，表示点到平面的向量与法向量垂直。
 
@@ -688,25 +688,25 @@ $$ Ax = b $$
 
 $$
 \begin{vmatrix}
-a_{11} & \ldots & \hat{a}_{1k} + \tilde{a}_{1k} & \ldots & a_{1n} \\
-a_{21} & \ldots & \hat{a}_{1k} + \tilde{a}_{1k} & \ldots & a_{2n} \\
-\vdots & \vdots & \vdots & \ddots & \vdots \\
-a_{n1} & \ldots & \hat{a}_{nk} + \tilde{a}_{nk} & \ldots & a_{nn} \\
+a_{11} & \ldots & \hat{a}_{1k} + \tilde{a}_{1k} & \ldots & a_{1n} /\\\\\\\\/
+a_{21} & \ldots & \hat{a}_{1k} + \tilde{a}_{1k} & \ldots & a_{2n} /\\\\\\\\/
+\vdots & \vdots & \vdots & \ddots & \vdots /\\\\\\\\/
+a_{n1} & \ldots & \hat{a}_{nk} + \tilde{a}_{nk} & \ldots & a_{nn} /\\\\\\\\/
 \end{vmatrix}
 $$
 $$=
 \begin{vmatrix}
-a_{11} & \ldots & \hat{a}_{1k} & \ldots & a_{1n} \\
-a_{21} & \ldots & \hat{a}_{1k} & \ldots & a_{2n} \\
-\vdots & \vdots & \vdots & \ddots & \vdots \\
-a_{n1} & \ldots & \hat{a}_{nk} & \ldots & a_{nn} \\
+a_{11} & \ldots & \hat{a}_{1k} & \ldots & a_{1n} /\\\\\\\\/
+a_{21} & \ldots & \hat{a}_{1k} & \ldots & a_{2n} /\\\\\\\\/
+\vdots & \vdots & \vdots & \ddots & \vdots /\\\\\\\\/
+a_{n1} & \ldots & \hat{a}_{nk} & \ldots & a_{nn} /\\\\\\\\/
 \end{vmatrix}
 +
 \begin{vmatrix}
-a_{11} & \ldots & \tilde{a}_{1k} & \ldots & a_{1n} \\
-a_{21} & \ldots & \tilde{a}_{1k} & \ldots & a_{2n} \\
-\vdots & \vdots & \vdots & \ddots & \vdots \\
-a_{n1} & \ldots & \tilde{a}_{nk} & \ldots & a_{nn} \\
+a_{11} & \ldots & \tilde{a}_{1k} & \ldots & a_{1n} /\\\\\\\\/
+a_{21} & \ldots & \tilde{a}_{1k} & \ldots & a_{2n} /\\\\\\\\/
+\vdots & \vdots & \vdots & \ddots & \vdots /\\\\\\\\/
+a_{n1} & \ldots & \tilde{a}_{nk} & \ldots & a_{nn} /\\\\\\\\/
 \end{vmatrix}
 $$
 
@@ -748,10 +748,10 @@ $$
 > Example: Evaluate Vandermonde Determinant
 > 
 > $$ \Delta_n = \begin{vmatrix}
-> 1 & 1 & \ldots & 1 \\
-> x_1 & x_2 & \ldots & x_n \\
-> x_1^2 & x_2^2 & \ldots & x_n^2 \\
-> \vdots & \vdots & \ddots & \vdots \\
+> 1 & 1 & \ldots & 1 /\\\\\\\\/
+> x_1 & x_2 & \ldots & x_n /\\\\\\\\/
+> x_1^2 & x_2^2 & \ldots & x_n^2 /\\\\\\\\/
+> \vdots & \vdots & \ddots & \vdots /\\\\\\\\/
 > x_1^{n-1} & x_2^{n-1} & \ldots & x_n^{n-1}
 > \end{vmatrix} $$
 > 
@@ -765,7 +765,7 @@ $$
 >从最后一行开始，$行_{k+1}-x_{n}\cdot行_k$
 >$$M'_{k+1,~j}=x_{j}^{k}-x_{j}^{j-1}\cdot x_{n} = x_{j}^{k-1}(x_{j}-x_{n})$$
 >$列j$提出$(x_{j}-x_{n})$
->$$\det=\small\prod_{j=1}^{n-1} (x_j - x_n)\cdot\begin{vmatrix}\dots &\dots &\dots &1\\1&1&1&0\\\dots &\dots &\dots &\vdots\\\dots &x_{j}^{k-1} &\dots &\vdots\\\dots &\dots &\dots &0\end{vmatrix}$$
+>$$\det=\small\prod_{j=1}^{n-1} (x_j - x_n)\cdot\begin{vmatrix}\dots &\dots &\dots &1/\\\\\\\\/1&1&1&0/\\\\\\\\/\dots &\dots &\dots &\vdots/\\\\\\\\/\dots &x_{j}^{k-1} &\dots &\vdots/\\\\\\\\/\dots &\dots &\dots &0\end{vmatrix}$$
 >按最后一列展开
 >$$\Delta_{n}=(-1)^{1+n}\cdot\prod_{j=1}^{n-1} (x_j - x_n)\cdot\Delta_{n-1}$$
 >$$\Delta_{n}=\prod_{j=1}^{n-1} (x_{n} - x_{j})\cdot\Delta_{n-1}=\dots$$
@@ -775,27 +775,27 @@ $$
 >
 > $$ A_n =
 > \begin{vmatrix}
-> a_1 & 1 & 1 & \ldots & 1 \\
-> 1 & a_2 \\
-> 1 && a_3 \\
-> \vdots & && \ddots \\
-> 1 &&&& a_n \\
+> a_1 & 1 & 1 & \ldots & 1 /\\\\\\\\/
+> 1 & a_2 /\\\\\\\\/
+> 1 && a_3 /\\\\\\\\/
+> \vdots & && \ddots /\\\\\\\\/
+> 1 &&&& a_n /\\\\\\\\/
 > \end{vmatrix}
 > $$
 > 化三角：
-> $=a_{2}\cdot a_{3}\cdots a_{n}\begin{vmatrix}a_{1} & 1 & 1 & \dots & 1\\ \frac{1}{a_{2}} & 1 & 0 & \dots & 0\\ \frac{1}{a_{3}} & 0 & 1 & \dots & 0\\\vdots & \vdots & \vdots & \ddots & \vdots\\ \frac{1}{a_{n}} & 0 & 0 & \dots & 1\end{vmatrix}$
-> $=a_{2}\cdot a_{3}\cdots a_{n}\begin{vmatrix}a_{1}-\sum_{i=2}^{n} \frac{1}{a_{i}} & 0 & 0 & \dots & 0\\ \frac{1}{a_{2}} & 1 & 0 & \dots & 0\\ \frac{1}{a_{3}} & 0 & 1 & \dots & 0\\\vdots & \vdots & \vdots & \ddots & \vdots\\ \frac{1}{a_{n}} & 0 & 0 & \dots & 1\end{vmatrix}$
+> $=a_{2}\cdot a_{3}\cdots a_{n}\begin{vmatrix}a_{1} & 1 & 1 & \dots & 1/\\\\\\\\/ \frac{1}{a_{2}} & 1 & 0 & \dots & 0/\\\\\\\\/ \frac{1}{a_{3}} & 0 & 1 & \dots & 0/\\\\\\\\/\vdots & \vdots & \vdots & \ddots & \vdots/\\\\\\\\/ \frac{1}{a_{n}} & 0 & 0 & \dots & 1\end{vmatrix}$
+> $=a_{2}\cdot a_{3}\cdots a_{n}\begin{vmatrix}a_{1}-\sum_{i=2}^{n} \frac{1}{a_{i}} & 0 & 0 & \dots & 0/\\\\\\\\/ \frac{1}{a_{2}} & 1 & 0 & \dots & 0/\\\\\\\\/ \frac{1}{a_{3}} & 0 & 1 & \dots & 0/\\\\\\\\/\vdots & \vdots & \vdots & \ddots & \vdots/\\\\\\\\/ \frac{1}{a_{n}} & 0 & 0 & \dots & 1\end{vmatrix}$
 > $=\left(a_{0}-\sum\limits_{i=1}^{n}\dfrac {1}{a_{i}}\right)\prod\limits_{i=1}^{n}a_{i}$
 > 
 > ---
 > 
 > $$ B_n =
 > \begin{vmatrix}
-> a_1 & b & b & \ldots & b \\
-> c & a_2 & b & \ldots & b \\
-> c & c & a_3 & \ldots & b \\
-> \vdots & \vdots & \vdots & \ddots & \vdots \\
-> c & c & c & \ldots & a_n \\
+> a_1 & b & b & \ldots & b /\\\\\\\\/
+> c & a_2 & b & \ldots & b /\\\\\\\\/
+> c & c & a_3 & \ldots & b /\\\\\\\\/
+> \vdots & \vdots & \vdots & \ddots & \vdots /\\\\\\\\/
+> c & c & c & \ldots & a_n /\\\\\\\\/
 > \end{vmatrix}
 > $$
 > 1. 写出递推
@@ -805,7 +805,7 @@ $$
 >    $行_{i}-行_{1}\times b$ 变成三角
 >    - $b\ne c$
 >      - $[a~b~\dots~b]=[b\dots b] + [a-b~0\dots0]$
->  	$D_{n}=\begin{vmatrix}a-b & 0 & 0 & \dots & 0\\c & a & b & \dots & b\\c & c & a & \dots & b\\&&\ddots & \ddots&\vdots\\c & c & c & \dots & a\end{vmatrix}$$+\begin{vmatrix}b & b & b & \dots & b\\c & a & b & \dots & b\\c & c & a & \dots & b\\ &&&\ddots\\\end{vmatrix}$ $=(a-b) D_{n-1}$$+b\begin{vmatrix}1 & 1 & 1 & \dots & 1\\ & a-c & b-c & \dots & b-c\\&&a-c&\dots&b-c\\&&&\ddots\\&&\end{vmatrix}$ $=(a-b) D_{n-1}+b(a-c)^{n-1}$
+>  	$D_{n}=\begin{vmatrix}a-b & 0 & 0 & \dots & 0/\\\\\\\\/c & a & b & \dots & b/\\\\\\\\/c & c & a & \dots & b/\\\\\\\\/&&\ddots & \ddots&\vdots/\\\\\\\\/c & c & c & \dots & a\end{vmatrix}$$+\begin{vmatrix}b & b & b & \dots & b/\\\\\\\\/c & a & b & \dots & b/\\\\\\\\/c & c & a & \dots & b/\\\\\\\\/ &&&\ddots/\\\\\\\\/\end{vmatrix}$ $=(a-b) D_{n-1}$$+b\begin{vmatrix}1 & 1 & 1 & \dots & 1/\\\\\\\\/ & a-c & b-c & \dots & b-c/\\\\\\\\/&&a-c&\dots&b-c/\\\\\\\\/&&&\ddots/\\\\\\\\/&&\end{vmatrix}$ $=(a-b) D_{n-1}+b(a-c)^{n-1}$
 >  	第二项提出第一行$b$, 相减变成上三角
 > 2. 特征方程递推
 >    - $D_{n}=\det(A_n)=\det(A_{n}^{T})\dots b/c互换位置$
@@ -815,11 +815,11 @@ $$
 >
 > $$ C_n =
 > \begin{vmatrix}
-> a & b \\
-> c & a & b \\
-> &c & \ddots & \ddots \\
-> & & \ddots & \ddots & b \\
->  & &  & c & a \\
+> a & b /\\\\\\\\/
+> c & a & b /\\\\\\\\/
+> &c & \ddots & \ddots /\\\\\\\\/
+> & & \ddots & \ddots & b /\\\\\\\\/
+>  & &  & c & a /\\\\\\\\/
 > \end{vmatrix}
 > $$
 >
@@ -829,23 +829,23 @@ $$
 > 
 > $$ D_n =
 > \begin{vmatrix}
-> 1 + a_1 & a_2 & \ldots & a_n \\
-> a_1 & 1 + a_2 & \ldots & a_n \\
-> \vdots & \vdots & \ddots & \vdots \\
-> a_1 & a_2 & \ldots & 1 + a_n \\
+> 1 + a_1 & a_2 & \ldots & a_n /\\\\\\\\/
+> a_1 & 1 + a_2 & \ldots & a_n /\\\\\\\\/
+> \vdots & \vdots & \ddots & \vdots /\\\\\\\\/
+> a_1 & a_2 & \ldots & 1 + a_n /\\\\\\\\/
 > \end{vmatrix}
 > $$
 > 
 >---
 >
 >$$\begin{vmatrix}
-> a_n &&&&&&& b_n \\
->  & a_{n-1} & & &&& b_{n-1} \\
-> &&\ddots &&& \dots \\
-> &&&a_1 & b_1 \\
-> &&&c_1 & d_1 \\
-> &&\dots &&& \ddots \\
-> &c_{n-1} &&&&& d_{n-1} \\
+> a_n &&&&&&& b_n /\\\\\\\\/
+>  & a_{n-1} & & &&& b_{n-1} /\\\\\\\\/
+> &&\ddots &&& \dots /\\\\\\\\/
+> &&&a_1 & b_1 /\\\\\\\\/
+> &&&c_1 & d_1 /\\\\\\\\/
+> &&\dots &&& \ddots /\\\\\\\\/
+> &c_{n-1} &&&&& d_{n-1} /\\\\\\\\/
 > c_n &&&&&&& d_n
 > \end{vmatrix}$$
 > 沿第一行展开 - 沿最后一行展开
@@ -895,9 +895,9 @@ $$
 > Let $A$ be a $4 \times 4$ matrix such that
 > $$ \text{adj}(A) =
 > \begin{bmatrix}
-> 2 & 0 & 1 & 0 \\
-> 0 & 2 & 0 & 0 \\
-> 4 & 0 & 3 & 2 \\
+> 2 & 0 & 1 & 0 /\\\\\\\\/
+> 0 & 2 & 0 & 0 /\\\\\\\\/
+> 4 & 0 & 3 & 2 /\\\\\\\\/
 > -2 & 0 & -1 & 2
 > \end{bmatrix}
 > $$
@@ -909,10 +909,10 @@ $$
 > Evaluate $\det(A_n)$, where
 > $$ A_n =
 > \begin{bmatrix}
-> a & b & b & \ldots & b \\
-> c & a & b & \ldots & b \\
-> c & c & a & \ldots & b \\
-> \vdots & \vdots & \vdots & \ddots & \vdots \\
+> a & b & b & \ldots & b /\\\\\\\\/
+> c & a & b & \ldots & b /\\\\\\\\/
+> c & c & a & \ldots & b /\\\\\\\\/
+> \vdots & \vdots & \vdots & \ddots & \vdots /\\\\\\\\/
 > c & c & c & \ldots & a
 > \end{bmatrix}
 > $$
@@ -921,24 +921,24 @@ $$
 > Suppose that $x \in \mathbb{R}^4$ is the vector satisfying $Ax = b$, where
 > $$ A =
 > \begin{bmatrix}
-> 2 & 0 & 0 & 4 \\
-> 0 & 1 & 2 & 0 \\
-> 2 & 2022 & 1 & 1 \\
+> 2 & 0 & 0 & 4 /\\\\\\\\/
+> 0 & 1 & 2 & 0 /\\\\\\\\/
+> 2 & 2022 & 1 & 1 /\\\\\\\\/
 > 0 & -3 & 2 & 0
 > \end{bmatrix}
 > $$
 > and
 > $$ b =
 > \begin{bmatrix}
-> 0 \\
-> 0 \\
-> -1 \\
+> 0 /\\\\\\\\/
+> 0 /\\\\\\\\/
+> -1 /\\\\\\\\/
 > 2
 > \end{bmatrix}
 > $$
 > Let $v = (0, 1, 2, 0) \in \mathbb{R}^4$. Find $\text{proj}_v x$, the orthogonal projection of $x$ on $v$.
 
-# Chap.03 General Vector Spaces
+/#Obsidian_ /Chap.03 General Vector Spaces
 
 > [!definition]
 > Vector space; subspace.
@@ -996,7 +996,7 @@ $$
 
 ---
 
-### 子空间
+/#Obsidian_## /子空间
 
 **成立：** 子空间成立只需要考虑 **对加法/数乘封闭**
 
@@ -1019,19 +1019,19 @@ $$
 > [!definition]
 > Linear dependence/independence; linear combination; span; basis; dimension.
 
-### 线性组合
+/#Obsidian_## /线性组合
 
 略
 
-### 线性相关/无关
+/#Obsidian_## /线性相关/无关
 
 > 当v1, . . . , vr满足何种条件时，这样的线性组合表示是唯一的？
 
 判断给定的一组向量是否线性无关<=>$\sum k_{i}\mathbf v_{i}=\mathbf 0\text{ if and only if }k_{i}=0$<=>$[\mathbf v_{1}|\dots|\mathbf v_{n}]=A\mathbf x=\mathbf 0\text{ only trivival solution}$<=>$A \text{ is invertible}$<=>$\textcolor{orange}{\det(A)\ne0}$
 
-### 线性张成
+/#Obsidian_## /线性张成
 
-### 基底
+/#Obsidian_## /基底
 
 - 1. S张成V ；
 - 2. S线性无关，
@@ -1040,7 +1040,7 @@ $$
 
 性质
 
-### 标准基
+/#Obsidian_## /标准基
 
 在F-线性空间Mm×n(F)中取集合{Eij : 1 ≤ i ≤ m, 1 ≤ j ≤ n}，其中Eij 表示第i行、第j列的元素为1，其余元素为0的矩阵. 它们构成一组基，称为Mm×n(F)的标准基.
 
@@ -1049,7 +1049,7 @@ $$
 
 在线性代数中，矩阵的行空间、列空间和零空间是与矩阵相关的一些基本概念，而秩和零度是描述这些空间维数的量。
 
-### 行空间
+/#Obsidian_## /行空间
 
 **定义**: 矩阵的行空间是其所有**行向量的线性组合所构成的空间**。对于一个矩阵$A$，其行空间通常表示为 Row(A) 或$\text{span}(\text{rows of } A)$。
 
@@ -1057,7 +1057,7 @@ $$
 
 **基**: 把矩阵$A$行简化（使用行简化阶梯形或最简行阶梯形），不为零的行将形成行空间的一个基。
 
-### 列空间
+/#Obsidian_## /列空间
 
 **定义**: 矩阵的列空间是其所有列向量的线性组合所构成的空间。对于一个矩阵$A$，其列空间通常表示为 Col(A) 或$\text{span}(\text{columns of } A)$。
 
@@ -1065,7 +1065,7 @@ $$
 
 **基**: 通过观察矩阵$A$的行简化形式，可以确定哪些列包含了领导1（即在每个行最左非零项），这些列在原矩阵$A$中对应的列向量将构成列空间的一个基。
 
-### 零空间（Null Space）
+/#Obsidian_## /零空间（Null Space）
 
 **定义**: 矩阵$A$的零空间是所有满足$A \mathbf{x} = \mathbf{0}$的向量$\mathbf{x}$的集合，通常表示为 Null(A)。
 
@@ -1073,14 +1073,14 @@ $$
 
 **基**: 要找到零空间的基，需解齐次方程$A \mathbf{x} = \mathbf{0}$，并找出自由变量对应的参数向量，这些参数向量就构成了零空间的基。
 
-#### **找基**
+/#Obsidian_### /**找基**
 **RREF**的**主1**的行向量张成RREF矩阵R的行空间的一组基底
 =>==组成A行空间的一组基底==
 
 **RREF**的**主1**的列向量张成RREF矩阵R的列向量的基底
 =>**对应原来的**A的列组成A列空间的一组基底
 
-### 秩（Rank）
+/#Obsidian_## /秩（Rank）
 
 **定义**: 矩阵$A$的秩是其行空间（等价地，列空间）的维数，表示为 rank(A)。
 
@@ -1088,7 +1088,7 @@ $$
 
 **公式**: 如果$A$是一个$m \times n$矩阵，那么$\text{rank}(A) = \text{dimension of Row}(A) = \text{dimension of Col}(A)$
 
-### 零度（Nullity）
+/#Obsidian_## /零度（Nullity）
 
 **定义**: 矩阵$A$的零度是其零空间的维数，表示为 nullity(A)。
 
@@ -1096,7 +1096,7 @@ $$
 
 **公式**: 对于一个$m \times n$矩阵$A$，$\text{nullity}(A) = \text{dimension of Null}(A)$
 
-### 秩-零度定理（Rank-Nullity Theorem）
+/#Obsidian_## /秩-零度定理（Rank-Nullity Theorem）
 
 $$\text{rank}(A) + \text{nullity}(A) = n$$
 
