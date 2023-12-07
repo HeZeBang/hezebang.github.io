@@ -7,11 +7,11 @@ share: true
 ### 一、基本概念
 
 #### 原函数
-> [!definition]<span class="md-tag">原函数</span>
+> [!definition]<b class="md-tag">原函数</b>
 > 设 $f(x): I \rightarrow \mathrm{R}$, 若 $\exists F(x)$ 使得 $F^{\prime}(x)=f(x)(\forall x \in I)$, 则称 $F(x)$ 是 $f(x)$ 在 $I$ 上的一个**原函数**.
 
 ##### 全体原函数
-> [!theorem]<span class="md-tag">全体原函数</span>
+> [!theorem]<b class="md-tag">全体原函数</b>
 > 设 $F(x)$ 是 $f(x)$ 在 $I$ 上的一个原函数, 则 $F(x)+C(C$ 为任意常数)为 $f(x)$ 在 $I$ 上的**全体原函数**.
 
 > ***Proof:***
@@ -22,7 +22,7 @@ share: true
 > $\xRightarrow{\exists C \in \mathbb{R}}\quad G(x)=F(x)+C$
 
 #### 不定积分
-> [!definition]<span class="md-tag">不定积分</span>
+> [!definition]<b class="md-tag">不定积分</b>
 > 设 $f(x)$ 存在原函数, 则 $f(x)$ 的全体原函数称为 $f(x)$ 的**不定积分**, 记作 $$\displaystyle \int f(x) \mathrm{d} x$$
 
 - $\displaystyle \int$ 一不定积分号
@@ -147,7 +147,7 @@ share: true
 ### 二、换元积分法
 
 #### 第一代换法 / 凑微分法
-> [!theorem]<span class="md-tag">凑微分法</span>
+> [!theorem]<b class="md-tag">凑微分法</b>
 > 若 $\displaystyle \int f(u) \mathrm{d} u=F(u)+C$, 而 $\varphi(x)$ 可导, 则
 > $$
 > \int f(\varphi(x)) \textcolor{orange}{\varphi^{\prime}(x) \mathrm{d} x}=F(\varphi(x))+C,
@@ -308,13 +308,13 @@ $$
 > 下说明 $F^{\prime}(x)\big|_{x=0}=f(0)$
 > 由于 $\lim _{x \rightarrow 0} F^{\prime}(x)=\lim _{x \rightarrow 0} f(x)=f(0)=1$
 > 又$\because F(x)$ 在 $x=0$ 连续：
-> $\Rightarrow F^{\prime}(0)=f(0)=1$ （运用<span class="md-tag">导数极限定理:</span>导函数极限->导数极限）
+> $\Rightarrow F^{\prime}(0)=f(0)=1$ （运用<b class="md-tag">导数极限定理:</b>导函数极限->导数极限）
 
 #### 第二代换法/换元积分法
 
 已知右端求左端积分为第一代换法; 已知左端, 能否求右端积分呢? 此即下面的第二换元法.
 
-> [!theorem]<span class="md-tag">换元积分法</span>
+> [!theorem]<b class="md-tag">换元积分法</b>
 > 若 $\displaystyle \int f(\varphi(t)) \varphi^{\prime}(t) \mathrm{d} t=G(t)+C$, 又 $x=\varphi(t)$, 且 $\varphi^{\prime}(t) \neq 0$, 则
 > $$
 > \int f(x) \mathrm{d} x=G\left(\varphi^{-1}(x)\right)+C
@@ -336,7 +336,7 @@ $$
 
 ##### 例题
 
-######<span class="md-tag">三角代换</span>去根号
+######<b class="md-tag">三角代换</b>去根号
 
 > [!tip] 含无理式 $\sqrt{a^2-x^2}, \sqrt{x^2+a^2}$ 和 $\sqrt{x^2-a^2}$ 时, 可采用 $x=a \sin t, x=a \tan t$ 和 $x=a \sec t$ 等三角代换去根号.
 
@@ -409,7 +409,7 @@ $$
 >***Tip***
 >上述例子很好地说明了原函数可不唯一（$C$不同）
 
-######<span class="md-tag">倒数代换</span>
+######<b class="md-tag">倒数代换</b>
 
 > [!tip] 分母含因子 $x$ 时, 可用倒代换 $x=1 / t$.
 
@@ -429,7 +429,7 @@ $$
 
 ### 三、分部积分法
 
-> [!theorem]<span class="md-tag">分部积分法</span>
+> [!theorem]<b class="md-tag">分部积分法</b>
 > 若 $u^{\prime}(x), v^{\prime}(x)$ 连续, 则
 > $$
 > \int u(x) v^{\prime}(x) \mathrm{d} x=u(x) v(x)-\int v(x) u^{\prime}(x) \mathrm{d} x .
@@ -627,7 +627,7 @@ $$
 > \end{array}$$
 > 
 > ***TIP***
-> 实际上可以使用<span class="md-tag">三角代换</span>$x=\tan t$ 配合<span class="md-tag">万能变换</span>$u=\tan(t/2)$
+> 实际上可以使用<b class="md-tag">三角代换</b>$x=\tan t$ 配合<b class="md-tag">万能变换</b>$u=\tan(t/2)$
 > 简略过程如下：
 > $令x=\tan t,|t|<\frac \pi2$
 > $$\begin{flalign}
