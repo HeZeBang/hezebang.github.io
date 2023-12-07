@@ -31,7 +31,8 @@ theme:
     - navigation.instant.progress
 
 plugins:
-  - tags
+  - tags:
+      tags_file: tags.md
   - blog
   - search  # Material for MkDocs search plugin
   - obsidian-support
