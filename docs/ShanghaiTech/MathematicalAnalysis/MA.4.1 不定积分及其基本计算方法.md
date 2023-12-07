@@ -115,7 +115,7 @@ share: true
 > ***Solution***
 > $$
 > \begin{flalign}
-> = & \int \frac{d x}{\sqrt{x}}-\int \frac{d x}{\sqrt{1-x^2}} \\\\\\\\
+> = & \int \frac{d x}{\sqrt{x}}-\int \frac{d x}{\sqrt{1-x^2}} \\
 > = & 2 \sqrt{x}-\arcsin x+c&
 > \end{flalign}
 > $$
@@ -126,9 +126,9 @@ share: true
 > ***Solution***
 > $$
 > \begin{flalign}
-> & =\int \frac{\sin ^2 x+\cos ^2 x}{\sin ^2 x \cos ^2 x} d x \\\\\\\\
-> & =\int\left(\frac{1}{\sin ^2 x}+\frac{1}{\cos ^2 x}\right) d x \\\\\\\\
-> & =\int\left(\csc ^2 x+\sec ^2 x\right) d x \\\\\\\\
+> & =\int \frac{\sin ^2 x+\cos ^2 x}{\sin ^2 x \cos ^2 x} d x \\
+> & =\int\left(\frac{1}{\sin ^2 x}+\frac{1}{\cos ^2 x}\right) d x \\
+> & =\int\left(\csc ^2 x+\sec ^2 x\right) d x \\
 > & =-\cot x+\tan x+C&
 > \end{flalign}
 > $$
@@ -139,7 +139,7 @@ share: true
 > ***Solution***
 > $$
 > \begin{flalign}
-> & =\int\left(\frac{1}{x^2}-\frac{1}{1+x^2}\right) d x \\\\\\\\
+> & =\int\left(\frac{1}{x^2}-\frac{1}{1+x^2}\right) d x \\
 > & =-\frac{1}{x}-\arctan x+C&
 > \end{flalign}
 > $$
@@ -160,15 +160,15 @@ share: true
 	> ***Analysis***
 	> $$
 	> \begin{flalign}
-	> & {[F(\varphi(x))]^{\prime}=f(\varphi(x)) \varphi^{\prime}(x) } \\\\\\\\
+	> & {[F(\varphi(x))]^{\prime}=f(\varphi(x)) \varphi^{\prime}(x) } \\
 	> \Rightarrow & \int f(\varphi(x)) \varphi^{\prime}(x) d x=F(\varphi(x))+C&
 	> \end{flalign}
 	> $$
 - 运算步骤
 	$$
 	\begin{flalign}
-	\int f(\varphi(x)) \textcolor{orange}{\varphi^{\prime}(x) \mathrm{d} x}&=\int f(\varphi(x)) \textcolor{orange}{\mathrm{d} \varphi(x)} \\\\\\\\
-	&\xlongequal{u=\textcolor{orange}{\varphi(x)}}\int f(\textcolor{orange}u) \mathrm{d} \textcolor{orange}u=F(u)+C \\\\\\\\
+	\int f(\varphi(x)) \textcolor{orange}{\varphi^{\prime}(x) \mathrm{d} x}&=\int f(\varphi(x)) \textcolor{orange}{\mathrm{d} \varphi(x)} \\
+	&\xlongequal{u=\textcolor{orange}{\varphi(x)}}\int f(\textcolor{orange}u) \mathrm{d} \textcolor{orange}u=F(u)+C \\
 	&\xlongequal{\text{回代}}F(\textcolor{orange}{\varphi(x)})+C .
 	\end{flalign}
 	$$
@@ -176,15 +176,16 @@ share: true
 ##### 例题
 > [!example]
 > 例4 求下列不定积分
+> 
 > 1. $\displaystyle \int \tan x d x$
 
 > ***Solution***
 > $$
 > \begin{flalign}
-> & =\int \frac{\textcolor{orange}{\sin x}}{\cos x} \textcolor{orange}{d x} \\\\\\\\
-> & =\int \frac{\textcolor{orange}{-d \cos x}}{\cos x}\\\\\\\\
-> & \xlongequal{u=\textcolor{orange}{-\cos x}} -\int \frac{d u}{u} \\\\\\\\
-> & =-\ln |u|+C \\\\\\\\
+> & =\int \frac{\textcolor{orange}{\sin x}}{\cos x} \textcolor{orange}{d x} \\
+> & =\int \frac{\textcolor{orange}{-d \cos x}}{\cos x}\\
+> & \xlongequal{u=\textcolor{orange}{-\cos x}} -\int \frac{d u}{u} \\
+> & =-\ln |u|+C \\
 > & =-\ln |\cos x|+C&
 > \end{flalign}
 > $$
@@ -193,9 +194,9 @@ share: true
 > 2. $\displaystyle \int(2 x-1)^{10} d x$
 $$
 \begin{flalign}
-&= \int\textcolor{orange}{(2 x-1)}^{20}\cdot \textcolor{orange}{\frac{1}{2}}d\textcolor{orange}{(2 x-1)} \\\\\\\\
-& \xlongequal{u=\textcolor{orange}{2 x-1}} \frac{1}{2} u^{10} d u \\\\\\\\
-&= \frac{u^{11}}{22}+C \\\\\\\\
+&= \int\textcolor{orange}{(2 x-1)}^{20}\cdot \textcolor{orange}{\frac{1}{2}}d\textcolor{orange}{(2 x-1)} \\
+& \xlongequal{u=\textcolor{orange}{2 x-1}} \frac{1}{2} u^{10} d u \\
+&= \frac{u^{11}}{22}+C \\
 &= \frac{(2 x-1)^{11}}{22}+C&
 \end{flalign}
 $$
@@ -206,9 +207,9 @@ $$
 > ***Solution***
 > $$
 > \begin{flalign}
-> = & \frac{1}{a} \int \frac{\textcolor{orange}{\frac{1}{a} d x}}{1+\left(\frac{x}{a}\right)^2} \\\\\\\\
-> = & \frac{1}{a} \int \frac{d \textcolor{orange}{\frac{x}{a}}}{1+\left(\frac{x}{a}\right)^2} \\\\\\\\
-> = & \frac{1}{a} \int \frac{d u}{1+u^2} \\\\\\\\
+> = & \frac{1}{a} \int \frac{\textcolor{orange}{\frac{1}{a} d x}}{1+\left(\frac{x}{a}\right)^2} \\
+> = & \frac{1}{a} \int \frac{d \textcolor{orange}{\frac{x}{a}}}{1+\left(\frac{x}{a}\right)^2} \\
+> = & \frac{1}{a} \int \frac{d u}{1+u^2} \\
 > = & \frac{1}{a} \arctan \frac{x}{a}+C&
 > \end{flalign}
 > $$
@@ -220,10 +221,10 @@ $$
 > ***Solution***
 > $$
 > \begin{flalign}
-> = & \int \frac{d x}{(x-a)(x+a)} \\\\\\\\
-> = & \frac{1}{2 a} \int\left(\frac{1}{x-a}-\frac{1}{x+a}\right) d x \\\\\\\\
-> = & \frac{1}{2 a}\left(\int \frac{d\textcolor{orange}{(x-a)}}{x-a}-\int \frac{d\textcolor{orange}{(x+a)}}{x+a}\right) \\\\\\\\
-> = & \frac{1}{2 a}[\ln |x-a|-\ln |x+a|] \\\\\\\\
+> = & \int \frac{d x}{(x-a)(x+a)} \\
+> = & \frac{1}{2 a} \int\left(\frac{1}{x-a}-\frac{1}{x+a}\right) d x \\
+> = & \frac{1}{2 a}\left(\int \frac{d\textcolor{orange}{(x-a)}}{x-a}-\int \frac{d\textcolor{orange}{(x+a)}}{x+a}\right) \\
+> = & \frac{1}{2 a}[\ln |x-a|-\ln |x+a|] \\
 > = & \frac{1}{2 a} \ln \left|\frac{x-a}{x+a}\right|+C&
 > \end{flalign}
 > $$
@@ -234,12 +235,12 @@ $$
 > ***Solution*** *凑微分*
 > $$
 > \begin{flalign}
-> = & \int \frac{1}{\cos x} d x \\\\\\\\
-> = & \int \frac{\textcolor{orange}{\cos x}}{\textcolor{Cyan}{\cos ^2 x}} \textcolor{orange}{d x} \quad\rightarrow  \text { 凑 } \sin x \\\\\\\\
-> = & \int \frac{\textcolor{orange}{d \sin x}}{\textcolor{Cyan}{1-\sin ^2 x}} \quad\rightarrow\tiny{\int \frac{\mathrm{d} x}{a^2-x^2}=\frac{1}{2 a} \ln \left|\frac{x+a}{x-a}\right|+C\quad(a \neq 0)}\\\\\\\\
-> = & \frac{1}{2} \ln \left|\frac{1+\sin x}{1-\sin x}\right|+C \\\\\\\\
-> = & \frac{1}{2} \ln \frac{(1+\sin x)^2}{\cos ^2 x}+C \\\\\\\\
-> = & \ln \left|\frac{1+\sin x}{\cos x}\right|+C \\\\\\\\
+> = & \int \frac{1}{\cos x} d x \\
+> = & \int \frac{\textcolor{orange}{\cos x}}{\textcolor{Cyan}{\cos ^2 x}} \textcolor{orange}{d x} \quad\rightarrow  \text { 凑 } \sin x \\
+> = & \int \frac{\textcolor{orange}{d \sin x}}{\textcolor{Cyan}{1-\sin ^2 x}} \quad\rightarrow\tiny{\int \frac{\mathrm{d} x}{a^2-x^2}=\frac{1}{2 a} \ln \left|\frac{x+a}{x-a}\right|+C\quad(a \neq 0)}\\
+> = & \frac{1}{2} \ln \left|\frac{1+\sin x}{1-\sin x}\right|+C \\
+> = & \frac{1}{2} \ln \frac{(1+\sin x)^2}{\cos ^2 x}+C \\
+> = & \ln \left|\frac{1+\sin x}{\cos x}\right|+C \\
 > = & \ln |\sec x+\tan x|+C&
 > \end{flalign}
 > $$
@@ -250,12 +251,12 @@ $$
 
 > ***Solution*** *添项*
 > $$
-> \begin{flalign}\\\\\\\\
-> &\int\dfrac{\ln x}{\textcolor{orange}x\sqrt{1+\ln x}}\textcolor{orange}{dx}\\\\\\\\
-> & =\int\dfrac{\ln x \cdot\textcolor{orange}{d \ln x}}{\sqrt{1+\ln x}}\\\\\\\\ 
-> & \xlongequal{u=\ln x}\int \frac{\textcolor{Cyan}{(1+u-1) d u}}{\sqrt{1+u}} \\\\\\\\
-> & =\int\left(\sqrt{1+u}-\frac{1}{\sqrt{1+u}}\right) \textcolor{Cyan}{d(1+u)} \\\\\\\\
-> & =\frac{2}{3}(1+u)^{3 / 2}-2 \sqrt{1+u}+C \\\\\\\\
+> \begin{flalign}\\
+> &\int\dfrac{\ln x}{\textcolor{orange}x\sqrt{1+\ln x}}\textcolor{orange}{dx}\\
+> & =\int\dfrac{\ln x \cdot\textcolor{orange}{d \ln x}}{\sqrt{1+\ln x}}\\ 
+> & \xlongequal{u=\ln x}\int \frac{\textcolor{Cyan}{(1+u-1) d u}}{\sqrt{1+u}} \\
+> & =\int\left(\sqrt{1+u}-\frac{1}{\sqrt{1+u}}\right) \textcolor{Cyan}{d(1+u)} \\
+> & =\frac{2}{3}(1+u)^{3 / 2}-2 \sqrt{1+u}+C \\
 > & =\frac{2}{3}(1+\ln x)^{3 / 2}-2 \sqrt{1+\ln x}+C &
 > \end{flalign}
 > $$
@@ -266,8 +267,8 @@ $$
 > ***Solution*** *配方*
 > $$
 > \begin{flalign}
-> = & \int \frac{2 x-4+3}{x^2-4 x+5} d x \\\\\\\\
-> = & \int \frac{d\left(x^2-4 x+5\right)}{x^2-4 x+5}+\int \frac{3}{(x-2)^2+1} d(x-2) \\\\\\\\
+> = & \int \frac{2 x-4+3}{x^2-4 x+5} d x \\
+> = & \int \frac{d\left(x^2-4 x+5\right)}{x^2-4 x+5}+\int \frac{3}{(x-2)^2+1} d(x-2) \\
 > = & \ln \left|x^2-4 x+5\right|+3 \arctan (x-2)+C&
 > \end{flalign}
 > $$
@@ -280,8 +281,8 @@ $$
 > 分式上下同时除去$x^2$，凑微分+配方：
 > $$
 > \begin{flalign}
-> & =\int \frac{\textcolor{orange}{\left(1+\frac{1}{x^2}\right) d x}}{x^2+1+\frac{1}{x^2}} \\\\\\\\
-> & =\int \frac{\textcolor{orange}{d\left(x-\frac{1}{x}\right)}}{\left(x-\frac{1}{x}\right)^2+\sqrt{3}^2} \\\\\\\\
+> & =\int \frac{\textcolor{orange}{\left(1+\frac{1}{x^2}\right) d x}}{x^2+1+\frac{1}{x^2}} \\
+> & =\int \frac{\textcolor{orange}{d\left(x-\frac{1}{x}\right)}}{\left(x-\frac{1}{x}\right)^2+\sqrt{3}^2} \\
 > & =\frac{1}{\sqrt{3}} \arctan \frac{x-\frac{1}{x}}{\sqrt{3}}+C&
 > \end{flalign}
 > $$
@@ -290,20 +291,20 @@ $$
 > 
 > 设 $f(x)=\dfrac{x^2+1}{x^4+x^2+1}$ 原函数为 $F(x)$
 > $$
-> \therefore F(x)= \begin{cases}\frac{1}{\sqrt{3}} \arctan \frac{x-\frac{1}{x}}{\sqrt{3}}+C_1, & x>0 \\\\\\\\\\\\\\\\ C, & x=0\\\\\\\\\\\\\\\\\frac{1}{\sqrt{3}} \arctan \frac{x-\frac{1}{x}}{\sqrt{3}}+C_2, &x<0\end{cases}
+> \therefore F(x)= \begin{cases}\frac{1}{\sqrt{3}} \arctan \frac{x-\frac{1}{x}}{\sqrt{3}}+C_1, & x>0 \\\\ C, & x=0\\\\\frac{1}{\sqrt{3}} \arctan \frac{x-\frac{1}{x}}{\sqrt{3}}+C_2, &x<0\end{cases}
 > $$
 > 
 > $$
 > \begin{flalign}
-> & \because F(x) \text { 在 } x=0 \text { 连续. } \\\\\\\\
-> & \therefore F(0+0)=F(0)=F(0-0),~\text{此时}x-\frac 1x \text{趋近正负无穷}\\\\\\\\
-> & \Rightarrow\frac{1}{\sqrt{3}} \cdot (-\frac{\pi}{2})+C_{1}=C=\frac{1}{\sqrt{3}} \cdot \frac{\pi}{2}+C_{2} \\\\\\\\
-> & \therefore C_1=C+\frac{1}{\sqrt{3}}\cdot \frac{\pi}{2} \\\\\\\\
+> & \because F(x) \text { 在 } x=0 \text { 连续. } \\
+> & \therefore F(0+0)=F(0)=F(0-0),~\text{此时}x-\frac 1x \text{趋近正负无穷}\\
+> & \Rightarrow\frac{1}{\sqrt{3}} \cdot (-\frac{\pi}{2})+C_{1}=C=\frac{1}{\sqrt{3}} \cdot \frac{\pi}{2}+C_{2} \\
+> & \therefore C_1=C+\frac{1}{\sqrt{3}}\cdot \frac{\pi}{2} \\
 > & C_2=C-\frac{1}{\sqrt{3}}\cdot \frac{\pi}{2}&
 > \end{flalign}
 > $$
 > 
-> 从而原函数 $F(x)=\begin{cases}\dfrac{1}{\sqrt{3}} \arctan \dfrac{x-\frac{1}{x}}{\sqrt{3}}+\dfrac{1}{\sqrt{3}} \cdot \dfrac{\pi}{2}+C, &x \geq0\\\\\\\\ \dfrac{1}{\sqrt{3}} \arctan \dfrac{x-\frac{1}{x}}{\sqrt{3}}-\dfrac{1}{\sqrt{3}} \cdot \dfrac{\pi}{2}+C,&x<0\end{cases}$
+> 从而原函数 $F(x)=\begin{cases}\dfrac{1}{\sqrt{3}} \arctan \dfrac{x-\frac{1}{x}}{\sqrt{3}}+\dfrac{1}{\sqrt{3}} \cdot \dfrac{\pi}{2}+C, &x \geq0\\ \dfrac{1}{\sqrt{3}} \arctan \dfrac{x-\frac{1}{x}}{\sqrt{3}}-\dfrac{1}{\sqrt{3}} \cdot \dfrac{\pi}{2}+C,&x<0\end{cases}$
 > 
 > 下说明 $F^{\prime}(x)\big|_{x=0}=f(0)$
 > 由于 $\lim _{x \rightarrow 0} F^{\prime}(x)=\lim _{x \rightarrow 0} f(x)=f(0)=1$
@@ -322,15 +323,15 @@ $$
 
 - 运算步骤
 $$\begin{flalign}
-\int f(\textcolor{orange}{x}) \mathrm{d} x&\xlongequal{x=\textcolor{orange}{\varphi(t)}}\int f(\textcolor{orange}{\varphi(t)}) \textcolor{orange}{\varphi^{\prime}(t) \mathrm{d} t} \\\\\\\\&\xlongequal{\text { 已知 }}G(t)+C \\\\\\\\&\xlongequal{\text { 回代 }}G\left(\varphi^{\textcolor{red}{-1}}(x)\right)+C .
+\int f(\textcolor{orange}{x}) \mathrm{d} x&\xlongequal{x=\textcolor{orange}{\varphi(t)}}\int f(\textcolor{orange}{\varphi(t)}) \textcolor{orange}{\varphi^{\prime}(t) \mathrm{d} t} \\&\xlongequal{\text { 已知 }}G(t)+C \\&\xlongequal{\text { 回代 }}G\left(\varphi^{\textcolor{red}{-1}}(x)\right)+C .
 \end{flalign}
 $$
 - 证明
 > ***Proof***
 > $$
 > \begin{flalign}
-> & \frac{d}{d x} G\left(\varphi^{-1}(x)\right)\\\\\\\\&\xlongequal{t:=\varphi^{-1}(x)}G^{\prime}(t) \frac{d t}{d x}\\\\\\\\&=\textcolor{Cyan}{G^{\prime}(t)} \cdot\frac{1}{\frac{d x}{d t}} \\\\\\\\
-> &=\textcolor{Cyan}{f(\varphi(t)) \varphi^{\prime}(t)} \cdot \frac{1}{\varphi^{\prime}(t)}=f(\varphi(t))\\\\\\\\&=f(x)&
+> & \frac{d}{d x} G\left(\varphi^{-1}(x)\right)\\&\xlongequal{t:=\varphi^{-1}(x)}G^{\prime}(t) \frac{d t}{d x}\\&=\textcolor{Cyan}{G^{\prime}(t)} \cdot\frac{1}{\frac{d x}{d t}} \\
+> &=\textcolor{Cyan}{f(\varphi(t)) \varphi^{\prime}(t)} \cdot \frac{1}{\varphi^{\prime}(t)}=f(\varphi(t))\\&=f(x)&
 > \end{flalign}
 > $$
 
@@ -349,11 +350,11 @@ $$
 > $\text{令 } x =a \tan t,|t|<\frac{\pi}{2}$
 > $$
 > \begin{flalign}
-> \int \frac{\textcolor{orange}{\mathrm d x}}{\sqrt{\textcolor{orange}{x^2}+a^2}} & =\int \frac{\textcolor{orange}{a \sec ^2 t \mathrm d t}}{\sqrt{\textcolor{orange}{a^2 \tan ^2 t}+a^2}} \\\\\\\\
-> & =\int \frac{\sec ^2 t}{\sqrt{\sec ^2 t}} d t \\\\\\\\
-> & =\int \sec t d t \\\\\\\\
-> & =\ln |\sec t+\tan t|+C \\\\\\\\
-> & =\ln \left|\frac{\sqrt{x^2+a^2}}{a}+\frac{x}{a}\right|+C \\\\\\\\
+> \int \frac{\textcolor{orange}{\mathrm d x}}{\sqrt{\textcolor{orange}{x^2}+a^2}} & =\int \frac{\textcolor{orange}{a \sec ^2 t \mathrm d t}}{\sqrt{\textcolor{orange}{a^2 \tan ^2 t}+a^2}} \\
+> & =\int \frac{\sec ^2 t}{\sqrt{\sec ^2 t}} d t \\
+> & =\int \sec t d t \\
+> & =\ln |\sec t+\tan t|+C \\
+> & =\ln \left|\frac{\sqrt{x^2+a^2}}{a}+\frac{x}{a}\right|+C \\
 > & =\ln \left|x+\sqrt{x^2+a^2}\right|+C_1&
 > \end{flalign}
 > $$
@@ -368,13 +369,13 @@ $$
 > ***Solution***
 > $$
 > \begin{flalign}
-> 令~x & =a \sin t \\\\\\\\
-> 原式& =\int \sqrt{a^2-a^2 \sin ^2 t}(a \cos t d t) \\\\\\\\
-> & =a^2 \int \cos ^2 t d t \\\\\\\\
-> & =\frac{a^2}{2} \int\left(1+\cos ^2 t\right) d t \\\\\\\\
-> & =\frac{a^2}{2}\left(t+\frac{\sin 2 t}{2}\right)+c \\\\\\\\
-> & =\frac{a^2}{2} t+\frac{a^2}{2} \sin t \cos t+c \\\\\\\\
-> & =\frac{a^2}{2} \arcsin \frac{x}{a}+\frac{a^2}{2} \cdot \frac{x}{a} \cdot \sqrt{1-\frac{x^2}{a^2}}+C \\\\\\\\
+> 令~x & =a \sin t \\
+> 原式& =\int \sqrt{a^2-a^2 \sin ^2 t}(a \cos t d t) \\
+> & =a^2 \int \cos ^2 t d t \\
+> & =\frac{a^2}{2} \int\left(1+\cos ^2 t\right) d t \\
+> & =\frac{a^2}{2}\left(t+\frac{\sin 2 t}{2}\right)+c \\
+> & =\frac{a^2}{2} t+\frac{a^2}{2} \sin t \cos t+c \\
+> & =\frac{a^2}{2} \arcsin \frac{x}{a}+\frac{a^2}{2} \cdot \frac{x}{a} \cdot \sqrt{1-\frac{x^2}{a^2}}+C \\
 > & =\frac{a^2}{2} \arcsin \frac{x}{a}+\frac{x}{2} \sqrt{a^2-x^2}+c&
 > \end{flalign}
 > $$
@@ -387,7 +388,7 @@ $$
 > **法I.配方**
 > $$
 > \begin{flalign}
-> 原式& =\int \frac{d\left(x-\frac{1}{2}\right)}{\sqrt{\left(\frac{1}{2}\right)^2-\left(x-\frac{1}{2}\right)^2}} \\\\\\\\
+> 原式& =\int \frac{d\left(x-\frac{1}{2}\right)}{\sqrt{\left(\frac{1}{2}\right)^2-\left(x-\frac{1}{2}\right)^2}} \\
 > & =\arcsin (2 x-1)&
 > \end{flalign}
 > $$
@@ -399,9 +400,9 @@ $$
 > $令~x=\sin ^2 t, t \in\left(0, \frac{\pi}{2}\right)$
 > $$
 > \begin{flalign}
-> \therefore \text { 原式 } & =\int \frac{2 \sin t \cos t \mathrm d  t}{\sqrt{\sin ^2 t \cos ^2 t}} \\\\\\\\
-> & =2 \int \mathrm d t \\\\\\\\
-> & =2 t+C \\\\\\\\
+> \therefore \text { 原式 } & =\int \frac{2 \sin t \cos t \mathrm d  t}{\sqrt{\sin ^2 t \cos ^2 t}} \\
+> & =2 \int \mathrm d t \\
+> & =2 t+C \\
 > & =2 \arcsin \sqrt{x}+C&
 > \end{flalign}
 > $$
@@ -419,10 +420,10 @@ $$
 > ***Solution***
 > $$
 > \begin{flalign}
-> &\xlongequal[t>0]{x=1 / t}  \int \frac{-\frac{1}{t^2} d t}{\frac{1}{t} \sqrt{\frac{1}{t^2}+\frac{1}{t}+1}} \\\\\\\\
-> & =-\int \frac{d t}{\sqrt{1+t+t^2}} \\\\\\\\
-> & =-\int \frac{d\left(t+\frac{1}{2}\right)}{\sqrt{\left(t+\frac{1}{2}\right)^2+\frac{3}{4}}} \\\\\\\\
-> & =-\ln \left|t+\frac{1}{2}+\sqrt{1+t+t^2}\right|+C \\\\\\\\
+> &\xlongequal[t>0]{x=1 / t}  \int \frac{-\frac{1}{t^2} d t}{\frac{1}{t} \sqrt{\frac{1}{t^2}+\frac{1}{t}+1}} \\
+> & =-\int \frac{d t}{\sqrt{1+t+t^2}} \\
+> & =-\int \frac{d\left(t+\frac{1}{2}\right)}{\sqrt{\left(t+\frac{1}{2}\right)^2+\frac{3}{4}}} \\
+> & =-\ln \left|t+\frac{1}{2}+\sqrt{1+t+t^2}\right|+C \\
 > & =-\ln \left|\frac{1}{x}+\frac{1}{2}+\frac{\sqrt{x^2+x+1}}{x}\right|+C&
 > \end{flalign}
 > $$
@@ -443,8 +444,8 @@ $$
 > ***Proof***
 > $$
 > \begin{flalign}
-> & (u(x) v(x))^{\prime}=u^{\prime}(x) v(x)+u(x) v^{\prime}(x) \\\\\\\\
-> & \text { 有 } \int\left[u^{\prime}(x) v(x)+u(x) v^{\prime}(x)\right]=u(x) v(x)+c \\\\\\\\
+> & (u(x) v(x))^{\prime}=u^{\prime}(x) v(x)+u(x) v^{\prime}(x) \\
+> & \text { 有 } \int\left[u^{\prime}(x) v(x)+u(x) v^{\prime}(x)\right]=u(x) v(x)+c \\
 > & \text { 即: } \int u(x) d v(x)=u(x) v(x)-\int v(x) d u(x)&
 > \end{flalign}
 $$
@@ -457,8 +458,8 @@ $$
 > ***Solution***
 > $$
 > \begin{flalign}
-> & =x \ln x-\int x d \ln x \\\\\\\\
-> & =x \ln x-\int x \cdot \frac{1}{x} d x \\\\\\\\
+> & =x \ln x-\int x d \ln x \\
+> & =x \ln x-\int x \cdot \frac{1}{x} d x \\
 > & =x \ln x-x+C&
 > \end{flalign}
 > $$
@@ -469,14 +470,14 @@ $$
 > ***Solution***
 > $$
 > \begin{flalign}
-> I&=\int \textcolor{orange}{\mathrm{e}^x} \sin x \textcolor{orange}{\mathrm{~d} x}&e^{x},\mathrm d x合并\\\\\\\\
-> & =\int \sin x \mathrm d  \textcolor{orange}{e^x} &分部积分\\\\\\\\
-> & =e^x \sin x-\int e^x \mathrm d  \sin x &e^{x},\mathrm d x合并\\\\\\\\
-> & =e^x \sin x-\int \cos x \mathrm d  e^x &分部积分\\\\\\\\
-> & =e^x \sin x-e^x \cos x+\int e^x \mathrm d  \cos x \\\\\\\\
-> & =e^x(\sin x-\cos x)-\underbrace{\int \sin x \mathrm d  e^{x}} \\\\\\\\
-> \therefore I & =e^{x}(\sin x-\cos x)-\qquad I \\\\\\\\
-> \therefore 2 I & =e^x(\sin x-\cos x)+C \\\\\\\\
+> I&=\int \textcolor{orange}{\mathrm{e}^x} \sin x \textcolor{orange}{\mathrm{~d} x}&e^{x},\mathrm d x合并\\
+> & =\int \sin x \mathrm d  \textcolor{orange}{e^x} &分部积分\\
+> & =e^x \sin x-\int e^x \mathrm d  \sin x &e^{x},\mathrm d x合并\\
+> & =e^x \sin x-\int \cos x \mathrm d  e^x &分部积分\\
+> & =e^x \sin x-e^x \cos x+\int e^x \mathrm d  \cos x \\
+> & =e^x(\sin x-\cos x)-\underbrace{\int \sin x \mathrm d  e^{x}} \\
+> \therefore I & =e^{x}(\sin x-\cos x)-\qquad I \\
+> \therefore 2 I & =e^x(\sin x-\cos x)+C \\
 > I & =\frac{1}{2} e^x(\sin x-\cos x)+C&
 > \end{flalign}
 > $$
@@ -487,8 +488,8 @@ $$
 > ***Solution***
 > $$
 > \begin{flalign}
-> I_{n} & =\frac{\alpha}{\left(x^{2}+a^{2}\right)^{n}}-\left(-2 \int \frac{\left(x^{2}+a^{2}-a^{2}\right.}{\left(x^{2}+a^{2}\right)^{n+1}} d x\right) \\\\\\\\
-> & =\frac{x}{\left(x^{2}+a^{2}\right)}+2 n I_{n}-2 n a^{2} I_{n+1} \\\\\\\\
+> I_{n} & =\frac{\alpha}{\left(x^{2}+a^{2}\right)^{n}}-\left(-2 \int \frac{\left(x^{2}+a^{2}-a^{2}\right.}{\left(x^{2}+a^{2}\right)^{n+1}} d x\right) \\
+> & =\frac{x}{\left(x^{2}+a^{2}\right)}+2 n I_{n}-2 n a^{2} I_{n+1} \\
 > \Rightarrow I_{n} & =\frac{x}{2 n a^{2}\left(x^{2}+a^{2}\right)^{n}}+\frac{2 n-1}{2 n a^{2}} I_{n}&
 > \end{flalign}
 > $$
@@ -501,9 +502,9 @@ $$
 > ***Solution***
 > $$
 > \begin{flalign}
-> & I=\int x\left(1+e^{x}\right)^{-\frac{3}{2}} d\left(e^{x}+1\right) \\\\\\\\
-> & =-2 \int x d\left(1+e^{x}\right)^{-\frac{1}{2}} \\\\\\\\
-> & =-\frac{2 x}{\sqrt{1+e^{x}}}+2 \int \frac{1}{\sqrt{1+e^{x}}} d x \\\\\\\\
+> & I=\int x\left(1+e^{x}\right)^{-\frac{3}{2}} d\left(e^{x}+1\right) \\
+> & =-2 \int x d\left(1+e^{x}\right)^{-\frac{1}{2}} \\
+> & =-\frac{2 x}{\sqrt{1+e^{x}}}+2 \int \frac{1}{\sqrt{1+e^{x}}} d x \\
 > & \text { 其中 } \int \frac{1}{\sqrt{1+e^{x}}} d x
 > \end{flalign}
 > $$
@@ -523,34 +524,34 @@ $$
 > \begin{array}{l}
 >  
 > \begin{array}{l}
->  \text{Take the integral:} \\\\\\\\
->  \int \frac{x}{\left(x^2+1\right)^{3/2}} \, dx \\\\\\\\
+>  \text{Take the integral:} \\
+>  \int \frac{x}{\left(x^2+1\right)^{3/2}} \, dx \\
 > \end{array}
->  \\\\\\\\
+>  \\
 > \hline
 >  
 > \begin{array}{l}
->  \text{For }\text{the }\text{integrand }\frac{x}{\left(x^2+1\right)^{3/2}}, \text{substitute }u=x^2+1 \text{ and }du=2 x\, dx: \\\\\\\\
->   \text{= }\frac{1}{2}\int \frac{1}{u^{3/2}} \, du \\\\\\\\
+>  \text{For }\text{the }\text{integrand }\frac{x}{\left(x^2+1\right)^{3/2}}, \text{substitute }u=x^2+1 \text{ and }du=2 x\, dx: \\
+>   \text{= }\frac{1}{2}\int \frac{1}{u^{3/2}} \, du \\
 > \end{array}
->  \\\\\\\\
+>  \\
 >  
 > \begin{array}{l}
->  \text{The }\text{integral }\text{of }\frac{1}{u^{3/2}} \text{is }-\frac{2}{\sqrt{u}}: \\\\\\\\
->   \text{= }-\frac{1}{\sqrt{u}}+\text{constant} \\\\\\\\
+>  \text{The }\text{integral }\text{of }\frac{1}{u^{3/2}} \text{is }-\frac{2}{\sqrt{u}}: \\
+>   \text{= }-\frac{1}{\sqrt{u}}+\text{constant} \\
 > \end{array}
->  \\\\\\\\
+>  \\
 >  
 > \begin{array}{l}
->  \text{Substitute }\text{back }\text{for }u=x^2+1: \\\\\\\\
+>  \text{Substitute }\text{back }\text{for }u=x^2+1: \\
 >  \fbox{$
 > \begin{array}{ll}
->  \text{Answer:} &  \\\\\\\\
->  \text{} &  \text{= }-\frac{1}{\sqrt{x^2+1}}+\text{constant} \\\\\\\\
+>  \text{Answer:} &  \\
+>  \text{} &  \text{= }-\frac{1}{\sqrt{x^2+1}}+\text{constant} \\
 > \end{array}
-> $} \\\\\\\\
+> $} \\
 > \end{array}
->  \\\\\\\\
+>  \\
 > \end{array}
 > $$
 
@@ -563,67 +564,67 @@ $$
 > $$\begin{array}{l}
 > \begin{array}{l}
 >  \text{For }\text{the }\text{integrand }\frac{x \log (x)}{\left(x^2+1\right)^{3/2}}, \text{integrate }\text{by }\text{parts, }\int f \, dg=f
->    g-\int g \, df, \text{where }\\\\\\\\f=\log (x),    dg=\frac{x}{\left(x^2+1\right)^{3}{2}}\, dx,df=\frac{1}{x}\, dx,  \\\\\\\\   g=\frac{1}{\sqrt{x^2+1}}: \\\\\\\\
->   \text{= }-\frac{\log (x)}{\sqrt{x^2+1}}+\int \frac{1}{x \sqrt{x^2+1}} \, dx \\\\\\\\
+>    g-\int g \, df, \text{where }\\f=\log (x),    dg=\frac{x}{\left(x^2+1\right)^{3}{2}}\, dx,df=\frac{1}{x}\, dx,  \\   g=\frac{1}{\sqrt{x^2+1}}: \\
+>   \text{= }-\frac{\log (x)}{\sqrt{x^2+1}}+\int \frac{1}{x \sqrt{x^2+1}} \, dx \\
 > \end{array}
->  \\\\\\\\\\\\\\\\
+>  \\\\
 > \begin{array}{l}
->  \text{For }\text{the }\text{integrand }\frac{1}{x \sqrt{x^2+1}}, \text{substitute }x=\tan (u) \text{and }dx=\sec ^2(u)\, du.\\\\\\\\ \text{Then
->    }\sqrt{x^2+1} \text{= }\sqrt{\tan ^2(u)+1} \text{= }\sec (u) \text{and }u=\tan ^{-1}(x): \\\\\\\\
->   \text{= }-\frac{\log (x)}{\sqrt{x^2+1}}+\int \csc (u) \, du \\\\\\\\
+>  \text{For }\text{the }\text{integrand }\frac{1}{x \sqrt{x^2+1}}, \text{substitute }x=\tan (u) \text{and }dx=\sec ^2(u)\, du.\\ \text{Then
+>    }\sqrt{x^2+1} \text{= }\sqrt{\tan ^2(u)+1} \text{= }\sec (u) \text{and }u=\tan ^{-1}(x): \\
+>   \text{= }-\frac{\log (x)}{\sqrt{x^2+1}}+\int \csc (u) \, du \\
 > \end{array}
->  \\\\\\\\\\\\\\\\
+>  \\\\
 > \begin{array}{l}
->  \text{Multiply }\text{numerator }\text{and }\text{denominator }\text{of }\csc (u) \text{by }\cot (u)+\csc (u): \\\\\\\\
->   \text{= }-\frac{\log (x)}{\sqrt{x^2+1}}+\int -\frac{-\cot (u) \csc (u)-\csc ^2(u)}{\cot (u)+\csc (u)} \, du \\\\\\\\
+>  \text{Multiply }\text{numerator }\text{and }\text{denominator }\text{of }\csc (u) \text{by }\cot (u)+\csc (u): \\
+>   \text{= }-\frac{\log (x)}{\sqrt{x^2+1}}+\int -\frac{-\cot (u) \csc (u)-\csc ^2(u)}{\cot (u)+\csc (u)} \, du \\
 > \end{array}
->  \\\\\\\\\\\\\\\\
+>  \\\\
 > \begin{array}{l}
 >  \text{For }\text{the }\text{integrand }-\frac{-\cot (u) \csc (u)-\csc ^2(u)}{\cot (u)+\csc (u)}, \text{substitute }s=\cot (u)+\csc (u) \text{and
->    }\\\\\\\\ds=\left(-\csc ^2(u)-\cot (u) \csc (u)\right)\, du: \\\\\\\\
->   \text{= }-\frac{\log (x)}{\sqrt{x^2+1}}+\int -\frac{1}{s} \, ds \\\\\\\\
+>    }\\ds=\left(-\csc ^2(u)-\cot (u) \csc (u)\right)\, du: \\
+>   \text{= }-\frac{\log (x)}{\sqrt{x^2+1}}+\int -\frac{1}{s} \, ds \\
 > \end{array}
->  \\\\\\\\\\\\\\\\
+>  \\\\
 > \begin{array}{l}
->  \text{Factor }\text{out }\text{constants:} \\\\\\\\
->   \text{= }-\frac{\log (x)}{\sqrt{x^2+1}}-\int \frac{1}{s} \, ds \\\\\\\\
+>  \text{Factor }\text{out }\text{constants:} \\
+>   \text{= }-\frac{\log (x)}{\sqrt{x^2+1}}-\int \frac{1}{s} \, ds \\
 > \end{array}
->  \\\\\\\\\\\\\\\\
+>  \\\\
 > \begin{array}{l}
->  \text{The }\text{integral }\text{of }\frac{1}{s} \text{is }\log (s): \\\\\\\\
->   \text{= }-\log (s)-\frac{\log (x)}{\sqrt{x^2+1}}+\text{constant} \\\\\\\\
+>  \text{The }\text{integral }\text{of }\frac{1}{s} \text{is }\log (s): \\
+>   \text{= }-\log (s)-\frac{\log (x)}{\sqrt{x^2+1}}+\text{constant} \\
 > \end{array}
->  \\\\\\\\\\\\\\\\
+>  \\\\
 > \begin{array}{l}
->  \text{Substitute }\text{back }\text{for }s=\cot (u)+\csc (u): \\\\\\\\
->   \text{= }-\log (\cot (u)+\csc (u))-\frac{\log (x)}{\sqrt{x^2+1}}+\text{constant} \\\\\\\\
+>  \text{Substitute }\text{back }\text{for }s=\cot (u)+\csc (u): \\
+>   \text{= }-\log (\cot (u)+\csc (u))-\frac{\log (x)}{\sqrt{x^2+1}}+\text{constant} \\
 > \end{array}
->  \\\\\\\\\\\\\\\\
+>  \\\\
 > \begin{array}{l}
->  \text{Substitute }\text{back }\text{for }u=\tan ^{-1}(x): \\\\\\\\
->   \text{= }-\frac{\log (x)}{\sqrt{x^2+1}}-\log \left(\cot \left(\tan ^{-1}(x)\right)+\csc \left(\tan ^{-1}(x)\right)\right)+\text{constant} \\\\\\\\
+>  \text{Substitute }\text{back }\text{for }u=\tan ^{-1}(x): \\
+>   \text{= }-\frac{\log (x)}{\sqrt{x^2+1}}-\log \left(\cot \left(\tan ^{-1}(x)\right)+\csc \left(\tan ^{-1}(x)\right)\right)+\text{constant} \\
 > \end{array}
->  \\\\\\\\\\\\\\\\
+>  \\\\
 > \begin{array}{l}
->  \text{Simplify }\text{using }\cot \left(\tan ^{-1}(z)\right)=\frac{1}{z} \text{and }\csc \left(\tan ^{-1}(z)\right)=\frac{\sqrt{z^2+1}}{z}: \\\\\\\\
->   \text{= }-\frac{\log (x)}{\sqrt{x^2+1}}-\log \left(\frac{\sqrt{x^2+1}+1}{x}\right)+\text{constant} \\\\\\\\
+>  \text{Simplify }\text{using }\cot \left(\tan ^{-1}(z)\right)=\frac{1}{z} \text{and }\csc \left(\tan ^{-1}(z)\right)=\frac{\sqrt{z^2+1}}{z}: \\
+>   \text{= }-\frac{\log (x)}{\sqrt{x^2+1}}-\log \left(\frac{\sqrt{x^2+1}+1}{x}\right)+\text{constant} \\
 > \end{array}
->  \\\\\\\\\\\\\\\\
+>  \\\\
 > \begin{array}{l}
->  \text{An }\text{alternative }\text{form }\text{of }\text{the }\text{integral }\text{is:} \\\\\\\\
->   \text{= }-\frac{\log (x)}{\sqrt{x^2+1}}-\text{csch}^{-1}(x)+\text{constant} \\\\\\\\
+>  \text{An }\text{alternative }\text{form }\text{of }\text{the }\text{integral }\text{is:} \\
+>   \text{= }-\frac{\log (x)}{\sqrt{x^2+1}}-\text{csch}^{-1}(x)+\text{constant} \\
 > \end{array}
->  \\\\\\\\\\\\\\\\
+>  \\\\
 > \begin{array}{l}
->  \text{Which }\text{is }\text{equivalent }\text{for }\text{restricted }x \text{values }\text{to:} \\\\\\\\
+>  \text{Which }\text{is }\text{equivalent }\text{for }\text{restricted }x \text{values }\text{to:} \\
 >  \fbox{$
 > \begin{array}{ll}
->  \text{Answer:} &  \\\\\\\\
->  \text{} &  \text{= }-\frac{\log (x)}{\sqrt{x^2+1}}-\log \left(\sqrt{x^2+1}+1\right)+\log (x)+\text{constant} \\\\\\\\
+>  \text{Answer:} &  \\
+>  \text{} &  \text{= }-\frac{\log (x)}{\sqrt{x^2+1}}-\log \left(\sqrt{x^2+1}+1\right)+\log (x)+\text{constant} \\
 > \end{array}
-> $} \\\\\\\\
+> $} \\
 > \end{array}
->  \\\\\\\\
+>  \\
 > \end{array}$$
 > 
 > ***TIP***
@@ -631,6 +632,6 @@ $$
 > 简略过程如下：
 > $令x=\tan t,|t|<\frac \pi2$
 > $$\begin{flalign}
-> \text{原式}&= \cdots+\int\frac 1{\sqrt{\tan^{2t+1}}\tan t}\mathrm d t\\\\\\\\
+> \text{原式}&= \cdots+\int\frac 1{\sqrt{\tan^{2t+1}}\tan t}\mathrm d t\\
 > &= \int \csc t ~\mathrm d t
 > \end{flalign}$$
