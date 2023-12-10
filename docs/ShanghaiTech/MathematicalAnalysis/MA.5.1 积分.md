@@ -388,6 +388,7 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > $$
 > 
 > 由 <b class="md-tag">积分/估值性</b> 
+> 
 > $$
 > \begin{aligned}
 > M(b-a) & \leq \int_{a}^{b} f(x) d x \leq M(b-a) . \newline \therefore \quad M & =\frac{\int_{a}^{b} f(x) d x}{b-a} \leq M
@@ -395,6 +396,7 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > $$
 > 
 > 由 <b class="md-tag">闭区间连续函数介值性</b> :
+> 
 > $$
 > \exists\left\{\in[a, b] \text {, 使 } \frac{\int_{a}^{b} f(x) d x}{b-a}=f(\xi)\right.
 > $$
@@ -480,10 +482,7 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 
 > $$
 > \begin{align}
-> &\left|\frac{\varphi\left(x\right)-\varphi\left(x_{0}\right)}{x-x_{0}}-f\left(x_{0}\right)\right|\newline 
-> & =\frac{\left|\int_{x_{0}}^{x}\left[f(t)-f\left(x_{0}\right)\right] d t\right|}{\left|x-x_{0}\right|}\newline 
-> & \leq \frac{\left|\int_{x_{0}}^{x}\right| f(t)-f\left(x_{0}\right)|d t|}{\left|x-x_{0}\right|}\newline 
-> &\leq \frac{\varepsilon\left|x-x_{0}\right|}{\left|x-x_{0}\right|} \newline  \newline &=\varepsilon
+> &\left|\frac{\varphi\left(x\right)-\varphi\left(x_{0}\right)}{x-x_{0}}-f\left(x_{0}\right)\right|\newline & =\frac{\left|\int_{x_{0}}^{x}\left[f(t)-f\left(x_{0}\right)\right] d t\right|}{\left|x-x_{0}\right|}\newline & \leq \frac{\left|\int_{x_{0}}^{x}\right| f(t)-f\left(x_{0}\right)|d t|}{\left|x-x_{0}\right|}\newline &\leq \frac{\varepsilon\left|x-x_{0}\right|}{\left|x-x_{0}\right|} \newline &=\varepsilon
 > \end{align}
 > $$
  
@@ -677,4 +676,4 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 &=\frac{1}{\sqrt{ 2 }}\left( \frac{\pi}{2}-0 \right)+\frac{1}{\sqrt{ 2 }}\left[0-\left( -\frac{\pi}{2} \right)\right]\\
 &=\frac{\pi}{\sqrt{ 2 }}&
 \end{flalign}
-$$
+$$\begin{align}  \end{align}
