@@ -29,3 +29,5 @@
 [Theb AI](https://chat.theb.ai)
 
 [MermaidLive](https://mermaid.live/)
+
+[Free WolframAlpha Step-by-step Solution](https://wolfreealpha.on.fleek.co/)
