@@ -310,10 +310,7 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 > 
 > $$
 > \begin{cases}
-> x_1 + 3x_2 - 2x_3 + 2x_5 = 0 \\
-> 2x_1 + 6x_2 - 5x_3 - 2x_4 + 4x_5 - 3x_6 = -1 \\
-> 5x_3 + 10x_4 + 15x_6 = 5 \\
-> 2x_1 + 6x_2 + 8x_4 + 4x_5 + 18x_6 = 6
+> x_1 + 3x_2 - 2x_3 + 2x_5 = 0 \newline 2x_1 + 6x_2 - 5x_3 - 2x_4 + 4x_5 - 3x_6 = -1 \newline 5x_3 + 10x_4 + 15x_6 = 5 \newline 2x_1 + 6x_2 + 8x_4 + 4x_5 + 18x_6 = 6
 > \end{cases}
 > $$
 > 
@@ -328,9 +325,7 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 > 
 > $$
 > \begin{cases}
-> -2x + y + z = -2 \\
-> x - 2y + z = a \\
-> x + y + (b - 2)z = a
+> -2x + y + z = -2 \newline x - 2y + z = a \newline x + y + (b - 2)z = a
 > \end{cases}
 > $$
 > 
@@ -346,17 +341,13 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 > 
 > $$ A =
 > \begin{bmatrix}
-> 1 & 2 & 3 \\
-> 2 & 5 & 3 \\
-> 1 & 0 & 8
+> 1 & 2 & 3 \newline 2 & 5 & 3 \newline 1 & 0 & 8
 > \end{bmatrix}
 > $$
 > 
 > $$ B =
 > \begin{bmatrix}
-> -1 & 0 & 1 \\
-> 1 & 2 & -2 \\
-> 0 & 3 & 2
+> -1 & 0 & 1 \newline 1 & 2 & -2 \newline 0 & 3 & 2
 > \end{bmatrix}
 > $$
 > 
@@ -757,11 +748,7 @@ $$
 > Example: Evaluate Vandermonde Determinant
 > 
 > $$ \Delta_n = \begin{vmatrix}
-> 1 & 1 & \ldots & 1 \\
-> x_1 & x_2 & \ldots & x_n \\
-> x_1^2 & x_2^2 & \ldots & x_n^2 \\
-> \vdots & \vdots & \ddots & \vdots \\
-> x_1^{n-1} & x_2^{n-1} & \ldots & x_n^{n-1}
+> 1 & 1 & \ldots & 1 \newline x_1 & x_2 & \ldots & x_n \newline x_1^2 & x_2^2 & \ldots & x_n^2 \newline \vdots & \vdots & \ddots & \vdots \newline x_1^{n-1} & x_2^{n-1} & \ldots & x_n^{n-1}
 > \end{vmatrix} $$
 > 
 > This is the Vandermonde determinant of order $n$, where $x_1, x_2, \ldots, x_n$ are distinct real numbers. The determinant is calculated by taking the product of the differences between all pairs of $x_i$'s:
@@ -784,12 +771,7 @@ $$
 >
 > $$ A_n =
 > \begin{vmatrix}
-> a_1 & 1 & 1 & \ldots & 1 \\
-> 1 & a_2 \\
-> 1 && a_3 \\
-> \vdots & && \ddots \\
-> 1 &&&& a_n \\
-> \end{vmatrix}
+> a_1 & 1 & 1 & \ldots & 1 \newline 1 & a_2 \newline 1 && a_3 \newline \vdots & && \ddots \newline 1 &&&& a_n \newline \end{vmatrix}
 > $$
 > 化三角：
 > $=a_{2}\cdot a_{3}\cdots a_{n}\begin{vmatrix}a_{1} & 1 & 1 & \dots & 1\\ \frac{1}{a_{2}} & 1 & 0 & \dots & 0\\ \frac{1}{a_{3}} & 0 & 1 & \dots & 0\\\vdots & \vdots & \vdots & \ddots & \vdots\\ \frac{1}{a_{n}} & 0 & 0 & \dots & 1\end{vmatrix}$
@@ -800,12 +782,7 @@ $$
 > 
 > $$ B_n =
 > \begin{vmatrix}
-> a_1 & b & b & \ldots & b \\
-> c & a_2 & b & \ldots & b \\
-> c & c & a_3 & \ldots & b \\
-> \vdots & \vdots & \vdots & \ddots & \vdots \\
-> c & c & c & \ldots & a_n \\
-> \end{vmatrix}
+> a_1 & b & b & \ldots & b \newline c & a_2 & b & \ldots & b \newline c & c & a_3 & \ldots & b \newline \vdots & \vdots & \vdots & \ddots & \vdots \newline c & c & c & \ldots & a_n \newline \end{vmatrix}
 > $$
 > 1. 写出递推
 >    - $b=c$
@@ -824,12 +801,7 @@ $$
 >
 > $$ C_n =
 > \begin{vmatrix}
-> a & b \\
-> c & a & b \\
-> &c & \ddots & \ddots \\
-> & & \ddots & \ddots & b \\
->  & &  & c & a \\
-> \end{vmatrix}
+> a & b \newline c & a & b \newline &c & \ddots & \ddots \newline & & \ddots & \ddots & b \newline  & &  & c & a \newline \end{vmatrix}
 > $$
 >
 > $=a\cdot C_{n-1}+(-c)\times b\cdot C_{n-2}$
@@ -838,24 +810,13 @@ $$
 > 
 > $$ D_n =
 > \begin{vmatrix}
-> 1 + a_1 & a_2 & \ldots & a_n \\
-> a_1 & 1 + a_2 & \ldots & a_n \\
-> \vdots & \vdots & \ddots & \vdots \\
-> a_1 & a_2 & \ldots & 1 + a_n \\
-> \end{vmatrix}
+> 1 + a_1 & a_2 & \ldots & a_n \newline a_1 & 1 + a_2 & \ldots & a_n \newline \vdots & \vdots & \ddots & \vdots \newline a_1 & a_2 & \ldots & 1 + a_n \newline \end{vmatrix}
 > $$
 > 
 >---
 >
 >$$\begin{vmatrix}
-> a_n &&&&&&& b_n \\
->  & a_{n-1} & & &&& b_{n-1} \\
-> &&\ddots &&& \dots \\
-> &&&a_1 & b_1 \\
-> &&&c_1 & d_1 \\
-> &&\dots &&& \ddots \\
-> &c_{n-1} &&&&& d_{n-1} \\
-> c_n &&&&&&& d_n
+> a_n &&&&&&& b_n \newline  & a_{n-1} & & &&& b_{n-1} \newline &&\ddots &&& \dots \newline &&&a_1 & b_1 \newline &&&c_1 & d_1 \newline &&\dots &&& \ddots \newline &c_{n-1} &&&&& d_{n-1} \newline c_n &&&&&&& d_n
 > \end{vmatrix}$$
 > 沿第一行展开 - 沿最后一行展开
 
@@ -904,10 +865,7 @@ $$
 > Let $A$ be a $4 \times 4$ matrix such that
 > $$ \text{adj}(A) =
 > \begin{bmatrix}
-> 2 & 0 & 1 & 0 \\
-> 0 & 2 & 0 & 0 \\
-> 4 & 0 & 3 & 2 \\
-> -2 & 0 & -1 & 2
+> 2 & 0 & 1 & 0 \newline 0 & 2 & 0 & 0 \newline 4 & 0 & 3 & 2 \newline -2 & 0 & -1 & 2
 > \end{bmatrix}
 > $$
 > Find:
@@ -918,11 +876,7 @@ $$
 > Evaluate $\det(A_n)$, where
 > $$ A_n =
 > \begin{bmatrix}
-> a & b & b & \ldots & b \\
-> c & a & b & \ldots & b \\
-> c & c & a & \ldots & b \\
-> \vdots & \vdots & \vdots & \ddots & \vdots \\
-> c & c & c & \ldots & a
+> a & b & b & \ldots & b \newline c & a & b & \ldots & b \newline c & c & a & \ldots & b \newline \vdots & \vdots & \vdots & \ddots & \vdots \newline c & c & c & \ldots & a
 > \end{bmatrix}
 > $$
 > 
@@ -930,19 +884,13 @@ $$
 > Suppose that $x \in \mathbb{R}^4$ is the vector satisfying $Ax = b$, where
 > $$ A =
 > \begin{bmatrix}
-> 2 & 0 & 0 & 4 \\
-> 0 & 1 & 2 & 0 \\
-> 2 & 2022 & 1 & 1 \\
-> 0 & -3 & 2 & 0
+> 2 & 0 & 0 & 4 \newline 0 & 1 & 2 & 0 \newline 2 & 2022 & 1 & 1 \newline 0 & -3 & 2 & 0
 > \end{bmatrix}
 > $$
 > and
 > $$ b =
 > \begin{bmatrix}
-> 0 \\
-> 0 \\
-> -1 \\
-> 2
+> 0 \newline 0 \newline -1 \newline 2
 > \end{bmatrix}
 > $$
 > Let $v = (0, 1, 2, 0) \in \mathbb{R}^4$. Find $\text{proj}_v x$, the orthogonal projection of $x$ on $v$.
