@@ -17,16 +17,16 @@ tags:
 
 - **(2) 作近似和** 
 $\forall \xi_{\mathrm{i}} \in\left[x_{i-1}, x_{i}\right]$,第 $i$ 个小曲边梯形面积 $\Delta S_{i} \approx$ $f\left(\xi_{\mathrm{i}}\right) \Delta x_{i}$, 故曲边梯形面积
-$$
+\begin{align*} 
 A=\sum_{i=1}^{n} \Delta S_{i} \approx \sum_{i=1}^{n} f\left(\xi_{i}\right) \Delta x_{i}
-$$
+ \end{align*}
 ![200](../../res/2023_11_30_371e33ffbe2119eb668cg-1.jpg)
 
 - **(3) 取极限**
 记 $\|T\|=\max _{1 \leq i \leq n} \Delta x_{i}$, 则曲边梯形面积
-$$
+\begin{align*} 
 A=\lim _{\|T\| \rightarrow 0} \sum_{i=1}^{n} f\left(\xi_{i}\right) \Delta x_{i}
-$$
+ \end{align*}
 
 ##### 变速直线运动位移
 
@@ -37,15 +37,15 @@ $$
 - **(1) 分割** 用分点 $a=t_{0}<t_{1}<\ldots<t_{n}=b$ 将 $[a, b]$ 分为 $n$ 个小区间 $\left[t_{i-1}, t_{i}\right](i=1,2, \ldots, n)$, 其长度记为 $\Delta t_{i}=t_{i}-t_{i-1}$
 
 - **(2) 作近似和** $\forall \xi_{\mathrm{i}} \in\left[t_{i-1}, t_{i}\right]$, 时段 $\left[t_{i-1}, t_{i}\right]$ 经过路程 $\Delta s_{i}$ $\approx v\left(\xi_{\mathrm{i}}\right) \Delta t_{i}$, 故 $[a, b]$ 内经过路程
-$$
+\begin{align*} 
 s=\sum_{i=1}^{n} \Delta s_{i} \approx \sum_{i=1}^{n} v\left(\xi_{i}\right) \Delta t_{i}
-$$
+ \end{align*}
 
 - **(3) 取极限** 记 $\|T\|=\max _{1 \leq i \leq n} \Delta t_{i}$, 则时间 $[a, b]$ 内路程
 
-$$
+\begin{align*} 
 s=\lim _{\|T\| \rightarrow 0} \sum_{i=1}^{n} v\left(\xi_{i}\right) \Delta t_{i}
-$$
+ \end{align*}
 
 > [!question] 
 > 设一个线密度为 $\ln x$ 的木棒，
@@ -60,16 +60,16 @@ $$
 > 
 > 设 $f:[a, b] \rightarrow \mathbf{R}$. 任取 $[a, b]$ 分割 $T$ 及 $\forall \xi_{\mathrm{i}} \in\left[x_{i-1}, x_{i}\right]$ $\left(\left\{\xi_{1}, \xi_{2}, \ldots, \xi_{n}\right\}=\xi(T)\right.$ 称为分割 $T$ 下介点集), 作和
 > 
-> $$
+> \begin{align*} 
 > S_{n}(T)=\sum_{i=1}^{n} f\left(\xi_{i}\right) \Delta x_{i}
-> $$
+>  \end{align*}
 > 若
-> $$
+> \begin{align*} 
 > \lim _{|T| \rightarrow 0} \sum_{i=1}^{n} f\left(\xi_{i}\right) \Delta x_{i}=I
-> $$
+>  \end{align*}
 > 
 > 则称 $f$ 在 $[a, b]$ 上可积, $I$ 称为 $f$ 在 $[a, b]$ 上的定积分, 记为
-> $$I=\int_{a}^{b} f(x) \mathrm d x$$
+> \begin{align*} I=\int_{a}^{b} f(x) \mathrm d x \end{align*}
 
 
 - $f\left(\xi_{i}\right) \rightarrow f(x) ; \Delta x_{i} \rightarrow d x ; \quad \lim \sum \rightarrow \int$
@@ -82,9 +82,9 @@ $$
 
 $\Leftrightarrow$ Riemann 可积，Riemann积分
 > [!definition] <b class="md-tag">Riemann和</b>
-> $$
+> \begin{align*} 
 > S_{n}(T)=\sum_{i=1}^{n} f\left(\xi_{i}\right) \Delta x_{i}
-> $$
+>  \end{align*}
 
 ##### $f ∈ R[a, b]$ 的含义?
 
@@ -96,16 +96,16 @@ $[a, b] \leqslant$ Riemann 可积的函数集合
 > $f \in R[a, b]$, 即
 > 
 > $\exists I \in \mathbb{R}, \forall \varepsilon>0, \exists \delta>0, \forall\|T\|<\delta, \forall \xi(T)$
-> $$\left|\sum_{i=1}^{n} f\left(\xi_{i}\right) x_{i} \cdot I\right|<\varepsilon$$
+> \begin{align*} \left|\sum_{i=1}^{n} f\left(\xi_{i}\right) x_{i} \cdot I\right|<\varepsilon \end{align*}
 
 > [!definition] <b class="md-tag">不可积</b>
 > $f \notin R[a, b]$ 即
 > 
 > $\forall I \in \mathbb{R}, \exists \varepsilon>0, \forall \delta>0, \exists\|T\|<\delta, \exists \xi(T)$
 > 
-> $$\left|\sum_{i=1}^{n} f\left(\xi_{i}\right) x_{i} \cdot I\right| \geqslant \varepsilon$$
+> \begin{align*} \left|\sum_{i=1}^{n} f\left(\xi_{i}\right) x_{i} \cdot I\right| \geqslant \varepsilon \end{align*}
 
--  定积分值与**积分区间**和**被积函数**有关, 与 $[a, b]$ 的**分割**和**介点集**无关, 也与**积分变量**无关, 即$$\int_{\textcolor{orange}a}^{\textcolor{orange}b} \textcolor{orange}f(x) \mathrm{d} x=\int_{a}^{b} f(t) \mathrm{d} t=\int_{a}^{b} f(u) \mathrm{d} u$$
+-  定积分值与**积分区间**和**被积函数**有关, 与 $[a, b]$ 的**分割**和**介点集**无关, 也与**积分变量**无关, 即\begin{align*} \int_{\textcolor{orange}a}^{\textcolor{orange}b} \textcolor{orange}f(x) \mathrm{d} x=\int_{a}^{b} f(t) \mathrm{d} t=\int_{a}^{b} f(u) \mathrm{d} u \end{align*}
 
 - 若存在两分割或同一分割下不同介点集, 使**积分和的极限不同**, 则 $f$ 在 $[a, b]$ **不可积**!
 	- i.e. 不同黎曼和(分割可不同), 但极限不同 $\Rightarrow$ 不可积
@@ -122,15 +122,15 @@ $[a, b] \leqslant$ Riemann 可积的函数集合
 > ***Solution***
 > $\forall$ 取 $[0,1]$ 分割 $T$ ，取 $\xi_{1}\in\left[x_{i-1}, x_{i}\right] \cap \mathbb{Q}$ 则 
 > 
-> $$
+> \begin{align*} 
 > \sum_{i=1}^{n} D\left(\xi_{i}\right) \Delta x_{i}=\sum_{i=1}^{n} \cdot 1 \Delta x_{i}=1\xrightarrow{\|T\| \rightarrow 0} 1
-> $$
+>  \end{align*}
 > 
 > 再取 $\eta_{i} \in\left[x_{i-1}, x_{i}\right] \cap \mathbb{Q}^{C}$ 则
 > 
-> $$
+> \begin{align*} 
 > \sum_{i=1}^{n} D\left(\eta_{i}\right) \Delta x_{i}=\sum_{i=1}^{n} 0 \cdot \Delta x_{i}=0 \xrightarrow{\|T\|\rightarrow0}0
-> $$
+>  \end{align*}
 > 
 > 矛盾
 
@@ -157,14 +157,14 @@ $[a, b] \leqslant$ Riemann 可积的函数集合
 > 
 > 不妨为第 $n$ 个区间: $\left[x_{n-1}, x_{n}\right]$:
 > 取 $\xi_{i}=x_{i}(1 \leq i \leq n-1)$, $\xi_{n} \in\left[x_{n-1}, x_{n}\right]$ 满足
-> $$
-> \color{orange}\left|f\left(\xi_{n}\right)\right|>\frac{1+\left|\sum_{i=1}^{n-1} f\left(\xi_{i}\right)-I\right|}{\Delta x_{n}} $$
+> \begin{align*} 
+> \color{orange}\left|f\left(\xi_{n}\right)\right|>\frac{1+\left|\sum_{i=1}^{n-1} f\left(\xi_{i}\right)-I\right|}{\Delta x_{n}}  \end{align*}
 > 
-> $$
+> \begin{align*} 
 > \begin{flalign}
 > \left|\sum_{i=1}^{n} f\left(\xi_{i}\right) \Delta x_{i}-I\right|&=\left|f\left(\xi_{n}\right) \Delta x_{n}+\sum_{i=1}^{n-1} f\left(\xi_{i}\right) \Delta x_{i}-I\right| \newline &\geqslant\left|f\left(\xi_{n}\right)\right| \Delta x_{n}-\left|\sum_{i=1}^{n-n} f\left(\xi_{i}\right) \Delta \alpha_{i} \cdot I\right| \newline &\geqslant \varepsilon \ldots 取~\color{orange} \varepsilon_{0}=1&
 > \end{flalign}
-> $$
+>  \end{align*}
 > 
 > 故 $f \notin R[a, b]$
 
@@ -191,6 +191,10 @@ $[a, b] \leqslant$ Riemann 可积的函数集合
 > 
 > 单增=>可积
 
+### 三、积分例子初识
+
+##### 例题
+
 > [!example] 例3
 > $\int_{a}^{b} c \mathrm{~d} x=c(b-a)$
 
@@ -206,27 +210,27 @@ $[a, b] \leqslant$ Riemann 可积的函数集合
 > 
 > 取 $\xi_{k}=x_{k}$ (右端点)
 > 则
-> $$
+> \begin{align*} 
 > \begin{flalign}
 > \sum\limits_{k=1}^{n} x_{k}^{2} \cdot h & =\sum_{k=1}^{n}(a+k h)^{2} h \newline & =h \sum_{k=1}^{n}\left(a^{2}+2 a k h+k^{2} h^{2}\right) \newline & =n a^{2} h+2 a h^{2} \cdot \frac{n(n+1)}{2}+h^{3} \frac{n(n+1)(2 n+1)}{6} \newline & =a^{2}(b-a)+a \cdot \frac{n(n+1)}{n^{2}}(b-a)^{2}+\frac{(n+1)(2 n+1)}{6 n^{3}}(b-a)^{3} \newline & \xrightarrow{n \rightarrow \infty}a^{2}(b-a)+a(b-a)^{2}+\frac{1}{3}(b-a)^{3}\\&= \frac{1}{3}\left(b^{3}-a^{3}\right)&
 > \end{flalign}
-> $$
+>  \end{align*}
 > 
 > 故 $\displaystyle\int_{a}^{b} x^{2} d x=\frac{1}{3}\left(b^{3}-a^{3}\right)$
 
 > [!example] 例5
 > $\bigstar$设 $c \in[a, b] . J(x)=\left\{\begin{array}{lc}0, & x \in[a, b] \backslash\{c\}, \\ 1, & x=c .\end{array}\right.$ 证明
-> $$
+> \begin{align*} 
 > \int_{a}^{b} J(x) \mathrm{d} x=0
-> $$
+>  \end{align*}
 
 > ***Proof***
 > 
-> $$
+> \begin{align*} 
 > \begin{flalign}
 > &\forall T \quad \forall \xi(T)\newline & 0 \leq \sum_{i=1}^{n} J\left(\xi_{i}\right) \Delta x_{i} \leq \textcolor{orange}{2}\|T\| \rightarrow 0 \newline & \text { c可能在分界点中: 至多\textcolor{orange}{两}项 } \newline & \text { 故: } \int_{a}^{b} J(x) d x=0&
 > \end{flalign}
-> $$
+>  \end{align*}
 
 > [!corollary]
 > $J(x)$ 有限个点值不为0，结论不变
@@ -235,24 +239,24 @@ $[a, b] \leqslant$ Riemann 可积的函数集合
 
 > [!tip]
 > 规定
-> $$\int_{a}^{b} f(x) \mathrm{d} x=-\int_{b}^{a} f(x) \mathrm{d} x, \int_{a}^{a} f(x) \mathrm{d} x=0$$
+> \begin{align*} \int_{a}^{b} f(x) \mathrm{d} x=-\int_{b}^{a} f(x) \mathrm{d} x, \int_{a}^{a} f(x) \mathrm{d} x=0 \end{align*}
 
 > ***Analysis***
 > $\xrightarrow{a\quad x_{i-1}\quad x_{i} \quad b}$ = $\xrightarrow{b\quad x_{i}\quad x_{i-1} \quad a}$
-> $$
+> \begin{align*} 
 > \begin{aligned}
 > & \int_{a}^{b} {{f}(x) d x=\lim _{\| T\|\rightarrow 1} \sum_{i=1}^{n}} f\left(\xi_{i}\right)\left(x_{i}-x_{i-1}\right) \newline & \int_{b}^{a} f(x) d x=\lim _{\| T\| \rightarrow 0} \sum_{i=1}^{n} f\left(\xi_{i}\right)\left(x_{i-1}-x_{i}\right)
 > \end{aligned}
-> $$
+>  \end{align*}
 
 #### 可加性
 
 > [!theorem] <b class="md-tag">积分/可加性</b>
 > 设 $f \in R[a, b]$, 则 $f$ 在 $[a, c]$ 和 $[c, b]$ 可积, 且
 > 
-> $$
+> \begin{align*} 
 > \int_{a}^{b} f(x) \mathrm{d} x=\int_{a}^{c} f(x) \mathrm{d} x+\int_{c}^{b} f(x) \mathrm{d} x .
-> $$
+>  \end{align*}
 >  
 - 且
   $\begin{flalign}\int_{a}^{c} f(x) d x&=\int_{a}^{b} f(x) d x-\int_{c}^{b} f(x) dx \\&=\int_{a}^{b} f(x) d x+\int_{b}^{c} f(x) d x\end{flalign}$
@@ -268,9 +272,9 @@ $[a, b] \leqslant$ Riemann 可积的函数集合
 > [!theorem] <b class="md-tag">积分/线性性</b> 
 >  若 $f, g \in R[a, b]$, 则 $\alpha f \pm \beta g \in R[a, b]$, 且
 > 
-> $$
+> \begin{align*} 
 > \int_{a}^{b}[\alpha f(x) \pm \beta g(x)] \mathrm{d} x=\alpha \int_{a}^{b} f(x) \mathrm{d} x \pm \beta \int_{a}^{b} g(x) \mathrm{d} x
-> $$
+>  \end{align*}
 
 $\Rightarrow$ 改变有限点不改变可积性一S积分值
 
@@ -280,7 +284,7 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 
 > [!corollary]
 > 设 $f \in R[a, b]$, 除有限点外 $g(x)=f(x)$. 有
-> $$g\in R[a,b]~且~\int_{a}^{b}g(x)\mathrm d x=\int_{a}^{b}f(x)\mathrm d x$$
+> \begin{align*} g\in R[a,b]~且~\int_{a}^{b}g(x)\mathrm d x=\int_{a}^{b}f(x)\mathrm d x \end{align*}
 
 - $g$ 相当于 $f$ 修改有限个点得到
 - 改变有限点不改变可积性与积分值
@@ -309,22 +313,22 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 
 > [!corollary] <b class="md-tag">积分/单调性</b>
 > 若 $f, g \in R[a, b]$, 且 $f(x) \leq g(x)$, 则
-> $$\int_{a}^{b} f(x) \mathrm{d} x \leq \int_{a}^{b} g(x) \mathrm{d} x$$
+> \begin{align*} \int_{a}^{b} f(x) \mathrm{d} x \leq \int_{a}^{b} g(x) \mathrm{d} x \end{align*}
 
 > ***Proof***
-> $$
+> \begin{align*} 
 > \begin{flalign}
 > \text { 令 } &F(x)=g(x)-f(x) \geqslant 0 \text {. 且FeR[a,b] } \newline \text { 故 } &\int_{a}^{b} F(x)=\int_{a}^{b} g(x)-\int_{a}^{b} f(x) \geqslant 0 \newline \therefore &\int_{a}^{b} f(x) \mathrm d x \leq \int_{a}^{b} g(x) \mathrm d x&
 > \end{flalign}
-> $$
+>  \end{align*}
 
 #### 估值性
 
 > [!corollary] <b class="md-tag">积分/估值性</b> 
 > 若 $f \in R[a, b]$, 且 $m \leq f(x) \leq M$, 则
-> $$
+> \begin{align*} 
 > m(b-a) \leq \int_{a}^{b} f(x) \mathrm{d} x \leq M(b-a)
-> $$
+>  \end{align*}
 
 > ***Analysis***
 > 取 $g(x)=M \text{ or } m$ 即可
@@ -333,21 +337,21 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 
 > [!corollary] <b class="md-tag">积分/绝对值</b>  积分绝对值不超过绝对值的积分
 > 若 $f \in R[a, b]$, 则 $|f| \in R[a, b]$, 且
-> $$
+> \begin{align*} 
 > \left|\int_{a}^{b} f(x) \mathrm{d} x\right| \leq \int_{a}^{b}|f(x)| \mathrm{d} x
-> $$
+>  \end{align*}
 
 
 > ***Proof***
-> 即证: $$-\int_{a}^{b}|f(x)| d x \leqslant \int_{a}^{b} f(x) d x \leq \int_{a}^{b}|f(x)| d x$$
+> 即证: \begin{align*} -\int_{a}^{b}|f(x)| d x \leqslant \int_{a}^{b} f(x) d x \leq \int_{a}^{b}|f(x)| d x \end{align*}
 > 
 > 由于 $\forall \alpha \in[a, b], \quad-|f(x)| \leq f(x) \leq|f(x)|$
 > 
 > 由 <b class="md-tag">积分/估值性</b>  三边积分:
 > 
-> $$
+> \begin{align*} 
 > -\int_{a}^{b}|f(x)| d x \leqslant \int_{a}^{b} f(x) d x \leqslant \int_{a}^{b}|f(x)| d x
-> $$
+>  \end{align*}
 
 ![300](../../res/2023_11_30_371e33ffbe2119eb668cg-5.jpg)
 
@@ -360,46 +364,46 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 运用Drichlet函数即可
 > 
 > **反例如下:**
-> $$
+> \begin{align*} 
 > \begin{flalign}
 > &f(x)=D(x)-\frac{1}{2}= \begin{cases}\frac{1}{2} & , D \in \mathbb{Q} \newline -\frac{1}{2} & , D \in \mathbb{Q}^{c}\end{cases} \newline &D(x) \notin R[a, b] \newline &\quad \Rightarrow f(x) \notin R[a, b]\newline &\text { 但 }|f(x)|=\frac{1}{2}&
 > \end{flalign}
-> $$
+>  \end{align*}
 
 #### 中值定理
 
 > [!theorem] <b class="md-tag">积分/中值定理</b> 
 > 设 $f \in C[a, b]$, 则 $\exists \xi \in[a, b]$ 使得
 > 
-> $$
+> \begin{align*} 
 > \int_{a}^{b} f(x) \mathrm{d} x=f(\xi)(b-a)
-> $$
+>  \end{align*}
 
 - 几何意义 “化曲为方”
 
 - $f$ 在 $[a, b]$ 的**平均值**: 
-  $$\displaystyle\frac{1}{b-a} \int_{a}^{b} f(x) \mathrm{d} x$$
+  \begin{align*} \displaystyle\frac{1}{b-a} \int_{a}^{b} f(x) \mathrm{d} x \end{align*}
 
 > ***Proof***
 > 
 > 设 $f$ 在 $[a, b]$ 上最大小值为M， m，则:
-> $$
+> \begin{align*} 
 > \forall x \in[a, b], \quad m \leqslant f(x) \leqslant M
-> $$
+>  \end{align*}
 > 
 > 由 <b class="md-tag">积分/估值性</b> 
 > 
-> $$
+> \begin{align*} 
 > \begin{aligned}
 > M(b-a) & \leq \int_{a}^{b} f(x) d x \leq M(b-a) . \newline \therefore \quad M & =\frac{\int_{a}^{b} f(x) d x}{b-a} \leq M
 > \end{aligned}
-> $$
+>  \end{align*}
 > 
 > 由 <b class="md-tag">闭区间连续函数介值性</b> :
 > 
-> $$
+> \begin{align*} 
 > \exists\left\{\in[a, b] \text {, 使 } \frac{\int_{a}^{b} f(x) d x}{b-a}=f(\xi)\right.
-> $$
+>  \end{align*}
 > 
 > **平均值为**: $\displaystyle\frac{1}{n} \sum_{i=1}^{n} f\left(\xi_{i}\right)=\frac{1}{b-a} \sum_{i=1}^{n} f\left(\xi_{i}\right) \underbrace{\frac{b-a}{n}}_{\Delta x_{i}}\xrightarrow{n \rightarrow \infty}\frac{1}{b-a} \int_{a}^{b} f(x) d x$
 
@@ -410,9 +414,9 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > [!definition] 变上限积分
 > 若 $f \in R[a, b]$, 称
 > 
-> $$
+> \begin{align*} 
 > \varphi(x)=\int_{a}^{x} f(t) \mathrm{d} t, x \in[a, b]
-> $$
+>  \end{align*}
 > 
 > 为 $f$ 在 $[a, b]$ 上的变上限积分
 
@@ -425,18 +429,18 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > ***Proof***
 > 
 > $\forall \alpha \in[a, b]$ 给 $\Delta x \neq 0$, 则
-> $$
+> \begin{align*} 
 > \begin{align}
 > \Delta \varphi &=\varphi(x+\Delta x)-\varphi(x) \newline &=\int_{a}^{x+\Delta x} f(t) d t-\int_{a}^{x} f(t) d t \newline &=\int_{x}^{\alpha+\Delta x} f(t) d t
 > \end{align}
-> $$
+>  \end{align*}
 > 
-> $$
+> \begin{align*} 
 > \begin{align}
 > \Rightarrow|\Delta \varphi|&=\left|\int_{x}^{x+\Delta x} f(t) d t\right|
 > \leq\left|\int_{x}^{x+\Delta x}\right| f(t)|d t| \newline &\leq \mu|\sigma x| \newline &\xrightarrow{\Delta x \rightarrow 0} 0
 > \end{align}
-> $$
+>  \end{align*}
 > 
 > $\text{即} ~\varphi~ \text{在} ~x~\text{处连续}$ 
 
@@ -446,9 +450,9 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 
 > 若 $f$ 在 $x_{0}$ 连续, 则 $\varphi$ 在 $x_{0}$ 可导, 且
 > 
-> $$
+> \begin{align*} 
 > \varphi^{\prime}\left(x_{0}\right)=f\left(x_{0}\right)
-> $$
+>  \end{align*}
 
 > ***Analysis***
 > 
@@ -456,11 +460,11 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 
 > 考虑: $\frac{\varphi(x)-\varphi\left(x_{0}\right)}{x-x_{0}}-f\left(x_{0}\right): \frac{\int_{a}^{x} f(t) d t-\int_{0}^{x_{0}} f(t) d t}{x-x_{0}}$
 > 
-> $$
+> \begin{align*} 
 > \begin{align}
 > & \dfrac{\varphi(x)-\varphi(x_{0})}{x-x_{0}} - f(x_{0})\newline =& \dfrac{\int_{a}^{x} f(t) \, dt - \int_{a}^{x_{0}} f(t) \, dt }{x-x_{0}}-f(x_{0}) \newline =& \dfrac{\int_{x_{0}}^{x} f(t) \, dt -(x-x_{0})f(x_{0})}{x-x_{0}} \newline =& \dfrac{\int_{x_{0}}^{x} f(t) \, dt -\int_{x_{0}}^{x} f(x_{0}) \, dt }{x-x_{0}} \newline =& \dfrac{\int_{x_{0}}^{x} [f(t)-f(x_{0})] \, dt }{x-x_{0}}
 > \end{align}
-> $$
+>  \end{align*}
 > 
 > $x\to x_{0},~t\in[x_{0},x]\implies t\to x_{0}$
 > 
@@ -480,19 +484,19 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 
 > 从而 $\forall 0<\left|x-x_{0}\right|<\delta$ 时, 有
 > 
-> $$
+> \begin{align*} 
 > \begin{align}
 > &\left|\frac{\varphi\left(x\right)-\varphi\left(x_{0}\right)}{x-x_{0}}-f\left(x_{0}\right)\right|\newline & =\frac{\left|\int_{x_{0}}^{x}\left[f(t)-f\left(x_{0}\right)\right] d t\right|}{\left|x-x_{0}\right|}\newline & \leq \frac{\left|\int_{x_{0}}^{x}\right| f(t)-f\left(x_{0}\right)|d t|}{\left|x-x_{0}\right|}\newline &\leq \frac{\varepsilon\left|x-x_{0}\right|}{\left|x-x_{0}\right|} \newline &=\varepsilon
 > \end{align}
-> $$
+>  \end{align*}
  
-> [!corollary]
+> [!corollary] <b class="md-tag">定.积分的导数</b>
 > 
 > 若 $f \in C[a, b]$, 则 $\varphi(x) \in D[a, b]$, 且
 > 
-> $$
+> \begin{align*} 
 > \varphi^{\prime}(x)=\frac{\mathrm{d}}{\mathrm{d} x} \int_{a}^{x} f(t) \mathrm{d} t=f(x)
-> $$
+>  \end{align*}
 
 > [!example]
 > 例6 求下列导数
@@ -505,11 +509,11 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 
 > $x$ 为给定的:
 > 
-> $$
+> \begin{align*} 
 > \begin{align}
 > \text{原式}&=\frac{d}{d x} \times \int_{a}^{x} \cos t d t \newline &=\int_{a}^{x} \cos t d t+x \frac{d}{d x} \int_{a}^{x} \cos t d t \newline &=\int_{a}^{x} \cos t d t+x \cdot \cos x
 > \end{align}
-> $$
+>  \end{align*}
 
 > [!example]
 > 3) $\frac{\mathrm{d}}{\mathrm{d} x} \int_{0}^{\sqrt{x}} \sin t^{2} \mathrm{~d} t$
@@ -518,11 +522,11 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 
 > $\varphi(u)=\int_{0}^{u} \sin t^{2} d t \Rightarrow$ 所给 $\varphi(\sqrt{x})$
 > 
-> $$
+> \begin{align*} 
 > \begin{align}
 > \text{原式}&=\frac{d}{d x} \varphi(\sqrt{x}) \newline &=\varphi^{\prime}(u)(\sqrt{x})^{\prime} \newline &=\sin u^{2} \cdot \frac{1}{2 \sqrt{x}} \newline &=\frac{\sin x}{2 \sqrt{x}}
 > \end{align}
-> $$
+>  \end{align*}
 
 > [!note] 变上限积分求导 $=$ 被积函数上限处值 $\times$ 上限求导
 
@@ -531,29 +535,29 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 
 > 用洛必达 $\frac{0}{0}$, 不用等价无穷小
 > 
-> $$
+> \begin{align*} 
 > \begin{align}
 > \text{原式}&\overset{\frac{0}{0}}{=}\lim_{ x \to 0 } \dfrac{\sin \sqrt{ x^{2} } 2x}{x^{3}} \newline &= \lim_{ x \to 0 } \dfrac{2\sin x}{3x} \newline &= \frac{2}{3}
 > \end{align}
-> $$
+>  \end{align*}
 
 #### 原函数存在定理
 
-> [!theorem] 原函数存在定理 
+> [!theorem] <b class="md-tag">原函数存在定理</b> 
 > 若 $f \in C[a, b]$, 则 $f$ 存在原函数 $F(x)$, 且
 > 
-> $$
+> \begin{align*} 
 > F(x)=\int_{a}^{x} f(t) \mathrm{d} t+C
-> $$
+>  \end{align*}
 
 #### 微积分基本定理
 
-> [!theorem] 微积分基本定理
+> [!theorem] <b class="md-tag">微积分基本定理</b>
 > 设 $f \in C[a, b]$, 且 $F^{\prime}(x)=f(x)$, 则
 > 
-> $$
+> \begin{align*} 
 > \int_{a}^{b} f(x) \mathrm{d} x=\left.F(x)\right|_{a} ^{b}=F(b)-F(a)
-> $$
+>  \end{align*}
 
 > ***Proof***
 > 
@@ -569,9 +573,9 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 
 > 设 $f \in R[a, b], F \in C[a, b]$ 且 $F^{\prime}(x)=f(x), x \in(a, b)$ 则
 > 
-> $$
+> \begin{align*} 
 > \int_{a}^{b} f(t) \, dt = F(b) - F(a)
-> $$
+>  \end{align*}
 > 
 > （弱化在：$f$ 可积不一定连续）
 
@@ -581,11 +585,11 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 
 > ***Proof***
 > 
-> $$
+> \begin{align*} 
 > \begin{flalign}
 > & \forall \text { 取分割T: } a=x_{0}<x_{1}<\cdots<x_{n}=b \newline & \text { 差分得: } \newline & F(b)-F(a)=F\left(x_{n}\right)-F\left(x_{0}\right)=\sum_{i=1}^{n}\left[F\left(a_{i}\right) - F\left(a_{i-1}\right)\right] \newline & \text { 由Lagrange } \newline & \xlongequal{\exists \xi_{i} \in\left(x_{i+1}, x_{i}\right)} \sum_{i=1}^{n} F^{\prime}\left(\xi_{i}\right) \Delta x_{i} \newline & =\sum_{i=1}^{n} f\left(\xi_{i}\right)\Delta x_{i} \newline & \Rightarrow F(b)-F(a)=\lim _{\lvert\lvert T \rvert\rvert \to {0}} \sum_{i=1}^{n} f\left(\xi_{i}\right) \Delta x_{i}=\int_{a}^{b} f(x) d x &
 > \end{flalign}
-> $$
+>  \end{align*}
 
 > [!example]
 > Eg. $\displaystyle\int_{a}^{b} x^{2} d x=\left.\frac{x^{3}}{3}\right|_{a} ^{b}$
@@ -599,44 +603,44 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 
 > ***Solution***
 > 
-> $$
+> \begin{align*} 
 > \begin{flalign}
 > &\int_{0}^{2 \pi}|\sin x| \mathrm{d} x \newline & =\int_{0}^{\pi} \sin x d x-\int_{\pi}^{2\pi} \sin x d x \newline & =-\left.\cos x\right|_{0} ^{\pi}+\left.\cos x\right|_{\pi} ^{2 \pi} \newline & =2+2 \newline & =4 &
 > \end{flalign}
-> $$
+>  \end{align*}
 
 > [!example]
 > 例9 计算 $\displaystyle\int_{-1}^{1} \operatorname{sgn} x \mathrm{~d} x$
 
 > ***Analysis***
 > 
-> $$
+> \begin{align*} 
 > \begin{flalign}
 > & \text { 有第一类间断点 } \Rightarrow \text { 无导数 } \Rightarrow \text { 无原正数 } \newline & \Rightarrow \text { 分段 }&
 > \end{flalign}
-> $$
+>  \end{align*}
 > 
 > ***Proof***
 > 
-> $$
+> \begin{align*} 
 \begin{flalign}
 \text{原式}&= \int_{-1}^{0} \text{sgn}x \, dx + \int_{0}^{1} \text{sgn}x \, dx \\
 &= \int_{-1}^{0} -1 \, dx + \int_{0}^{1} 1 \, dx &\dots\text{改变有限点，不改变积分值}\\
 &= -1 + 1\\
 &= 0&
 \end{flalign}
-> $$
+>  \end{align*}
 
 > [!example]
 > 例10 计算 $\displaystyle\int_{0}^{1} \frac{x^{2}+1}{x^{4}+1} \mathrm{~d} x$
 
 > ***Solution***
 > 
-> $$
+> \begin{align*} 
 > \begin{flalign}
-> & =\int_{0}^{1} \frac{1+\frac{1}{x^{2}}}{x^{2}+\frac{1}{x^{2}}} d x \newline & =\int_{0}^{1} \frac{d\left(x-\frac{1}{x}\right)}{\left(x-\frac{1}{x}\right)^{2}+(\sqrt{2})^{2}} \newline & =\left.\frac{1}{\sqrt{x}} \arctan \frac{x-\frac{1}{x}}{\sqrt{2}}\right|_{0} ^{1}+c&
+> & =\int_{0}^{1} \frac{1+\frac{1}{x^{2}}}{x^{2}+\frac{1}{x^{2}}} d x \newline & =\int_{0}^{1} \frac{d\left(x-\frac{1}{x}\right)}{\left(x-\frac{1}{x}\right)^{2}+(\sqrt{2})^{2}} \newline & =\left.\frac{1}{\sqrt{2}} \arctan \frac{x-\frac{1}{x}}{\sqrt{2}}\right|_{0} ^{1}+c&
 > \end{flalign}
-> $$
+>  \end{align*}
 > 
 >  > [!tip] $0$ 处无意义: 补充极限
 > 
@@ -646,22 +650,22 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 
 > 且 $F^{\prime}(x)=\frac{x^{2}+1}{x^{4}+1}, x \in(0,1]$
 > 
-> $$
+> \begin{align*} 
 > \begin{flalign}
 > \therefore \text{原积分} &=\left.F(x)\right|_{0} ^{1}+C\newline &=\frac{\pi}{2 \sqrt{2}}&
 > \end{flalign}
-> $$
+>  \end{align*}
 
 > [!example]
-> $\int_{0}^{\pi} \frac{d x}{1+\cos ^{2} x}$
+> $\displaystyle\int_{0}^{\pi} \frac{d x}{1+\cos ^{2} x}$
 
 > ***Wrong Solution***
 > 
-> $$
+> \begin{align*} 
 > \begin{flalign}
 > &=\int_{0}^{\pi} \frac{\frac{1}{\cos ^{2} x} d x}{\frac{1}{\cos ^{2} x}+1}\newline &=\int_{0}^{\pi} \frac{d \tan x}{2+\tan ^{2} x}\newline &\textcolor{red}{ \neq\left. \frac{1}{\sqrt{2}} \arctan \frac{\tan x}{\sqrt{2}}\right|_{0}^{\pi}=0 }&
 > \end{flalign}
-> $$
+>  \end{align*}
 > 
 > > [!warning] 该函数在 $x=\frac{\pi}{2}$ 无意义
 > 
@@ -669,11 +673,13 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 
 > ***Correct Solution***
 > 
-> $$
-\begin{flalign}
-&= \int_{0}^{\pi/2} \dfrac{\mathrm{d}\tan x}{2+\tan ^{2}x}+ \int_{\frac{\pi}{2}}^{\pi} \dfrac{\mathrm{d}\tan x}{2+\tan ^{2} x}\\
-&=\frac{1}{\sqrt{ 2 }}\arctan \dfrac{\tan x}{\sqrt{ 2 }}|_{0}^{\pi/2}+\frac{1}{\sqrt{ 2 }}\arctan \dfrac{\tan x}{\sqrt{ 2 }}|_{\frac{\pi}{2}}^{\pi}\\
-&=\frac{1}{\sqrt{ 2 }}\left( \frac{\pi}{2}-0 \right)+\frac{1}{\sqrt{ 2 }}\left[0-\left( -\frac{\pi}{2} \right)\right]\\
-&=\frac{\pi}{\sqrt{ 2 }}&
-\end{flalign}
-$$\begin{align}  \end{align}
+> \begin{align*} 
+> \begin{flalign}
+> &= \int_{0}^{\pi/2} \dfrac{\mathrm{d}\tan x}{2+\tan ^{2}x}+ \int_{\frac{\pi}{2}}^{\pi} \dfrac{\mathrm{d}\tan x}{2+\tan ^{2} x}\newline &=\frac{1}{\sqrt{ 2 }}\arctan \dfrac{\tan x}{\sqrt{ 2 }}|_{0}^{\pi/2}+\frac{1}{\sqrt{ 2 }}\arctan \dfrac{\tan x}{\sqrt{ 2 }}|_{\frac{\pi}{2}}^{\pi}\newline &=\frac{1}{\sqrt{ 2 }}\left( \frac{\pi}{2}-0 \right)+\frac{1}{\sqrt{ 2 }}\left[0-\left( -\frac{\pi}{2} \right)\right]\newline &=\frac{\pi}{\sqrt{ 2 }}&
+> \end{flalign}
+>  \end{align*}
+
+### 六、定积分的计算
+
+> [!note] <b class="md-tag">换元积分法</b>
+> 
