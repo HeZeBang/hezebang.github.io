@@ -162,9 +162,7 @@ $[a, b] \leqslant$ Riemann 可积的函数集合
 > 
 > $$
 > \begin{flalign}
-> \left|\sum_{i=1}^{n} f\left(\xi_{i}\right) \Delta x_{i}-I\right|&=\left|f\left(\xi_{n}\right) \Delta x_{n}+\sum_{i=1}^{n-1} f\left(\xi_{i}\right) \Delta x_{i}-I\right| \\
-> &\geqslant\left|f\left(\xi_{n}\right)\right| \Delta x_{n}-\left|\sum_{i=1}^{n-n} f\left(\xi_{i}\right) \Delta \alpha_{i} \cdot I\right| \\
-> &\geqslant \varepsilon \ldots 取~\color{orange} \varepsilon_{0}=1&
+> \left|\sum_{i=1}^{n} f\left(\xi_{i}\right) \Delta x_{i}-I\right|&=\left|f\left(\xi_{n}\right) \Delta x_{n}+\sum_{i=1}^{n-1} f\left(\xi_{i}\right) \Delta x_{i}-I\right| \newline &\geqslant\left|f\left(\xi_{n}\right)\right| \Delta x_{n}-\left|\sum_{i=1}^{n-n} f\left(\xi_{i}\right) \Delta \alpha_{i} \cdot I\right| \newline &\geqslant \varepsilon \ldots 取~\color{orange} \varepsilon_{0}=1&
 > \end{flalign}
 > $$
 > 
@@ -210,11 +208,7 @@ $[a, b] \leqslant$ Riemann 可积的函数集合
 > 则
 > $$
 > \begin{flalign}
-> \sum\limits_{k=1}^{n} x_{k}^{2} \cdot h & =\sum_{k=1}^{n}(a+k h)^{2} h \\
-> & =h \sum_{k=1}^{n}\left(a^{2}+2 a k h+k^{2} h^{2}\right) \\
-> & =n a^{2} h+2 a h^{2} \cdot \frac{n(n+1)}{2}+h^{3} \frac{n(n+1)(2 n+1)}{6} \\
-> & =a^{2}(b-a)+a \cdot \frac{n(n+1)}{n^{2}}(b-a)^{2}+\frac{(n+1)(2 n+1)}{6 n^{3}}(b-a)^{3} \\
-> & \xrightarrow{n \rightarrow \infty}a^{2}(b-a)+a(b-a)^{2}+\frac{1}{3}(b-a)^{3}\\&= \frac{1}{3}\left(b^{3}-a^{3}\right)&
+> \sum\limits_{k=1}^{n} x_{k}^{2} \cdot h & =\sum_{k=1}^{n}(a+k h)^{2} h \newline & =h \sum_{k=1}^{n}\left(a^{2}+2 a k h+k^{2} h^{2}\right) \newline & =n a^{2} h+2 a h^{2} \cdot \frac{n(n+1)}{2}+h^{3} \frac{n(n+1)(2 n+1)}{6} \newline & =a^{2}(b-a)+a \cdot \frac{n(n+1)}{n^{2}}(b-a)^{2}+\frac{(n+1)(2 n+1)}{6 n^{3}}(b-a)^{3} \newline & \xrightarrow{n \rightarrow \infty}a^{2}(b-a)+a(b-a)^{2}+\frac{1}{3}(b-a)^{3}\\&= \frac{1}{3}\left(b^{3}-a^{3}\right)&
 > \end{flalign}
 > $$
 > 
@@ -230,10 +224,7 @@ $[a, b] \leqslant$ Riemann 可积的函数集合
 > 
 > $$
 > \begin{flalign}
-> &\forall T \quad \forall \xi(T)\\
-> & 0 \leq \sum_{i=1}^{n} J\left(\xi_{i}\right) \Delta x_{i} \leq \textcolor{orange}{2}\|T\| \rightarrow 0 \\
-> & \text { c可能在分界点中: 至多\textcolor{orange}{两}项 } \\
-> & \text { 故: } \int_{a}^{b} J(x) d x=0&
+> &\forall T \quad \forall \xi(T)\newline & 0 \leq \sum_{i=1}^{n} J\left(\xi_{i}\right) \Delta x_{i} \leq \textcolor{orange}{2}\|T\| \rightarrow 0 \newline & \text { c可能在分界点中: 至多\textcolor{orange}{两}项 } \newline & \text { 故: } \int_{a}^{b} J(x) d x=0&
 > \end{flalign}
 > $$
 
@@ -250,8 +241,7 @@ $[a, b] \leqslant$ Riemann 可积的函数集合
 > $\xrightarrow{a\quad x_{i-1}\quad x_{i} \quad b}$ = $\xrightarrow{b\quad x_{i}\quad x_{i-1} \quad a}$
 > $$
 > \begin{aligned}
-> & \int_{a}^{b} {{f}(x) d x=\lim _{\| T\|\rightarrow 1} \sum_{i=1}^{n}} f\left(\xi_{i}\right)\left(x_{i}-x_{i-1}\right) \\
-> & \int_{b}^{a} f(x) d x=\lim _{\| T\| \rightarrow 0} \sum_{i=1}^{n} f\left(\xi_{i}\right)\left(x_{i-1}-x_{i}\right)
+> & \int_{a}^{b} {{f}(x) d x=\lim _{\| T\|\rightarrow 1} \sum_{i=1}^{n}} f\left(\xi_{i}\right)\left(x_{i}-x_{i-1}\right) \newline & \int_{b}^{a} f(x) d x=\lim _{\| T\| \rightarrow 0} \sum_{i=1}^{n} f\left(\xi_{i}\right)\left(x_{i-1}-x_{i}\right)
 > \end{aligned}
 > $$
 
@@ -324,9 +314,7 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > ***Proof***
 > $$
 > \begin{flalign}
-> \text { 令 } &F(x)=g(x)-f(x) \geqslant 0 \text {. 且FeR[a,b] } \\
-> \text { 故 } &\int_{a}^{b} F(x)=\int_{a}^{b} g(x)-\int_{a}^{b} f(x) \geqslant 0 \\
-> \therefore &\int_{a}^{b} f(x) \mathrm d x \leq \int_{a}^{b} g(x) \mathrm d x&
+> \text { 令 } &F(x)=g(x)-f(x) \geqslant 0 \text {. 且FeR[a,b] } \newline \text { 故 } &\int_{a}^{b} F(x)=\int_{a}^{b} g(x)-\int_{a}^{b} f(x) \geqslant 0 \newline \therefore &\int_{a}^{b} f(x) \mathrm d x \leq \int_{a}^{b} g(x) \mathrm d x&
 > \end{flalign}
 > $$
 
@@ -374,11 +362,7 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > **反例如下:**
 > $$
 > \begin{flalign}
-> &f(x)=D(x)-\frac{1}{2}= \begin{cases}\frac{1}{2} & , D \in \mathbb{Q} \\
-> -\frac{1}{2} & , D \in \mathbb{Q}^{c}\end{cases} \\
-> &D(x) \notin R[a, b] \\
-> &\quad \Rightarrow f(x) \notin R[a, b]\\
-> &\text { 但 }|f(x)|=\frac{1}{2}&
+> &f(x)=D(x)-\frac{1}{2}= \begin{cases}\frac{1}{2} & , D \in \mathbb{Q} \newline -\frac{1}{2} & , D \in \mathbb{Q}^{c}\end{cases} \newline &D(x) \notin R[a, b] \newline &\quad \Rightarrow f(x) \notin R[a, b]\newline &\text { 但 }|f(x)|=\frac{1}{2}&
 > \end{flalign}
 > $$
 
@@ -406,8 +390,7 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 由 <b class="md-tag">积分/估值性</b> 
 > $$
 > \begin{aligned}
-> M(b-a) & \leq \int_{a}^{b} f(x) d x \leq M(b-a) . \\
-> \therefore \quad M & =\frac{\int_{a}^{b} f(x) d x}{b-a} \leq M
+> M(b-a) & \leq \int_{a}^{b} f(x) d x \leq M(b-a) . \newline \therefore \quad M & =\frac{\int_{a}^{b} f(x) d x}{b-a} \leq M
 > \end{aligned}
 > $$
 > 
@@ -442,18 +425,14 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > $\forall \alpha \in[a, b]$ 给 $\Delta x \neq 0$, 则
 > $$
 > \begin{align}
-> \Delta \varphi &=\varphi(x+\Delta x)-\varphi(x) \\
-> &=\int_{a}^{x+\Delta x} f(t) d t-\int_{a}^{x} f(t) d t \\
-> &=\int_{x}^{\alpha+\Delta x} f(t) d t
+> \Delta \varphi &=\varphi(x+\Delta x)-\varphi(x) \newline &=\int_{a}^{x+\Delta x} f(t) d t-\int_{a}^{x} f(t) d t \newline &=\int_{x}^{\alpha+\Delta x} f(t) d t
 > \end{align}
 > $$
 > 
 > $$
 > \begin{align}
 > \Rightarrow|\Delta \varphi|&=\left|\int_{x}^{x+\Delta x} f(t) d t\right|
-> \leq\left|\int_{x}^{x+\Delta x}\right| f(t)|d t| \\
-> &\leq \mu|\sigma x| \\
-> &\xrightarrow{\Delta x \rightarrow 0} 0
+> \leq\left|\int_{x}^{x+\Delta x}\right| f(t)|d t| \newline &\leq \mu|\sigma x| \newline &\xrightarrow{\Delta x \rightarrow 0} 0
 > \end{align}
 > $$
 > 
@@ -477,11 +456,7 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 
 > $$
 > \begin{align}
-> & \dfrac{\varphi(x)-\varphi(x_{0})}{x-x_{0}} - f(x_{0})\\
-> =& \dfrac{\int_{a}^{x} f(t) \, dt - \int_{a}^{x_{0}} f(t) \, dt }{x-x_{0}}-f(x_{0}) \\
-> =& \dfrac{\int_{x_{0}}^{x} f(t) \, dt -(x-x_{0})f(x_{0})}{x-x_{0}} \\
-> =& \dfrac{\int_{x_{0}}^{x} f(t) \, dt -\int_{x_{0}}^{x} f(x_{0}) \, dt }{x-x_{0}} \\
-> =& \dfrac{\int_{x_{0}}^{x} [f(t)-f(x_{0})] \, dt }{x-x_{0}}
+> & \dfrac{\varphi(x)-\varphi(x_{0})}{x-x_{0}} - f(x_{0})\newline =& \dfrac{\int_{a}^{x} f(t) \, dt - \int_{a}^{x_{0}} f(t) \, dt }{x-x_{0}}-f(x_{0}) \newline =& \dfrac{\int_{x_{0}}^{x} f(t) \, dt -(x-x_{0})f(x_{0})}{x-x_{0}} \newline =& \dfrac{\int_{x_{0}}^{x} f(t) \, dt -\int_{x_{0}}^{x} f(x_{0}) \, dt }{x-x_{0}} \newline =& \dfrac{\int_{x_{0}}^{x} [f(t)-f(x_{0})] \, dt }{x-x_{0}}
 > \end{align}
 > $$
 > 
@@ -505,15 +480,10 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 
 > $$
 > \begin{align}
-> &\left|\frac{\varphi\left(x\right)-\varphi\left(x_{0}\right)}{x-x_{0}}-f\left(x_{0}\right)\right|\\
-> 
-> & =\frac{\left|\int_{x_{0}}^{x}\left[f(t)-f\left(x_{0}\right)\right] d t\right|}{\left|x-x_{0}\right|}\\
-> 
-> & \leq \frac{\left|\int_{x_{0}}^{x}\right| f(t)-f\left(x_{0}\right)|d t|}{\left|x-x_{0}\right|}\\
-> 
-> &\leq \frac{\varepsilon\left|x-x_{0}\right|}{\left|x-x_{0}\right|} \\
->  \\
-> &=\varepsilon
+> &\left|\frac{\varphi\left(x\right)-\varphi\left(x_{0}\right)}{x-x_{0}}-f\left(x_{0}\right)\right|\newline 
+> & =\frac{\left|\int_{x_{0}}^{x}\left[f(t)-f\left(x_{0}\right)\right] d t\right|}{\left|x-x_{0}\right|}\newline 
+> & \leq \frac{\left|\int_{x_{0}}^{x}\right| f(t)-f\left(x_{0}\right)|d t|}{\left|x-x_{0}\right|}\newline 
+> &\leq \frac{\varepsilon\left|x-x_{0}\right|}{\left|x-x_{0}\right|} \newline  \newline &=\varepsilon
 > \end{align}
 > $$
  
@@ -538,9 +508,7 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 
 > $$
 > \begin{align}
-> \text{原式}&=\frac{d}{d x} \times \int_{a}^{x} \cos t d t \\
-> &=\int_{a}^{x} \cos t d t+x \frac{d}{d x} \int_{a}^{x} \cos t d t \\
-> &=\int_{a}^{x} \cos t d t+x \cdot \cos x
+> \text{原式}&=\frac{d}{d x} \times \int_{a}^{x} \cos t d t \newline &=\int_{a}^{x} \cos t d t+x \frac{d}{d x} \int_{a}^{x} \cos t d t \newline &=\int_{a}^{x} \cos t d t+x \cdot \cos x
 > \end{align}
 > $$
 
@@ -553,10 +521,7 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 
 > $$
 > \begin{align}
-> \text{原式}&=\frac{d}{d x} \varphi(\sqrt{x}) \\
-> &=\varphi^{\prime}(u)(\sqrt{x})^{\prime} \\
-> &=\sin u^{2} \cdot \frac{1}{2 \sqrt{x}} \\
-> &=\frac{\sin x}{2 \sqrt{x}}
+> \text{原式}&=\frac{d}{d x} \varphi(\sqrt{x}) \newline &=\varphi^{\prime}(u)(\sqrt{x})^{\prime} \newline &=\sin u^{2} \cdot \frac{1}{2 \sqrt{x}} \newline &=\frac{\sin x}{2 \sqrt{x}}
 > \end{align}
 > $$
 
@@ -569,9 +534,7 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 
 > $$
 > \begin{align}
-> \text{原式}&\overset{\frac{0}{0}}{=}\lim_{ x \to 0 } \dfrac{\sin \sqrt{ x^{2} } 2x}{x^{3}} \\
-> &= \lim_{ x \to 0 } \dfrac{2\sin x}{3x} \\
-> &= \frac{2}{3}
+> \text{原式}&\overset{\frac{0}{0}}{=}\lim_{ x \to 0 } \dfrac{\sin \sqrt{ x^{2} } 2x}{x^{3}} \newline &= \lim_{ x \to 0 } \dfrac{2\sin x}{3x} \newline &= \frac{2}{3}
 > \end{align}
 > $$
 
@@ -621,13 +584,7 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 
 > $$
 > \begin{flalign}
-> & \forall \text { 取分割T: } a=x_{0}<x_{1}<\cdots<x_{n}=b \\
-> & \text { 差分得: } \\
-> & F(b)-F(a)=F\left(x_{n}\right)-F\left(x_{0}\right)=\sum_{i=1}^{n}\left[F\left(a_{i}\right) - F\left(a_{i-1}\right)\right] \\
-> & \text { 由Lagrange } \\
-> & \xlongequal{\exists \xi_{i} \in\left(x_{i+1}, x_{i}\right)} \sum_{i=1}^{n} F^{\prime}\left(\xi_{i}\right) \Delta x_{i} \\
-> & =\sum_{i=1}^{n} f\left(\xi_{i}\right)\Delta x_{i} \\
-> & \Rightarrow F(b)-F(a)=\lim _{\lvert\lvert T \rvert\rvert \to {0}} \sum_{i=1}^{n} f\left(\xi_{i}\right) \Delta x_{i}=\int_{a}^{b} f(x) d x &
+> & \forall \text { 取分割T: } a=x_{0}<x_{1}<\cdots<x_{n}=b \newline & \text { 差分得: } \newline & F(b)-F(a)=F\left(x_{n}\right)-F\left(x_{0}\right)=\sum_{i=1}^{n}\left[F\left(a_{i}\right) - F\left(a_{i-1}\right)\right] \newline & \text { 由Lagrange } \newline & \xlongequal{\exists \xi_{i} \in\left(x_{i+1}, x_{i}\right)} \sum_{i=1}^{n} F^{\prime}\left(\xi_{i}\right) \Delta x_{i} \newline & =\sum_{i=1}^{n} f\left(\xi_{i}\right)\Delta x_{i} \newline & \Rightarrow F(b)-F(a)=\lim _{\lvert\lvert T \rvert\rvert \to {0}} \sum_{i=1}^{n} f\left(\xi_{i}\right) \Delta x_{i}=\int_{a}^{b} f(x) d x &
 > \end{flalign}
 > $$
 
@@ -645,11 +602,7 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 
 > $$
 > \begin{flalign}
-> &\int_{0}^{2 \pi}|\sin x| \mathrm{d} x \\
-> & =\int_{0}^{\pi} \sin x d x-\int_{\pi}^{2\pi} \sin x d x \\
-> & =-\left.\cos x\right|_{0} ^{\pi}+\left.\cos x\right|_{\pi} ^{2 \pi} \\
-> & =2+2 \\
-> & =4 &
+> &\int_{0}^{2 \pi}|\sin x| \mathrm{d} x \newline & =\int_{0}^{\pi} \sin x d x-\int_{\pi}^{2\pi} \sin x d x \newline & =-\left.\cos x\right|_{0} ^{\pi}+\left.\cos x\right|_{\pi} ^{2 \pi} \newline & =2+2 \newline & =4 &
 > \end{flalign}
 > $$
 
@@ -660,8 +613,7 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 
 > $$
 > \begin{flalign}
-> & \text { 有第一类间断点 } \Rightarrow \text { 无导数 } \Rightarrow \text { 无原正数 } \\
-> & \Rightarrow \text { 分段 }&
+> & \text { 有第一类间断点 } \Rightarrow \text { 无导数 } \Rightarrow \text { 无原正数 } \newline & \Rightarrow \text { 分段 }&
 > \end{flalign}
 > $$
 > 
@@ -683,9 +635,7 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 
 > $$
 > \begin{flalign}
-> & =\int_{0}^{1} \frac{1+\frac{1}{x^{2}}}{x^{2}+\frac{1}{x^{2}}} d x \\
-> & =\int_{0}^{1} \frac{d\left(x-\frac{1}{x}\right)}{\left(x-\frac{1}{x}\right)^{2}+(\sqrt{2})^{2}} \\
-> & =\left.\frac{1}{\sqrt{x}} \arctan \frac{x-\frac{1}{x}}{\sqrt{2}}\right|_{0} ^{1}+c&
+> & =\int_{0}^{1} \frac{1+\frac{1}{x^{2}}}{x^{2}+\frac{1}{x^{2}}} d x \newline & =\int_{0}^{1} \frac{d\left(x-\frac{1}{x}\right)}{\left(x-\frac{1}{x}\right)^{2}+(\sqrt{2})^{2}} \newline & =\left.\frac{1}{\sqrt{x}} \arctan \frac{x-\frac{1}{x}}{\sqrt{2}}\right|_{0} ^{1}+c&
 > \end{flalign}
 > $$
 > 
@@ -699,8 +649,7 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 
 > $$
 > \begin{flalign}
-> \therefore \text{原积分} &=\left.F(x)\right|_{0} ^{1}+C\\
-> &=\frac{\pi}{2 \sqrt{2}}&
+> \therefore \text{原积分} &=\left.F(x)\right|_{0} ^{1}+C\newline &=\frac{\pi}{2 \sqrt{2}}&
 > \end{flalign}
 > $$
 
@@ -711,9 +660,7 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > 
 > $$
 > \begin{flalign}
-> &=\int_{0}^{\pi} \frac{\frac{1}{\cos ^{2} x} d x}{\frac{1}{\cos ^{2} x}+1}\\
-> &=\int_{0}^{\pi} \frac{d \tan x}{2+\tan ^{2} x}\\
-> &\textcolor{red}{ \neq\left. \frac{1}{\sqrt{2}} \arctan \frac{\tan x}{\sqrt{2}}\right|_{0}^{\pi}=0 }&
+> &=\int_{0}^{\pi} \frac{\frac{1}{\cos ^{2} x} d x}{\frac{1}{\cos ^{2} x}+1}\newline &=\int_{0}^{\pi} \frac{d \tan x}{2+\tan ^{2} x}\newline &\textcolor{red}{ \neq\left. \frac{1}{\sqrt{2}} \arctan \frac{\tan x}{\sqrt{2}}\right|_{0}^{\pi}=0 }&
 > \end{flalign}
 > $$
 > 
