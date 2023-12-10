@@ -20,7 +20,7 @@ $\forall \xi_{\mathrm{i}} \in\left[x_{i-1}, x_{i}\right]$,第 $i$ 个小曲边�
 \begin{align*} 
 A=\sum_{i=1}^{n} \Delta S_{i} \approx \sum_{i=1}^{n} f\left(\xi_{i}\right) \Delta x_{i}
  \end{align*}
-![200](../../res/2023_11_30_371e33ffbe2119eb668cg-1.jpg)
+![200](../res/2023_11_30_371e33ffbe2119eb668cg-1.jpg)
 
 - **(3) 取极限**
 记 $\|T\|=\max _{1 \leq i \leq n} \Delta x_{i}$, 则曲边梯形面积
@@ -51,7 +51,7 @@ s=\lim _{\|T\| \rightarrow 0} \sum_{i=1}^{n} v\left(\xi_{i}\right) \Delta t_{i}
 > 设一个线密度为 $\ln x$ 的木棒，
 > 计算木棒质量?
 
-> ![250](../../res/2023_11_30_371e33ffbe2119eb668cg-1%201.jpg)
+> ![250](../res/2023_11_30_371e33ffbe2119eb668cg-1%201.jpg)
 
 #### 定积分
 
@@ -353,7 +353,7 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 > -\int_{a}^{b}|f(x)| d x \leqslant \int_{a}^{b} f(x) d x \leqslant \int_{a}^{b}|f(x)| d x
 >  \end{align*}
 
-![300](../../res/2023_11_30_371e33ffbe2119eb668cg-5.jpg)
+![300](../res/2023_11_30_371e33ffbe2119eb668cg-5.jpg)
 
 > [!question]
 > 由$|f| \in R[a, b]$ 能否导出 $f \in R[a, b]$ ?
@@ -657,6 +657,7 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 >  \end{align*}
 
 > [!example]
+> 
 > $\displaystyle\int_{0}^{\pi} \frac{d x}{1+\cos ^{2} x}$
 
 > ***Wrong Solution***
@@ -683,3 +684,57 @@ $\Rightarrow$ 改变有限点不改变可积性一S积分值
 
 > [!note] <b class="md-tag">换元积分法</b>
 > 
+> 设 $f \in C[a,b],~x=\varphi(t)\in C^{(1)}[\alpha,\beta]\textcolor{orange}{ (\text{或}[\beta,\alpha]) },~$且$\varphi(\alpha)=a,\varphi(\beta)=b,~则,$
+> 
+> \begin{align*} 
+> \int_{a}^{b} f(x) \, dx = \int_{\alpha}^{\beta} f(\varphi(t))\varphi'(t) \, dt 
+>  \end{align*}
+
+- $x$积分的上，下限与$t$积分的上下限由$x=\varphi(t)$对应
+
+> ***Proof***
+> 
+> \begin{align*} 
+> \begin{flalign}
+> &\text{设 } F'(x)=f(x),~\text{则 } \int_{a}^{b} f(x) \, dx =F(b)-F(a)&\newline & \text{而 } \int f(\varphi(t))\varphi'(t) \, dt = \int f(\varphi(t)) \, d\varphi(t) = F(\varphi(t))+C\newline & \text{故 } \int_{a}^{b} f(\varphi(t))\varphi'(t) \, dt = F[\varphi(t)]\Big|_{a}^{b}=F(b)-F(a)
+> \end{flalign}
+>  \end{align*}
+
+##### 例题
+
+> [!example]
+> 
+> 例题11 计算 $\displaystyle \int_{0}^{a} \sqrt{ a^{2}-x^{2} } \, dx\quad(a>0)$
+
+> ***Solution***
+> 1. 几何法
+> 
+> $S=\frac{\pi}{4}a^{2}$
+> 
+> 2. 代数法： <b class="md-tag">三角代换</b> 
+> 
+> \begin{align*} 
+> \begin{flalign}
+> \text{令 } x&=a\sin t\newline \text{原式 } &= \int_{0}^{\textcolor{orange}{ \pi/2 }} \sqrt{ a^{2}-a^{2}\sin ^{2}t } \cdot a\cos t\, dt & \textcolor{orange}{ \text{设为 } \frac{pi}{2}\text{ 不用加绝对值}  }\newline & = a^{2}\int_{0}^{\pi/2}\cos ^{2}t  \, dt\newline &= \frac{a^{2}}{2} \int_{0}^{\pi/2} (1+\cos 2t) \, dt & \text{运用降幂公式} \newline &=\frac{\pi}{4}a^{2}+a^{2} \frac{\sin 2t}{4}\Big|_{0}^{\pi/2}\newline &= \frac{\pi}{4} a^{2}
+> \end{flalign}
+>  \end{align*}
+
+> [!example]
+> 
+> 设 $f$ 连续且 $f(x)=\sin 2x + \int_{0}^{\pi/2} f(x) \, dx$
+
+***Analysis***
+
+$f(x)=\sin 2x + \underbrace{ \int_{0}^{\pi/2} f(x) \, dx }_{ \text{一个常数} }$
+
+***Solution***
+
+\begin{align*} 
+\begin{flalign}
+&\text{令 } \int_{0}^{\pi/2} f(x) \, dx =A& \\
+&\text{则 } f(x)=\sin 2x + A\\
+&\text{两边积分得到 } \\
+&\int_{0}^{\pi/2} f(x) \, dx \\
+&= 
+\end{flalign}
+ \end{align*}
