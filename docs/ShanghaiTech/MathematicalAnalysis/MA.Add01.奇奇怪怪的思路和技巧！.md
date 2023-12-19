@@ -81,25 +81,25 @@ $\lim \sqrt[n]{n}=1\quad(n>1)$
 
 ## 绝对值不等式
 
-\begin{align*} 
+$$
 |a+b|\leq |a|+|b|,\ 当a,b同号
- \end{align*}
+$$
 
 推广：
 
-\begin{align*} 
+$$
 |a_{1}+a_{2}+\dots+a_{n}|\leq|a_1|+\dots|a_{n}|,\ 当a_{i}同号
- \end{align*}
+$$
 
-\begin{align*} 
+$$
 ||a|-|b|| \leq |a-b| \leq |a| + |b|
- \end{align*}
+$$
 
 即 
 
-\begin{align*} 
+$$
 |两边之差| \leq 第三边 \leq 两边之和
- \end{align*}
+$$
 
 两边之差小于第三边 + 两边之和大于第三边
 
@@ -175,7 +175,7 @@ $< \varepsilon$
 $\lim a_{n}^{m}=a^{m},\ (a>0,m\in\mathbb{N}_{+})$
 
 **证明：**
-$|\sqrt[3] {a_{n}}-\sqrt[3] a|=\dfrac{|a_{n}-a|}{\sqrt[3]{a_{n}}+\sqrt[3] a}\begin{align*} <\dfrac{|a_{n}-a|}{a_{n}^\frac23+a_{n}^\frac13a^\frac13+a^\frac23}<\dfrac{|a_{n}-a|}{a^\frac23}$
+$|\sqrt[3] {a_{n}}-\sqrt[3] a|=\dfrac{|a_{n}-a|}{\sqrt[3]{a_{n}}+\sqrt[3] a}$$<\dfrac{|a_{n}-a|}{a_{n}^\frac23+a_{n}^\frac13a^\frac13+a^\frac23}<\dfrac{|a_{n}-a|}{a^\frac23}$
 
 $a_{n}^\frac13a^\frac13$可以存在运用了 <b class="md-tag">收敛数列保号性</b> 
 
@@ -194,7 +194,7 @@ $\begin{aligned} a^n-b^n &=b^n\Big[(\frac{a}{b})^n-1\Big]\\ &=b^n\Big(\frac{a}{b
 
 ## <b class="md-tag">实数公理</b> -> <b class="md-tag">确界原理</b>
 
- \end{align*}
+$$
 \begin{align*}
 &令\ Y=\{y|y \geq x, \forall x \in X\}\\
 &\quad 则\ M \in Y,\ 且\forall x \in X,\ y\in Y\ 有x \leq Y\\
@@ -210,7 +210,7 @@ $\begin{aligned} a^n-b^n &=b^n\Big[(\frac{a}{b})^n-1\Big]\\ &=b^n\Big(\frac{a}{b
 &\quad\therefore a-\varepsilon不为X上界\\
 &\quad\therefore \forall \varepsilon>0,\ \exists x_\varepsilon \in X,\ 使得\ a-\varepsilon<x_\varepsilon&②最小
 \end{align*}
-\begin{align*} 
+$$
 
 ## <b class="md-tag">调和级数</b>
 
@@ -224,11 +224,11 @@ $\begin{aligned} a^n-b^n &=b^n\Big[(\frac{a}{b})^n-1\Big]\\ &=b^n\Big(\frac{a}{b
 
 例题：证明 $\lim\limits_{x \to x_{0}}\cos x=\cos x_{0}$
 
-**证：**  \end{align*}\begin{aligned}\left| \cos x-\cos x_{0}\right| &=\left| -2\times \sin \dfrac{x-x_{0}}{2}\times \sin \dfrac{x+x_{0}}{2}\right| \\
+**证：** $$\begin{aligned}\left| \cos x-\cos x_{0}\right| &=\left| -2\times \sin \dfrac{x-x_{0}}{2}\times \sin \dfrac{x+x_{0}}{2}\right| \\
 &\leq 2\times \left| \sin \dfrac{x-x_{0}}{2}\right| \\
 &\leq 2\times \left| \dfrac{x-x_{0}}{2}\right| \\
 &=\left| x-x_{0}\right|<\varepsilon 
-\end{aligned}\begin{align*} 
+\end{aligned}$$
 $\therefore \forall\varepsilon>0,\ \exists\delta>0:\ |x-x_{0}|<\delta\Rightarrow\cdots$
 
 ## $e$ $\gamma$
@@ -361,7 +361,7 @@ $\therefore \forall\varepsilon>0,\ \exists\delta>0:\ |x-x_{0}|<\delta\Rightarrow
 
 ### 如何定义一个开集
 
- \end{align*}\begin{align*}
+$$\begin{align*}
 我们称x为集合A的一个内点\\
 \exists \delta > 0, C(x,\delta)\subset A\quad(O(x,\delta)\overset{\Delta}{=}\left\{y\;|\;||x-y||<\delta\right\})\\
 开集合：只含有内点的集合称为开集\\
@@ -371,14 +371,14 @@ a\in[a,b]\\
 \\\\
 (0,1)\bigcup_{n=1}^\infty(0,\dfrac1n)
 \end{align*}
-\begin{align*} 
+$$
 
 线性空间满足八条原则
 
 ### 什么是数域？
 
 ### 什么是拓扑空间？
- \end{align*}
+$$
 \begin{align*}
 设X为一个集合,F为x的幂集的子集（所有子集的集合）\\
 若：\\
@@ -387,7 +387,7 @@ a\in[a,b]\\
 \forall U_\alpha \in F, \alpha \in I,其中I为指标集,都有\bigcup_{\alpha\in I}U_{\alpha}\in F\\
 则称F为一个拓扑空间
 \end{align*}
-\begin{align*} 
+$$
 
 ### 势
 
@@ -421,10 +421,10 @@ $存在\xi\in[a,b],使得f(\xi)=\xi(即为[a,b]中的不动点)$
 
 ***Solution:***
 > <b class="md-tag">添项</b> 
->  \end{align*}\begin{align*}
+> $$\begin{align*}
 \dfrac{f(\beta_{n})-f(\alpha_{n})}{\beta_{n}-\alpha_{n}}&=\dfrac{f(\beta_{n})-f(x_{0})+f(x_{0})-f(\alpha_{n})}{\beta_{n}-\alpha_{n}}\\
 &=\dfrac{\beta_0-x_0}{\beta_n-\alpha_n}\dfrac{f(\beta_{n})-f(x_0)}{\beta_{n}-x_{0}}\\&\quad-\dfrac{f(\beta_{n})-f(\alpha_{n})}{\beta_{n}-\alpha_{n}}\dfrac{f(\beta_{n})-f(\alpha_{n})}{\beta_{n}-\alpha_{n}}
-\end{align*}\begin{align*} 
+\end{align*}$$
 
 > [!example]
 > $设f(x),g(x),h(x)\in C[a,b]\cap D[a,b],试证$
@@ -435,7 +435,7 @@ $存在\xi\in[a,b],使得f(\xi)=\xi(即为[a,b]中的不动点)$
 
 > [!example]
 > $\bigstar设f(x)在[a,b]上连续,且f(a)=f(b),证明:$
->  \end{align*}M(x)=\sup\limits_{a \leq t \leq x}f(t),~m(x)=\inf\limits_{a \leq t \leq x} f(t)$$
+> $$M(x)=\sup\limits_{a \leq t \leq x}f(t),~m(x)=\inf\limits_{a \leq t \leq x} f(t)$$
 > $在[a,b]上连续$
 
 ### 一些常考 Theorem
