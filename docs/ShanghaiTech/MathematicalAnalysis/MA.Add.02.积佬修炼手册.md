@@ -61,27 +61,27 @@ share: true
 > 
 > ***Solution***
 > 
-> \begin{align*} 
+> $$
 > \begin{flalign}
 > &\text{Assuming } a>0\newline &=\frac{1}{a^{2}}\int \frac{1}{1+\left( \frac{x}{a} \right)^{2} } \, dx \newline &=\frac{1}{a}\int \dfrac{\left( \frac{x}{a} \right)}{1+\left( \frac{x}{a} \right)^{2}}+C 
 > \end{flalign}
->  \end{align*}
+> $$
 
 ### $\int \frac{1}{x^{2}-a^{2}} \, dx$
 
 > ***Tips*** **∓** 
 > 
-> \begin{align*} 
+> $$
 > {\text{凑2a}\implies} \frac{1}{x-a}-\frac{1}{x+a}\implies \dfrac{x-a}{x+a}
->  \end{align*}
+> $$
 > 
 > ***Solution***
 > 
-> \begin{align*} 
+> $$
 > \begin{flalign}
 > &\text{Assuming } a\neq 0\newline &= \int \dfrac{1}{(x+a)(x-a)} \, dx \newline &= \frac{1}{2a}\left( \int \frac{1}{x-a} \, dx - \int \frac{1}{x+a} \, dx  \right)\newline &=\frac{1}{2a}\left( \ln|x-a|-\ln|x+a| \right)+C\newline &=\frac{1}{2a}\ln \left| \dfrac{x-a}{x+a} \right| +C
 > \end{flalign}
->  \end{align*}
+> $$
 
 ### $\int \frac{1}{\sqrt{ a^{2}-x^{2} }} \, dx$
 
@@ -94,10 +94,10 @@ share: true
 > ***Solution***
 > 类似 $\int \frac{1}{x^2+a^2} \, dx$
 > 
-> \begin{align*} 
+> $$
 > \begin{flalign}\newline &\text{Assuming } a>0\newline &\int \frac{1}{\sqrt{ a^{2}-x^{2} }}\newline &= \frac{1}{a}\int \frac{1}{\sqrt{ 1-\left( \frac{x}{a} \right)^{2} }} \, dx\newline &=\int \frac{1}{\sqrt{ 1-\left( \frac{x}{a} \right)^{2} }} \, d\left( \frac{x}{a} \right)\newline &=\arcsin\left( \frac{x}{a} \right)+C
 > \end{flalign}
->  \end{align*}
+> $$
 
 ### $\int \frac{1}{\sqrt{ x^{2}\pm a^{2} }} \, dx$
 
@@ -113,11 +113,11 @@ share: true
 > 
 > ***Solution***
 > 
-> \begin{align*} 
+> $$
 > \begin{flalign}
 > &\int \frac{1}{\sqrt{ x^{2}-a^{2} }} \, dx \newline &\xlongequal{ x=a\sec t }\int \frac{1}{a\tan t} \, d\left( a\sec t \right) & 0 < t < \frac{\pi}{2}\newline &=\int \frac{1}{\tan t} t \, d\sec t\newline &=\int \frac{1}{\tan t} \sec t\tan t\, dt \newline &=\int \sec t \, dt \newline &=\ln|\sec t+\tan t| + C\newline &=\ln\left| \frac{x}{a} + \dfrac{\sqrt{ x^{2}-a^{2} }}{a}\right| + C & \bigstar \text{ 还原}
 > \end{flalign}
->  \end{align*}
+> $$
 
 #### $\int \frac{1}{\sqrt{ x^{2} + a^{2} }} \, dx$
 
@@ -131,55 +131,55 @@ share: true
 > 
 > ***Solution***
 > 
-> \begin{align*} 
+> $$
 > \begin{flalign}
 > &\int \frac{1}{\sqrt{ x^{2} + a^{2} }} \, dx\newline &\xlongequal{ x=a \tan t } \int \frac{1}{a\sec t} \, d(a\tan t)\newline &=\int \frac{1}{\sec t}\sec ^{2}t \, dx \newline &=\int \sec t \, dt \newline &\text{同上}\newline &=\ln\left| \frac{x}{a} + \dfrac{\sqrt{ x^{2}+a^{2} }}{a}\right| + C & \bigstar \text{ 还原}
 > \end{flalign}
->  \end{align*}
+> $$
 
 > **综上**
 > 
-> \begin{align*} 
+> $$
 > \int \frac{1}{\sqrt{ x^{2}\pm a^{2} }} \, dx = \ln\left| \frac{x}{a} + \dfrac{\sqrt{ x^{2}\pm a^{2} }}{a}\right| + C
->  \end{align*}
+> $$
 
 ### $\int \tan x\, dx$
 
 > ***Solution***
 > 
-> \begin{align*} 
+> $$
 > \begin{aligned}
 > &=\int \dfrac{\textcolor{orange}{ \sin x }}{\cos x} \, dx\newline &=\textcolor{orange}{ - }\int \frac{1}{\cos x} \, d\textcolor{orange}{ \cos x }\newline &=-\ln \left|\cos x\right|+C
 > \end{aligned}
->  \end{align*}
+> $$
 
 ### $\int \sec x \, dx$
 
 > ***Solution.I***
 > 
-> \begin{align*} 
+> $$
 > \begin{aligned}
 > &=\int \dfrac{\sec x \textcolor{orange}{ \cdot(\sec x+\tan x) }}{\textcolor{orange}{ \sec x+\tan x }} \, dx\newline \because~&(\sec x + \tan x)'=\dfrac{\sin x}{\cos ^{2}x}+\frac{1}{\cos ^{2}x}=\sec x\cdot(\sec x+\tan x)\newline &=\int \dfrac{d(\sec x+\tan x)}{\sec x+\tan x}\newline &=\ln|\sec x+\tan x|+C
 > \end{aligned}
->  \end{align*}
+> $$
 > 
 > ***Solution.II***
 > 
-> \begin{align*} 
+> $$
 > \begin{aligned}
 > &=\int \dfrac{\cos x}{\cos ^{2} x} \, dx \newline &=-\int \dfrac{d\sin x}{1-\sin ^{2}x} \, dx \newline &=-\frac{1}{2}\ln\left( \frac{1+\sin x}{1-\sin x} \right)+C
 > \end{aligned}
->  \end{align*}
+> $$
 
 ### $\int \csc x \, dx$
 
 > ***Solution.I***
 > 
-> \begin{align*} 
+> $$
 > \begin{aligned}
 > &=\int \textcolor{orange}{ - }\dfrac{\csc x\textcolor{orange}{ \cdot-(\csc x+\cot x) }}{\textcolor{orange}{ \csc x+\cot x }} \, dx \newline \because~&\left( \csc x+\cot x \right)'=-\csc x\cdot(\csc x+\cot x)\newline &=-\int \dfrac{d(\csc x+\cot x)}{\csc x+\cot x} \, dx \newline &=-\ln|\csc x+\cot x|+C\newline &\textcolor{Gray}{ =-\ln \left| \tan \frac{x}{2} \right|  }
 > \end{aligned}
->  \end{align*}
+> $$
 > 
 > ***Solution.II***
 > 
@@ -189,11 +189,11 @@ share: true
 
 > ***Solution***
 > 
-> \begin{align*} 
+> $$
 > \begin{flalign}
 > I(m,n)&=-\frac{1}{m+1}\int \sin ^{\textcolor{orange}{ n-1 }}x \, d(\cos ^{\textcolor{orange}{ m+1 }}x)\newline &=-\frac{1}{m+1}\left( \sin ^{n-1}x\cos ^{m+1}x-\int \cos ^{m+1}x \, d\sin ^{n-1}x  \right) \dots\text{分部积分}\newline &=-\frac{1}{m+1}\sin ^{n-1}x\cos ^{m+1}x + \dfrac{n-1}{m+1}\int \sin ^{n-2}x \cos ^{m\textcolor{red}{ +2 }}x \, dx \newline &=-\frac{1}{m+1}\sin ^{n-1}x\cos ^{m+1}x + \dfrac{n-1}{m+1}\sin ^{n-2}x\cos ^{m}x\textcolor{red}{ (1-\sin ^{2}x) }\,dx\newline &=-\frac{1}{m+1}\sin ^{n-1}x\cos ^{m+1}x + \dfrac{n-1}{m+1}\sin ^{n-2}x\cos ^{m}x\,dx\\&\qquad+\dfrac{1-n}{m+1}\int \sin ^{n}x\cos ^{m}x \, dx \newline \therefore~ \frac{m+n}{m+1}I(m,n)&=-\frac{1}{m+1}\sin ^{n-1}x\cos ^{m+1}x+ \dfrac{n-1}{m+1}I(m,n-2)\newline \implies I(m,n)&=-\frac{1}{m+n}\sin ^{n-1}x\cos ^{m+1}x+ \dfrac{n-1}{m+n}I(m,n-2)\quad(m\geq 0,n\geq 2)\newline \text{同理: } I(m,n)&=-\frac{1}{m+n}\cos ^{m-1}x\sin ^{n+1}x+ \dfrac{m-1}{m+n}I(m-2,n)\quad(m\geq 2,n\geq 0)
 > \end{flalign}
->  \end{align*}
+> $$
 
 ## 典题整理
 
@@ -201,8 +201,8 @@ share: true
 
 > ***Solution***
 > 
-> \begin{align*} 
+> $$
 > \begin{align*}
 > \int_0^{\frac{\pi}{2}}\sqrt{\tan x}{\mathrm d}x&=2\left(\int_0^1+\int_1^{+\infty}\right)\frac{x^2}{1+x^4}{\mathrm d}x\newline &=2\int_0^1\frac{x^2}{1+x^4}{\mathrm d}x+2\int_0^{1}\frac{1}{1+x^4}{\mathrm d}x\newline &=2\int_0^1 \frac{{\mathrm d}\left(x-\frac{1}{x}\right)}{\left(x-\frac{1}{x}\right)^2+2}\newline &=2\int_{-\infty}^0\frac{{\mathrm d}x}{x^2+2}\newline &=\frac{\pi}{\sqrt{2}}.
 > \end{align*}
->  \end{align*}
+> $$
