@@ -1061,3 +1061,64 @@ a_{n1} & \ldots & \tilde{a}_{nk} & \ldots & a_{nn} \\
 
 以上就是这些概念的基本描述和相关公式。在实际应用中，了解和使用这些概念可以帮助你解决各种线性代数问题，如求解线性方程组、分析线性变换等。
 
+# Chap.04
+
+## 特征向量与特征值
+
+### 定义
+
+进行线性变换之后仍在同一方向：相当于只进行了伸缩变换
+
+![../res/GIF 2023-12-17 20-01-12.gif](../res/GIF%202023-12-17%2020-01-12.gif)
+
+\begin{align*} 
+\underbrace{ A\mathbf{v} }_{ \text{Matrix Product} }=\underbrace{ \lambda \mathbf{v} }_{ \text{Scalar Product} }
+ \end{align*}
+
+也即
+
+\begin{align*} 
+A\mathbf{v}=(\lambda I) \mathbf{v}
+ \end{align*}
+
+即
+
+\begin{align*} 
+(A-\lambda I)\mathbf{v}=\mathbf{0}
+ \end{align*}
+
+
+此时 $\mathbf{v}$ 就是一个**特征向量**，且 $\lambda$ 就是这个特征向量的**特征值**
+
+### 求解
+
+#### 行列式为0
+
+![../res/GIF 2023-12-17 19-52-13.gif](../res/GIF%202023-12-17%2019-52-13.gif)
+
+此时 $\lambda$ 有解，即
+
+\begin{align*} 
+\det(A-\lambda I)=0
+ \end{align*}
+
+值得注意的是，我们可以直接书写成
+
+\begin{align*} 
+\begin{bmatrix}a_{11}-\lambda & a_{12} & a_{13} \\
+a_{21} & a_{22}-\lambda & a_{23} \\
+a_{31} & a_{32} & a_{33}-\lambda\end{bmatrix}
+ \end{align*}
+
+
+#### Mean-Product Formula (2x2)
+
+> [!formula] Mean-Product Formula
+> \begin{align*} 
+> \lambda_{1,2}=m \pm \sqrt{ m^2 -p }
+>  \end{align*}
+> 
+> 其中
+> $m=\frac{\lambda_{1}+\lambda_{2}}{2}=\frac{\text{tr}(A)}{2};$
+> $p=\lambda_{1}\lambda_{2}=\det(A)$
+
