@@ -74,18 +74,18 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 
 1. **线性系统（Linear System）：**
    线性系统是由一组线性方程组成的系统。每个方程都涉及一组未知数的线性组合。一般形式为：
-   \begin{align*} a_{11}x_1 + a_{12}x_2 + \ldots + a_{1n}x_n = b_1 \end{align*}
-   \begin{align*} a_{21}x_1 + a_{22}x_2 + \ldots + a_{2n}x_n = b_2 \end{align*}
-   \begin{align*} \vdots \end{align*}
-   \begin{align*} a_{m1}x_1 + a_{m2}x_2 + \ldots + a_{mn}x_n = b_m \end{align*}
+   $$a_{11}x_1 + a_{12}x_2 + \ldots + a_{1n}x_n = b_1$$
+   $$a_{21}x_1 + a_{22}x_2 + \ldots + a_{2n}x_n = b_2$$
+   $$\vdots$$
+   $$a_{m1}x_1 + a_{m2}x_2 + \ldots + a_{mn}x_n = b_m$$
    其中，$a_{ij}$ 是系数，$x_i$ 是未知数，$b_i$ 是常数。
 
 2. **齐次线性系统（Homogeneous Linear System）：**
    齐次线性系统是一个特殊的线性系统，其右侧常数项都为零。即，对于一个齐次线性系统：
-   \begin{align*} a_{11}x_1 + a_{12}x_2 + \ldots + a_{1n}x_n = 0 \end{align*}
-   \begin{align*} a_{21}x_1 + a_{22}x_2 + \ldots + a_{2n}x_n = 0 \end{align*}
-   \begin{align*} \vdots \end{align*}
-   \begin{align*} a_{m1}x_1 + a_{m2}x_2 + \ldots + a_{mn}x_n = 0 \end{align*}
+   $$a_{11}x_1 + a_{12}x_2 + \ldots + a_{1n}x_n = 0$$
+   $$a_{21}x_1 + a_{22}x_2 + \ldots + a_{2n}x_n = 0$$
+   $$\vdots$$
+   $$a_{m1}x_1 + a_{m2}x_2 + \ldots + a_{mn}x_n = 0$$
    所有的 $b_i$ 都等于零。
 
 3. **解（Solution）：**
@@ -99,16 +99,16 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 
 6. **增广矩阵（Augmented Matrix）：**
    增广矩阵是将线性系统的系数矩阵和常数项列合并成一个矩阵的形式。例如，对于线性系统：
-   \begin{align*} a_{11}x_1 + a_{12}x_2 + \ldots + a_{1n}x_n = b_1 \end{align*}
-   \begin{align*} a_{21}x_1 + a_{22}x_2 + \ldots + a_{2n}x_n = b_2 \end{align*}
-   \begin{align*} \vdots \end{align*}
-   \begin{align*} a_{m1}x_1 + a_{m2}x_2 + \ldots + a_{mn}x_n = b_m \end{align*}
+   $$a_{11}x_1 + a_{12}x_2 + \ldots + a_{1n}x_n = b_1$$
+   $$a_{21}x_1 + a_{22}x_2 + \ldots + a_{2n}x_n = b_2$$
+   $$\vdots$$
+   $$a_{m1}x_1 + a_{m2}x_2 + \ldots + a_{mn}x_n = b_m$$
    对应的增广矩阵为：
-   \begin{align*} [A | B] = \begin{bmatrix} a_{11} & a_{12} & \ldots & a_{1n} & | & b_1 \\ a_{21} & a_{22} & \ldots & a_{2n} & | & b_2 \\ \vdots & \vdots & \ddots & \vdots & | & \vdots \\ a_{m1} & a_{m2} & \ldots & a_{mn} & | & b_m \end{bmatrix} \end{align*}
+   $$[A | B] = \begin{bmatrix} a_{11} & a_{12} & \ldots & a_{1n} & | & b_1 \\ a_{21} & a_{22} & \ldots & a_{2n} & | & b_2 \\ \vdots & \vdots & \ddots & \vdots & | & \vdots \\ a_{m1} & a_{m2} & \ldots & a_{mn} & | & b_m \end{bmatrix}$$
 
 7. **系数矩阵（Coefficient Matrix）：**
    系数矩阵是线性系统中由所有系数构成的矩阵。对于上述线性系统，系数矩阵为：
-   \begin{align*} A = \begin{bmatrix} a_{11} & a_{12} & \ldots & a_{1n} \\ a_{21} & a_{22} & \ldots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \ldots & a_{mn} \end{bmatrix} \end{align*}
+   $$A = \begin{bmatrix} a_{11} & a_{12} & \ldots & a_{1n} \\ a_{21} & a_{22} & \ldots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \ldots & a_{mn} \end{bmatrix}$$
 
 这些概念对于理解和解决线性系统问题非常重要。增广矩阵和系数矩阵的使用使得线性系统的处理更加方便。
 
@@ -218,10 +218,10 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 	- 对角矩阵（Diagonal Matrix）：
 	  1. **对角矩阵的逆：**
    如果 $D$ 是一个对角矩阵，其中对角线上的元素 $d_{ii} \neq 0$，那么其逆矩阵为：
-   \begin{align*}  D^{-1} = \begin{bmatrix} \frac{1}{d_{11}} & 0 & \cdots & 0 \\ 0 & \frac{1}{d_{22}} & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & \frac{1}{d_{nn}} \end{bmatrix}  \end{align*}
+   $$ D^{-1} = \begin{bmatrix} \frac{1}{d_{11}} & 0 & \cdots & 0 \\ 0 & \frac{1}{d_{22}} & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & \frac{1}{d_{nn}} \end{bmatrix} $$
 		2. **对角矩阵的行列式：**
    对角矩阵的行列式等于其主对角线上的元素的乘积：
-   \begin{align*}  \text{det}(D) = d_{11} \cdot d_{22} \cdot \ldots \cdot d_{nn}  \end{align*}
+   $$ \text{det}(D) = d_{11} \cdot d_{22} \cdot \ldots \cdot d_{nn} $$
 
 	- 三角矩阵（Triangular Matrix）：
 	  
@@ -249,10 +249,10 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 
 **阐释：**
 1. **系数矩阵 $A$ 的秩：**
-   \begin{align*}  \text{rank}(A)  \end{align*}
+   $$ \text{rank}(A) $$
 
 2. **增广矩阵 $[A | B]$ 的秩：**
-   \begin{align*}  \text{rank}([A | B])  \end{align*}
+   $$ \text{rank}([A | B]) $$
 
 3. **一致性判断：**
    如果 $\text{rank}(A) = \text{rank}([A | B])$，则线性系统一致，存在解；否则，线性系统不一致，不存在解。
@@ -268,17 +268,17 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 1. **唯一解（Unique Solution）：**
    线性系统存在唯一解当且仅当系数矩阵 $A$ 的秩等于方程组中的未知数数量 $n$，即 $\text{rank}(A) = n$。
 
-   \begin{align*}  \text{rank}(A) = n \implies \text{唯一解}  \end{align*}
+   $$ \text{rank}(A) = n \implies \text{唯一解} $$
 
 2. **无穷多解（Infinitely Many Solutions）：**
    线性系统存在无穷多解当且仅当系数矩阵 $A$ 的秩小于方程组中的未知数数量 $n$，即 $\text{rank}(A) < n$，且存在自由变量。
 
-   \begin{align*}  \text{rank}(A) < n \implies \text{无穷多解}  \end{align*}
+   $$ \text{rank}(A) < n \implies \text{无穷多解} $$
 
 3. **无解（No Solution）：**
    线性系统无解当且仅当系数矩阵 $A$ 的秩小于增广矩阵 $[A | B]$ 的秩，即 $\text{rank}(A) < \text{rank}([A | B])$。
 
-   \begin{align*}  \text{rank}(A) < \text{rank}([A | B]) \implies \text{无解}  \end{align*}
+   $$ \text{rank}(A) < \text{rank}([A | B]) \implies \text{无解} $$
 
 其中，$\text{rank}(A)$ 表示系数矩阵 $A$ 的秩，$n$ 表示未知数的数量。这个定理表明了线性系统解的三种可能性与系数矩阵的秩之间的关系。
 
@@ -308,11 +308,11 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 > 
 > Solve the linear system:
 > 
-> \begin{align*} 
+> $$
 > \begin{cases}
 > x_1 + 3x_2 - 2x_3 + 2x_5 = 0 \newline 2x_1 + 6x_2 - 5x_3 - 2x_4 + 4x_5 - 3x_6 = -1 \newline 5x_3 + 10x_4 + 15x_6 = 5 \newline 2x_1 + 6x_2 + 8x_4 + 4x_5 + 18x_6 = 6
 > \end{cases}
->  \end{align*}
+> $$
 > 
 > Solve by:
 > 
@@ -323,11 +323,11 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 > 
 > Consider the linear system of equations:
 > 
-> \begin{align*} 
+> $$
 > \begin{cases}
 > -2x + y + z = -2 \newline x - 2y + z = a \newline x + y + (b - 2)z = a
 > \end{cases}
->  \end{align*}
+> $$
 > 
 > Find the conditions on $a, b$ such that the above linear system is consistent. Then find the solutions.
 > 
@@ -335,21 +335,21 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 > 
 > Solve the linear system:
 > 
-> \begin{align*}  Ax = B  \end{align*}
+> $$ Ax = B $$
 > 
 > where:
 > 
-> \begin{align*}  A =
+> $$ A =
 > \begin{bmatrix}
 > 1 & 2 & 3 \newline 2 & 5 & 3 \newline 1 & 0 & 8
 > \end{bmatrix}
->  \end{align*}
+> $$
 > 
-> \begin{align*}  B =
+> $$ B =
 > \begin{bmatrix}
 > -1 & 0 & 1 \newline 1 & 2 & -2 \newline 0 & 3 & 2
 > \end{bmatrix}
->  \end{align*}
+> $$
 > 
 > Evaluate $A^{-1}$ and $A^{-1}B$.
 
@@ -399,7 +399,7 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 
 13. **叉积（Cross Product）：**
     - **阐释：** 三维空间中，两个向量的叉积是一个与这两个向量都垂直的向量，其大小由平行四边形的面积表示，方向由右手定则确定。
-    - Notational trick: 得到的是向量 \begin{align*} (v_{1},v_{2},v_{3})\times(w_{1},w_{2},w_{3})=\begin{vmatrix}\hat i & \hat j & \hat k\\v_{1} & v_{2} & v_{3}\\w_{1} & w_{2} & w_{3}\end{vmatrix}  \end{align*}
+    - Notational trick: 得到的是向量 $$(v_{1},v_{2},v_{3})\times(w_{1},w_{2},w_{3})=\begin{vmatrix}\hat i & \hat j & \hat k\\v_{1} & v_{2} & v_{3}\\w_{1} & w_{2} & w_{3}\end{vmatrix} $$
 
 > [!definition]
 > determinant; minor; cofactor; adjunct(adjunct).
@@ -408,7 +408,7 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 
 1. **行列式（Determinant）：**
    - **阐释：** 对于一个n阶方阵 $A$，其行列式表示为 $|A|$ 或 $\det(A)$。对于3阶矩阵 $A$，行列式的表达式为：
-     \begin{align*}  |A| = \det(A) = a_{11}(a_{22}a_{33} - a_{23}a_{32}) -  \end{align*}\begin{align*} a_{12}(a_{21}a_{33} - a_{23}a_{31}) + a_{13}(a_{21}a_{32} - a_{22}a_{31})  \end{align*}
+     $$ |A| = \det(A) = a_{11}(a_{22}a_{33} - a_{23}a_{32}) - $$$$a_{12}(a_{21}a_{33} - a_{23}a_{31}) + a_{13}(a_{21}a_{32} - a_{22}a_{31}) $$
      - **含义：** 面积/体积
 
 2. **余子式（Minor）：**
@@ -416,12 +416,12 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 
 3. **代数余子式（Cofactor）：**
    - **阐释：** 对于矩阵 $A$ 中的一个元素 $a_{ij}$，其对应的代数余子式是其余子式乘以 $(-1)^{i+j}$。代数余子式通常表示为 $\text{cof}(A)_{ij}$ 或 $C_{ij}$。
-     \begin{align*}  C_{ij} = (-1)^{i+j} \cdot M_{ij}  \end{align*}
+     $$ C_{ij} = (-1)^{i+j} \cdot M_{ij} $$
 
 4. **伴随矩阵（adjunct/Adjugate）：**
    - **阐释：** 对于n阶方阵 $A$，其伴随矩阵（伴随矩阵也称为伴随矩阵）记作 $\text{adj}(A)$ 或 $\text{adjunct}(A)$，其中每个元素是对应位置的余子式。
-     \begin{align*}  \text{adj}(A)_{ij} = C_{ji}  \end{align*}
-   - **性质：** 如果 $A$ 可逆，则其逆矩阵为 \begin{align*} A^{-1}=\dfrac1{\det(A)}\cdot{\text{adj}(A)} \end{align*}
+     $$ \text{adj}(A)_{ij} = C_{ji} $$
+   - **性质：** 如果 $A$ 可逆，则其逆矩阵为 $$A^{-1}=\dfrac1{\det(A)}\cdot{\text{adj}(A)}$$
 
 > [!definition]
 > Concepts/Definitions: matrix transformation; composition; inverse.
@@ -444,12 +444,12 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 
 1. **向量加法的性质：**
    - **公式：** 对于任意向量 $\mathbf{u}, \mathbf{v}, \mathbf{w}$，满足交换律和结合律。
-     \begin{align*}  \mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u}  \end{align*}
-     \begin{align*}  (\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + (\mathbf{v} + \mathbf{w})  \end{align*}
+     $$ \mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u} $$
+     $$ (\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + (\mathbf{v} + \mathbf{w}) $$
 
 2. **标量乘法的性质：**
    - **公式：** 对于任意标量 $c$ 和向量 $\mathbf{v}$，满足分配律。
-     \begin{align*}  c(\mathbf{u} + \mathbf{v}) = c\mathbf{u} + c\mathbf{v}  \end{align*}
+     $$ c(\mathbf{u} + \mathbf{v}) = c\mathbf{u} + c\mathbf{v} $$
 
 3. **范数的性质：**
    - **公式：** 对于任意向量 $\mathbf{v}$ 和标量 $c$，满足非负性、齐次性、和三角不等式。
@@ -487,9 +487,9 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 
 1. **点积 (Inner Product) 的性质：**
    - **公式：** 对于向量 $\mathbf{u}, \mathbf{v}, \mathbf{w}$ 和标量 $c$，点积具有交换律和分配律。
-     \begin{align*}  \mathbf{u} \cdot \mathbf{v} = \mathbf{v} \cdot \mathbf{u}  \end{align*}
-     \begin{align*}  (k\mathbf{u})\cdot\mathbf{v} = k(\mathbf{u}\cdot\mathbf{v})  \end{align*}
-     \begin{align*}  (\mathbf{u} + \mathbf{v}) \cdot \mathbf{w} = \mathbf{u} \cdot \mathbf{w} + \mathbf{v} \cdot \mathbf{w}  \end{align*}
+     $$ \mathbf{u} \cdot \mathbf{v} = \mathbf{v} \cdot \mathbf{u} $$
+     $$ (k\mathbf{u})\cdot\mathbf{v} = k(\mathbf{u}\cdot\mathbf{v}) $$
+     $$ (\mathbf{u} + \mathbf{v}) \cdot \mathbf{w} = \mathbf{u} \cdot \mathbf{w} + \mathbf{v} \cdot \mathbf{w} $$
    - **几何意义：** 点积表示了两个向量之间的投影关系，可以用来计算夹角余弦。
 	- **Proposition:**
 		- Let $\mathbf{u}, \mathbf{v}$ be vectors. Then:
@@ -502,14 +502,14 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 
 2. **叉积的性质：**
    - **公式：** 对于向量 $\mathbf{u}, \mathbf{v}, \mathbf{w}$ 和标量 $c$，叉积具有分配律、反对称性和线性性。
-     \begin{align*}  \mathbf{u} \times \mathbf{v} = -(\mathbf{v} \times \mathbf{u})  \end{align*}
-     \begin{align*}  (\mathbf{u} + \mathbf{v}) \times \mathbf{w} = \mathbf{u} \times \mathbf{w} + \mathbf{v} \times \mathbf{w}  \end{align*}
+     $$ \mathbf{u} \times \mathbf{v} = -(\mathbf{v} \times \mathbf{u}) $$
+     $$ (\mathbf{u} + \mathbf{v}) \times \mathbf{w} = \mathbf{u} \times \mathbf{w} + \mathbf{v} \times \mathbf{w} $$
 	- **性质:**
-		\begin{align*} \mathbf{u} \times (\mathbf{v} + \mathbf{w}) = (\mathbf{u} \times \mathbf{v}) + (\mathbf{u} \times \mathbf{w}) \end{align*}
-		\begin{align*} (\mathbf{u} + \mathbf{v}) \times \mathbf{w} = (\mathbf{u} \times \mathbf{w}) + (\mathbf{v} \times \mathbf{w}) \end{align*}
-		\begin{align*} \mathbf{u} \times (\mathbf{v} \times \mathbf{w}) = (\mathbf{u} \cdot \mathbf{w})\mathbf{v} - (\mathbf{u} \cdot \mathbf{v})\mathbf{w} \end{align*}
-		\begin{align*} (\mathbf{u} \times \mathbf{v}) \times \mathbf{w} = (\mathbf{u} \cdot \mathbf{w})\mathbf{v} - (\mathbf{v} \cdot \mathbf{w})\mathbf{u} \end{align*}
-		\begin{align*} \mathbf{u} \times (\mathbf{v} \times \mathbf{w}) + \mathbf{v} \times (\mathbf{w} \times \mathbf{u}) + \mathbf{w} \times (\mathbf{u} \times \mathbf{v}) = \mathbf{0} \end{align*}
+		$$\mathbf{u} \times (\mathbf{v} + \mathbf{w}) = (\mathbf{u} \times \mathbf{v}) + (\mathbf{u} \times \mathbf{w})$$
+		$$(\mathbf{u} + \mathbf{v}) \times \mathbf{w} = (\mathbf{u} \times \mathbf{w}) + (\mathbf{v} \times \mathbf{w})$$
+		$$\mathbf{u} \times (\mathbf{v} \times \mathbf{w}) = (\mathbf{u} \cdot \mathbf{w})\mathbf{v} - (\mathbf{u} \cdot \mathbf{v})\mathbf{w}$$
+		$$(\mathbf{u} \times \mathbf{v}) \times \mathbf{w} = (\mathbf{u} \cdot \mathbf{w})\mathbf{v} - (\mathbf{v} \cdot \mathbf{w})\mathbf{u}$$
+		$$\mathbf{u} \times (\mathbf{v} \times \mathbf{w}) + \mathbf{v} \times (\mathbf{w} \times \mathbf{u}) + \mathbf{w} \times (\mathbf{u} \times \mathbf{v}) = \mathbf{0}$$
 
    - **几何意义：** 叉积的结果是一个垂直于参与运算的两个向量的向量，其大小等于这两个向量围成的平行四边形的面积。
 	- **Theorem:** Let $\mathbf{u}$, $\mathbf{v}$, and $\mathbf{w}$ be vectors in $\mathbb{R}^3$, and $k$ be a scalar.
@@ -523,33 +523,33 @@ If $A$ is an $n \times n$ matrix, then the following statements are equivalent:
 		- $\lVert \mathbf{u} \times \mathbf{v} \rVert^2 = \lVert \mathbf{u} \rVert^2 \lVert \mathbf{v} \rVert^2 - (\mathbf{u} \cdot \mathbf{v})^2$.
 
 	- **Theorem:** Suppose that $\mathbf{u} = (u_1, u_2, u_3)$ and $\mathbf{v} = (v_1, v_2, v_3)$. Then,
-	\begin{align*} 
+	$$
 	\mathbf{u} \times \mathbf{v} =
 	\begin{pmatrix}
 	\begin{vmatrix} u_2 & u_3 \\ v_2 & v_3 \end{vmatrix} , & 
 	\begin{vmatrix} u_3 & u_1 \\ v_3 & v_1 \end{vmatrix} , & 
 	\begin{vmatrix} u_1 & u_2 \\ v_1 & v_2 \end{vmatrix}
 	\end{pmatrix}
-	 \end{align*}
+	$$
 
 	- **Gou-Gu Theorem:**
 Suppose that $\mathbf{u} = (u_1, u_2, u_3)$ and $\mathbf{v} = (v_1, v_2, v_3)$. Then,
-\begin{align*}  \lVert \mathbf{u} \times \mathbf{v} \rVert^2 = \begin{vmatrix} u_2 & u_3 \\ v_2 & v_3 \end{vmatrix}^2 + \begin{vmatrix} u_3 & u_1 \\ v_3 & v_1 \end{vmatrix}^2 + \begin{vmatrix} u_1 & u_2 \\ v_1 & v_2 \end{vmatrix}^2  \end{align*}
-\begin{align*}  = \lVert \text{proj}_{\text{yOz}}(\mathbf{u}) \times \text{proj}_{\text{yOz}}(\mathbf{v}) \rVert^2 +  \end{align*}\begin{align*} \lVert \text{proj}_{\text{xOz}}(\mathbf{u}) \times \text{proj}_{\text{xOz}}(\mathbf{v}) \rVert^2 + \lVert \text{proj}_{\text{xOz}}(\mathbf{u}) \times \text{proj}_{\text{xOz}}(\mathbf{v}) \rVert^2  \end{align*}
+$$ \lVert \mathbf{u} \times \mathbf{v} \rVert^2 = \begin{vmatrix} u_2 & u_3 \\ v_2 & v_3 \end{vmatrix}^2 + \begin{vmatrix} u_3 & u_1 \\ v_3 & v_1 \end{vmatrix}^2 + \begin{vmatrix} u_1 & u_2 \\ v_1 & v_2 \end{vmatrix}^2 $$
+$$ = \lVert \text{proj}_{\text{yOz}}(\mathbf{u}) \times \text{proj}_{\text{yOz}}(\mathbf{v}) \rVert^2 + $$$$\lVert \text{proj}_{\text{xOz}}(\mathbf{u}) \times \text{proj}_{\text{xOz}}(\mathbf{v}) \rVert^2 + \lVert \text{proj}_{\text{xOz}}(\mathbf{u}) \times \text{proj}_{\text{xOz}}(\mathbf{v}) \rVert^2 $$
 Here, $\text{proj}_{\text{yOz}}(\mathbf{u})$ is the projection of $\mathbf{u}$ onto the $yOz$-plane, and the other notations are similar.
 
 3. **混合积 / 标量三重积的性质：**
    - **公式：** 对于向量 $\mathbf{u}, \mathbf{v}, \mathbf{w}$，标量三重积满足交换律。
-     \begin{align*}  \mathbf{u} \cdot (\mathbf{v} \times \mathbf{w}) = \mathbf{v} \cdot (\mathbf{w} \times \mathbf{u}) = \mathbf{w} \cdot (\mathbf{u} \times \mathbf{v})  \end{align*}
+     $$ \mathbf{u} \cdot (\mathbf{v} \times \mathbf{w}) = \mathbf{v} \cdot (\mathbf{w} \times \mathbf{u}) = \mathbf{w} \cdot (\mathbf{u} \times \mathbf{v}) $$
    - **几何意义：** 标量三重积的绝对值等于以三个向量为边的平行六面体的体积。
 
 	- **Theorem:**
 		- Suppose that
-		\begin{align*}  \mathbf{u} = (u_1, u_2, u_3), \; \mathbf{v} = (v_1, v_2, v_3), \;\mathbf{w} = (w_1, w_2, w_3).  \end{align*}
+		$$ \mathbf{u} = (u_1, u_2, u_3), \; \mathbf{v} = (v_1, v_2, v_3), \;\mathbf{w} = (w_1, w_2, w_3). $$
 		Then the scalar triple product
-		\begin{align*}  \mathbf{u} \cdot (\mathbf{v} \times \mathbf{w}) = \begin{vmatrix} u_1 & u_2 & u_3 \\ v_1 & v_2 & v_3 \\ w_1 & w_2 & w_3 \end{vmatrix}  \end{align*}
-		\begin{align*}  = u_1 \begin{vmatrix} v_2 & v_3 \\ w_2 & w_3 \end{vmatrix} - u_2 \begin{vmatrix} v_1 & v_3 \\ w_1 & w_3 \end{vmatrix} + u_3 \begin{vmatrix} v_1 & v_2 \\ w_1 & w_2 \end{vmatrix}  \end{align*}
-		\begin{align*}  = u_1v_2w_3 + u_2v_3w_1 + u_3v_1w_2 -  \end{align*}\begin{align*} u_3v_2w_1 - u_2v_1w_3 - u_1v_3w_2.  \end{align*}
+		$$ \mathbf{u} \cdot (\mathbf{v} \times \mathbf{w}) = \begin{vmatrix} u_1 & u_2 & u_3 \\ v_1 & v_2 & v_3 \\ w_1 & w_2 & w_3 \end{vmatrix} $$
+		$$ = u_1 \begin{vmatrix} v_2 & v_3 \\ w_2 & w_3 \end{vmatrix} - u_2 \begin{vmatrix} v_1 & v_3 \\ w_1 & w_3 \end{vmatrix} + u_3 \begin{vmatrix} v_1 & v_2 \\ w_1 & w_2 \end{vmatrix} $$
+		$$ = u_1v_2w_3 + u_2v_3w_1 + u_3v_1w_2 - $$$$u_3v_2w_1 - u_2v_1w_3 - u_1v_3w_2. $$
 	- **Proposition:**
 		1. $\lvert (\mathbf{a} \times \mathbf{b}) \cdot \mathbf{c} \rvert$ is the volume of the parallelepiped determined by $\mathbf{a}, \mathbf{b}, \mathbf{c}$.
 		2. If $\mathbf{a}, \mathbf{b}, \mathbf{c}$ satisfy the "right-hand rule," then $(\mathbf{a} \times \mathbf{b}) \cdot \mathbf{c} > 0$;
@@ -557,7 +557,7 @@ Here, $\text{proj}_{\text{yOz}}(\mathbf{u})$ is the projection of $\mathbf{u}$ o
 		4. If $\mathbf{a}, \mathbf{b}, \mathbf{c}$ are coplanar vectors, then $(\mathbf{a} \times \mathbf{b}) \cdot \mathbf{c} = 0$.
 
 	- **Remark:**
-		\begin{align*}  (\mathbf{a} \times \mathbf{b}) \cdot \mathbf{c} = (\mathbf{b} \times \mathbf{c}) \cdot \mathbf{a} = (\mathbf{c} \times \mathbf{a}) \cdot \mathbf{b}  \end{align*}
+		$$ (\mathbf{a} \times \mathbf{b}) \cdot \mathbf{c} = (\mathbf{b} \times \mathbf{c}) \cdot \mathbf{a} = (\mathbf{c} \times \mathbf{a}) \cdot \mathbf{b} $$
 
 4. **行列式的几何意义：**
    - **公式：** 对于3阶方阵 $A$，其行列式 $\det(A)$ 表示了由矩阵的列向量所确定的平行六面体的体积。
@@ -570,26 +570,26 @@ Here, $\text{proj}_{\text{yOz}}(\mathbf{u})$ is the projection of $\mathbf{u}$ o
 
 1. **直线的参数方程：**
    - **公式：** 一条通过点 $(x_0, y_0, z_0)$ 且方向向量为 $\mathbf{v} = \begin{bmatrix} a \\ b \\ c \end{bmatrix}$ 的直线的参数方程可以表示为：
-     \begin{align*}  \begin{cases}
+     $$ \begin{cases}
          x = x_0 + at \\
          y = y_0 + bt \\
          z = z_0 + ct
-       \end{cases}  \end{align*}
+       \end{cases} $$
    - **几何意义：** 直线上的每个点都可以通过参数 $t$ 来表示，表示了直线上的点沿着方向向量的运动。
 
 2. **直线的对称式方程：**
    - **公式：** 一条通过点 $(x_0, y_0, z_0)$ 且方向向量为 $\mathbf{v} = \begin{bmatrix} a \\ b \\ c \end{bmatrix}$ 的直线的对称式方程为：
-     \begin{align*}  \frac{x - x_0}{a} = \frac{y - y_0}{b} = \frac{z - z_0}{c}  \end{align*}
+     $$ \frac{x - x_0}{a} = \frac{y - y_0}{b} = \frac{z - z_0}{c} $$
    - **几何意义：** 对称式方程表示了直线上的任意一点到起点的距离与方向向量的比例相等。
 
 3. **平面的点法式方程：**
    - **公式：** 一个过点 $(x_0, y_0, z_0)$ 且法向量为 $\mathbf{n} = \begin{bmatrix} A \\ B \\ C \end{bmatrix}$ 的平面的点法式方程为：
-     \begin{align*}  A(x - x_0) + B(y - y_0) + C(z - z_0) = 0  \end{align*}
+     $$ A(x - x_0) + B(y - y_0) + C(z - z_0) = 0 $$
    - **几何意义：** 平面上的每个点满足点法式方程，表示点到平面的向量与法向量垂直。
 
 4. **平面的一般方程：**
    - **公式：** 一个平面的一般方程为：
-     \begin{align*}  Ax + By + Cz + D = 0  \end{align*}
+     $$ Ax + By + Cz + D = 0 $$
    - **几何意义：** 一般方程表示了平面上的点满足平面方程，其中 $A, B, C$ 是法向量的分量，$D$ 是平面的截距。
 
 > [!theorem]
@@ -602,34 +602,34 @@ Here, $\text{proj}_{\text{yOz}}(\mathbf{u})$ is the projection of $\mathbf{u}$ o
 
 1. **性质1 - 行的交换：** 
    - **公式：** 行列式的值不变，当且仅当交换行。
-     \begin{align*}  \det(A) = -\det(A')  \end{align*}
+     $$ \det(A) = -\det(A') $$
    - 理解：交换坐标
 
 2. **性质2 - 行的倍乘：** 
    - **公式：** 行列式的值乘以一个标量，结果为原行列式的值乘以该标量。
-     \begin{align*}  \det(cA) = c^n \cdot \det(A)  \end{align*}
+     $$ \det(cA) = c^n \cdot \det(A) $$
     - 理解：n次面积翻c倍
 
 3. **性质3 - 行的加法：**
    - **公式：** 如果将矩阵的某一行加上另一行的某个倍数，行列式的值不变。
-     \begin{align*}  \det(A) = \det(A')  \end{align*}
+     $$ \det(A) = \det(A') $$
     - 理解：左乘初等矩阵保乘法；进行行列式为1的变换不改变面积
 
 4. **性质4 - 单位矩阵的行列式：**
    - **公式：** 单位矩阵的行列式为1。
-     \begin{align*}  \det(I) = 1  \end{align*}
+     $$ \det(I) = 1 $$
 
 5. **性质5 - 乘积矩阵的行列式：**
    - **公式：** 两个矩阵的乘积的行列式等于这两个矩阵的行列式的乘积。
-     \begin{align*}  \det(AB) = \det(A) \cdot \det(B)  \end{align*}
+     $$ \det(AB) = \det(A) \cdot \det(B) $$
 
 6. **性质6 - 转置矩阵的行列式：**
    - **公式：** 矩阵的转置的行列式等于原矩阵的行列式。
-     \begin{align*}  \det(A^T) = \det(A)  \end{align*}
+     $$ \det(A^T) = \det(A) $$
 
 7. **性质7 - 逆矩阵的行列式：**
    - **公式：** 如果矩阵可逆，其逆矩阵的行列式等于原矩阵的行列式的倒数。
-     \begin{align*}  \det(A^{-1}) = \frac{1}{\det(A)}  \end{align*}
+     $$ \det(A^{-1}) = \frac{1}{\det(A)} $$
 
 这些性质描述了行列式在矩阵运算中的一些基本规律，它们对于计算和理解矩阵的行列式是非常有用的。
 
@@ -664,7 +664,7 @@ Here, $\text{proj}_{\text{yOz}}(\mathbf{u})$ is the projection of $\mathbf{u}$ o
 
 考虑一个线性方程组：
 
-\begin{align*}  Ax = b  \end{align*}
+$$ Ax = b $$
 
 其中，$A$ 是一个 $n \times n$ 的矩阵，$x$ 是未知向量，$b$ 是已知向量。如果矩阵 $A$ 是可逆的，即 $\det(A) \neq 0$，那么克拉默法则可以用以下公式表示：
 
@@ -673,7 +673,7 @@ Here, $\text{proj}_{\text{yOz}}(\mathbf{u})$ is the projection of $\mathbf{u}$ o
 
 2. **解的表达式：**
    - 方程组的解可以通过克拉默法则表示为：
-     \begin{align*}  x_i = \frac{\det(A_i)}{\det(A)}  \end{align*}
+     $$ x_i = \frac{\det(A_i)}{\det(A)} $$
    其中，$x_i$ 是向量 $x$ 的第 $i$ 个分量，$\det(A_i)$ 是将矩阵 $A$ 的第 $i$ 列替换为向量 $b$ 后得到的矩阵的行列式。
 
 3. **注意事项：**
@@ -686,15 +686,15 @@ Here, $\text{proj}_{\text{yOz}}(\mathbf{u})$ is the projection of $\mathbf{u}$ o
 
 - **Theorem:**
 
-\begin{align*} 
+$$
 \begin{vmatrix}
 a_{11} & \ldots & \hat{a}_{1k} + \tilde{a}_{1k} & \ldots & a_{1n} \\
 a_{21} & \ldots & \hat{a}_{1k} + \tilde{a}_{1k} & \ldots & a_{2n} \\
 \vdots & \vdots & \vdots & \ddots & \vdots \\
 a_{n1} & \ldots & \hat{a}_{nk} + \tilde{a}_{nk} & \ldots & a_{nn} \\
 \end{vmatrix}
- \end{align*}
-\begin{align*} =
+$$
+$$=
 \begin{vmatrix}
 a_{11} & \ldots & \hat{a}_{1k} & \ldots & a_{1n} \\
 a_{21} & \ldots & \hat{a}_{1k} & \ldots & a_{2n} \\
@@ -708,7 +708,7 @@ a_{21} & \ldots & \tilde{a}_{1k} & \ldots & a_{2n} \\
 \vdots & \vdots & \vdots & \ddots & \vdots \\
 a_{n1} & \ldots & \tilde{a}_{nk} & \ldots & a_{nn} \\
 \end{vmatrix}
- \end{align*}
+$$
 
 > [!Formulae]
 > $\det(cA) = c^n \det(A)$
@@ -718,11 +718,11 @@ a_{n1} & \ldots & \tilde{a}_{nk} & \ldots & a_{nn} \\
 
 1. **常数倍法则：**
    - **公式：** 对于任意 $n \times n$ 矩阵 $A$ 和标量 $c$，有 $\det(cA) = c^n \det(A)$。
-     \begin{align*}  \det(cA) = c^n \det(A)  \end{align*}
+     $$ \det(cA) = c^n \det(A) $$
 
 2. **乘积法则：**
    - **公式：** 对于任意两个 $n \times n$ 矩阵 $A$ 和 $B$，有 $\det(AB) = \det(A) \det(B)$。
-     \begin{align*}  \det(AB) = \det(A) \det(B)  \end{align*}
+     $$ \det(AB) = \det(A) \det(B) $$
 
 这些性质是关于行列式的基本性质，它们对于行列式的计算和理解非常有用。第一个常数倍法则说明了当矩阵中的所有元素都乘以一个常数时，行列式的值变为原来的 $n$ 次幂倍。第二个乘积法则则表示了两个矩阵的乘积的行列式等于这两个矩阵的行列式的乘积。这些性质在解决线性代数问题和矩阵计算中经常被使用。
 
@@ -736,43 +736,43 @@ a_{n1} & \ldots & \tilde{a}_{nk} & \ldots & a_{nn} \\
 
 1. **伴随矩阵与原矩阵的乘积：**
    - **公式：** 对于任意可逆的 $n \times n$ 矩阵 $A$，其伴随矩阵为 $\text{adj}(A)$ 或 $\text{adjunct}(A)$。有 $A \cdot \text{adj}(A) = \text{adj}(A) \cdot A = \det(A) \cdot I_n$。
-     \begin{align*}  A \cdot \text{adj}(A) = \text{adj}(A) \cdot A = \det(A) \cdot I_n  \end{align*}
+     $$ A \cdot \text{adj}(A) = \text{adj}(A) \cdot A = \det(A) \cdot I_n $$
 
 2. **伴随矩阵的行列式：**
    - **公式：** 对于任意可逆的 $n \times n$ 矩阵 $A$，有 $\det(\text{adj}(A)) = (\det(A))^{n-1}$。
-     \begin{align*}  \det(\text{adj}(A)) = (\det(A))^{n-1}  \end{align*}
+     $$ \det(\text{adj}(A)) = (\det(A))^{n-1} $$
 
 这些性质是关于伴随矩阵的基本性质，它们对于解决线性代数中的问题和计算伴随矩阵时非常有用。第一个性质表明矩阵与其伴随矩阵的乘积等于该矩阵的行列式乘以单位矩阵。第二个性质涉及伴随矩阵的行列式，提供了关于伴随矩阵行列式和原矩阵行列式之间的关系。
 
 > [!note] Formulae
 > Example: Evaluate Vandermonde Determinant
 > 
-> \begin{align*}  \Delta_n = \begin{vmatrix}
+> $$ \Delta_n = \begin{vmatrix}
 > 1 & 1 & \ldots & 1 \newline x_1 & x_2 & \ldots & x_n \newline x_1^2 & x_2^2 & \ldots & x_n^2 \newline \vdots & \vdots & \ddots & \vdots \newline x_1^{n-1} & x_2^{n-1} & \ldots & x_n^{n-1}
-> \end{vmatrix}  \end{align*}
+> \end{vmatrix} $$
 > 
 > This is the Vandermonde determinant of order $n$, where $x_1, x_2, \ldots, x_n$ are distinct real numbers. The determinant is calculated by taking the product of the differences between all pairs of $x_i$'s:
 > 
->  \begin{align*} \Delta_n = \prod_{1 \leq i < j \leq n} (x_j - x_i)  \end{align*}
+>  $$\Delta_n = \prod_{1 \leq i < j \leq n} (x_j - x_i) $$
 > 
 > Solution:
 >1. $x_i=x_j$ => $\det \Delta n= 0$
 >2. $x_{i} \ne x_{j}$ 
 >从最后一行开始，$行_{k+1}-x_{n}\cdot行_k$
->\begin{align*} M'_{k+1,~j}=x_{j}^{k}-x_{j}^{j-1}\cdot x_{n} = x_{j}^{k-1}(x_{j}-x_{n}) \end{align*}
+>$$M'_{k+1,~j}=x_{j}^{k}-x_{j}^{j-1}\cdot x_{n} = x_{j}^{k-1}(x_{j}-x_{n})$$
 >$列j$提出$(x_{j}-x_{n})$
->\begin{align*} \det=\small\prod_{j=1}^{n-1} (x_j - x_n)\cdot\begin{vmatrix}\dots &\dots &\dots &1\\1&1&1&0\\\dots &\dots &\dots &\vdots\\\dots &x_{j}^{k-1} &\dots &\vdots\\\dots &\dots &\dots &0\end{vmatrix} \end{align*}
+>$$\det=\small\prod_{j=1}^{n-1} (x_j - x_n)\cdot\begin{vmatrix}\dots &\dots &\dots &1\\1&1&1&0\\\dots &\dots &\dots &\vdots\\\dots &x_{j}^{k-1} &\dots &\vdots\\\dots &\dots &\dots &0\end{vmatrix}$$
 >按最后一列展开
->\begin{align*} \Delta_{n}=(-1)^{1+n}\cdot\prod_{j=1}^{n-1} (x_j - x_n)\cdot\Delta_{n-1} \end{align*}
->\begin{align*} \Delta_{n}=\prod_{j=1}^{n-1} (x_{n} - x_{j})\cdot\Delta_{n-1}=\dots \end{align*}
->\begin{align*} \Delta_n = \prod_{1 \leq i < j \leq n} (x_j - x_i)  \end{align*}
+>$$\Delta_{n}=(-1)^{1+n}\cdot\prod_{j=1}^{n-1} (x_j - x_n)\cdot\Delta_{n-1}$$
+>$$\Delta_{n}=\prod_{j=1}^{n-1} (x_{n} - x_{j})\cdot\Delta_{n-1}=\dots$$
+>$$\Delta_n = \prod_{1 \leq i < j \leq n} (x_j - x_i) $$
 
 > [!corollary]
 >
-> \begin{align*}  A_n =
+> $$ A_n =
 > \begin{vmatrix}
 > a_1 & 1 & 1 & \ldots & 1 \newline 1 & a_2 \newline 1 && a_3 \newline \vdots & && \ddots \newline 1 &&&& a_n \newline \end{vmatrix}
->  \end{align*}
+> $$
 > 化三角：
 > $=a_{2}\cdot a_{3}\cdots a_{n}\begin{vmatrix}a_{1} & 1 & 1 & \dots & 1\\ \frac{1}{a_{2}} & 1 & 0 & \dots & 0\\ \frac{1}{a_{3}} & 0 & 1 & \dots & 0\\\vdots & \vdots & \vdots & \ddots & \vdots\\ \frac{1}{a_{n}} & 0 & 0 & \dots & 1\end{vmatrix}$
 > $=a_{2}\cdot a_{3}\cdots a_{n}\begin{vmatrix}a_{1}-\sum_{i=2}^{n} \frac{1}{a_{i}} & 0 & 0 & \dots & 0\\ \frac{1}{a_{2}} & 1 & 0 & \dots & 0\\ \frac{1}{a_{3}} & 0 & 1 & \dots & 0\\\vdots & \vdots & \vdots & \ddots & \vdots\\ \frac{1}{a_{n}} & 0 & 0 & \dots & 1\end{vmatrix}$
@@ -780,10 +780,10 @@ a_{n1} & \ldots & \tilde{a}_{nk} & \ldots & a_{nn} \\
 > 
 > ---
 > 
-> \begin{align*}  B_n =
+> $$ B_n =
 > \begin{vmatrix}
 > a_1 & b & b & \ldots & b \newline c & a_2 & b & \ldots & b \newline c & c & a_3 & \ldots & b \newline \vdots & \vdots & \vdots & \ddots & \vdots \newline c & c & c & \ldots & a_n \newline \end{vmatrix}
->  \end{align*}
+> $$
 > 1. 写出递推
 >    - $b=c$
 >      - $行_{1}+行_{2\to n}$
@@ -791,7 +791,7 @@ a_{n1} & \ldots & \tilde{a}_{nk} & \ldots & a_{nn} \\
 >    $行_{i}-行_{1}\times b$ 变成三角
 >    - $b\ne c$
 >      - $[a~b~\dots~b]=[b\dots b] + [a-b~0\dots0]$
->  	$D_{n}=\begin{vmatrix}a-b & 0 & 0 & \dots & 0\\c & a & b & \dots & b\\c & c & a & \dots & b\\&&\ddots & \ddots&\vdots\\c & c & c & \dots & a\end{vmatrix}\begin{align*} +\begin{vmatrix}b & b & b & \dots & b\\c & a & b & \dots & b\\c & c & a & \dots & b\\ &&&\ddots\\\end{vmatrix}$ $=(a-b) D_{n-1} \end{align*}+b\begin{vmatrix}1 & 1 & 1 & \dots & 1\\ & a-c & b-c & \dots & b-c\\&&a-c&\dots&b-c\\&&&\ddots\\&&\end{vmatrix}$ $=(a-b) D_{n-1}+b(a-c)^{n-1}$
+>  	$D_{n}=\begin{vmatrix}a-b & 0 & 0 & \dots & 0\\c & a & b & \dots & b\\c & c & a & \dots & b\\&&\ddots & \ddots&\vdots\\c & c & c & \dots & a\end{vmatrix}$$+\begin{vmatrix}b & b & b & \dots & b\\c & a & b & \dots & b\\c & c & a & \dots & b\\ &&&\ddots\\\end{vmatrix}$ $=(a-b) D_{n-1}$$+b\begin{vmatrix}1 & 1 & 1 & \dots & 1\\ & a-c & b-c & \dots & b-c\\&&a-c&\dots&b-c\\&&&\ddots\\&&\end{vmatrix}$ $=(a-b) D_{n-1}+b(a-c)^{n-1}$
 >  	第二项提出第一行$b$, 相减变成上三角
 > 2. 特征方程递推
 >    - $D_{n}=\det(A_n)=\det(A_{n}^{T})\dots b/c互换位置$
@@ -799,25 +799,25 @@ a_{n1} & \ldots & \tilde{a}_{nk} & \ldots & a_{nn} \\
 > ---
 > 
 >
-> \begin{align*}  C_n =
+> $$ C_n =
 > \begin{vmatrix}
 > a & b \newline c & a & b \newline &c & \ddots & \ddots \newline & & \ddots & \ddots & b \newline  & &  & c & a \newline \end{vmatrix}
->  \end{align*}
+> $$
 >
 > $=a\cdot C_{n-1}+(-c)\times b\cdot C_{n-2}$
 >
 > ---
 > 
-> \begin{align*}  D_n =
+> $$ D_n =
 > \begin{vmatrix}
 > 1 + a_1 & a_2 & \ldots & a_n \newline a_1 & 1 + a_2 & \ldots & a_n \newline \vdots & \vdots & \ddots & \vdots \newline a_1 & a_2 & \ldots & 1 + a_n \newline \end{vmatrix}
->  \end{align*}
+> $$
 > 
 >---
 >
->\begin{align*} \begin{vmatrix}
+>$$\begin{vmatrix}
 > a_n &&&&&&& b_n \newline  & a_{n-1} & & &&& b_{n-1} \newline &&\ddots &&& \dots \newline &&&a_1 & b_1 \newline &&&c_1 & d_1 \newline &&\dots &&& \ddots \newline &c_{n-1} &&&&& d_{n-1} \newline c_n &&&&&&& d_n
-> \end{vmatrix} \end{align*}
+> \end{vmatrix}$$
 > 沿第一行展开 - 沿最后一行展开
 
 > [!note]
@@ -832,12 +832,12 @@ a_{n1} & \ldots & \tilde{a}_{nk} & \ldots & a_{nn} \\
 
 1. **代数余子式展开法（Cofactor Expansion）：**
    - **公式：** 对于一个 $n \times n$ 的矩阵 $A$，其行列式可以通过代数余子式展开法计算。
-     \begin{align*}  \det(A) = a_{11}C_{11} + a_{12}C_{12} + \ldots + a_{1n}C_{1n} = \sum_{i=1}^{n} a_{1i}C_{1i}  \end{align*}
+     $$ \det(A) = a_{11}C_{11} + a_{12}C_{12} + \ldots + a_{1n}C_{1n} = \sum_{i=1}^{n} a_{1i}C_{1i} $$
    - **方法：** 选择某一行（或列），计算每个元素与其代数余子式的乘积，然后求和。
 
 2. **初等行变换法（Elementary Row Operations）：**
    - **公式：** 通过初等行变换，将矩阵化为上三角形矩阵，然后行列式即为对角线元素的乘积。
-     \begin{align*}  \det(A) = \prod_{i=1}^{n} a_{ii}  \end{align*}
+     $$ \det(A) = \prod_{i=1}^{n} a_{ii} $$
    - **方法：** 利用行变换，将矩阵化为上（或下）三角形，然后计算对角线元素的乘积。
 
 3. **拆分行/列法（Splitting One Row/Column into Two）：**
@@ -846,12 +846,12 @@ a_{n1} & \ldots & \tilde{a}_{nk} & \ldots & a_{nn} \\
 
 4. **递归关系法（Recurrence Relation）：**
    - **公式：** 利用递归关系，将 $n$ 阶矩阵的行列式表示为 $n-1$ 阶矩阵的行列式。
-     \begin{align*}  \det(A) = a_{11} \det(A_{11}) - a_{12} \det(A_{12}) + \ldots  \end{align*}\begin{align*} + (-1)^{1+n}a_{1n} \det(A_{1n})  \end{align*}
+     $$ \det(A) = a_{11} \det(A_{11}) - a_{12} \det(A_{12}) + \ldots $$$$+ (-1)^{1+n}a_{1n} \det(A_{1n}) $$
    - **方法：** 利用递归关系，将较高阶矩阵的行列式表示为较低阶矩阵的行列式。
 
 5. **对角线和反对角线法（Computing Diagonal and Anti-Diagonal Lines）：**
    - **公式：** 对于2阶或3阶矩阵，计算对角线和反对角线上元素的乘积之和。
-     \begin{align*}  \det(A) = a_{11}a_{22} - a_{12}a_{21}  \end{align*}
+     $$ \det(A) = a_{11}a_{22} - a_{12}a_{21} $$
    - **方法：** 对角线和反对角线上的元素相乘，并根据符号求和。对于3阶矩阵，还需要重复这个过程。
 
 这些方法提供了计算行列式的多种途径，选择合适的方法取决于具体矩阵的结构和大小。
@@ -863,36 +863,36 @@ a_{n1} & \ldots & \tilde{a}_{nk} & \ldots & a_{nn} \\
 > 
 > **Example 2.2:**
 > Let $A$ be a $4 \times 4$ matrix such that
-> \begin{align*}  \text{adj}(A) =
+> $$ \text{adj}(A) =
 > \begin{bmatrix}
 > 2 & 0 & 1 & 0 \newline 0 & 2 & 0 & 0 \newline 4 & 0 & 3 & 2 \newline -2 & 0 & -1 & 2
 > \end{bmatrix}
->  \end{align*}
+> $$
 > Find:
 > (1) $\det(A)$;
 > (2) $A$.
 > 
 > **Example 2.3:**
 > Evaluate $\det(A_n)$, where
-> \begin{align*}  A_n =
+> $$ A_n =
 > \begin{bmatrix}
 > a & b & b & \ldots & b \newline c & a & b & \ldots & b \newline c & c & a & \ldots & b \newline \vdots & \vdots & \vdots & \ddots & \vdots \newline c & c & c & \ldots & a
 > \end{bmatrix}
->  \end{align*}
+> $$
 > 
 > **Example 2.4:**
 > Suppose that $x \in \mathbb{R}^4$ is the vector satisfying $Ax = b$, where
-> \begin{align*}  A =
+> $$ A =
 > \begin{bmatrix}
 > 2 & 0 & 0 & 4 \newline 0 & 1 & 2 & 0 \newline 2 & 2022 & 1 & 1 \newline 0 & -3 & 2 & 0
 > \end{bmatrix}
->  \end{align*}
+> $$
 > and
-> \begin{align*}  b =
+> $$ b =
 > \begin{bmatrix}
 > 0 \newline 0 \newline -1 \newline 2
 > \end{bmatrix}
->  \end{align*}
+> $$
 > Let $v = (0, 1, 2, 0) \in \mathbb{R}^4$. Find $\text{proj}_v x$, the orthogonal projection of $x$ on $v$.
 
 # Chap.03 General Vector Spaces
@@ -1055,7 +1055,7 @@ a_{n1} & \ldots & \tilde{a}_{nk} & \ldots & a_{nn} \\
 
 ### 秩-零度定理（Rank-Nullity Theorem）
 
-\begin{align*} \text{rank}(A) + \text{nullity}(A) = n \end{align*}
+$$\text{rank}(A) + \text{nullity}(A) = n$$
 
 其中$n$是矩阵的列数。这个定理说明了$\mathbb{R}^n$中向量空间的维数可以通过矩阵的秩和零度来划分：$n$不仅是列空间的维数（即秩），还是零空间的维数（即零度）之和。
 
@@ -1071,21 +1071,21 @@ a_{n1} & \ldots & \tilde{a}_{nk} & \ldots & a_{nn} \\
 
 ![../res/GIF 2023-12-17 20-01-12.gif](../res/GIF%202023-12-17%2020-01-12.gif)
 
-\begin{align*} 
+$$
 \underbrace{ A\mathbf{v} }_{ \text{Matrix Product} }=\underbrace{ \lambda \mathbf{v} }_{ \text{Scalar Product} }
- \end{align*}
+$$
 
 也即
 
-\begin{align*} 
+$$
 A\mathbf{v}=(\lambda I) \mathbf{v}
- \end{align*}
+$$
 
 即
 
-\begin{align*} 
+$$
 (A-\lambda I)\mathbf{v}=\mathbf{0}
- \end{align*}
+$$
 
 
 此时 $\mathbf{v}$ 就是一个**特征向量**，且 $\lambda$ 就是这个特征向量的**特征值**
@@ -1098,25 +1098,25 @@ A\mathbf{v}=(\lambda I) \mathbf{v}
 
 此时 $\lambda$ 有解，即
 
-\begin{align*} 
+$$
 \det(A-\lambda I)=0
- \end{align*}
+$$
 
 值得注意的是，我们可以直接书写成
 
-\begin{align*} 
+$$
 \begin{bmatrix}a_{11}-\lambda & a_{12} & a_{13} \\
 a_{21} & a_{22}-\lambda & a_{23} \\
 a_{31} & a_{32} & a_{33}-\lambda\end{bmatrix}
- \end{align*}
+$$
 
 
 #### Mean-Product Formula (2x2)
 
 > [!formula] Mean-Product Formula
-> \begin{align*} 
+> $$
 > \lambda_{1,2}=m \pm \sqrt{ m^2 -p }
->  \end{align*}
+> $$
 > 
 > 其中
 > $m=\frac{\lambda_{1}+\lambda_{2}}{2}=\frac{\text{tr}(A)}{2};$
