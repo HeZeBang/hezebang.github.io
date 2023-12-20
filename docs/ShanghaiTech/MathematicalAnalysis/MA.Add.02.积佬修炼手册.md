@@ -1,9 +1,10 @@
 ---
 share: true
+title: MA.Add.02.积佬修炼手册
 ---
 
 
-## 积分表
+# 积分表
 
 ![../res/无标题.png](../res/%E6%97%A0%E6%A0%87%E9%A2%98.png)
 
@@ -208,11 +209,11 @@ share: true
 > \end{flalign}
 > $$
 
-## 典题整理
+# 典题整理
 
-### 不定积分
+## 不定积分
 
-##### $\int_0^{\frac{\pi}{2}}\sqrt{\tan x}{\mathrm d}x$
+#### $\int_0^{\frac{\pi}{2}}\sqrt{\tan x}{\mathrm d}x$
 
 > ***Solution***
 > 
@@ -222,7 +223,7 @@ share: true
 > \end{align*}
 > $$
 
-##### 🔴$\int_0^{\frac{\pi}{4}} \sqrt{\tan x} \mathrm{~d} x$
+#### 🔴$\int_0^{\frac{\pi}{4}} \sqrt{\tan x} \mathrm{~d} x$
 
 > Chap 5.1 P190 22.(9)
 
@@ -234,7 +235,7 @@ share: true
 > \end{aligned}
 > $$
 
-##### $I_{15}=\int \mathrm{e}^x\left(1-\frac{\mathrm{e}^{-x}}{\sqrt{x}}\right) \mathrm{d} x$.
+#### $I_{15}=\int \mathrm{e}^x\left(1-\frac{\mathrm{e}^{-x}}{\sqrt{x}}\right) \mathrm{d} x$.
 
 >来源: [微积分每日一题3-187：求不定积分基础26题第15题](https://zhuanlan.zhihu.com/p/671872512)
 
@@ -257,9 +258,9 @@ share: true
 > $$
 > 不能在分式上挪 $e^{x}$ !
 
-### 定积分
+## 定积分
 
-##### $\int_{0}^{1} x\arcsin x \, dx$
+#### $\int_{0}^{1} x\arcsin x \, dx$
 
 > ***Analysis***
 > 
@@ -273,7 +274,7 @@ share: true
 > \end{aligned}
 > $$
 
-#### 结合 <b class="md-tag">积分/中值定理</b> 
+### 结合 <b class="md-tag">积分/中值定理</b> 
 
 > [!theorem] 积分/中值定理 
 > 设 $f \in C[a, b]$, 则 $\exists \xi \in[a, b]$ 使得
@@ -288,7 +289,7 @@ share: true
 > \displaystyle\int_{a}^{b} f(x)g(x) \, dx =f(\xi)\int_{a}^{b} g(x) \, dx ,~\xi \in[a,b]
 > $$
 
-##### 求 $\text {(1)} \lim _{n \rightarrow \infty} \int_0^1 \frac{x^n}{1+x} \mathrm{~d} x$,  
+#### 求 $\text {(1)} \lim _{n \rightarrow \infty} \int_0^1 \frac{x^n}{1+x} \mathrm{~d} x$,  
 
 > ***Analysis***
 > 
@@ -311,7 +312,7 @@ share: true
 > \lim _{n \rightarrow \infty} \int_0^1 \frac{x^n}{1+x} \mathrm{~d} x=0
 > $$
 
-##### 求 ${(2)} \lim _{n \rightarrow \infty} \int_n^{n+p} \frac{\sin x}{x} \mathrm{~d} x, p \text { 为自然数. }$
+#### 求 ${(2)} \lim _{n \rightarrow \infty} \int_n^{n+p} \frac{\sin x}{x} \mathrm{~d} x, p \text { 为自然数. }$
 
 > ***Solution***
 > 
