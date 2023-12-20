@@ -170,6 +170,7 @@ title: MA.Add.02.积佬修炼手册
 ### $\int \sec x \, dx$
 
 > ***Solution.I***
+> 最快，不自然
 > 
 > $$
 > \begin{aligned}
@@ -178,6 +179,7 @@ title: MA.Add.02.积佬修炼手册
 > $$
 > 
 > ***Solution.II***
+> 较快， <b class="md-tag">凑微分法</b> 
 > 
 > $$
 > \begin{aligned}
@@ -202,6 +204,7 @@ title: MA.Add.02.积佬修炼手册
 ### $I(m,n)=\int \cos ^{m}x\sin ^{m}x \, dx$
 
 > ***Solution***
+> <b class="md-tag">分部积分法</b> + 递推构造
 > 
 > $$
 > \begin{flalign}
@@ -214,6 +217,20 @@ title: MA.Add.02.积佬修炼手册
 ## 典题整理
 
 ### 不定积分
+
+#### $\int \dfrac{\arctan x}{x^{2}(x^{2}+1)} \, dx$
+
+> ***Analysis***
+> 
+> <b class="md-tag">分部积分法</b> 
+> 
+> Hint.1: **裂项** $\frac{1}{x^{2}(x^{2}+1)}=\frac{1}{x^{2}}-\frac{1}{x^{2}+1}$ 
+> 
+> Hint.2: $\left( -\frac{1}{x}-\arctan x \right)'=\frac{1}{x^{2}}-\frac{1}{x^{2}+1}$
+> 
+> ***Solution***
+> 
+> ![../res/4d7255c501ddd002282f09ee53725eeb.jpeg](../res/4d7255c501ddd002282f09ee53725eeb.jpeg)
 
 #### $I_{15}=\int \mathrm{e}^x\left(1-\frac{\mathrm{e}^{-x}}{\sqrt{x}}\right) \mathrm{d} x$.
 
@@ -329,7 +346,7 @@ title: MA.Add.02.积佬修炼手册
 > \int_{a}^{b} f(x) \mathrm{d} x=f(\xi)(b-a)
 > $$
 
-> [!corollary] 积分/中值定理/推广
+> [!corollary] 积分/中值定理/推广 AKA.积分第一中值公式
 > 
 > $$
 > \displaystyle\int_{a}^{b} f(x)g(x) \, dx =f(\xi)\int_{a}^{b} g(x) \, dx ,~\xi \in[a,b]
@@ -377,3 +394,40 @@ title: MA.Add.02.积佬修炼手册
 > $$
 > \lim _{n \rightarrow \infty} \int_n^{n+p} \frac{\sin x}{x} \mathrm{~d} x=\lim _{\xi \rightarrow \infty} \frac{\sin \xi}{\xi} \cdot p=0 .
 > $$
+
+### 证明部分
+
+#### 积分第一中值公式
+
+> 作业题
+
+> [!question] 
+> 证明 (积分第一中值公式) 若 $f(x)$ 是 $[a, b]$ 上的连续函数, $g(x)$ 是 $[a, b]$ 上的非负可积函数, 则存在 $\xi \in[a, b]$, 使得
+> $$
+> \int_a^b f(x) g(x) \mathrm{d} x=f(\xi) \int_a^b g(x) \mathrm{d} x .
+> $$
+
+> ***Proof***
+> 
+> 记 $f([a, b])=[c, d]$, 易知 ==$f$有界==
+> $$
+> c g(x) \leqslant f(x) g(x) \leqslant d g(x), \text { a. e. } x \in[a, b] .
+> $$
+> 
+> 将上式积分, 我们有
+> $$
+> c \int_a^b g(x) \mathrm{d} x \leqslant \int_a^b f(x) g(x) \mathrm{d} x \leqslant d \int_a^b g(x) \mathrm{d} x .
+> $$
+> 
+> 若 $I=\int_a^b g(x) \mathrm{d} x>0$, 则用它来除上式两端可得
+> $$
+> c \leqslant \frac{\int_a^b f(x) g(x) \mathrm{d} x}{I} \leqslant d .
+> $$
+> 
+> 由 $f(x)$ 的 <b class="md-tag">闭区间连续函数介值性</b> 可知, 存在 $\xi \in[a, b]$, 使得
+> $$
+> f(\xi)=\frac{\int_a^b f(x) g(x) \mathrm{d} x}{\int_a^b g(x) \mathrm{d} x} .
+> $$
+> 
+> 此即 (5.14) 式.
+> 若 $I=0$, 则 $g(x)=0$, a. e. $x \in[a, b]$, 从而 (5.14) 式两端皆为零. 此时 $\xi$ 可任意地选取.
