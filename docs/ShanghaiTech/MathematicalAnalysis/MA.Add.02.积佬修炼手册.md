@@ -220,17 +220,36 @@ title: MA.Add.02.积佬修炼手册
 
 #### $\int \dfrac{\arctan x}{x^{2}(x^{2}+1)} \, dx$
 
+> 来源: 作业题
+
 > ***Analysis***
 > 
 > <b class="md-tag">分部积分法</b> 
 > 
-> Hint.1: **裂项** $\frac{1}{x^{2}(x^{2}+1)}=\frac{1}{x^{2}}-\frac{1}{x^{2}+1}$ 
-> 
-> Hint.2: $\left( -\frac{1}{x}-\arctan x \right)'=\frac{1}{x^{2}}-\frac{1}{x^{2}+1}$
+> *Hint*
+> 1. **裂项** $\displaystyle \frac{1}{x^{2}(x^{2}+1)}=\frac{1}{x^{2}}-\frac{1}{x^{2}+1}$ 
+> 2. $\displaystyle \left( -\frac{1}{x}-\arctan x \right)'=\frac{1}{x^{2}}-\frac{1}{x^{2}+1}$
+> 3. $\displaystyle \frac{1}{x^{3}+x}=\frac{(x^{2}+1)-\textcolor{Orange}{ x\cdot x }}{\textcolor{Orange}{ x(x^{2}+1) }}=\frac{1}{x}-\frac{x}{x^{2}+1}$
+> 4. $\displaystyle \int \frac{x}{x^{2}+1} \, dx\implies \frac{1}{2}\int \frac{1}{x^{2}+1} \, d(x^{2}+1)$
 > 
 > ***Solution***
 > 
 > ![../res/4d7255c501ddd002282f09ee53725eeb.jpeg](../res/4d7255c501ddd002282f09ee53725eeb.jpeg)
+
+#### $\int \dfrac{x+\sin x}{\cos x + 1} \, dx$
+
+> 来源: 作业题
+
+> ***Analysis***
+> 
+> *Hint*
+> 1. 分子加法：拆分
+> 2. <b class="md-tag">凑微分法</b> $\left( \cos x+1 \right)'=\sin x$
+> 3. 分母 $\cos x+1$ => 二倍角/半角公式消成**单一项**
+> 
+> ***Solution***
+> 
+> ![../res/d772af544a78253f060658ff030dafbf.jpeg](../res/d772af544a78253f060658ff030dafbf.jpeg)
 
 #### $I_{15}=\int \mathrm{e}^x\left(1-\frac{\mathrm{e}^{-x}}{\sqrt{x}}\right) \mathrm{d} x$.
 
