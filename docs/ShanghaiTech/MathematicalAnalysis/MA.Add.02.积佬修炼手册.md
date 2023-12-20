@@ -136,7 +136,7 @@ share: true
 
 > ***Tips***
 > 
-> <b class="md-tag">三角换元</b>
+> <b class="md-tag">三角代换</b> 
 > 
 > 对边：$x$
 > 邻边：$a$
@@ -210,7 +210,9 @@ share: true
 
 ## 典题整理
 
-### $\int_0^{\frac{\pi}{2}}\sqrt{\tan x}{\mathrm d}x$
+### 不定积分
+
+##### $\int_0^{\frac{\pi}{2}}\sqrt{\tan x}{\mathrm d}x$
 
 > ***Solution***
 > 
@@ -220,7 +222,7 @@ share: true
 > \end{align*}
 > $$
 
-### 🔴$\int_0^{\frac{\pi}{4}} \sqrt{\tan x} \mathrm{~d} x$
+##### 🔴$\int_0^{\frac{\pi}{4}} \sqrt{\tan x} \mathrm{~d} x$
 
 > Chap 5.1 P190 22.(9)
 
@@ -230,4 +232,96 @@ share: true
 > \begin{aligned}
 > &\xlongequal{t=\tan x} \int_0^1 \sqrt{t} d \arctan t\newline &\xlongequal{m=\sqrt{t}} \int_0^1 m d \arctan m^2\newline & =\int_0^1 \frac{2 m^2}{1+m^4} d m \newline & =\int_0^1 \frac{m^2-1}{1+m^4} d m+\int_0^1 \frac{m^2+1}{1+m^{\varphi}} d m\newline & =\int_0^1 \frac{1-\frac{1}{m^2}}{m^2+\frac{1}{m^2}} d m+\int_0^1 \frac{1+\frac{1}{m^2}}{m^2+\frac{1}{m^2}} d m\newline & =\int_0^1 \frac{d\left(m+\frac{1}{m}\right)}{m^2+\frac{1}{m^2}}+\int_0^1 \frac{d\left(m-\frac{1}{m}\right)}{m^2+\frac{1}{m^2}}\newline & =\int_0^1 \frac{d\left(m+\frac{1}{m}\right)}{\left(m+\frac{1}{m}\right)^2-2}+\int_0^1 \frac{d\left(m-\frac{1}{m}\right)}{\left(m-\frac{1}{m}\right)^2+2}\newline & =\left.\frac{1}{2 \sqrt{2}} \ln \left|\frac{m+\frac{1}{m}-\sqrt{2}}{m+\frac{1}{m}+\sqrt{2}}\right|\right|_0 ^1+\left.\frac{1}{\sqrt{2}} \arctan \frac{m-\frac{1}{m}}{\sqrt{2}}\right|_0 ^1\newline \because~ &\lim _{m \rightarrow 0^{+}}\left(1-\frac{2 \sqrt{2}}{m+\frac{1}{m}+\sqrt{2}}\right)=1-\lim _{m \rightarrow 0^{+}} \frac{2 \sqrt{2} m}{m^2+\sqrt{2} m+1}=1 \newline & \lim _{m \rightarrow 0^{+}}\left(m-\frac{1}{m}\right) \frac{0}{=} \lim _{m \rightarrow 0^{+}} m-\lim _{m \rightarrow 0^{+}} \frac{1}{m}=-\infty \newline \therefore~ &= \frac{1}{2 \sqrt{2}}\left(\ln \frac{2-\sqrt{2}}{2+\sqrt{2}}-0\right)+\frac{1}{\sqrt{2}}(\arctan 0-\arctan -\infty) \newline &= \frac{1}{2 \sqrt{2}} \ln (3-2 \sqrt{2})+\frac{1}{\sqrt{2}}\left(0+\frac{\pi}{2}\right) \newline &= \frac{\sqrt{2}}{2} \ln (\sqrt{2}-1)+\frac{\sqrt{2} \pi}{4} \newline & \approx 0.4875
 > \end{aligned}
+> $$
+
+##### $I_{15}=\int \mathrm{e}^x\left(1-\frac{\mathrm{e}^{-x}}{\sqrt{x}}\right) \mathrm{d} x$.
+
+>来源: [微积分每日一题3-187：求不定积分基础26题第15题](https://zhuanlan.zhihu.com/p/671872512)
+
+> ***Analysis***
+> 
+> 本题考查最基本的积分表运算
+> 
+> ***Solution***
+> 
+> $$
+> \begin{aligned}
+> I_{15} & =\int \mathrm{e}^x\left(1-\frac{\mathrm{e}^{-x}}{\sqrt{x}}\right) \mathrm{d} x=\int\left(\mathrm{e}^x-\frac{\textcolor{orange}{ \mathrm{e}^x \cdot \mathrm{e}^{-x} }}{\sqrt{x}}\right) \mathrm{d} x \newline & =\int \mathrm{e}^x \mathrm{~d} x-\int \frac{\textcolor{orange}{ 1 }}{\sqrt{x}} \mathrm{~d} x=\mathrm{e}^x-2 \int \frac{\mathrm{d} x}{2 \sqrt{x}} \newline & =\mathrm{e}^x-2 \int \mathrm{d}(\sqrt{x})=\mathrm{e}^x-2 \sqrt{x}+C .
+> \end{aligned}
+> $$
+> 
+> ***Wrong Answer***
+> 
+> $$
+> \int e^{x} \, d \dfrac{e^{-x}}{\sqrt{ x }}\neq \int 1 \, d \frac{1}{\sqrt{ x }}
+> $$
+> 不能在分式上挪 $e^{x}$ !
+
+### 定积分
+
+##### $\int_{0}^{1} x\arcsin x \, dx$
+
+> ***Analysis***
+> 
+> <b class="md-tag">分部积分法</b>  + <b class="md-tag">三角代换</b> 
+> 
+> ***Solution***
+> 
+> $$
+> \begin{aligned}
+> & u=\arcsin x \quad v^{\prime}=x \newline & u^{\prime}=\frac{1}{\sqrt{1-x^2}} \quad v=\frac{x^2}{2} \newline & \int x \arcsin x d x=\frac{x^2}{2} \arcsin x-\frac{1}{2} \int \frac{x^2}{\sqrt{1-x^2}} d x \text {. } \\ \newline &\textcolor{Orange}{\textbf {第二类换元 }} \newline &\text { 故 } x=\sin t . \Rightarrow d x=\cos t d t \newline &\qquad\left(t=\arcsin x\right), \quad x \in[0,1] \Rightarrow t \in\left[0, \frac{\pi}{2}\right] \\ \newline & \int \frac{x^2}{\sqrt{1-x^2}} d x \newline &\xlongequal{ x=\sin t }\int \dfrac{\sin ^{2}t}{\cos t} \, d\sin t \newline & =\int \sin ^2 t d t\newline &=\int \left( \frac{1}{2}-\frac{1}{2} \cos 2 t \right) \,d t\newline & =\frac{1}{2} t-\frac{\sin 2 t}{4}+C \newline \therefore~ & \int x \arcsin x d x\newline &=\left.\frac{x^2}{2} \arcsin x\right|_0 ^1-\left.\frac{1}{2}\left[\frac{1}{2} t-\frac{\sin 2 t}{4}\right]\right|_0 ^{\pi/2} \newline & =\frac{\pi}{4}-\frac{1}{2}\left(\frac{\pi}{4}-0\right) \text {. } \newline & =\frac{\pi}{8} \newline &
+> \end{aligned}
+> $$
+
+#### 结合 <b class="md-tag">积分/中值定理</b> 
+
+> [!theorem] 积分/中值定理 
+> 设 $f \in C[a, b]$, 则 $\exists \xi \in[a, b]$ 使得
+> 
+> $$
+> \int_{a}^{b} f(x) \mathrm{d} x=f(\xi)(b-a)
+> $$
+
+> [!corollary] 积分/中值定理/推广
+> 
+> $$
+> \displaystyle\int_{a}^{b} f(x)g(x) \, dx =f(\xi)\int_{a}^{b} g(x) \, dx ,~\xi \in[a,b]
+> $$
+
+##### 求 $\text {(1)} \lim _{n \rightarrow \infty} \int_0^1 \frac{x^n}{1+x} \mathrm{~d} x$,  
+
+> ***Analysis***
+> 
+> <b class="md-tag">积分/中值定理/推广</b> 
+> 
+> ***Solution***
+> 
+> (1) 由积分中值定理推广 $\int_a^b f(x) g(x) \mathrm{d} x=f(\xi) \int_a^b g(x) \mathrm{d} x$ 可知
+> $$
+> \int_0^1 \frac{x^n}{1+x} \mathrm{~d} x=\frac{1}{1+\xi} \int_0^1 x^n \mathrm{~d} x, 0 \leqslant \xi \leqslant 1 .
+> $$
+> 
+> 又
+> $$
+> \lim _{n \rightarrow \infty} \int_0^1 x^n \mathrm{~d} x=\lim _{n \rightarrow \infty} \frac{1}{n+1}=0 \text { 且 } \frac{1}{2} \leqslant \frac{1}{1+\xi} \leqslant 1,
+> $$
+> 
+> 故
+> $$
+> \lim _{n \rightarrow \infty} \int_0^1 \frac{x^n}{1+x} \mathrm{~d} x=0
+> $$
+
+##### 求 ${(2)} \lim _{n \rightarrow \infty} \int_n^{n+p} \frac{\sin x}{x} \mathrm{~d} x, p \text { 为自然数. }$
+
+> ***Solution***
+> 
+> （2）利用积分中值定理.
+> 设 $f(x)=\frac{\sin x}{x}$, 显然 $f(x)$ 在 $[n, n+p]$ 上连续, 由积分中值定理得
+> $$
+> \int_n^{n+p} \frac{\sin x}{x} \mathrm{~d} x=\frac{\sin \xi}{\xi} \cdot p, \xi \in[n, n+p],
+> $$
+> 
+> 当 $n \rightarrow \infty$ 时, $\xi \rightarrow \infty$, 而 $|\sin \xi| \leqslant 1$, 故
+> $$
+> \lim _{n \rightarrow \infty} \int_n^{n+p} \frac{\sin x}{x} \mathrm{~d} x=\lim _{\xi \rightarrow \infty} \frac{\sin \xi}{\xi} \cdot p=0 .
 > $$
