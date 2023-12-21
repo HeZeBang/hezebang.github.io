@@ -392,6 +392,20 @@ title: MA.Add.02.积佬修炼手册
 
 ---
 
+### 变上限积分及求导
+
+#### $\lim _{x \rightarrow 0} \frac{1}{\sin ^3 x} \int_0^{\tan x} \arcsin t^2 \mathrm{~d} t$
+
+> ***Solution***
+> 
+> $$
+> \begin{aligned}
+> & =\lim _{x \rightarrow \infty} \frac{\int_0^{\textcolor{Cyan}{ \tan x }} \arcsin t^2 d t}{\sin ^3 x} \newline & =\lim _{x \rightarrow 0} \frac{\arcsin \left(\textcolor{Cyan}{ \tan ^2 x }\right)}{3 \sin ^2 x \cos ^2 x \textcolor{Cyan}{ \cos ^2 x }} \newline & =\lim _{x \rightarrow 0} \frac{\arcsin x}{3 x^2 \cos ^3 x} \newline & =\lim _{x \rightarrow-\infty} \frac{x^2}{3 x^2} \newline & =\frac{1}{3} \newline &
+> \end{aligned}
+> $$
+
+---
+
 ### 结合 <b class="md-tag">积分/中值定理</b> 
 
 > [!theorem] 积分/中值定理 
