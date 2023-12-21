@@ -53,9 +53,9 @@ title: MA.Add.02.积佬修炼手册
 
 ## 部分积分推导
 
-### $\int \frac{1}{x^2+a^2} \, dx$
+### $\int \frac{1}{x^2+a^2} \, dx=\frac{1}{a}\arctan \frac{x}{a}+C$ "AA"
 
-> ***Tips*** **"AA"**
+> ***Tips***
 > 
 > $(\arctan x)'=\frac{1}{1+x^2}$
 > 
@@ -69,9 +69,9 @@ title: MA.Add.02.积佬修炼手册
 > \end{flalign}
 > $$
 
-### $\int \frac{1}{x^{2}-a^{2}} \, dx$
+### $\int \frac{1}{x^{2}-a^{2}} \, dx=\frac{1}{2a}\ln \left| \frac{x-a}{x+a} \right| +C$ 1/2a ∓
 
-> ***Tips*** **1/2a ∓** 
+> ***Tips***
 > 
 > $$
 > {\text{凑2a}\implies} \frac{1}{x-a}-\frac{1}{x+a}\implies \dfrac{x-a}{x+a}
@@ -85,8 +85,7 @@ title: MA.Add.02.积佬修炼手册
 > \end{flalign}
 > $$
 
-### $\int \frac{1}{a^{2}-x^{2}} \, dx$
-
+### $\int \frac{1}{a^{2}-x^{2}} \, dx=\frac{1}{2a}\ln \left| \frac{x+a}{x-a} \right| +C$
 
 > ***Solution***
 > 
@@ -98,7 +97,7 @@ title: MA.Add.02.积佬修炼手册
 > \end{flalign}
 > $$
 
-### $\int \frac{1}{\sqrt{ a^{2}-x^{2} }} \, dx$
+### $\int \frac{1}{\sqrt{ a^{2}-x^{2} }} \, dx=\arcsin\left( \frac{x}{a} \right)+C$
 
 > ***Tips***
 > 
@@ -114,9 +113,9 @@ title: MA.Add.02.积佬修炼手册
 > \end{flalign}
 > $$
 
-### $\int \frac{1}{\sqrt{ x^{2}\pm a^{2} }} \, dx$
+### $\int \frac{1}{\sqrt{ x^{2}\pm a^{2} }} \, dx\textcolor{lightgray}{ =\int \sec t \, dt }= \ln\left| \frac{x}{a} + \frac{\sqrt{ x^{2}\pm a^{2} }}{a}\right| + C$ ▲ (b + c) / a
 
-#### $\int \frac{1}{\sqrt{ x^{2} + a^{2} }} \, dx$
+#### $\int \frac{1}{\sqrt{ x^{2} - a^{2} }} \, dx$
 
 > ***Tips***
 > 
@@ -155,8 +154,10 @@ title: MA.Add.02.积佬修炼手册
 > **综上**
 > 
 > $$
-> \int \frac{1}{\sqrt{ x^{2}\pm a^{2} }} \, dx = \ln\left| \frac{x}{a} + \dfrac{\sqrt{ x^{2}\pm a^{2} }}{a}\right| + C
+> \int \frac{1}{\textcolor{Cyan}{ \sqrt{ x^{2}\pm a^{2} } }} \, dx = \ln\left| \frac{x}{a} + \dfrac{\textcolor{Cyan}{ \sqrt{ x^{2}\pm a^{2} } }}{a}\right| + C
 > $$
+> 
+> 三角形**两个边比a相加**
 
 ### $\int \tan x\, dx$
 
@@ -168,7 +169,7 @@ title: MA.Add.02.积佬修炼手册
 > \end{aligned}
 > $$
 
-### $\int \sec x \, dx$
+### $\int \sec x \, dx=\ln|\sec x+\tan x|+C$ 10'(ten sec)
 
 > ***Solution.I***
 > 最快，不自然
@@ -188,7 +189,7 @@ title: MA.Add.02.积佬修炼手册
 > \end{aligned}
 > $$
 
-### $\int \csc x \, dx$
+### $\int \csc x \, dx=-\ln|\csc x+\cot x|+C$ 
 
 > ***Solution.I***
 > 
@@ -355,6 +356,16 @@ title: MA.Add.02.积佬修炼手册
 
 ### 定积分
 
+#### $\int_{-1}^1 e^{|x|} \cdot \arctan e^x d x$
+
+> ***Solution***
+> 
+> $$
+> \begin{aligned}
+> & (13) \int_{-1}^1 e^{|x|} \cdot \arctan e^x d x ; \newline = & \int_{-1}^0 e^x \arctan x e^x d x+\int_0^1 e^x \arctan e^x d x \quad\dots\text{分离去绝对值}\newline = & \int_{-1}^0 e^{-x}\left(\frac{\pi}{2}-\arctan e^{-x} d x\right)+\int_0^1 e^x \arctan e^x d x \newline = & \frac{\pi}{2} \int_{-1}^0 e^{-x} d x-\int_{-1}^0 e^{-x} \arctan e^{-x} d x+\int_0^1 e^x \arctan e^x d x \newline = & \frac{\pi}{2} \cdot(e-1)+\int_{-1}^0 \arctan e^{-x} d\left(e^{-x}\right)+\int_0^1 \arctan e^x d\left(e^x\right) . \newline = & \frac{\pi}{2}(e-1)
+> \end{aligned}
+> $$
+
 #### $\int_0^{\frac{\pi}{2}}\sqrt{\tan x}{\mathrm d}x$
 
 > ***Solution***
@@ -439,9 +450,52 @@ title: MA.Add.02.积佬修炼手册
 > \lim _{n \rightarrow \infty} \int_n^{n+p} \frac{\sin x}{x} \mathrm{~d} x=\lim _{\xi \rightarrow \infty} \frac{\sin \xi}{\xi} \cdot p=0 .
 > $$
 
+---
+
+### 结合 <b class="md-tag">Wallis公式</b>  🥧EVENPIE~
+
+> [!formula] Wallis 公式
+> $$
+> In=\begin{cases}
+> \dfrac{n-1}{n}\cdot \dfrac{n-3}{n-2} \cdot \dots \cdot \frac{1}{2}I_{0}=\dfrac{(n-1)!!}{n!!}\cdot \dfrac{\pi}{2},& n\text{ is even} \newline \dfrac{n-1}{n}\cdot \dfrac{n-3}{n-2} \cdot \dots \cdot \frac{1}{2}I_{1}=\dfrac{(n-1)!!}{n!!},& n\text{ is odd}\end{cases}
+> $$
+
+> [!example]
+> 
+> 例16 证明 <b class="md-tag">Wallis公式</b>
+
+> ***Proof***
+> 
+> $$
+> \begin{flalign}
+> In&=-\int_{0}^{\pi/2} \sin ^{n-1}x \, d\cos x\newline &=-\sin ^{n-1}x \cos x\Big|_{ 0 }^{ \pi/2 }+(n-1)\int_{0}^{\pi/2} \cos ^{2}x \sin ^{n-2}x \, dx  \newline &=(n-1)\int_{0}^{\pi/2} \sin ^{n-2}x(1-\sin ^{2}x) \, dx \newline &=(n-1)(I_{n-2}-I_{n})&
+> \end{flalign}
+> $$
+> 
+> $$
+> \begin{flalign}
+> \implies In&=\dfrac{n-1}{n}I_{n-2},~\text{其中 } I_{0}=\frac{\pi}{2},~I_{1}=\int_{0}^{\pi/2} \sin x \, dx =1&\newline \implies In&=\begin{cases}
+> \dfrac{n-1}{n}\cdot \dfrac{n-3}{n-2} \cdot \dots \cdot \frac{1}{2}I_{0}=\dfrac{(n-1)!!}{n!!}\cdot \dfrac{\pi}{2},& n\text{ is even} \newline \dfrac{n-1}{n}\cdot \dfrac{n-3}{n-2} \cdot \dots \cdot \frac{1}{2}I_{1}=\dfrac{(n-1)!!}{n!!}\cdot 1,& n\text{ is odd}\end{cases}
+> \end{flalign}
+> $$
+> 
+> ***P.S.*** $!!$ - 双阶乘
+
+#### $\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \frac{1}{1+\mathrm{e}^x} \cos ^3 x \mathrm{~d} x$
+
+> ***Solution***
+> 
+> $$
+> \begin{aligned}
+> & \Rightarrow \quad f(-x)=\frac{1}{1+e^{-x}} \cos ^3 x=\frac{e^x}{e^{x+1}} \cos ^3 x \newline & \textcolor{red}{ \therefore f(-x)+f(x)=\cos ^3 x \text {. } } \newline & \therefore \text{原式}=\frac{1}{2} \times 2 \int_0^{\frac{\pi}{2}} \cos ^3 x=\frac{2 ! !}{3 ! !}=\frac{2}{3 \times 1}: \frac{2}{3} \quad \text { (Wallis) } \newline &
+> \end{aligned}
+> $$
+
+---
+
 ### 证明部分
 
-#### 积分第一中值公式
+#### 积分第一中值公式 $\int_a^b f(x) g(x) \mathrm{d} x=f(\xi) \int_a^b g(x) \mathrm{d} x$
 
 > 作业题
 
@@ -475,3 +529,21 @@ title: MA.Add.02.积佬修炼手册
 > 
 > 此即 (5.14) 式.
 > 若 $I=0$, 则 $g(x)=0$, a. e. $x \in[a, b]$, 从而 (5.14) 式两端皆为零. 此时 $\xi$ 可任意地选取.
+
+#### $\int_0^\pi x f(\sin x) \mathrm{d} x=\pi \int_0^{\frac{\pi}{2}} f(\sin x) \mathrm{d} x,$
+
+> [!question] 
+> 23. 设 $f(x)$ 在 $[0,1]$ 上连续, 证明:
+> $$
+> \int_0^\pi x f(\sin x) \mathrm{d} x=\pi \int_0^{\frac{\pi}{2}} f(\sin x) \mathrm{d} x,
+> $$
+> 
+> 并用这一结果计算 $\int_0^\pi \frac{x \sin x}{1+\cos ^2 x} \mathrm{~d} x$.
+
+> ***Solution***
+> 
+> $$
+> \begin{aligned}
+> \text { Let } x& =\pi-u \Rightarrow \sin x=\sin u \newline \text { LHS }& =\int_\pi^0(\pi-u) f(\sin u) d(\pi-u) \newline & =\int_0^\pi(\pi-u) f(\sin u) d u \newline & =\pi \int_0^\pi f(\sin u) d u-\int_0^\pi u f(\sin u) d u \newline & \Rightarrow 2 \int_0^\pi x f(\sin x) d x=\pi \int_0^\pi f(\sin u) d u \newline & \because \sin x \text { 关于 } x=\frac{\pi}{2} \text { 对称 } \newline & \therefore \int_0^{\pi / 2} f(\sin (u)) d u=\int_{\pi / 2}^\pi f(\sin (u) d u \newline \int_0^\pi x f(\sin x) d x& =\frac{\pi}{2} \int_0^\pi f(\sin u) d u \newline & =\frac{\pi}{2}\left(\int_0^{\pi / 2} f(\sin u) d u+\int_{\pi / 2}^\pi f(\sin u) d u\right) \newline & =2 \int_0^{\pi / 2} f(\sin u) d u \newline &
+> \end{aligned}
+> $$
