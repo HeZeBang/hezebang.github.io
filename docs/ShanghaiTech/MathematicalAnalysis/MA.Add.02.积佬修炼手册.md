@@ -3,6 +3,7 @@ share: true
 title: MA.Add.02.积佬修炼手册
 ---
 
+
 ## 积分表
 
 ![../res/无标题.png](../res/%E6%97%A0%E6%A0%87%E9%A2%98.png)
@@ -47,7 +48,8 @@ title: MA.Add.02.积佬修炼手册
 -  $\int \tan(x) \mathrm d x=\ln(\cos(x))$
 - $\int \sqrt{ x^{2}\pm a^{2} } \, dx=\frac{x}{2}\sqrt{ x^{2}\pm a^{2} }\pm \frac{a^{2}}{2}\ln \left| x+\sqrt{ x^{2}\pm a^{2} } \right|+C$
 - $\int \sqrt{ a^{2}-x^{2} } \, dx=\frac{x}{2} \sqrt{ a^{2}-x^{2} } +\frac{a^{2}}{2} \arcsin \frac{x}{a} + C$
-- $I(m,n)=\int \cos ^{m}x\sin ^{m}x \, dx=\dots$(递推公式)
+- $\textbf{Reduction Formula: }I(m,n)=\int \cos ^{m}x\sin ^{m}x \, dx=\dots$(递推)
+- $\int \arctan x \, dx=-\frac{1}{2}\ln(x^{2}+1)+x\arctan(x)+C$
 
 ## 部分积分推导
 
@@ -312,6 +314,18 @@ title: MA.Add.02.积佬修炼手册
 ---
 
 ### <b class="md-tag">换元积分法</b> 
+
+#### $\int_{1}^{+\infty} \frac{1}{x\sqrt{ x-1 }} \, dx$
+
+> 来源: Chap 5.4 3.(1)
+> 
+> ***Solution***
+> 
+> $$
+> \begin{flalign}
+> &\xlongequal{ t=\sqrt{ x-1 } } \int_{0}^{+\infty} \dfrac{1}{(t^{2}+1)t} \, d(t^{2}+1) \newline &=\int_{0}^{+\infty} \frac{1}{t^{2}+1} \, dt \newline &=2\arctan \sqrt{ x-1 }
+> \end{flalign}
+> $$
 
 #### $\int \frac{\sqrt{x-1} \arctan \sqrt{x-1}}{x} d x$
 
