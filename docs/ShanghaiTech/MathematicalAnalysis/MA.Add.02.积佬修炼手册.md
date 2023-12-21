@@ -3,6 +3,7 @@ share: true
 title: MA.Add.02.积佬修炼手册
 ---
 
+> Last update: {{ git_revision_date }}
 
 ## 积分表
 

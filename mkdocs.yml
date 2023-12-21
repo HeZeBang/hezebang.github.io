@@ -37,6 +37,7 @@ plugins:
   - search  # Material for MkDocs search plugin
   - obsidian-support
   - mkdocs-pdf
+  - git-revision-date
 
 markdown_extensions:
   - admonition
