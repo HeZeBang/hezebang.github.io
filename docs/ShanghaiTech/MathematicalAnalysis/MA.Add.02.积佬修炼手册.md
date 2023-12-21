@@ -314,6 +314,18 @@ title: MA.Add.02.积佬修炼手册
 
 ### <b class="md-tag">换元积分法</b> 
 
+#### $\int \frac{\sqrt{x-1} \arctan \sqrt{x-1}}{x} d x$
+
+> 来源: 作业题
+> 
+> ***Solution***
+> 
+> $$
+> \begin{aligned}
+> & \int \frac{\sqrt{x-1} \arctan \sqrt{x-1}}{x} d x \newline & \text { 设 } u=\sqrt{x-1} \text {, 则 } x=u^2+1, d x=2 u d u \newline & \text { 原式 }=\int \frac{u \arctan u}{u^2+1} \cdot 2 u d u \newline & =2 \int \frac{\textcolor{orange}{ u^2 } \arctan u}{\textcolor{orange}{ u^2+1 }} d u \newline & =2 \int \arctan u d u-2 \int \frac{\arctan u}{u^2+1} d u \newline & =2 u \arctan u-2 \int \frac{u}{u^2+1} d u-2 \int \arctan u d(\arctan u) \newline & =2 u \arctan u-\int \frac{1}{u^2+1} d\left(u^2\right)-(\arctan u)^2 \newline & =2 u \arctan u-\ln \left(u^2+1\right)-(\arctan u)^2+c \newline & =2 \sqrt{x-1} \arctan \sqrt{x-1}-(\arctan \sqrt{x-1})^2-\ln x+c
+> \end{aligned}
+> $$
+
 #### 🔴$\int_0^{\frac{\pi}{4}} \sqrt{\tan x} \mathrm{~d} x$
 
 > Chap 5.1 P190 22.(9)
