@@ -8,7 +8,8 @@ window.MathJax = {
     options: {
       ignoreHtmlClass: ".*|",
       processHtmlClass: "arithmatex"
-    }
+    },
+    // loader: {load: ['ui/lazy']}
   };
   
   document$.subscribe(() => { 
