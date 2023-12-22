@@ -10,7 +10,7 @@ share: true
 > *Written by **ZAMBAR** *<br>
 > *2023 Fall*
 
-# 推荐阅读
+## 推荐阅读
 
 > *由 [**Asta**](https://github.com/AstatineAi) 倾情推荐*
 
@@ -18,9 +18,9 @@ share: true
 
 [GitCheatSheet](https://education.github.com/git-cheat-sheet-education.pdf) Github官方CheatSheet
 
-# Intro
+## Intro
 
-## 什么是 Git ？我为什么需要它？
+### 什么是 Git ？我为什么需要它？
 
 假设你（Alice）和你同学（Bob、John）在一起做SI100B的Project
 
@@ -121,7 +121,7 @@ gitGraph
 
 所有我们需要的，只是安安心心建一个远程的代码仓库，然后一顿`add` + `commit` + `push` 组合拳，就好了！
 
-## Git 是如何工作的？
+### Git 是如何工作的？
 
 Git 就像你的秘书，因为它是一种类似**增量**备份的一种模式，会记录下每一次你的**增、改、删**，而不是单纯的记录文件。这也是为什么它叫做**版本控制工具**，有了 Git，你就可以轻松地在不同的代码版本中切换、更新和回滚。
 
@@ -147,7 +147,7 @@ end
 > 更具体的请参见 ![../res/1352126739_7909.jpg](../res/1352126739_7909.jpg)
 > [这个页面](https://www.runoob.com/git/git-workspace-index-repo.html)
 
-## 另：fork 和 use template
+### 另：fork 和 use template
 
 - use template：对远程仓库发动“拿来把你”，~~对方由于开源精神不得不把代码连同之前的所有commit都给你（bushi~~<br>
   当然没有开源精神也不肯能会设置成模板的（
@@ -155,13 +155,13 @@ end
 - fork：对远程仓库发动“借我使使”，对方的仓库**仍然与你有关联**，也就是对方未来的代码修改和commit你仍然可以直接合并到你 fork 的仓库。<br>
 由于一般我们没有办法直接对对方的仓库进行直接的修改，所以往往会 fork 一份到本地，本地进行修改之后，如果觉得有必要可以向对方请求合并，也就是 pull request 到对方仓库（即：给你康康，你要不要嘛），对方可以考虑是否合并你的修改。
 
-## 基本命令操作
+### 基本命令操作
 
-### `git init`
+#### `git init`
 
 在**当前文件夹**下初始化一个本地仓库，本质上就是新建了那个神秘的 `.git` 文件夹
 
-### `git clone [url]`
+#### `git clone [url]`
 
 > [!example] 
 > ```bash
@@ -170,7 +170,7 @@ end
 
 克隆一个远程仓库/下载一个项目到当前文件夹（通常也会帮你建立好本地的仓库）
 
-### `git status`
+#### `git status`
 
 显示当前的状态，包括：
 
@@ -179,7 +179,7 @@ end
 - 未暂存的修改：显示已修改但尚未使用 `git add` 添加到暂存区的文件列表。
 - 未跟踪的文件：显示尚未纳入版本控制的新文件列表。
 
-#### `git status -s`
+##### `git status -s`
 
 输出当前状态的更简短的结果，格式如下：
 
@@ -222,11 +222,11 @@ U           U    unmerged, both modified
 
 这个格式的含义与 VSCode 中显示工作区文件变化的方式一样（也就是你的文件名为什么会是绿的多了个U，红的多了个M等等）
 
-### `git add .`
+#### `git add .`
 
 让 Git 将当前目录下的所有文件**目前**看起来的样子记录下来，并丢到**暂存区**
 
-### `git commit -m [MESSAGE]`
+#### `git commit -m [MESSAGE]`
 
 > 来自作者的一句劝：好好写 commit message，**特别是你的代码还能跑起来的时候**
 
@@ -236,23 +236,23 @@ U           U    unmerged, both modified
 > - [完蛋，我刚提交 commit 就发现还有一个小改动需要添加！](https://ohshitgit.com/zh#change-last-commit)
 > - [我草，我要修改我刚刚 commit 提交的信息！](https://ohshitgit.com/zh#change-last-commit-message)
 
-### `git push`
+#### `git push`
 
 将**本地仓库**推送到**远程仓库**
 
-### `git pull`
+#### `git pull`
 
 将**远程仓库**拉取到**本地仓库**
 
-### Git 时光机
+#### Git 时光机
 
 参阅：[哎呦我去，我刚才好像犯了个大错，能不能给我台时光机啊!?!](https://ohshitgit.com/zh#magic-time-machine)
 
-# 准备工作
+## 准备工作
 
-## 安装 Git
+### 安装 Git
 
-### On Windows
+#### On Windows
 
 如果你是使用 Windows 的用户，请
 
@@ -282,11 +282,11 @@ git -v
 ```
 就会显示Git的版本了
 
-### On Mac OS / Linux
+#### On Mac OS / Linux
 
 请查找对应系统 / 发行版的安装方式
 
-## 配置身份信息 —— Tell Git who you are
+### 配置身份信息 —— Tell Git who you are
 
 > 如果你使用了 Github Desktop，请参阅[配置 Github Desktop](Git%20Guide.md#github-desktop)
 
@@ -303,13 +303,13 @@ git config --global user.name "Your Name"
 
 这样做可以用来区分代码贡献者，相当于一个没有密码的账号或者名片。
 
-# 尝试图形化的交互—— Github Desktop
+## 尝试图形化的交互—— Github Desktop
 
-## 下载 Github Desktop
+### 下载 Github Desktop
 
 [这里下载](https://desktop.github.com/)
 
-## 配置 Github Desktop
+### 配置 Github Desktop
 
 1. 选择 `Sign in to github.com` ![../res/Pasted image 20231222112910.png](../res/Pasted%20image%2020231222112910.png)
 2. 在**浏览器**里面点`Authorize desktop`授权 ![../res/Pasted image 20231222112946.png](../res/Pasted%20image%2020231222112946.png)
@@ -318,7 +318,7 @@ git config --global user.name "Your Name"
    - 如果进行了这一步，**上文配置Git中的配置用户身份信息的步骤就可以跳过了**
    - ![../res/Pasted image 20231222113145.png](../res/Pasted%20image%2020231222113145.png)
 
-## 开始克隆一个仓库
+### 开始克隆一个仓库
 
 > 相当于 `git clone`
 
@@ -328,7 +328,7 @@ git config --global user.name "Your Name"
    ![../res/Pasted image 20231222145659.png](../res/Pasted%20image%2020231222145659.png)
 3. 此时就可以使用图形化的操作界面啦！
 
-## 从远程仓库拉取
+### 从远程仓库拉取
 
 > 相当于 `git pull`
 
@@ -336,17 +336,17 @@ git config --global user.name "Your Name"
 
 点击`Pull origin`
 
-## 做一些更改，并提交到远程仓库
+### 做一些更改，并提交到远程仓库
 
 > 相当于 `add` + `commit` + `push`
 
-### add
+#### add
 
 在 Github Desktop ，文件默认是帮你全部追踪过了的，也就是相当于帮你执行了`git add .`
 
 ![../res/Pasted image 20231222145930.png](../res/Pasted%20image%2020231222145930.png)
 
-### commit
+#### commit
 
 我们可以在这里 commit 一个更改，键入 Summary 作为 Commit message
 
@@ -354,11 +354,11 @@ git config --global user.name "Your Name"
 
 ![../res/Pasted image 20231222150018.png](../res/Pasted%20image%2020231222150018.png)
 
-### push
+#### push
 
 点击 `Push origin`
 
 ![../res/Pasted image 20231222150357.png](../res/Pasted%20image%2020231222150357.png)
 
-# 使用 VSCode 集成的 Git 工具
+## 使用 VSCode 集成的 Git 工具
 
