@@ -7,7 +7,9 @@ share: true
 
 这篇 Markdown 旨在与大家分享如何使用 `Git` 这一个**版本控制工具**
 
-> *Written by **ZAMBAR** *<br>
+虽然比较长，但是不要害怕哦~
+
+> *Written by **[ZAMBAR](https://hezebang.github.io)** *<br>
 > *2023 Fall*
 
 ## 推荐阅读
@@ -129,10 +131,10 @@ Git 就像你的秘书，因为它是一种类似**增量**备份的一种模式
 
 ```mermaid
 graph TB
-subgraph 远程各种托管平台
+subgraph 远程の各种托管平台 <small>比如 Github</small>
 	repo[远程仓库<br>repo]
 end
-subgraph 本地
+subgraph 本地 <small>通常是你的电脑</small>
 	local[本地仓库<br><small>通常是你的文件夹</small>]
 	stage[暂存区/索引<br>stage/index<br><small>在一个神秘且一般<br>隐藏的文件夹<code>.git</code></small>]
 	work([<b>工作区</b><br><small>就是文件夹里你能看到<br>的目录文件等<small/>])
@@ -149,7 +151,7 @@ end
 
 ### 另：fork 和 use template
 
-- use template：对远程仓库发动“拿来把你”，~~对方由于开源精神不得不把代码连同之前的所有commit都给你（bushi~~<br>
+- use template：对远程仓库发动“拿来把你”，~~对方由于开源精神不得不把代码连同之前的所有commit都给你（bushi~~ <br>
   当然没有开源精神也不肯能会设置成模板的（
 
 - fork：对远程仓库发动“借我使使”，对方的仓库**仍然与你有关联**，也就是对方未来的代码修改和commit你仍然可以直接合并到你 fork 的仓库。<br>
@@ -157,13 +159,21 @@ end
 
 ### 基本命令操作
 
+在开始菜单中搜索 `git bash` 可以打开命令行窗口
+
+![../res/Pasted image 20231223135506.png](../res/Pasted%20image%2020231223135506.png)
+
+你也可以选择在终端直接调用 `git` 命令使用 Git
+
+> Git 的 **bash** 和 Windows 的终端/命令行 有什么区别？请自行查阅~
+
 #### `git init`
 
 在**当前文件夹**下初始化一个本地仓库，本质上就是新建了那个神秘的 `.git` 文件夹
 
 #### `git clone [url]`
 
-> [!example] 
+> [!example] Example
 > ```bash
 > git clone https://github.com/HeZeBang/ONU.git
 > ```
@@ -323,9 +333,9 @@ git config --global user.name "Your Name"
 > 相当于 `git clone`
 
 1. 打开主界面 ![../res/Pasted image 20231222115629.png](../res/Pasted%20image%2020231222115629.png)
-2. 点击`Clone a repository from the Internet...`<br>
-   此时可以选择`Local Path`来确定你的本地仓库的存放位置
-   ![../res/Pasted image 20231222145659.png](../res/Pasted%20image%2020231222145659.png)
+2. 点击`Clone a repository from the Internet...`
+    ![../res/Pasted image 20231222145659.png](../res/Pasted%20image%2020231222145659.png)    
+> 此时可以选择`Local Path`来确定你的本地仓库的存放位置
 3. 此时就可以使用图形化的操作界面啦！
 
 ### 从远程仓库拉取
@@ -362,3 +372,107 @@ git config --global user.name "Your Name"
 
 ## 使用 VSCode 集成的 Git 工具
 
+### 配置 Git Extension
+
+在左侧侧栏区域，点击 Source Control 选项卡
+
+![../res/Pasted image 20231223135038.png](../res/Pasted%20image%2020231223135038.png)
+
+>Source Control 界面
+
+若显示如下图，请转到[安装 Git](Git%20Guide.md#git)
+
+![../res/Q~Z9P248E{OA%5Z[{VB%J@P.png](../res/Q~Z9P248E%7BOA%255Z%7BVB%25J@P.png)
+
+>未安装 Git 时的提示
+
+如果安装完毕，请重启 VSCode 或点击 `reload`
+
+> [!warning] 你可能会遇到这个弹窗
+> 
+> ![../res/@SVA4RTK346[UG}2DT{8CDB.png](../res/@SVA4RTK346UG%7D2DT%7B8CDB.png)
+> 
+> 也就是问你是否周期性地获取远程仓库地数据（用来提醒你别人是否做了更改/你当前的版本是否落后于远程仓库）
+> 
+> 无所谓，按个人意愿即可
+
+### 打开文件夹
+
+在 VSCode 中，你需要打开一个文件夹，这个文件夹需要包含一个有效的 Git 本地仓库，这样 VSCode 就能识别到你的仓库并且启用 Source Control 的插件
+
+![[../res/%T]{G9O{(A6`MP%U)~Q)]Y8.png|../res/%T]{G9O{(A6`MP%U)~Q)]Y8.png]]
+
+点击 `Open Folder` 打开一个文件夹作为工作区，或者点击 `Clone Repository` 直接克隆一个远程仓库
+
+如果出现下图的窗口请点击信任即可
+
+![../res/M(50AFB$~_)GDUJWJ$0DU}G.png](../res/M(50AFB$~_)GDUJWJ$0DU%7DG.png)
+
+此时打开任意文件，VSCode 就会自动启用 Git 相关的插件，并且能够只能地帮你显示 **增、改、删**
+
+![../res/G[YW2{)~G3{(8R5LZ(4M$XH.png](../res/GYW2%7B)~G3%7B(8R5LZ(4M$XH.png)
+
+在左侧边栏也会显示每个文件的状态（相当于之前说的[git status](#git%20status))，文件的标签页也会显示一个字母或者着色来显示对应的状态
+
+![../res/HX}%Q(J6)OR@FW5C}%28Z[N.png](../res/HX%7D%25Q(J6)OR@FW5C%7D%2528ZN.png)
+
+### 左侧边栏的 Commit 功能
+
+在 Message 区域可以输入你的 Commit Message
+
+![[../res/YK$`(IH7S`U7{IZYONV[NUH.png]]
+
+对应的按钮的功能分别为
+- `Commit` 相当于 `git commit -m [Message]`
+- `Commit (Amend)` 对上次的 Commit 进行修改
+  > 此时 VSCode 会打开你**上一次 Commit** 的内容，假如你上一次出现了少写了一个冒号等等的小错误，而这并不值得新开一个 Commit 时，可以使用 Amend 来追加
+- `Commit & Push` 字面意思
+- `Commit & Sync` Sync 就是 Push+Pull
+
+> [!note] 当你没有指定 Commit Message 时
+> 
+> ![[../res/O%`X4DI680FZ4K2H]JBOU9A.png|../res/O%`X4DI680FZ4K2H]JBOU9A.png]]
+> 
+> 请读注释
+
+### 解决 Conflict
+
+~~在使用 Git 时候最烦人的事情之一~~
+
+关于贮藏(stash)并不打算在此讲解，可以参考一些资料比如：
+
+- [熟练掌握git-stash用法](https://zhuanlan.zhihu.com/p/344100614)
+
+#### Step.1 接受一种更改
+
+当你和你的小伙伴在同一处修改，在你提交或者合并的时候就可能弹出来：
+
+![[../res/OMA~VOE]H}[Q3Q7A6)@Y`GS.png|../res/OMA~VOE]H}[Q3Q7A6)@Y`GS.png]]
+
+此时 `Accept Current Change` 和 `Accept Incoming Change` 就是分别应用不用的更改
+
+上图中的 Current Change 就是绿色的 `<<<<<<<` 到 `=======`，Incoming Change 就是图中蓝色的 `=======` 到 `>>>>>>>` 部分
+
+~~非常奇怪，但是醒目，不是吗~~
+
+而 `Accept Both Change` 则会将不同的代码都保留下来
+
+`Compare Changes` 就会列出两个文件不同的地方
+
+#### Step.2 解决冲突
+
+此时你的代码文件会变成接受了 Step.1 的某一种更改的样子
+
+![../res/SG]HEH5[UE47~~7LBX1XD$C.png](../res/SG.md)
+
+当你修改好了之后，点击 `Resolve in Merge Editor`
+
+![../res/LO6Z@WV32DV84IFKFMONSCL.png](../res/LO6Z@WV32DV84IFKFMONSCL.png)
+
+在确认页面点击 `Complete Merge` 完成合并，或者进行其他操作
+
+#### Question...?
+
+> [!question] 为什么是 Merge？为什么自动提交的 Commit 信息也是 Merge？我只是 Pull 了？！
+> 
+> Pull = Fetch + Merge
