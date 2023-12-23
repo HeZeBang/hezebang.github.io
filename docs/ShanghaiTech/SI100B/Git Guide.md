@@ -131,10 +131,10 @@ Git 就像你的秘书，因为它是一种类似**增量**备份的一种模式
 
 ```mermaid
 graph TB
-subgraph 远程の各种托管平台 <small>比如 Github</small>
+subgraph 远程の各种托管平台 - 比如 Github
 	repo[远程仓库<br>repo]
 end
-subgraph 本地 <small>通常是你的电脑</small>
+subgraph 本地 - 通常是你的电脑
 	local[本地仓库<br><small>通常是你的文件夹</small>]
 	stage[暂存区/索引<br>stage/index<br><small>在一个神秘且一般<br>隐藏的文件夹<code>.git</code></small>]
 	work([<b>工作区</b><br><small>就是文件夹里你能看到<br>的目录文件等<small/>])
