@@ -382,7 +382,7 @@ git config --global user.name "Your Name"
 
 若显示如下图，请转到[安装 Git](Git%20Guide.md#git)
 
-![../res/Q~Z9P248E{OA%5Z[{VB%J@P.png](../res/Q~Z9P248E%7BOA%255Z%7BVB%25J@P.png)
+![../res/Pasted230v9u4j.png](../res/Pasted230v9u4j.png)
 
 >未安装 Git 时的提示
 
@@ -390,7 +390,7 @@ git config --global user.name "Your Name"
 
 > [!warning] 你可能会遇到这个弹窗
 > 
-> ![../res/@SVA4RTK346[UG}2DT{8CDB.png](../res/@SVA4RTK346UG%7D2DT%7B8CDB.png)
+> ![../res/Pasted13crvt93pjpi4.png](../res/Pasted13crvt93pjpi4.png)
 > 
 > 也就是问你是否周期性地获取远程仓库地数据（用来提醒你别人是否做了更改/你当前的版本是否落后于远程仓库）
 > 
@@ -400,27 +400,27 @@ git config --global user.name "Your Name"
 
 在 VSCode 中，你需要打开一个文件夹，这个文件夹需要包含一个有效的 Git 本地仓库，这样 VSCode 就能识别到你的仓库并且启用 Source Control 的插件
 
-![[../res/%T]{G9O{(A6`MP%U)~Q)]Y8.png|../res/%T]{G9O{(A6`MP%U)~Q)]Y8.png]]
+![../res/Pasted12erewfdso.png](../res/Pasted12erewfdso.png)
 
 点击 `Open Folder` 打开一个文件夹作为工作区，或者点击 `Clone Repository` 直接克隆一个远程仓库
 
 如果出现下图的窗口请点击信任即可
 
-![../res/M(50AFB$~_)GDUJWJ$0DU}G.png](../res/M(50AFB$~_)GDUJWJ$0DU%7DG.png)
+![../res/Pasted12erqfwijc12.png](../res/Pasted12erqfwijc12.png)
 
 此时打开任意文件，VSCode 就会自动启用 Git 相关的插件，并且能够只能地帮你显示 **增、改、删**
 
-![../res/G[YW2{)~G3{(8R5LZ(4M$XH.png](../res/GYW2%7B)~G3%7B(8R5LZ(4M$XH.png)
+![../res/Pasted12eelfkd.png](../res/Pasted12eelfkd.png)
 
-在左侧边栏也会显示每个文件的状态（相当于之前说的[git status](#git%20status))，文件的标签页也会显示一个字母或者着色来显示对应的状态
+在左侧边栏也会显示每个文件的状态（相当于之前说的[git status](Git%20Guide.md#git-status))，文件的标签页也会显示一个字母或者着色来显示对应的状态
 
-![../res/HX}%Q(J6)OR@FW5C}%28Z[N.png](../res/HX%7D%25Q(J6)OR@FW5C%7D%2528ZN.png)
+![../res/Pasted12eeipwcj23r.png](../res/Pasted12eeipwcj23r.png)
 
 ### 左侧边栏的 Commit 功能
 
 在 Message 区域可以输入你的 Commit Message
 
-![[../res/YK$`(IH7S`U7{IZYONV[NUH.png]]
+![../res/Pasted1cejck3rvn.png](../res/Pasted1cejck3rvn.png)
 
 对应的按钮的功能分别为
 - `Commit` 相当于 `git commit -m [Message]`
@@ -431,7 +431,7 @@ git config --global user.name "Your Name"
 
 > [!note] 当你没有指定 Commit Message 时
 > 
-> ![[../res/O%`X4DI680FZ4K2H]JBOU9A.png|../res/O%`X4DI680FZ4K2H]JBOU9A.png]]
+> ![../res/Pasted23r9icjconl.png](../res/Pasted23r9icjconl.png)
 > 
 > 请读注释
 
@@ -447,7 +447,7 @@ git config --global user.name "Your Name"
 
 当你和你的小伙伴在同一处修改，在你提交或者合并的时候就可能弹出来：
 
-![[../res/OMA~VOE]H}[Q3Q7A6)@Y`GS.png|../res/OMA~VOE]H}[Q3Q7A6)@Y`GS.png]]
+![../res/Pasted13v-0i65j5v45.png](../res/Pasted13v-0i65j5v45.png)
 
 此时 `Accept Current Change` 和 `Accept Incoming Change` 就是分别应用不用的更改
 
@@ -463,11 +463,11 @@ git config --global user.name "Your Name"
 
 此时你的代码文件会变成接受了 Step.1 的某一种更改的样子
 
-![../res/SG]HEH5[UE47~~7LBX1XD$C.png](../res/SG.md)
+![../res/Pasted000001.png](../res/Pasted000001.png)
 
 当你修改好了之后，点击 `Resolve in Merge Editor`
 
-![../res/LO6Z@WV32DV84IFKFMONSCL.png](../res/LO6Z@WV32DV84IFKFMONSCL.png)
+![../res/Pasted12cerv3by6uu.png](../res/Pasted12cerv3by6uu.png)
 
 在确认页面点击 `Complete Merge` 完成合并，或者进行其他操作
 
