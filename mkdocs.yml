@@ -3,6 +3,7 @@ theme:
   name: material
   logo: assets/zambar.png
   favicon: assets/zambar.png
+  custom_dir: overrides
 
   palette:
     # Palette toggle for light mode
@@ -37,6 +38,9 @@ plugins:
   - search  # Material for MkDocs search plugin
   - obsidian-support
   - mkdocs-pdf
+  - exclude:
+      glob:
+        - revealjs/*.md
 
 markdown_extensions:
   - admonition
