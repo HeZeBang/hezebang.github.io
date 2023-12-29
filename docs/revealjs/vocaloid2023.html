@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>上科大术群 - 2023年度回顾</title>
 		<style>
 			img{
 				border-radius: 10px;
@@ -381,6 +381,7 @@
 			});
 			Reveal.on( 'slidechanged', event => {
 				if(Reveal.getIndices().h == 2) {
+					playMusic()
 					confetti({
 						particleCount: 500,
 						spread: 100
@@ -449,7 +450,8 @@
 			
 			function playMusic(){
 				var myAudio = document.getElementById('myAudio');
-
+				if(myAudio.played.length)
+					return;
 				myAudio.play();
 				myAudio.volume = 0; 
 				var fadeAudio = setInterval(function () {
