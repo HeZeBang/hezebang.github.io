@@ -4,8 +4,9 @@
 <style>
 
     .md-tabs{
-        background-color: transparent;
+        /* background-color: transparent; */
         /* display: none; */
+        background: hsla(var(--md-hue),15%,14%,1);
     }
 
     .md-grid{
@@ -28,9 +29,21 @@
     .tx-container {
         padding-top: 14.0rem;
         /* background: linear-gradient(to bottom, var(--md-primary-fg-color), hsla(160deg,47%,55%,1) 99%,#fff 99%) */
+        background: transparent;
+    }
+
+    body {
         background-image: url(/assets/scene.jpg);
         background-size: cover;
     }
+
+    .md-main {
+        background: hsla(var(--md-hue),15%,14%,1)
+    }
+    .md-footer{
+        background: hsla(var(--md-hue),15%,14%,1)
+    }
+
 
     .tx-hero {
         /* margin: 32px 2.8rem; */
@@ -235,9 +248,6 @@
 
 <!-- Main site Entry button descriptions -->
 <section class="tx-container">
-    {% block header %}
-    {{ super() }}
-    {% endblock %}
     <div class="md-grid md-typeset">
       <div class="tx-hero">
         <div class="tx-hero__image">
@@ -254,4 +264,3 @@
 {{ super() }}
 {% endblock %}
 {% block content %}{% endblock %}
-{% block footer %}{% endblock %}
