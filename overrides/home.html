@@ -9,7 +9,7 @@
         background: hsla(var(--md-hue),15%,14%,1);
     }
 
-    .md-tabs__list{
+    [class=md-tabs__list] [class=md-ellipsis] [class=tx-hero__content]{
         color:white
     }
 
@@ -265,14 +265,6 @@
       </div>    
     </div>
 </section>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        document.body.setAttribute("data-md-color-primary", "blue-grey")
-        document.body.setAttribute("data-md-color-scheme", "slate") 
-    });
-    document.body.setAttribute("data-md-color-primary", "blue-grey")
-    document.body.setAttribute("data-md-color-scheme", "slate") 
-</script>
 {{ super() }}
 {% endblock %}
 {% block content %}{% endblock %}
