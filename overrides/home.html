@@ -1,6 +1,6 @@
 {% extends "main.html" %}
 
-{% block header %}
+{% block content %}
 <style>
 
     .md-tabs{
@@ -232,7 +232,9 @@
 </style>
 
 <!-- Main site Entry button descriptions -->
+{% block header %}
 {{ super() }}
+{% endblock %}
 <section class="tx-container">
     <div class="md-grid md-typeset">
       <div class="tx-hero">
@@ -248,6 +250,4 @@
     </div>
 </section>
 {% endblock %}
-
-{% block content %}{% endblock %}
 {% block footer %}{% endblock %}
