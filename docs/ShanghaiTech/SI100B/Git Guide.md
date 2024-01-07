@@ -565,7 +565,7 @@ end
 
 ```mermaid
 graph LR
-subgraph 软回退到更改1
+subgraph 硬回退到更改1
 	subgraph 工作区'
 		更改1'
 	end
