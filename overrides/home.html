@@ -79,8 +79,15 @@
         padding-right: 2.5rem;
     }
 
-    .md-button {
+    .md-button { 
         margin: 5px;
+        color: white !important;
+
+        &:hover {
+            background-color: white !important;
+            border-color: white !important;
+            color: black !important;
+        }
     }
 
     .tx-hero .md-button {
@@ -283,15 +290,15 @@
 {% block content %}
 <div style="display: flex; justify-content: center;">
     
-<a href="Blog/" title="Blog" class="md-button" data-md-color-primary="white">
+<a href="Blog/" title="Blog" class="md-button">
     Blog
 </a>
  
-<a href="https://note.zambar.xyz" title="Note" class="md-button" data-md-color-primary="white">
+<a href="https://note.zambar.xyz" title="Note" class="md-button">
     Notebook
 </a>
  
-<a href="links/" title="Links" class="md-button" data-md-color-primary="white">
+<a href="links/" title="Links" class="md-button">
     Links
 </a>
 </div>

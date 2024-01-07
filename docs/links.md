@@ -13,7 +13,9 @@ title: Links
 
 <div class="grid cards" markdown>
 
--   __AstatineAi__
+-   <img style="max-height: 3em; border-radius: 50%;" src="https://avatars.githubusercontent.com/u/47201556?v=4"> 
+
+    __AstatineAi__
 
     ---
 
@@ -21,7 +23,9 @@ title: Links
 
     [:fontawesome-brands-github: Github](https://github.com/AstatineAi) [:fontawesome-solid-rss: Blog](https://astatineai.github.io/)
 
--   __CoinRed__
+-   <img style="max-height: 3em; border-radius: 50%;" src="https://avatars.githubusercontent.com/u/47453260?v=4"> 
+
+    __CoinRed__
 
     ---
 
