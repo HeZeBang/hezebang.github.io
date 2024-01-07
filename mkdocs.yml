@@ -26,6 +26,7 @@ theme:
     text: Inter
     
   features:
+    - navigation.top
     - navigation.tabs
     - navigation.footer
     - navigation.instant
