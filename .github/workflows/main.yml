@@ -28,4 +28,5 @@ jobs:
                          mkdocs-obsidian-support-plugin \
                          mkdocs-pdf \
                          mkdocs-git-revision-date-localized-plugin \
+                         mkdocs-exclude \
       - run: mkdocs gh-deploy --force

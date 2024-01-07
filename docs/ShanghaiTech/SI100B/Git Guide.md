@@ -9,8 +9,9 @@ share: true
 
 虽然比较长，但是不要害怕哦~
 
-> *Written by **[ZAMBAR](https://hezebang.github.io)** *<br>
-> *2023 Fall*
+> *Written by* [***ZAMBAR***](https://hezebang.github.io)
+> 
+> 最后更新：2023/12/23 - 22:30
 
 ## 推荐阅读
 
@@ -59,7 +60,6 @@ sequenceDiagram
 以上的问题，放在Git的工作流中，就会变得非常简单了！
 
 你的工作流可能就变成了这样：
-
 ```mermaid
 sequenceDiagram
     participant Alice
@@ -79,7 +79,7 @@ sequenceDiagram
 
 如果你学会了分支，复杂的工作流就可以更进一步简化：
 
-```mermaid    
+```mermaid
 gitGraph
     commit id:"这是之前版本的代码"
     branch hotfix/bug1
@@ -110,6 +110,10 @@ gitGraph
     merge dev id:"测试无误，允许合并"
     merge hotfix/bug1 id:"bug修复通过，允许合并"
 ```
+
+> 吐槽：这个 Mermaid 渲染 Git Graph 居然不能自适应大小？？？还是附一个图吧
+> 
+> [![](https://mermaid.ink/img/pako:eNqllM-P0kAUx_8VMmfCj5a2tkdj4smTngyXgQ60WdqSOjW7EhJW0WWXJYsHdd0YxajhoAt78AfIGv6ZTltO_gtOmYqFupHEniav732-731fOw1QtlQEFFDV8U0b1rXUnetK0UzRp2wZho5TuqoUQTB_6Z2O3WmXHPb8w4736pN_1nZn7_zBfhGw9JINzbKW0ixc0XezJaeaX4ur6H6E1VB5x3JwLBIT8j92F2-nZPqVXLbIyVPSb_vDHjl6Ezz6sSFEy7MVBHFCJmujkqPX1KRcPD8u6n2bkaOB-_2JO2n5D6dhlmOj33orQmK0tcY_D73WB3c-Iu97lLRM2gQYUDdZyEB2FcWBDBKeGIKMjr1O_-flMXm8H4wmpN-hniSAyWljHS0Oet7rdjjV2p62McSfDf3Z-Za2rPbIhlphI2-fX0SFbAbSuWD9uJPzfxpEWRHlSzcYP_NeDILxmJrCOvuD_t9VcdsMFRkdN3ejrSu2tO1Uf1v11R8K63_ROgvmB4likAa0kgqr9NduhKgiwBoyqFMKPaqoAp0aDkWaNBU62Lq9Z5aBgm0HpYFTVyFGN3RYtaEBlAqs3aPROjSB0gC7QMmLfIaTZanAiwLHF3hJSIM9oIgZKSfkJIETeVmix3wzDR5YFiXkMrJc4K-JnCSLMicI_JJ2d_kuoiNVx5Z9i11Gyzup-QslsOto?type=png)](https://mermaid.live/edit#pako:eNqllM-P0kAUx_8VMmfCj5a2tkdj4smTngyXgQ60WdqSOjW7EhJW0WWXJYsHdd0YxajhoAt78AfIGv6ZTltO_gtOmYqFupHEniav732-731fOw1QtlQEFFDV8U0b1rXUnetK0UzRp2wZho5TuqoUQTB_6Z2O3WmXHPb8w4736pN_1nZn7_zBfhGw9JINzbKW0ixc0XezJaeaX4ur6H6E1VB5x3JwLBIT8j92F2-nZPqVXLbIyVPSb_vDHjl6Ezz6sSFEy7MVBHFCJmujkqPX1KRcPD8u6n2bkaOB-_2JO2n5D6dhlmOj33orQmK0tcY_D73WB3c-Iu97lLRM2gQYUDdZyEB2FcWBDBKeGIKMjr1O_-flMXm8H4wmpN-hniSAyWljHS0Oet7rdjjV2p62McSfDf3Z-Za2rPbIhlphI2-fX0SFbAbSuWD9uJPzfxpEWRHlSzcYP_NeDILxmJrCOvuD_t9VcdsMFRkdN3ejrSu2tO1Uf1v11R8K63_ROgvmB4likAa0kgqr9NduhKgiwBoyqFMKPaqoAp0aDkWaNBU62Lq9Z5aBgm0HpYFTVyFGN3RYtaEBlAqs3aPROjSB0gC7QMmLfIaTZanAiwLHF3hJSIM9oIgZKSfkJIETeVmix3wzDR5YFiXkMrJc4K-JnCSLMicI_JJ2d_kuoiNVx5Z9i11Gyzup-QslsOto)
 
 这一个像地铁线路一样的图，就是我们树枝状工作流的时间线啦！
 
@@ -382,7 +386,7 @@ git config --global user.name "Your Name"
 
 若显示如下图，请转到[安装 Git](Git%20Guide.md#git)
 
-![../res/Q~Z9P248E{OA%5Z[{VB%J@P.png](../res/Q~Z9P248E%7BOA%255Z%7BVB%25J@P.png)
+![../res/Pasted230v9u4j.png](../res/Pasted230v9u4j.png)
 
 >未安装 Git 时的提示
 
@@ -390,7 +394,7 @@ git config --global user.name "Your Name"
 
 > [!warning] 你可能会遇到这个弹窗
 > 
-> ![../res/@SVA4RTK346[UG}2DT{8CDB.png](../res/@SVA4RTK346UG%7D2DT%7B8CDB.png)
+> ![../res/Pasted13crvt93pjpi4.png](../res/Pasted13crvt93pjpi4.png)
 > 
 > 也就是问你是否周期性地获取远程仓库地数据（用来提醒你别人是否做了更改/你当前的版本是否落后于远程仓库）
 > 
@@ -400,27 +404,27 @@ git config --global user.name "Your Name"
 
 在 VSCode 中，你需要打开一个文件夹，这个文件夹需要包含一个有效的 Git 本地仓库，这样 VSCode 就能识别到你的仓库并且启用 Source Control 的插件
 
-![[../res/%T]{G9O{(A6`MP%U)~Q)]Y8.png|../res/%T]{G9O{(A6`MP%U)~Q)]Y8.png]]
+![../res/Pasted12erewfdso.png](../res/Pasted12erewfdso.png)
 
 点击 `Open Folder` 打开一个文件夹作为工作区，或者点击 `Clone Repository` 直接克隆一个远程仓库
 
 如果出现下图的窗口请点击信任即可
 
-![../res/M(50AFB$~_)GDUJWJ$0DU}G.png](../res/M(50AFB$~_)GDUJWJ$0DU%7DG.png)
+![../res/Pasted12erqfwijc12.png](../res/Pasted12erqfwijc12.png)
 
 此时打开任意文件，VSCode 就会自动启用 Git 相关的插件，并且能够只能地帮你显示 **增、改、删**
 
-![../res/G[YW2{)~G3{(8R5LZ(4M$XH.png](../res/GYW2%7B)~G3%7B(8R5LZ(4M$XH.png)
+![../res/Pasted12eelfkd.png](../res/Pasted12eelfkd.png)
 
-在左侧边栏也会显示每个文件的状态（相当于之前说的[git status](#git%20status))，文件的标签页也会显示一个字母或者着色来显示对应的状态
+在左侧边栏也会显示每个文件的状态（相当于之前说的[git status](Git%20Guide.md#git-status))，文件的标签页也会显示一个字母或者着色来显示对应的状态
 
-![../res/HX}%Q(J6)OR@FW5C}%28Z[N.png](../res/HX%7D%25Q(J6)OR@FW5C%7D%2528ZN.png)
+![../res/Pasted12eeipwcj23r.png](../res/Pasted12eeipwcj23r.png)
 
 ### 左侧边栏的 Commit 功能
 
 在 Message 区域可以输入你的 Commit Message
 
-![[../res/YK$`(IH7S`U7{IZYONV[NUH.png]]
+![../res/Pasted1cejck3rvn.png](../res/Pasted1cejck3rvn.png)
 
 对应的按钮的功能分别为
 - `Commit` 相当于 `git commit -m [Message]`
@@ -431,7 +435,7 @@ git config --global user.name "Your Name"
 
 > [!note] 当你没有指定 Commit Message 时
 > 
-> ![[../res/O%`X4DI680FZ4K2H]JBOU9A.png|../res/O%`X4DI680FZ4K2H]JBOU9A.png]]
+> ![../res/Pasted23r9icjconl.png](../res/Pasted23r9icjconl.png)
 > 
 > 请读注释
 
@@ -447,7 +451,7 @@ git config --global user.name "Your Name"
 
 当你和你的小伙伴在同一处修改，在你提交或者合并的时候就可能弹出来：
 
-![[../res/OMA~VOE]H}[Q3Q7A6)@Y`GS.png|../res/OMA~VOE]H}[Q3Q7A6)@Y`GS.png]]
+![../res/Pasted13v-0i65j5v45.png](../res/Pasted13v-0i65j5v45.png)
 
 此时 `Accept Current Change` 和 `Accept Incoming Change` 就是分别应用不用的更改
 
@@ -463,11 +467,11 @@ git config --global user.name "Your Name"
 
 此时你的代码文件会变成接受了 Step.1 的某一种更改的样子
 
-![../res/SG]HEH5[UE47~~7LBX1XD$C.png](../res/SG.md)
+![../res/Pasted000001.png](../res/Pasted000001.png)
 
 当你修改好了之后，点击 `Resolve in Merge Editor`
 
-![../res/LO6Z@WV32DV84IFKFMONSCL.png](../res/LO6Z@WV32DV84IFKFMONSCL.png)
+![../res/Pasted12cerv3by6uu.png](../res/Pasted12cerv3by6uu.png)
 
 在确认页面点击 `Complete Merge` 完成合并，或者进行其他操作
 
@@ -476,3 +480,113 @@ git config --global user.name "Your Name"
 > [!question] 为什么是 Merge？为什么自动提交的 Commit 信息也是 Merge？我只是 Pull 了？！
 > 
 > Pull = Fetch + Merge
+
+### 查看历史记录并恢复
+
+VSCode 自带的 Source Control 中并没有提供图形化的历史查看功能，但是我们可以安装额外的扩展
+
+#### 安装 Git History 扩展
+
+Git History 提供了 Git History 功能，可以方便地查看当前仓库或者单个文件的历史
+
+要安装 Git History，请转到 Extension 侧边选项卡，在搜索栏中键入 Git History，并点击 `Install`
+
+![../res/Pasted image 20231223215320.png](../res/Pasted%20image%2020231223215320.png)
+
+此时等待插件安装完成并启用即可（可能需要 reload VSCode）
+
+#### File History
+
+想要呼出 File History，请右键文件的标签页或者 Explorer 侧栏中的文件中点击 `Git View File History`
+
+![../res/Pasted image 20231223214659.png](../res/Pasted%20image%2020231223214659.png)
+
+此时就会显示出单个文件的修改记录
+
+![../res/Pasted image 20231223215455.png](../res/Pasted%20image%2020231223215455.png)
+
+> ***PS.*** 此处即为笔者和 [AstatineAi](https://github.com/AstatineAi) 一起开发的 [ONU](https://github.com/HeZeBang/ONU) 项目中，`server.py` 的修改记录，欢迎pr~
+> 
+> ***PPS.*** 绿色和红色的分别是本地分支 (branch) 和线上分支，我们不在这里细说
+
+#### Git History
+
+与 File History 不同，Git History 会显示整个目录的 History，如果你创建了许多 branch，你还可以看到漂亮的 branch 图（就像前文那样）
+
+![../res/Pasted image 20231223220434.png](../res/Pasted%20image%2020231223220434.png)
+
+> 不难看出，鄙人的写bug水平有待提高
+
+#### 复活吧！我的爱人！
+
+你会看到每个 Commit 有两个蓝色的 clickable 的 link，分别是 `Soft` 和 `Hard`，分别对应了 `git reset --soft [hash id]` 和 `git reset --hard [hash id]` 两个命令
+
+暂且不探究这两个命令的含义，我们来讲讲它如何作用的，如果你忘记了暂存区和工作区的含义，请回到[Git 是如何工作的？](Git%20Guide.md#git)看看
+
+##### Soft reset
+
+在使用 Soft reset 的时候，你的电脑上：
+- 暂存区（`add` 添加的地方）：保留当前的更改
+- 工作区（编辑器当前的文件）：回到历史版本
+
+直白一点
+
+```mermaid
+graph LR
+subgraph 软回退到更改1
+	subgraph 工作区'
+		更改1'
+	end
+	subgraph 暂存区'
+	更改2'
+	更改3'
+	end
+end
+subgraph 原来
+	subgraph 历史
+		更改1
+		更改2
+	end
+	subgraph 工作区
+		更改3
+	end
+end
+更改1 --> 更改1'
+更改2 --> 更改2'
+更改3 --> 更改3'
+```
+
+##### Hard reset（危险）
+
+- 暂存区（`add` 添加的地方）：回到历史版本
+- 工作区（编辑器当前的文件）：回到历史版本
+
+如你所见，Hard reset 会**丢弃并回收掉当前的更改**，所以如果没有 commit 或者 push，你的更改就**全 部 木 大**！
+
+```mermaid
+graph LR
+subgraph 软回退到更改1
+	subgraph 工作区'
+		更改1'
+	end
+	subgraph "🚮拜拜"
+	更改2'
+	更改3'
+	end
+end
+subgraph 原来
+	subgraph 历史
+		更改1
+		更改2
+	end
+	subgraph 工作区
+		更改3
+	end
+end
+更改1 --> 更改1'
+更改2 --> 更改2'
+更改3 --> 更改3'
+```
+
+> ***PS.*** 当然一定时间内还是有方法的，请搜索 git reflog / git log
+
