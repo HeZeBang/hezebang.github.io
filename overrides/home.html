@@ -266,8 +266,10 @@
     </div>
 </section>
 <script>
-    document.body.setAttribute("data-md-color-primary", "blue-grey")
-    document.body.setAttribute("data-md-color-scheme", "default") 
+    document.addEventListener('DOMContentLoaded', function() {
+        document.body.setAttribute("data-md-color-primary", "blue-grey")
+        document.body.setAttribute("data-md-color-scheme", "default") 
+    });
 </script>
 {{ super() }}
 {% endblock %}
