@@ -1,7 +1,7 @@
 site_name: ZAMBAR's Website
 theme:
   name: material
-  logo: assets/zambar.png
+  logo: assets/zambar.white.png
   favicon: assets/zambar.white.png
   custom_dir: overrides
 
