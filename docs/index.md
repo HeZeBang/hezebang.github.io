@@ -9,7 +9,7 @@ template: home.html
 
 ---
 
-### 快捷导航
+<!-- ### 快捷导航 -->
 
 [A Soft Murmur](https://asoftmurmur.com/)
 
