@@ -13,11 +13,6 @@
         color:white
     }
 
-    [data-md-color-scheme="slate"][data-md-color-primary="black"], [data-md-color-scheme="slate"][data-md-color-primary="blue-grey"], [data-md-color-scheme="slate"][data-md-color-primary="grey"], [data-md-color-scheme="slate"][data-md-color-primary="white"]{
-        --md-primary-bg-color: white;
-        --md-primary-bg-color--light: white;
-    }
-
     .md-grid{
         max-width: 100%;
     }
@@ -270,6 +265,10 @@
       </div>    
     </div>
 </section>
+<script>
+    document.body.setAttribute("data-md-color-primary", "blue-grey")
+    document.body.setAttribute("data-md-color-scheme", "default") 
+</script>
 {{ super() }}
 {% endblock %}
 {% block content %}{% endblock %}
