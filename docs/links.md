@@ -11,13 +11,6 @@ title: Links
 
 ## Friends
 
-<div class="grid" markdown>
-
- 
-{ .card }
-
-</div>
-
 <div class="grid cards" markdown>
 
 -   __AstatineAi__
@@ -26,7 +19,16 @@ title: Links
 
     太强啦！！！%%%%
 
-    [:fontawesome-brands-github:](https://github.com/AstatineAi)
+    [:fontawesome-brands-github: Github](https://github.com/AstatineAi) [:fontawesome-solid-rss: Blog](https://astatineai.github.io/)
+
+-   __CoinRed__
+
+    ---
+
+    膜佬%%%%
+
+    [:fontawesome-brands-github: Github](https://github.com/lsCoinred)
+
 
 </div>
 
