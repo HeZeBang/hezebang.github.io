@@ -9,6 +9,19 @@ title: Links
 
 ---
 
+## My links
+
+<div class="grid cards" markdown>
+
+-   [:fontawesome-brands-bilibili: __Bilibili：糌粑_ZAMBAR__](https://space.bilibili.com/156494172)
+
+-   [:fontawesome-brands-zhihu: __Zhihu: 糌粑ZAMBAR__](https://www.zhihu.com/people/ZAMBAR)
+
+-   [:fontawesome-brands-github: __Github__](https://github.com/HeZeBang)
+
+
+</div>
+
 ## Friends
 
 <div class="grid cards" markdown>
