@@ -43,7 +43,6 @@ plugins:
       glob:
         - revealjs/*.md
   - git-revision-date-localized:
-      locale: en
       type: datetime
 
 markdown_extensions: 
