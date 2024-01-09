@@ -1,5 +1,6 @@
 ---
 share: true
+dg-publish: true
 title: MA.Add.02.积佬修炼手册
 ---
 
@@ -22,7 +23,7 @@ title: MA.Add.02.积佬修炼手册
 5. $\displaystyle \int \mathrm{e}^x \mathrm{~d} x=\mathrm{e}^x+C$;
 6. $\displaystyle \int \sin x \mathrm{~d} x=-\cos x+C$;
 7. $\displaystyle \int \cos x \mathrm{~d} x=\sin x+C$;
-8. $\displaystyle \int \sec ^2 x \mathrm{~d} x=\tan x+C$;
+8. $\displaystyle \int \sec^2 x \mathrm{~d} x=\tan x+C$;
    
    - $\displaystyle \int \sec x \mathrm d x=\ln\left|\sec x+\tan x\right|+C$
    
@@ -213,6 +214,33 @@ title: MA.Add.02.积佬修炼手册
 > I(m,n)&=-\frac{1}{m+1}\int \sin ^{\textcolor{orange}{ n-1 }}x \, d(\cos ^{\textcolor{orange}{ m+1 }}x)\newline &=-\frac{1}{m+1}\left( \sin ^{n-1}x\cos ^{m+1}x-\int \cos ^{m+1}x \, d\sin ^{n-1}x  \right) \dots\text{分部积分}\newline &=-\frac{1}{m+1}\sin ^{n-1}x\cos ^{m+1}x + \dfrac{n-1}{m+1}\int \sin ^{n-2}x \cos ^{m\textcolor{red}{ +2 }}x \, dx \newline &=-\frac{1}{m+1}\sin ^{n-1}x\cos ^{m+1}x + \dfrac{n-1}{m+1}\sin ^{n-2}x\cos ^{m}x\textcolor{red}{ (1-\sin ^{2}x) }\,dx\newline &=-\frac{1}{m+1}\sin ^{n-1}x\cos ^{m+1}x + \dfrac{n-1}{m+1}\sin ^{n-2}x\cos ^{m}x\,dx\\&\qquad+\dfrac{1-n}{m+1}\int \sin ^{n}x\cos ^{m}x \, dx \newline \therefore~ \frac{m+n}{m+1}I(m,n)&=-\frac{1}{m+1}\sin ^{n-1}x\cos ^{m+1}x+ \dfrac{n-1}{m+1}I(m,n-2)\newline \implies I(m,n)&=-\frac{1}{m+n}\sin ^{n-1}x\cos ^{m+1}x+ \dfrac{n-1}{m+n}I(m,n-2)\quad(m\geq 0,n\geq 2)\newline \text{同理: } I(m,n)&=-\frac{1}{m+n}\cos ^{m-1}x\sin ^{n+1}x+ \dfrac{m-1}{m+n}I(m-2,n)\quad(m\geq 2,n\geq 0)
 > \end{flalign}
 > $$
+
+#### Reduction Formulae
+
+The **reduction formulae** for the sine function and the cosine function to an unspecific (integer) degree are:
+
+$$
+\begin{aligned}
+& I_n=\int \sin ^n(a x) d x=\frac{-\sin ^{n-1}(a x) \cos (a x)}{a n}+\frac{n-1}{n} I_{n-2} \\
+& J_n=\int \cos ^n(a x) d x=\frac{\sin (a x) \cos ^{n-1}(a x)}{a n}+\frac{n-1}{n} J_{n-2}
+\end{aligned}
+$$
+
+As a **particular case** of their products and quotients:
+
+$$
+K_n=\int \tan ^n(a x) d x=\frac{\tan ^{n-1}(a x)}{a(n-1)}-K_{n-2}
+$$
+
+**Memorization**
+
+$$
+I_{n}=\int \textcolor{orange}{ \sin } ^\textcolor{Cyan}{ n }(a x) d x=\frac{\textcolor{red}{ \mathbf{-} }\textcolor{orange}{ \sin } ^{\textcolor{Cyan}{ n-1 }}(a x) \cos (a x)}{\textcolor{Cyan}{ n } a}+\frac{\textcolor{Cyan}{ n-1 }}{\textcolor{Cyan}{ n }} I_{n-2}
+$$
+
+$$
+J_n=\int \textcolor{orange}{ \cos } ^\textcolor{Cyan}{ n }(a x) d x=\frac{\textcolor{orange}{ \cos } ^{\textcolor{Cyan}{ n-1 }}(a x) \sin (a x)}{\textcolor{Cyan}{ n } a}+\frac{\textcolor{Cyan}{ n-1 }}{\textcolor{Cyan}{ n }} J_{n-2}
+$$
 
 ---
 
@@ -561,3 +589,4 @@ title: MA.Add.02.积佬修炼手册
 > \text { Let } x& =\pi-u \Rightarrow \sin x=\sin u \newline \text { LHS }& =\int_\pi^0(\pi-u) f(\sin u) d(\pi-u) \newline & =\int_0^\pi(\pi-u) f(\sin u) d u \newline & =\pi \int_0^\pi f(\sin u) d u-\int_0^\pi u f(\sin u) d u \newline & \Rightarrow 2 \int_0^\pi x f(\sin x) d x=\pi \int_0^\pi f(\sin u) d u \newline & \because \sin x \text { 关于 } x=\frac{\pi}{2} \text { 对称 } \newline & \therefore \int_0^{\pi / 2} f(\sin (u)) d u=\int_{\pi / 2}^\pi f(\sin (u) d u \newline \int_0^\pi x f(\sin x) d x& =\frac{\pi}{2} \int_0^\pi f(\sin u) d u \newline & =\frac{\pi}{2}\left(\int_0^{\pi / 2} f(\sin u) d u+\int_{\pi / 2}^\pi f(\sin u) d u\right) \newline & =2 \int_0^{\pi / 2} f(\sin u) d u \newline &
 > \end{aligned}
 > $$
+
