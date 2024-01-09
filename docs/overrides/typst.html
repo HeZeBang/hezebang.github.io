@@ -16,7 +16,7 @@
 <div class="result"> <details class="quote">
     <summary class="">Source Code</summary>
     <p> Share Link: {{ page.meta.edit }}</p>
-    <textarea id="input" style="width: 100%; max-width: 100%;"></textarea>
+    <textarea id="input1" style="width: 100%; max-width: 100%;"></textarea>
   </details>
 </div>
 <div id="content"></div>
@@ -32,10 +32,10 @@
 {% endif %}
 <script>
     // console.log({{ page.meta }})
-    const input = document.getElementById('input');
+    const input1 = document.getElementById('input1');
     const filename = `../${document.title.split(" - ")[0]}.typ`;
     console.log(filename);
-    input.value = "Loading...";
+    input1.value = "Loading...";
     document.getElementById('typst').addEventListener('load', function () {
         $typst.setCompilerInitOptions({
             getModule: () =>
@@ -52,7 +52,7 @@
             document.getElementById('content').innerHTML = svg;
             });
         };
-        input.oninput = () => compile(input.value);
+        input1.oninput = () => compile(input1.value);
         // compile(input.value);
     });
     
@@ -65,8 +65,8 @@
             return response.text(); // 或者 response.blob() 如果是图片或其他二进制数据
         })
         .then(data => {
-            input.value = data;
-            input.oninput()})
+            input1.value = data;
+            input1.oninput()})
         .catch(error => {
             // 处理错误情况
             console.error('There has been a problem with your fetch operation:', error);
