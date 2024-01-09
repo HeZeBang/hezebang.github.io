@@ -242,6 +242,42 @@ $$
 J_n=\int \textcolor{orange}{ \cos } ^\textcolor{Cyan}{ n }(a x) d x=\frac{\textcolor{orange}{ \cos } ^{\textcolor{Cyan}{ n-1 }}(a x) \sin (a x)}{\textcolor{Cyan}{ n } a}+\frac{\textcolor{Cyan}{ n-1 }}{\textcolor{Cyan}{ n }} J_{n-2}
 $$
 
+### $\int \sec ^n x d x$
+
+> Quiz 2 部分过程
+
+$$
+\begin{aligned}
+I_n=\int \sec ^n x d x & =\int \sec ^{n-2} x \sec ^2 x d x \\
+& =\sec ^{n-2} \tan x-\int \tan x(n-2) \sec ^{n-3} x \tan x \sec x d x \\
+& =\sec ^{n-2} \tan x-(n-2) \int \sec ^{n-2} x \tan ^2 x \\
+& =\sec ^{n-2} \tan x-(n-2) \int \sec ^{n-2} x\left(\sec ^2 x-1\right) d x \\
+& =\sec ^{n-2} \tan x-(n-2) \int \sec ^n x d x+(n-2) \int \sec ^{n-2} x d x
+\end{aligned}
+$$
+
+将右边 $(n-2) \int \sec ^n x d x$ 移项到左边，我们得到
+$$
+(n-1) I_n=\sec ^{n-2} \tan x+(n-2) I_{n-2}
+$$
+
+也就是
+$$
+I_n=\frac{1}{n-1} \sec ^{n-2} \tan x+\frac{n-2}{n-1} I_{n-2}
+$$
+
+再由
+$$
+\int \sec x d x=\ln |\tan x+\sec x|+C
+$$
+
+和
+$$
+\int \sec ^2 x d x=\tan x+C
+$$
+
+就可以求出积分。例如
+
 ---
 
 ## 典题整理
