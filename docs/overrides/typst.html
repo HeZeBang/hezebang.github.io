@@ -19,7 +19,7 @@
     <textarea id="input1" style="width: 100%; max-width: 100%;"></textarea>
   </details>
 </div>
-<div id="content"></div>
+<div id="content" style="background: #fff8;"></div>
 
 {% if page and page.meta and (
     page.meta.git_revision_date_localized or
@@ -31,7 +31,7 @@
     {% endif %}
 {% endif %}
 <script>
-    console.log({{ page.meta }})
+    // console.log({{ page.meta }})
     const input1 = document.getElementById('input1');
     const filename = `../${document.title.split(" - ")[0]}.typ`;
     console.log(filename);
