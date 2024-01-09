@@ -44,7 +44,8 @@ plugins:
       glob:
         - revealjs/*.md
   - git-revision-date-localized:
-      locale: zh
+      timezone: Asia/Shanghai
+      locale: en
       type: datetime
 
 markdown_extensions: 
