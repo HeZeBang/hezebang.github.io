@@ -1,9 +1,10 @@
 site_name: ZAMBAR's Website
+
 theme:
   name: material
   logo: assets/zambar.white.png
   favicon: assets/zambar.white.png
-  custom_dir: overrides
+  custom_dir: docs/overrides
 
   palette:
     # Palette toggle for light mode
@@ -43,6 +44,7 @@ plugins:
       glob:
         - revealjs/*.md
   - git-revision-date-localized:
+      locale: zh
       type: datetime
 
 markdown_extensions: 
@@ -78,7 +80,7 @@ markdown_extensions:
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - javascrips/mathjax.js
+  # - javascripts/all-in-one-lite.bundle.js
 
 extra:
   social:
