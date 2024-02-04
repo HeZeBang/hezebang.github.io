@@ -5,9 +5,9 @@ title: MA.Add.02.积佬修炼手册
 ---
 
 
-## 积分表
-
 ![../res/无标题.png](../res/%E6%97%A0%E6%A0%87%E9%A2%98.png)
+
+## 积分表
 
 1. $\displaystyle \int k \mathrm{~d} x=k x+C\quad\left(\int 0 \mathrm{~d} x=C\right)$;
 2. $\displaystyle \int x^\alpha \mathrm{d} x=\frac{1}{\alpha+1} x^{\alpha+1}+C \quad(\alpha \neq-1)$;<br>*常用形式：*
@@ -204,7 +204,7 @@ title: MA.Add.02.积佬修炼手册
 > 
 > 同上，$\displaystyle=-\frac{1}{2}\ln \left( \dfrac{1+\cos x}{1-\cos x} \right)$
 
-### $I(m,n)=\int \cos ^{m}x\sin ^{m}x \, dx$
+### $I(m,n)=\int \cos ^{m}x\sin ^{n}x \, dx$
 
 > ***Solution***
 > <b class="md-tag">分部积分法</b> + 递推构造
