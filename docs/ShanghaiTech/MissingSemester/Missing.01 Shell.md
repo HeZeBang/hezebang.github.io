@@ -224,3 +224,13 @@ total 4
 
 ## /sys
 
+这一题要求查看电量或 CPU 温度
+
+由于笔者使用的是 WSL，就使用了 `find` 来定位电量文件 `capacity`
+
+```sh
+$ find /sys -name capacity
+/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/PNP0C0A:00/power_supply/BAT1/capacity
+$ cat /sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/PNP0C0A:00/power_supply/BAT1/capacity
+100
+```
