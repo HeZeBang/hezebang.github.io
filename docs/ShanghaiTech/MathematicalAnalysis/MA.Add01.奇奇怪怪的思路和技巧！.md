@@ -1,5 +1,6 @@
 ---
 share: true
+dg-publish: true
 ---
 
 
@@ -106,7 +107,34 @@ $$
 
 ## 伯努利不等式、均值不等式
 
-![MA.1.0 ~ 1.1 Intro, 实数 > 不等式](../../../MA.1.0%20~%201.1%20Intro,%20%E5%AE%9E%E6%95%B0.md)
+### $Bernoulli$ 不等式
+$$
+(1+x)^n\geq1+nx
+$$
+### [均值不等式](%E5%9D%87%E5%80%BC%E4%B8%8D%E7%AD%89%E5%BC%8F.md)（AGH不等式）
+G：最适用于 不全相同但接近
+$$
+\begin{align*}
+\dfrac{n}{\frac1{x_1}+\frac1{x_2}+\cdots+\frac1{x_{n}}}\leq \sqrt[n]{x_{1}x_{2}x_{3}\cdots x_{n}} \leq \dfrac{x_{1}+x_{2} + x_{3} \cdots x_{n}}{n}\\\\
+其中等号当且仅当x_{1}=x_{2}=x_{3}=\cdots=x_{n}成立
+\end{align*}
+$$
+
+例题4：$设 e_{n}=(1+\dfrac1n)^{n}.\ 证明数列\{e_{n}\}单调递增且e_n<4.$
+证明： ^1e9a3c
+$$
+\begin{align*}
+e_{n}&=(1+\frac1n)(1+\frac1n)\cdots(1+\frac1n)\cdot1\\
+&<\left( \dfrac{n(1+\frac1n)+1}{n+1} \right)^{n+1}\\
+&=\left(\dfrac{n+2}{n+1}\right)^{n+1}\\
+&=\left(1+\frac1{n+1}\right)^{n+1}\\
+&=e_{n+1}\\
+\\
+e_{n}&=4\left[ \left( 1+\dfrac{1}{n}\right) \left( 1+\dfrac{1}{n}\right) \ldots \left( 1 + \dfrac{1}{n}\right) \cdot \dfrac{1}{2}\cdot\dfrac{1}{2}\right] \\
+&<4\left( \dfrac{n\left( 1+\dfrac{1}{n}\right) +\dfrac{1}{2}+\dfrac{1}{2}}{n+2}\right) ^{n+2}\\
+&=4\\
+\end{align*}
+$$
 
 ## $e$的泰勒展开
 
@@ -125,9 +153,12 @@ $\begin{align*} \lim_{n\to\infty}n\sin(2\pi en!)&=\lim_{n\to\infty}n\sin\bigg[2\
 >[!example]
 >若$\lim a_{n}=a,\ \lim b_{n}=b$,
 >试证明: $\lim\dfrac{a_{1}b_{n}+a_{2}b_{n-1}+\dots+a_{n}b_{1}}{n}=ab$
+>
 >---
+>
 > <b class="md-tag">极限与无穷小的转化</b> + <b class="md-tag">Cauchy第一定理</b> 
 > **证:**
+> 
 >![e812811aa353ae5d66ae80cd14f5c285.jpeg](../res/e812811aa353ae5d66ae80cd14f5c285.jpeg)
 
 ^13b407
@@ -224,11 +255,15 @@ $$
 
 例题：证明 $\lim\limits_{x \to x_{0}}\cos x=\cos x_{0}$
 
-**证：** $$\begin{aligned}\left| \cos x-\cos x_{0}\right| &=\left| -2\times \sin \dfrac{x-x_{0}}{2}\times \sin \dfrac{x+x_{0}}{2}\right| \\
+**证：**
+$$
+\begin{aligned}\left| \cos x-\cos x_{0}\right| &=\left| -2\times \sin \dfrac{x-x_{0}}{2}\times \sin \dfrac{x+x_{0}}{2}\right| \\
 &\leq 2\times \left| \sin \dfrac{x-x_{0}}{2}\right| \\
 &\leq 2\times \left| \dfrac{x-x_{0}}{2}\right| \\
 &=\left| x-x_{0}\right|<\varepsilon 
-\end{aligned}$$
+\end{aligned}
+$$
+
 $\therefore \forall\varepsilon>0,\ \exists\delta>0:\ |x-x_{0}|<\delta\Rightarrow\cdots$
 
 ## $e$ $\gamma$

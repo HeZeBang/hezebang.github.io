@@ -5,9 +5,9 @@ title: MA.Add.02.积佬修炼手册
 ---
 
 
-## 积分表
-
 ![../res/无标题.png](../res/%E6%97%A0%E6%A0%87%E9%A2%98.png)
+
+## 积分表
 
 1. $\displaystyle \int k \mathrm{~d} x=k x+C\quad\left(\int 0 \mathrm{~d} x=C\right)$;
 2. $\displaystyle \int x^\alpha \mathrm{d} x=\frac{1}{\alpha+1} x^{\alpha+1}+C \quad(\alpha \neq-1)$;<br>*常用形式：*
@@ -204,7 +204,7 @@ title: MA.Add.02.积佬修炼手册
 > 
 > 同上，$\displaystyle=-\frac{1}{2}\ln \left( \dfrac{1+\cos x}{1-\cos x} \right)$
 
-### $I(m,n)=\int \cos ^{m}x\sin ^{m}x \, dx$
+### $I(m,n)=\int \cos ^{m}x\sin ^{n}x \, dx$
 
 > ***Solution***
 > <b class="md-tag">分部积分法</b> + 递推构造
@@ -415,6 +415,75 @@ $$
 > &\xlongequal{t=\tan x} \int_0^1 \sqrt{t} d \arctan t\newline &\xlongequal{m=\sqrt{t}} \int_0^1 m d \arctan m^2\newline & =\int_0^1 \frac{2 m^2}{1+m^4} d m \newline & =\int_0^1 \frac{m^2-1}{1+m^4} d m+\int_0^1 \frac{m^2+1}{1+m^{\varphi}} d m\newline & =\int_0^1 \frac{1-\frac{1}{m^2}}{m^2+\frac{1}{m^2}} d m+\int_0^1 \frac{1+\frac{1}{m^2}}{m^2+\frac{1}{m^2}} d m\newline & =\int_0^1 \frac{d\left(m+\frac{1}{m}\right)}{m^2+\frac{1}{m^2}}+\int_0^1 \frac{d\left(m-\frac{1}{m}\right)}{m^2+\frac{1}{m^2}}\newline & =\int_0^1 \frac{d\left(m+\frac{1}{m}\right)}{\left(m+\frac{1}{m}\right)^2-2}+\int_0^1 \frac{d\left(m-\frac{1}{m}\right)}{\left(m-\frac{1}{m}\right)^2+2}\newline & =\left.\frac{1}{2 \sqrt{2}} \ln \left|\frac{m+\frac{1}{m}-\sqrt{2}}{m+\frac{1}{m}+\sqrt{2}}\right|\right|_0 ^1+\left.\frac{1}{\sqrt{2}} \arctan \frac{m-\frac{1}{m}}{\sqrt{2}}\right|_0 ^1\newline \because~ &\lim _{m \rightarrow 0^{+}}\left(1-\frac{2 \sqrt{2}}{m+\frac{1}{m}+\sqrt{2}}\right)=1-\lim _{m \rightarrow 0^{+}} \frac{2 \sqrt{2} m}{m^2+\sqrt{2} m+1}=1 \newline & \lim _{m \rightarrow 0^{+}}\left(m-\frac{1}{m}\right) \frac{0}{=} \lim _{m \rightarrow 0^{+}} m-\lim _{m \rightarrow 0^{+}} \frac{1}{m}=-\infty \newline \therefore~ &= \frac{1}{2 \sqrt{2}}\left(\ln \frac{2-\sqrt{2}}{2+\sqrt{2}}-0\right)+\frac{1}{\sqrt{2}}(\arctan 0-\arctan -\infty) \newline &= \frac{1}{2 \sqrt{2}} \ln (3-2 \sqrt{2})+\frac{1}{\sqrt{2}}\left(0+\frac{\pi}{2}\right) \newline &= \frac{\sqrt{2}}{2} \ln (\sqrt{2}-1)+\frac{\sqrt{2} \pi}{4} \newline & \approx 0.4875
 > \end{aligned}
 > $$
+
+---
+
+### 反向乘积求导公式与反向商的求导公式
+
+> 来自：[SUDO Edu](https://www.sudoedu.com/blog/%e4%bd%a0%e6%89%80%e4%b8%8d%e7%9f%a5%e9%81%93%e7%9a%84%e7%a7%af%e5%88%86%e6%b3%95%ef%bc%88%e4%b8%89%ef%bc%89%ef%bc%9a%e5%8f%8d%e5%90%91%e4%b9%98%e7%a7%af%e6%b1%82%e5%af%bc%e5%85%ac%e5%bc%8f%e4%b8%8e/)
+
+#### 反向乘积的导数
+
+我们知道，两个函数的乘积的导数为
+$$
+(f(x) \cdot g(x))^{\prime}=f^{\prime}(x) \cdot g(x)+f(x) \cdot g^{\prime}(x)
+$$
+
+所以
+$$
+\int f^{\prime}(x) \cdot g(x)+f(x) \cdot g^{\prime}(x) d x=f(x) \cdot g(x)+C
+$$
+
+##### 例1 求积分 $\int\left(\frac{1}{\ln x}+\ln (\ln x)\right) d x$.
+解: 分开来算，这两个积分都算不出来。但仔细观察， $(\ln (\ln x))^{\prime}=\frac{1}{x \ln x}$ ，与第一项差了一个因子 $\frac{1}{x}$ ，所以将 $\ln (\ln x)$ 乘以 $x$ ，再求导，正好了被积分函数，所以
+$$
+\int\left(\frac{1}{\ln x}+\ln (\ln x)\right) d x=\int[x \ln (\ln x)]^{\prime} d x=x \ln (\ln x)+C
+$$
+	
+#### 反向商的求导公式
+
+商的求导公式为
+$$
+\left(\frac{f(x)}{g(x)}\right)^{\prime}=\frac{f^{\prime}(x) g(x)-f(x) g^{\prime}(x)}{g^2(x)}
+$$
+
+所以
+$$
+\int \frac{f^{\prime}(x) g(x)-f(x) g^{\prime}(x)}{g^2(x)}=\frac{f(x)}{g(x)}+C
+$$
+
+如果一个被积分函数的分母为一个函数的平方，我们可以通过商的求导公式凑出 $f(x)$ ，然后利用反向商的求导公式求出积分。
+
+##### 例2 求积分 $\int \frac{\sin ^2 x}{(x \cos x-\sin x)^2} d x$.
+解: 因为分母是一个函数的平方，看起来还有点复杂，我们来“凑”出一个商的求导公式。因为分母为 $(x \cos x-\sin x)^2$ ，所以令 $g(x)=x \cos x-\sin x ， g^{\prime}(x)=\cos x-x \sin x-\cos x=-x \sin x$ ，
+$$
+\begin{aligned}
+f^{\prime}(x) g(x)-f(x) g^{\prime}(x) & =f^{\prime}(x) g(x)-f(x) g^{\prime}(x) \\
+& =f^{\prime}(x) \cdot(x \cos x-\sin x)-f(x) \cdot(-x \sin x) \\
+& =f^{\prime}(x) \cdot x \cdot \cos x-f^{\prime}(x) \sin x+f(x) \cdot x \cdot \sin x \\
+& =\sin ^2 x
+\end{aligned}
+$$
+
+因为右边只有 $\sin ^2 x$ ，一个直观的猜想是 $-f^{\prime}(x) \sin x=\sin ^2 x$ ，也就是 $f(x)=\cos x$ ，而另外两项为 0 。将 $f(x)=\cos x$ 代入上式，
+$$
+f^{\prime}(x) \cdot x \cdot \cos x+f(x) \cdot x \cdot \sin x=-\sin x \cdot x \cdot \cos x+\cos x \cdot x \cdot \sin x=0
+$$
+
+所以，原积分为
+$$
+\int \frac{\sin ^2 x}{(x \cos x-\sin x)^2} d x=\int\left(\frac{\cos x}{x \cos x-\sin x}\right)^{\prime} d x=\frac{\cos x}{x \cos x-\sin x}+C
+$$
+
+#### 练习题
+
+最后，给出几个习题供有兴趣的同学们练习。
+求积分
+(1) $\int\left(x \sec ^2 x+\tan x\right) d x$
+(2) $\int x^x(\ln x+1) d x$
+(3) $\int e^{\sin x}\left(x^2 \cos x+2 x\right) d x$
+(4) $\int \frac{\ln x}{x^2(1-\ln x)^2} d x$
+(5) $\int \frac{\sin x-x \cos x-\cos }{\sin ^2 x}$
 
 ---
 
