@@ -201,6 +201,19 @@ total 4
 - `#!/usr/bin/env python3` – Execute with a [Python](https://en.wikipedia.org/wiki/Python_(programming_language) "Python (programming language)") interpreter, using the [env](https://en.wikipedia.org/wiki/Env "Env") program search path to find it
 - `#!/bin/false` – Do nothing, but return a non-zero [exit status](https://en.wikipedia.org/wiki/Exit_status "Exit status"), indicating failure. Used to prevent stand-alone execution of a script file intended for execution in a specific context, such as by the `.` command from sh/bash, `source` from csh/tcsh, or as a .profile, .cshrc, or .login file.
 
+注意，脚本并不一定只有用 bash 写才能在终端里调用。比如说，这是一段 Python 脚本，作用是将输入的参数倒序输出：
+
+```python
+#!/usr/local/bin/python
+import sys
+for arg in reversed(sys.argv[1:]):
+    print(arg)
+```
+
+内核知道去用 python 解释器而不是 shell 命令来运行这段脚本，是因为脚本的开头第一行的 [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix))。
+
+在 `shebang` 行中使用 [`env`](https://man7.org/linux/man-pages/man1/env.1.html) 命令是一种好的实践，它会利用环境变量中的程序来解析该脚本，这样就提高来您的脚本的可移植性。`env` 会利用我们第一节讲座中介绍过的`PATH` 环境变量来进行定位。 例如，使用了`env`的shebang看上去是这样的`#!/usr/bin/env python`。
+
 ## 管道 `|` 输出的最后更改日期，grep
 
 1. `stat -c %y semester` 没有用管道
@@ -215,9 +228,11 @@ total 4
 > 
 > 常用选项：
 > - `-i`：忽略大小写进行匹配。
+> - `-C`：查看上下文 (Context) Eg. `-C 5` 输出前后 5 行
 > - `-v`：反向查找，只打印不匹配的行。
 > - `-n`：显示匹配行的行号。
 > - `-r`：递归查找子目录中的文件。
+> - `-R`：递归地进入子目录并搜索所有的文本文件。
 > - `-l`：只打印匹配的文件名。
 > - `-c`：只打印匹配的行数。
 > - `-E`：使用（扩展）正则表达式
