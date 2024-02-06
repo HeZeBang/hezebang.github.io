@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2023-12-07
+date: 2024-02-06
 categories:
   - Others
   - tmux
