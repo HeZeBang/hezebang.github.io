@@ -18,28 +18,28 @@ categories:
 
 ## 常用快捷键
 
-- `- `C-b /`` Describe key binding
-- `- `C-b t`` Show a clock
+- `C-b /` Describe key binding
+- `C-b t` Show a clock
 
 **分屏**
 
-- `- `C-b %`` Split window horizontally
-- `- `C-b "`` Split window vertically
+- `C-b %` Split window horizontally
+- `C-b "` Split window vertically
 
 **编辑**
 
-- `- `C-b \[`` Enter copy mode
-- `- `C-b \]`` Paste the most recent paste buffer
+- `C-b \[` Enter copy mode
+- `C-b \]` Paste the most recent paste buffer
 
 **窗口管理**
 
-- `- `C-b i`` Display window information
-- `- `C-b c`` Create a new window
-- `- `C-b f`` Search for a pane
-- `- `C-b w`` Choose a window from a list
-- `- `C-b s`` Choose a session from a list
-- `- `C-b d`` Detach the current client
-- `- `C-b x`` Kill the active pane
+- `C-b i` Display window information
+- `C-b c` Create a new window
+- `C-b f` Search for a pane
+- `C-b w` Choose a window from a list
+- `C-b s` Choose a session from a list
+- `C-b d` Detach the current client
+- `C-b x` Kill the active pane
 
 **窗口移动**
 
