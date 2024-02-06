@@ -12,6 +12,8 @@ categories:
 >
 > 本人经常忘记 tmux 怎么用，特写此文，望周知
 
+<!-- more -->
+
 ## `Ctrl` + `b` 前缀键！
 
 相当于 VSCode 某些二段快捷键的 `Ctrl` + `K`

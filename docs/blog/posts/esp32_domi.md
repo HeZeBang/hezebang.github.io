@@ -13,6 +13,8 @@ categories:
 
 学校 SI100B 的 EE Part 需要用到 ESP32 ，闲着无聊买回来然后琢磨怎么玩。然后就有了这个项目……
 
+<!-- more -->
+
 ## 电机驱动
 
 ESP32 的电机比较特殊，并不能直接 `#include <Servo.h>`， 我们需要在 Library 中下载专门编写的 `ESP32Servo` 并导入 `ESP32Servo.h` 才能使用。
