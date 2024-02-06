@@ -65,7 +65,7 @@ N 型 MOSFET 在栅极施加电源电压（H）时电流可以流通，接地（
 
 ### NOT 门的 MOSFET 级实现
 
-	![Pasted image 20240204160816.png](../../res/Pasted%20image%2020240204160816.png)
+![../../res/Pasted image 20240204160816.png](../../res/Pasted%20image%2020240204160816.png)
 
 ### MIL（美军标准）逻辑符号
 
