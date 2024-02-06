@@ -41,9 +41,7 @@ categories:
 - `C-b d` Detach the current client
 - `C-b x` Kill the active pane
 
-**窗口移动**
+**窗口操作**
 
-- `C-b C-Up` Resize the pane up
-- `C-b C-Down` Resize the pane down
-- `C-b C-Left` Resize the pane left
-- `C-b C-Right` Resize the pane right
+- `C-b Up/Down/Right/Left` Select the pane
+- `C-b C-Up/Down/Right/Left` Resize the pane
