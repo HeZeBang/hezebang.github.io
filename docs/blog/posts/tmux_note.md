@@ -1,0 +1,49 @@
+---
+draft: false
+date: 2023-12-07
+categories:
+  - Others
+  - tmux
+---
+
+# tmux 指南
+
+> [!note]
+>
+> 本人经常忘记 tmux 怎么用，特写此文，望周知
+
+## `Ctrl` + `b` 前缀键！
+
+相当于 VSCode 某些二段快捷键的 `Ctrl` + `K`
+
+## 常用快捷键
+
+- `- `C-b /`` Describe key binding
+- `- `C-b t`` Show a clock
+
+**分屏**
+
+- `- `C-b %`` Split window horizontally
+- `- `C-b "`` Split window vertically
+
+**编辑**
+
+- `- `C-b \[`` Enter copy mode
+- `- `C-b \]`` Paste the most recent paste buffer
+
+**窗口管理**
+
+- `- `C-b i`` Display window information
+- `- `C-b c`` Create a new window
+- `- `C-b f`` Search for a pane
+- `- `C-b w`` Choose a window from a list
+- `- `C-b s`` Choose a session from a list
+- `- `C-b d`` Detach the current client
+- `- `C-b x`` Kill the active pane
+
+**窗口移动**
+
+- `C-b C-Up` Resize the pane up
+- `C-b C-Down` Resize the pane down
+- `C-b C-Left` Resize the pane left
+- `C-b C-Right` Resize the pane right
