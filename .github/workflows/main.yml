@@ -29,4 +29,5 @@ jobs:
                          mkdocs-pdf \
                          mkdocs-git-revision-date-localized-plugin \
                          mkdocs-exclude \
+                         overrides \
       - run: mkdocs gh-deploy --force
