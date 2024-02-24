@@ -7,7 +7,7 @@ categories:
   - ShanghaiTech
 ---
 
-# Docker 下的 PostgreSQL
+# Docker 下的 PostgreSQL 以及 Gin / Gorm 编写
 
 最近有项目需要使用到 PostgreSQL，经学长指点最好使用 Docker 部署，由于本人是 Docker 新手，于是有了本篇踩坑日记
 
@@ -15,7 +15,7 @@ categories:
 
 > [!Warning]
 >
-> 本文假设您使用的是 Windows 环境，本文的 PostgreSQL 镜像版本为 12.18-bullseye，阅读此文时最新版本可能有所变化
+> 本文假设您使用的是 Windows 环境，阅读此文时 PostgreSQL 最新版本可能有所变化
 
 ## 部署
 
@@ -86,7 +86,7 @@ docker run --name postgres-test -e POSTGRES_PASSWORD=p@ssw0rd -d postgres
 ```
 
 - `--name`: Container **Name**
-- `-e`: **E**nviroment Variables
+- `-e`: **E**nviroment Variables0
   - POSTGRES_PASSWORD: 数据库密码
 - `-d`: Docker 镜像名称，可以通过 Repo 名后加 `:[TAG NAME]` 的形式指定 TAG / 版本
 
@@ -163,3 +163,86 @@ docker remove 55bc748371a5
 - `POSTGRES_INITDB_WALDIR` – Defines a specific directory for the Postgres transaction log. A transaction is an operation and usually describes a change to your database. 
 - `POSTGRES_HOST_AUTH_METHOD` – Controls the `auth-method` for `host` connections to `all` databases, users, and addresses
 - `PGDATA` – Defines another default location or subdirectory for database files
+
+## Go 开发
+
+### 启动 PostgreSQL Docker
+
+这里我们将运行一个基于 `postgres:latest` 的名为 `postgres-test` 的容器实例，并且将 `5432` 的 PostgreSQL 端口映射到本地的 `5432` 端口，并且设置密码为 `123456`
+
+```bash
+docker run -id --name=postgres-test -v postgre-data:/var/lib/postgresql/data -p 5432:5432 -e POSTGRES_PASSWORD=p@ssw0rd -e LANG=C.UTF-8 postgres
+```
+
+与此同时，我们还
+
+- `-id` 为两个参数的组合
+  - `-i` 表示交互模式 (Interactive)
+  - `-d` 表示后台运行
+- 将本地主机上名为 `postgre-data` 的卷挂载到容器中的 `/var/lib/postgresql/data` 目录
+- 使用环境变量 `LANG` 来设置容器的语言环境为 `C.UTF-8`，以支持中文
+
+> [!Note] `postgres` 是 PostgreSQL 的默认用户名和数据库名称
+
+> [!Question] 挂载是如何进行的？
+
+### 使用 Gin / Gorm 编写简单的后端
+
+这里我们将在 `8080` 端口上运行服务，并且我们实现一些简单的功能
+
+- GET
+  - 访问 `/` 时的 Hello, World! 消息实现
+  - 访问 `/users` 时返回用户列表
+
+```go
+package main
+
+import (
+	"fmt"
+	"log"
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+	"gorm.io/driver/postgres"
+	"gorm.io/gorm"
+)
+
+type User struct {
+	gorm.Model
+  // User Model
+}
+
+func main() {
+  // Init Gin
+  r := gin.Default()
+
+  // Init Gorm
+	dsn := "host=localhost user=postgres password=123456 dbname=postgres port=5432 sslmode=disable TimeZone=Asia/Shanghai"
+
+	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
+
+	if err != nil {
+		panic("Failed to connect to database")
+	}
+	fmt.Println("Successfully connected to database")
+
+	db.AutoMigrate(&User{})
+
+	r.GET("/", func(c *gin.Context) {
+		c.JSON(http.StatusOK, gin.H{
+			"message": "Hello, World!",
+		})
+	})
+
+	r.GET("/users", func(c *gin.Context) {
+		var users []User
+		db.Find(&users)
+		c.JSON(http.StatusOK, users)
+	})
+  
+	err = r.Run(":8080")
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+```
