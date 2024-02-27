@@ -19,7 +19,7 @@ CPU的存储程序式架构 => Stored-program Computer
 2. Decode
 	- 【指令解码器】 ：解码
 	- 【General Purpose Register】（通用寄存器）：保存地址和运算结果
-3. Run
+3. Execute + Memory access + Register write block
 	- $\begin{rcases}\text{Register} \\ \text{Memory}\end{rcases}\xrightarrow{\text{读取、处理、写回}}\begin{cases}\text{Register} \\ \text{Memory}\end{cases}$
 
 ![../../res/Pasted image 20240113114249.png](../../res/Pasted%20image%2020240113114249.png)
