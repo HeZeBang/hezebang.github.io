@@ -71,7 +71,7 @@ share: true
 > [!definition] DLOG
 > 设 $G=\langle g\rangle$ 为阶数为 $q$ 的循环群. 对所有 $h \in G$, 若存在 $x \in\{0,1, \ldots, q-1\}$ 使得 $h=g^x$. 则整数 $x$ 称为 $h$ 对 $g$ 的离散对数 ( Discrete Log of $h$ with respect to $g$, 
 **DLOG**) .  
-> 记为: $x=\log _g h$
+> 记为: $x=\log _g h$i
 
 ### DLOG 问题, CDH 问题
 
