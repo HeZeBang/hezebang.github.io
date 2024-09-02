@@ -2,7 +2,7 @@
 share: true
 ---
 
-# 群
+# Lec.8 群
 
 文章部分摘自：https://oiwiki.org/math/group-theory/
 
