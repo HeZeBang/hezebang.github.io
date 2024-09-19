@@ -9,13 +9,13 @@ share: true
 
 正好 CS131 改成了 OCaml ，说实话是第一次了解这个语言，也是第一次了解函数式编程。作为妮可唯一的 FP 课（x）记录一下初探函数式的一些小不适应吧。
 
-> 这部分是 [这个教程](https://sanette.github.io/ocaml2.org/learn/tutorials/functional_programming.zh.html) 的简单读后感
+> 这部分大多是 [这个教程](https://sanette.github.io/ocaml2.org/learn/tutorials/functional_programming.zh.html) 的简单读后感，还参考了 [这篇博客](https://www.cnblogs.com/gyhang/p/4785193.html)
 
 ## 什么是函数式
 
 > 在**函数式语言中**, **函数（functions）**是一等公民。
 
-不理解，继续看
+它应该可以像其它类型（int，float，string等）一样，能支持“字面量”（例如匿名函数）
 
 ```ocaml
 # let double x = x * 2 in
@@ -113,6 +113,30 @@ val plus : int -> int -> int = <fun>
 - : int list = [3; 4; 5]
 # let list_of_functions = List.map plus [1; 2; 3];;
 val list_of_functions : (int -> int) list = [<fun>; <fun>; <fun>]
+```
+
+而如果 `+` 变成了一个函数，那么它就由 operator 的中缀变为了 function 的前缀
+
+```ocaml
+# (+) 5 3
+- : int = 8
+# (mod) 5 3
+- : int = 2
+```
+
+自定义运算符也可以，但是必须从如下符号集合中组合：
+
+```txt
+! $ % & * + - . / : < = > ? @ ^ | ~
+```
+
+Eg.
+
+```ocaml
+# let (+!) (x1,y1) (x2,y2) = x1+x2, y1+y2;;
+val ( +! ) : int * int -> int * int -> int * int = <fun>
+# (1,2) +! (10,20);;
+- : int * int = (11, 22)
 ```
 
 ## 函数式编程的优点
@@ -216,3 +240,18 @@ main ()
 显然操作一个unboxed的整数数组是比操作一个boxed的要快很多。并且由于上了很多 小的分块，垃圾收集也要快很多。
 
 C/C++，这应该不成问题，在Java中，`int`是unboxed而`Integer`是boxed的。Ocaml中， 基本类型是unboxed的。
+
+---
+
+神奇的是
+
+```ocaml
+# exit;;
+- : int -> 'a = <fun>
+```
+
+OCaml 的函数式必须要有一个参数。
+
+多个参数的函数并不是传入两个参数，而是“传入了一个参数又返回了另一个函数”的函数。
+
+另外，函数式语言不鼓励变量循环（这是不纯的），而是多用递归。
