@@ -2,7 +2,10 @@
 share: true
 ---
 
-## [IOC](https://www.seas.upenn.edu/~cis3410/current/_static/files/ocaml-book.pdf) 学习手记
+
+# OCaml 学习手记
+
+> 学习资料来自：[Introduction to OCaml](https://www.seas.upenn.edu/~cis3410/current/_static/files/ocaml-book.pdf)
 
 ### Tuples 与 Polymorphism
 
