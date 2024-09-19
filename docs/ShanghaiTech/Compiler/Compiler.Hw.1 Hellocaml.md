@@ -3,7 +3,13 @@ share: true
 ---
 
 
-# Homework 1
+# 编译原理 - Homework 1
+
+> 本笔记适用于
+> 
+> - UPENN CIS 3410/7000
+> - ShanghaiTech CS 131 2024+
+> - Havard CS 153
 
 ## Tips - 在开始之前
 
