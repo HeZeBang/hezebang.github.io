@@ -14,6 +14,27 @@ share: true
 
 ## AST
 
+来看看我们演示中设计的 SIMPLE 语言的语法
+
+```txt
+ *  <exp> ::= 
+ *         |  <X>                       // variables
+ *         |  <exp> + <exp>             // addition
+ *         |  <exp> * <exp>             // multiplication
+ *         |  <exp> < <exp>             // less-than
+ *         |  <integer constant>        // literal
+ *         |  (<exp>)
+ *
+ *  <cmd> ::= 
+ *         |  skip
+ *         |  <X> = <exp>
+ *         |  ifNZ <exp> { <cmd> } else { <cmd> }
+ *         |  whileNZ <exp> { <cmd> }
+ *         |  <cmd>; <cmd>
+```
+
+我们可以用如下的方式表达
+
 ```ocaml
 type var = string
 
@@ -32,13 +53,18 @@ type cmd =
   | Seq of cmd * cmd
 ```
 
+现在，假设我们的程序需要完成一个阶乘的人物，它用别的语言看起来可能如下：
+
 ```c
 X = 6;
 ANS = 1;
 whileNZ (X) {
 	ANS = ANS * X;
 	X = X + -1;
+}
 ```
+
+我们使用我们构建的语法来表达就会是这样 ~~哇哦，真是回调地狱呢，Promise? Monad? 救一下啊~~
 
 ```ocaml
 let factorial : cmd =
