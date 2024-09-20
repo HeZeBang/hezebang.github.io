@@ -58,5 +58,8 @@ make zip   --  creates a zip file with the code you need to submit
 - Problem 4 更多匹配
 	- 可以参考 Lec1.zip 的内容
 	- 注意小细节即可
+- Problem 5 虽然是 Hidden Point，但是也很重要
+	- 这里主要是 `@` 和 `append` 实测 `@` 的代码更简洁，但是笔者先入为主用的 `append`
+	- 本质就是加了个 stack 换皮，没有什么含金量
 - 最后
 	- 注意 OCaml 语法格式规范
