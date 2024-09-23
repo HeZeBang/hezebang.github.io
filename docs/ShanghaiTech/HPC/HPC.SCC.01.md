@@ -50,7 +50,7 @@ scc112-login      1     debug     drained 2       2:1:1      5        0      1  
 
 可以看到，在我们的节点中，`cpu` 节点显示已下线，于是使用下面的命令查看详情
 
-```sh
+```bash
 $ scontrol show node scc112-cpu3
 ```
 
@@ -79,13 +79,13 @@ NodeName=scc112-cpu3 Arch=x86_64 CoresPerSocket=1
 
 可以看到错误消息为 `Node unexpectedly rebooted`，但是 `ssh` 能够正常访问，并不知道是什么原因，所以决定先重启节点上的 slurm 服务，也就是在每个 `down` 的节点服务器上运行
 
-```
-sudo systemctl restart slurmd
+```bash
+$ sudo systemctl restart slurmd
 ```
 
 接下来再看看
 
-```
+```bash
 $ sinfo
 PARTITION AVAIL  TIMELIMIT  NODES  STATE NODELIST
 debug        up   infinite      1  drain scc112-login
@@ -103,7 +103,7 @@ GPU*         up   infinite      1   idle scc112-gpu0
 
 使用下面的命令查看单个任务详情
 
-```
+```bash
 $ scontrol show job 34
 JobId=34 JobName=submit.sh
    UserId=rocky(1000) GroupId=rocky(1000) MCS_label=N/A
@@ -155,4 +155,84 @@ GPU*         up   infinite      1   idle scc112-gpu0
 
 ![../res/Pasted image 20240923141948.png](../res/Pasted%20image%2020240923141948.png)
 
+## OpemMPI 踩坑经历
+
+### `automake` 版本过低
+
+首先就是安装，在 `make` 的过程中居然提示 `automake` 版本太低
+
+```txt
+...
+configure.ac:14: error: version mismatch.  This is Automake 1.16.2, 
+configure.ac:14: but the definition used by this AM_INIT_AUTOMAKE   
+configure.ac:14: comes from Automake 1.16.5.  You should recreate   
+configure.ac:14: aclocal.m4 with aclocal and run automake again.    
+...
+WARNING: 'automake-1.16' is probably too old.
+         You should only need it if you modified 'Makefile.am' or
+         'configure.ac' or m4 files included by 'configure.ac'.
+         The 'automake' program is part of the GNU Automake package:
+         <https://www.gnu.org/software/automake>
+         It also requires GNU Autoconf, GNU m4 and Perl in order to run:
+         <https://www.gnu.org/software/autoconf>
+         <https://www.gnu.org/software/m4/>
+         <https://www.perl.org/>
+make: *** [Makefile:1472: Makefile.in] Error 1
+```
+
+于是可以用 `wget` 下载所需要的版本安装，于是安装完成了
+
+### 缺少 `munge`
+
+接下来不报错了，但是遇到了
+
+```
+...
+/usr/bin/ld: cannot find -lmunge
+...
+collect2: ld returned 1 exit status
+```
+
+得，神秘 `ld` 错误，下载一下 `munge`
+
+下载 `munge` 源码后，为了构建 `configure`，还需要运行 `./bootstrap`
+
+于是报错
+
+```
+configure.ac:32: error: possibly undefined macro: AC_PROG_LIBTOOL
+```
+
+### `libtool` 在 `munge` 安装的配置
+
+可能是 `libtool` 没有配置好，运行
+
+```bash
+$ libtoolize --force
+```
+
+可以补充链接库
+
+以及
+
+```bash
+$ aclocal
+$ autoconf
+$ automake --add-missing --copy
+```
+
+再次按照安装手册运行 `configure`，没有报错了！
+
+于是 `make; make install`，虽然 `make check` 有 2 个 Fail，但是 `make install` 异常顺利
+
+### 回到 OpenMPI 的安装
+
+好了，回到刚才停下的地方，继续 `make`，过了！
+
+然后 `make install`，虽然一堆红红的闪过去了，但是还是安装完成了！
+
 撒花！
+
+### `-n 300`?
+
+![../res/Pasted image 20240923171719.png](../res/Pasted%20image%2020240923171719.png)
