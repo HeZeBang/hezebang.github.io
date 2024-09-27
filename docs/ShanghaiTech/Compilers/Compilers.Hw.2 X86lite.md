@@ -68,7 +68,7 @@ type mach = { flags : flags
 - **内存**：只是用 `64K` 内存， 堆模拟的部分是最高可寻址内存位置的部分，范围从 `mem_bot` 到 `mem_top`，并且不会要求像 OS 一样实现内存请求（好耶），即：你可以假设这些内存都是已经被虚拟化和分页好了的，也不会模拟与内存分页相关的对齐或代码布局的任何限制。
 - **符号指令编码**：补充前文，程序读取和操作代表指令的 `sbyte`s 作为数据的行为是没有指定的，我们写的 Simulator 可能会报错或者指定一些默认操作，原文中称 `we will not test these cases.`
 - **操作数限制**：比如 `leaq` 在 x86lite 规范中只能使用间接内存操作数。而我们的 Simulator 不要求检测无效操作数。
-- **终止和 System calls**：正常的程序会在终止时调用例如 POSIX 的 `exit` 这种系统调用来通知 OS 终止，我们这里采用 `exit_addr` 这样一个超出内存空间的 sentinel address 来表示程序是否被终止。因此，==你应该从堆栈顶部的 `exit_addr` 开始执行==，因此，在不先将其他内容压入堆栈的情况下执行 `RETQ` 将终止程序。
+- **终止和 System calls**：正常的程序会在终止时调用例如 POSIX 的 `exit` 这种系统调用来通知 OS 终止，我们这里采用 `exit_addr` 这样一个超出内存空间的 sentinel address 来表示程序是否被终止。
 
 #### Tasks
 
@@ -208,7 +208,7 @@ type exec = {
 
 如何实现？参考的步骤如下：
 
-- 分离 `text` 和 `data` 两个堆
+- 分离 `text` 和 `data` 两个段
 - 计算两个堆的大小（`Asciz` 的大小是 `strlen + 1`）
 - 解析 `label` 和地址，并且用 Immediate 替换掉代码里出现的标签
 - 堆从最低地址开始，首先是 `text` 然后是 `data`
