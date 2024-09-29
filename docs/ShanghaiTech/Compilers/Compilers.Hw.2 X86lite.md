@@ -135,6 +135,13 @@ type operand = Imm of imm            (* immediate *)
              | Ind3 of (imm * reg)   (* indirect: displacement(%reg) *)
 ```
 
+- Immediate: 即返回立即数本身，类似于字面值
+- Register: 返回寄存器的值
+- 接下来的所有 Indirect 寻址都像是：将原本的字面值作为一个指针，也就是 `*addr` 的形式，例如 `*0x1234` 就是指向 `0x1234` 的地址。
+	- Ind1：返回字面值指向的地址存放的值
+	- Ind2：返回寄存器的值指向的地址存放的值
+	- Ind3：寄存器+偏移的地址存放的值
+
 不过这里只给出了 `interp_op` 是一个 `operand -> int64` 的映射，我这里默认做的是对操作数取出具体值。
 
 需要注意的是，这里还没有涉及到关于 `lbl` 的实现，这将会在我们的后续的任务中实现 `lbl` 的替换，这里只需要 `raise` 或者做默认行为即可。
@@ -191,6 +198,10 @@ type operand = Imm of imm            (* immediate *)
 
 ```ocaml
 let assemble (p : prog) : exec = failwith "assemble unimplemented"
+```
+
+```ocaml
+type elem = { lbl: lbl; global: bool; asm: asm }
 ```
 
 而 `prog` 是 `elem list` 的 alias ，而 `exec` 的定义如下
