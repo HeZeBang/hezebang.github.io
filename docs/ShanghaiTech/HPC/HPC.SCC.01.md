@@ -236,3 +236,83 @@ $ automake --add-missing --copy
 ### `-n 300`?
 
 ![../res/Pasted image 20240923171719.png](../res/Pasted%20image%2020240923171719.png)
+
+```txt
+JobId=119 JobName=submit-mpi2.sh
+   UserId=rocky(1000) GroupId=rocky(1000) MCS_label=N/A
+   Priority=4294901755 Nice=0 Account=(null) QOS=(null)
+   JobState=COMPLETING Reason=NonZeroExitCode Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=1:0
+   RunTime=00:00:00 TimeLimit=UNLIMITED TimeMin=N/A
+   SubmitTime=2024-09-25T07:35:55 EligibleTime=2024-09-25T07:35:55
+   AccrueTime=2024-09-25T07:35:55
+   StartTime=2024-09-25T07:35:55 EndTime=2024-09-25T07:35:55 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2024-09-25T07:35:55 Scheduler=Main
+   Partition=CPU AllocNode:Sid=scc112-login:3148
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=scc112-cpu[0-3]
+   BatchHost=scc112-cpu0
+   NumNodes=4 NumCPUs=32 NumTasks=32 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=32,mem=488M,node=4,billing=32
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryNode=0 MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=./submit-mpi2.sh
+   WorkDir=/home/rocky
+   StdErr=/home/rocky/slurm-119.out
+   StdIn=/dev/null
+   StdOut=/home/rocky/slurm-119.out
+   Power=
+
+```
+
+## ARM-Forge
+
+### 显示问题
+
+```sh
+sudo yum install tigervnc-server
+```
+
+之后 vnc 连接上即可
+
+或者
+
+```sh
+ssh -q -X user@hostname
+```
+
+转发窗口
+
+以及注意，如果使用图形化窗口：
+
+```sh
+export DISPLAY=:1
+```
+
+### `returned -1`
+
+通常是 mpi 报错，可以先尝试之运行 `mpirun` 等
+
+以及，如过核心不够分配也会报错，例如没有调动多节点
+
+### 共享库问题
+
+```sh
+export MPI_HOME=$HOME/openmpi-5.0.5-local
+export PATH=$MPI_HOME/bin:$PATH
+export LD_LIBRARY_PATH=$MPI_HOME/lib:$LD_LIBRARY_PATH
+```
+
+### 单节点多核心样例
+
+```sh
+map mpirun -np 32 --hostfile ./hostname $HOME/NAMD_3.0_Source/Linux-x86_64-g++/namd3 $HOME/apoa1/apoa1.namd
+```
+
+### 多节点共享库问题
+
+mpi 编译添加 `-enable-dynamic`
+
+（还没尝试成功）
