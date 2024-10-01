@@ -427,9 +427,13 @@ git config --global user.name "Your Name"
 ![../res/Pasted1cejck3rvn.png](../res/Pasted1cejck3rvn.png)
 
 对应的按钮的功能分别为
+
 - `Commit` 相当于 `git commit -m [Message]`
 - `Commit (Amend)` 对上次的 Commit 进行修改
+
   > 此时 VSCode 会打开你**上一次 Commit** 的内容，假如你上一次出现了少写了一个冒号等等的小错误，而这并不值得新开一个 Commit 时，可以使用 Amend 来追加
+  
+
 - `Commit & Push` 字面意思
 - `Commit & Sync` Sync 就是 Push+Pull
 
@@ -441,7 +445,7 @@ git config --global user.name "Your Name"
 
 ### 解决 Conflict
 
-~~在使用 Git 时候最烦人的事情之一~~
+~~在使用 Git 时候最烦人的事情之一 ~~ 
 
 关于贮藏(stash)并不打算在此讲解，可以参考一些资料比如：
 
@@ -526,6 +530,7 @@ Git History 提供了 Git History 功能，可以方便地查看当前仓库或�
 ##### Soft reset
 
 在使用 Soft reset 的时候，你的电脑上：
+
 - 暂存区（`add` 添加的地方）：保留当前的更改
 - 工作区（编辑器当前的文件）：回到历史版本
 
