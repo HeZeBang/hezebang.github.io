@@ -123,6 +123,10 @@ Interpret a condition code with respect to the given flags.
 
 注意可爱的 `Int64` 即可，以及提供的一些常量如 `mem_bot`, `mem_size`, `mem_top`
 
+> [!warning] raise
+> 
+> 在 `map_addr` 中不应该直接 raise，否则某些测试点会失败， 新版的文件中添加了对错误的统一处理修复了该问题。
+
 ##### Interpreting operands
 
 已知操作数有如下类型，那就直接分开匹配就行了，记得阅读手册
@@ -172,6 +176,8 @@ type operand = Imm of imm            (* immediate *)
 
 好吧，那么读取内存和读取数据不能用同一个 match 了，所以笔者姑且把对内存的读取换成了 `InsB0 (op, args) :: _` 的匹配
 
+> [!note] 这个问题在新的版本已经修复了
+
 然后涉及到位移的话必须要有针对内存的操作，我单独设置了一个 `read_data` 和 `save_data` 分别针对 `m` 的状态存放 `data` 到操作数 `dest`  
 并且抽象出针对地址的 `read_data_addr` 和 `save_data_addr` 用来抽象出针对 `Ind` 寻址的存储，然后在解析的时候编写了一个用来解包参数用的函数。
 
@@ -187,6 +193,15 @@ type operand = Imm of imm            (* immediate *)
 
 最后则是让整个模拟器正常运行，首先你可能需要设置栈顶指针的初始位置，并且注意每次运行 `step` 之后都要更新 `rip` 寄存器的值，这样就可以正常运行了。
 
+> [!note] 附上新版更新后笔者的实现顺序
+> 
+> - `map_addr`
+> - Read / Write
+> - `fechins`
+> - `validate_operands`
+> - `crack`
+> - Interpreate basic implement
+> - Fix known issues
  
 ## Part II: X86lite Assembler and Loader
 
@@ -226,3 +241,6 @@ type exec = {
 
 还给了一个 HINT，善用 `List.fold_left` 和 `List.fold_right`
 
+> [!info] `gtext` 与 `text`
+> 
+> 在汇编层面上没有本质区别，但是带有 `.global` 的标记的能够被外部程序导入，例如 C 语言中的 `extern` 等。
