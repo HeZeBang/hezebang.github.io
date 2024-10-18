@@ -1,0 +1,75 @@
+{% extends "main.html" %}
+
+{% block content %}
+<script
+    type="module"
+    src="/javascripts/all-in-one-lite.bundle.js"
+    id="typst"
+></script>
+<!-- src="https://cdn.jsdelivr.net/npm/@myriaddreamin/typst.ts/dist/esm/contrib/all-in-one-lite.bundle.js" -->
+<style>
+  #content > svg {
+      width: 100% !important;
+      height: auto !important;
+  }
+</style>
+<div class="result"> <details class="quote">
+    <summary class="">Source Code</summary>
+    <p> Share Link: {{ page.meta.edit }}</p>
+    <textarea id="input1" style="width: 100%; max-width: 100%;"></textarea>
+  </details>
+</div>
+<div id="content" style="background: #fff8;"></div>
+
+{% if page and page.meta and (
+    page.meta.git_revision_date_localized or
+    page.meta.revision_date
+  ) %}
+    {% if page and page.meta and page.meta.hide and "date" in page.meta.hide %}
+    {% else %}
+      {% include "partials/source-file.html" %}
+    {% endif %}
+{% endif %}
+<script>
+    // console.log({{ page.meta }})
+    const input1 = document.getElementById('input1');
+    const filename = `../${document.title.split(" - ")[0]}.typ`;
+    console.log(filename);
+    input1.value = "Loading...";
+    document.getElementById('typst').addEventListener('load', function () {
+        $typst.setCompilerInitOptions({
+            getModule: () =>
+            'https://cdn.jsdelivr.net/npm/@myriaddreamin/typst-ts-web-compiler/pkg/typst_ts_web_compiler_bg.wasm',
+        });
+        $typst.setRendererInitOptions({
+            getModule: () =>
+            'https://cdn.jsdelivr.net/npm/@myriaddreamin/typst-ts-renderer/pkg/typst_ts_renderer_bg.wasm',
+        });
+        const compile = function (mainContent) {
+            $typst.svg({ mainContent }).then(svg => {
+            console.log(`rendered! SvgElement { len: ${svg.length} }`);
+            // append svg text
+            document.getElementById('content').innerHTML = svg;
+            });
+        };
+        input1.oninput = () => compile(input1.value);
+        compile(input1.value);
+    });
+    
+    fetch(filename)
+        .then(response => {
+            // 确保请求成功
+            if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.text(); // 或者 response.blob() 如果是图片或其他二进制数据
+        })
+        .then(data => {
+            input1.value = data;
+            input1.oninput()})
+        .catch(error => {
+            // 处理错误情况
+            console.error('There has been a problem with your fetch operation:', error);
+        });
+</script>
+{% endblock %}
