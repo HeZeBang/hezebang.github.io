@@ -23,39 +23,39 @@ Hello! I'm Zebang He from **ShanghaiTech University**. As a **computer science u
 
 <div class="grid cards" markdown>
 
-- ### **PintOS**
+-   ### **PintOS**
+    
+    An operating system for the 80x86 architecture.
   
-  An operating system for the 80x86 architecture.
-
-  ---
-
-  - I implemented the advanced scheduling, system call, user/kernel mode, virtual memory and file system of the operating system.
-  - PintOS contains basic shell and filesystem, and is able to run programs in user mode.
-
-- ### **OATC**
-
-  A simple language compiler for the OATC language.
-
-  ---
-
-  - I implemented an X86lite instruction set simulator and assembler. And the OATC language interpreter using OCaml.
-  - I've also developed the compiler from OATC to LLVMlite IR, and final to X86lite platform.
-
-- ### **Tiny CPU with ZASM**
-
-  A simple CPU with ZASM which defined by myself.
-
-  ---
-
-  - I designed a simple CPU which is turing complete, and it supports 8-bit instructions and interger calculations. It contains 8 registers and 256 bytes of memory.
-  - I made a simple instruction set and named it "ZASM", it contains 20+ instructions, including function calls, jumps and basic arithmetic and logic operations.
-
-- ### CatLin
-
-  CatLin is a Deadline Manager with Kawaii Interface
-
-  ---
-
-  Available at [Here](https://catlin.zambar.top)
+    ---
+  
+    - I implemented the advanced scheduling, system call, user/kernel mode, virtual memory and file system of the operating   system.
+    - PintOS contains basic shell and filesystem, and is able to run programs in user mode.
+  
+-   ### **OATC**
+  
+    A simple language compiler for the OATC language.
+  
+    ---
+  
+    - I implemented an X86lite instruction set simulator and assembler. And the OATC language interpreter using OCaml.
+    - I've also developed the compiler from OATC to LLVMlite IR, and final to X86lite platform.
+  
+-   ### **Tiny CPU with ZASM**
+  
+    A simple CPU with ZASM which defined by myself.
+  
+    ---
+  
+    - I designed a simple CPU which is turing complete, and it supports 8-bit instructions and interger calculations. It   contains 8 registers and 256 bytes of memory.
+    - I made a simple instruction set and named it "ZASM", it contains 20+ instructions, including function calls, jumps and   basic arithmetic and logic operations.
+  
+-   ### CatLin
+  
+    CatLin is a Deadline Manager with Kawaii Interface
+  
+    ---
+  
+    Available at [Here](https://catlin.zambar.top)
 
 </div>
