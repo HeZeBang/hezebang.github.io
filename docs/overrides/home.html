@@ -293,18 +293,5 @@
 {% block site_nav %}{{ super() }}{% endblock %}
 
 {% block content %}
-<div style="display: flex; justify-content: center;">
-    
-<a href="blog/" title="Blog" class="md-button">
-    Blog
-</a>
- 
-<a href="https://note.zambar.xyz" title="Note" class="md-button">
-    Notebook
-</a>
- 
-<a href="links/" title="Links" class="md-button">
-    Links
-</a>
-</div>
+{{ super() }}
 {% endblock %}
