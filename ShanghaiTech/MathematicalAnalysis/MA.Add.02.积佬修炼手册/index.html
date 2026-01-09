@@ -1,0 +1,4756 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../LinearAlgebra/LA.Review/">
+      
+      
+        <link rel="next" href="../MA.Add01.%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA%E7%9A%84%E6%80%9D%E8%B7%AF%E5%92%8C%E6%8A%80%E5%B7%A7%EF%BC%81/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/zambar.white.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>MA.Add.02.积佬修炼手册 - ZAMBAR's Website</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="ZAMBAR&#39;s Website" class="md-header__button md-logo" aria-label="ZAMBAR's Website" data-md-component="logo">
+      
+  <img src="../../../assets/zambar.white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ZAMBAR's Website
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MA.Add.02.积佬修炼手册
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Light Mode Enabled"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Light Mode Enabled" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-label="Dark Mode Enabled"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Dark Mode Enabled" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Zebang He (ZAMBAR He)
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../links/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Links
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../tags/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tags
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  ShanghaiTech
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="ZAMBAR&#39;s Website" class="md-nav__button md-logo" aria-label="ZAMBAR's Website" data-md-component="logo">
+      
+  <img src="../../../assets/zambar.white.png" alt="logo">
+
+    </a>
+    ZAMBAR's Website
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zebang He (ZAMBAR He)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../links/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Links
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tags
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ShanghaiTech
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ShanghaiTech
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shanghai Tech
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AZ Processer
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AZ Processer
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AZ%20Processer/AZ.Chap.0%20Intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AZ.Chap.0 Intro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2" id="__nav_4_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chap.1 CPU的设计与实现
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chap.1 CPU的设计与实现
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AZ%20Processer/Chap.1%20CPU%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/AZ.1.1.2%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    计算机系统
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AZ%20Processer/Chap.1%20CPU%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/AZ.1.1.3%20%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数字电路基础
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AZ%20Processer/Chap.1%20CPU%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/AZ.1.1.4%20Verilog%20HDL%20%E8%AF%AD%E8%A8%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Verilog HDL 语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CS100
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    CS100
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS100/CS100.00%20Introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS100/CS100.01%20The%20First%20C%20Program/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The First C Program
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS100/CS100.01.Old%20C%20Program%20Structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C Program Structure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS100/CS100.02%20Variables%20I%20and%20Arithmetic%20Types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variables I and Arithmetic Types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS100/CS100.10%20Summary%20of%20C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summary of C
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Compilers
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Compilers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Compilers/Compilers.0%20Functional%20Programming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    在开始之前——函数式初探
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Compilers/Compilers.0%20OCaml/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OCaml 学习手记
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Compilers/Compilers.Hw.1%20Hellocaml/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    编译原理 - Homework 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Compilers/Compilers.Hw.2%20X86lite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    编译原理 - Homework 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Compilers/Compilers.Lec.1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    编译原理 - Lecture 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Compilers/Compilers.Lec.2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    编译原理 - Lecture 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Compilers/Compilers.Lec.3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    编译原理 - Lecture 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Compilers/Compilers.Lec.4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    编译原理 - Lecture 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DiscreteMathematics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DiscreteMathematics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DiscreteMathematics/DM.00%20Intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DiscreteMathematics/DM.8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lec.8 群
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DiscreteMathematics/DM.9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lec.9 离散对数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HPC
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    HPC
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HPC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HPC/HPC.SCC.01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IndySCC Hw.1 - NAMD 与 Slurm 踩坑记
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HPC/HPC.SCC.02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IndySCC Hw.2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LinearAlgebra
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    LinearAlgebra
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LinearAlgebra/LA.Review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LA.Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MathematicalAnalysis
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    MathematicalAnalysis
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MA.Add.02.积佬修炼手册
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MA.Add.02.积佬修炼手册
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        积分表
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        补充不定积分
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        部分积分推导
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="部分积分推导">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#int-frac1x2a2-dxfrac1aarctan-fracxac-aa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \frac{1}{x^2+a^2} \, dx=\frac{1}{a}\arctan \frac{x}{a}+C\) "AA"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-frac1x2-a2-dxfrac12aln-left-fracx-axa-right-c-12a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \frac{1}{x^{2}-a^{2}} \, dx=\frac{1}{2a}\ln \left| \frac{x-a}{x+a} \right| +C\) &frac12;a ∓
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-frac1a2-x2-dxfrac12aln-left-fracxax-a-right-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \frac{1}{a^{2}-x^{2}} \, dx=\frac{1}{2a}\ln \left| \frac{x+a}{x-a} \right| +C\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-frac1sqrt-a2-x2-dxarcsinleft-fracxa-rightc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \frac{1}{\sqrt{ a^{2}-x^{2} }} \, dx=\arcsin\left( \frac{x}{a} \right)+C\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-frac1sqrt-x2pm-a2-dxtextcolorlightgray-int-sec-t-dt-lnleft-fracxa-fracsqrt-x2pm-a2-aright-c-b-c-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \frac{1}{\sqrt{ x^{2}\pm a^{2} }} \, dx\textcolor{lightgray}{ =\int \sec t \, dt }= \ln\left| \frac{x}{a} + \frac{\sqrt{ x^{2}\pm a^{2} }}{a}\right| + C\) ▲ (b + c) / a
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="\(\int \frac{1}{\sqrt{ x^{2}\pm a^{2} }} \, dx\textcolor{lightgray}{ =\int \sec t \, dt }= \ln\left| \frac{x}{a} + \frac{\sqrt{ x^{2}\pm a^{2} }}{a}\right| + C\) ▲ (b + c) / a">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#int-frac1sqrt-x2-a2-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \frac{1}{\sqrt{ x^{2} - a^{2} }} \, dx\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-frac1sqrt-x2-a2-dx_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \frac{1}{\sqrt{ x^{2} + a^{2} }} \, dx\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-tan-x-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \tan x\, dx\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-sec-x-dxlnsec-xtan-xc-10ten-sec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \sec x \, dx=\ln|\sec x+\tan x|+C\) 10'(ten sec)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-csc-x-dx-lncsc-xcot-xc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \csc x \, dx=-\ln|\csc x+\cot x|+C\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imnint-cos-mxsin-nx-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(I(m,n)=\int \cos ^{m}x\sin ^{n}x \, dx\)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="\(I(m,n)=\int \cos ^{m}x\sin ^{n}x \, dx\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reduction-formulae" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reduction Formulae
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-sec-n-x-d-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \sec ^n x d x\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        典题整理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="典题整理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        不定积分
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="不定积分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#int-dfracarctan-xx2x21-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \dfrac{\arctan x}{x^{2}(x^{2}+1)} \, dx\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-dfracxsin-xcos-x-1-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \dfrac{x+\sin x}{\cos x + 1} \, dx\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i_15int-mathrmexleft1-fracmathrme-xsqrtxright-mathrmd-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(I_{15}=\int \mathrm{e}^x\left(1-\frac{\mathrm{e}^{-x}}{\sqrt{x}}\right) \mathrm{d} x\).
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        凑微分法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="凑微分法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#int-fracmathrmd-x1x4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \frac{\mathrm{d} x}{1+x^4}\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iint-fracmathrmd-xsqrt20231x2023left1x2023right" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        求不定积分: \(I=\int \frac{\mathrm{d} x}{\sqrt[2023]{1+x^{2023}}\left(1+x^{2023}\right)}\).
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        换元积分法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="换元积分法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#int_1infty-frac1xsqrt-x-1-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int_{1}^{+\infty} \frac{1}{x\sqrt{ x-1 }} \, dx\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-fracsqrtx-1-arctan-sqrtx-1x-d-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \frac{\sqrt{x-1} \arctan \sqrt{x-1}}{x} d x\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int_0fracpi4-sqrttan-x-mathrmd-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔴\(\int_0^{\frac{\pi}{4}} \sqrt{\tan x} \mathrm{~d} x\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        反向乘积求导公式与反向商的求导公式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="反向乘积求导公式与反向商的求导公式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        反向乘积的导数
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="反向乘积的导数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-intleftfrac1ln-xln-ln-xright-d-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        例1 求积分 \(\int\left(\frac{1}{\ln x}+\ln (\ln x)\right) d x\).
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        反向商的求导公式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="反向商的求导公式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-int-fracsin-2-xx-cos-x-sin-x2-d-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        例2 求积分 \(\int \frac{\sin ^2 x}{(x \cos x-\sin x)^2} d x\).
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        定积分
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="定积分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#int_-11-ex-cdot-arctan-ex-d-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int_{-1}^1 e^{|x|} \cdot \arctan e^x d x\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int_0fracpi2sqrttan-xmathrm-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int_0^{\frac{\pi}{2}}\sqrt{\tan x}{\mathrm d}x\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int_01-xarcsin-x-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int_{0}^{1} x\arcsin x \, dx\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        变上限积分及求导
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="变上限积分及求导">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lim-_x-rightarrow-0-frac1sin-3-x-int_0tan-x-arcsin-t2-mathrmd-t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\lim _{x \rightarrow 0} \frac{1}{\sin ^3 x} \int_0^{\tan x} \arcsin t^2 \mathrm{~d} t\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        结合 积分/中值定理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="结合 积分/中值定理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#text-1-lim-_n-rightarrow-infty-int_01-fracxn1x-mathrmd-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        求 \(\text {(1)} \lim _{n \rightarrow \infty} \int_0^1 \frac{x^n}{1+x} \mathrm{~d} x\),
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-lim-_n-rightarrow-infty-int_nnp-fracsin-xx-mathrmd-x-p-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        求 \({(2)} \lim _{n \rightarrow \infty} \int_n^{n+p} \frac{\sin x}{x} \mathrm{~d} x, p \text { 为自然数. }\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wallis-evenpie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        结合 Wallis公式 🥧EVENPIE~
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="结合 Wallis公式 🥧EVENPIE~">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#int_-fracpi2fracpi2-frac11mathrmex-cos-3-x-mathrmd-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \frac{1}{1+\mathrm{e}^x} \cos ^3 x \mathrm{~d} x\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        证明部分
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="证明部分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#int_ab-fx-gx-mathrmd-xfxi-int_ab-gx-mathrmd-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        积分第一中值公式 \(\int_a^b f(x) g(x) \mathrm{d} x=f(\xi) \int_a^b g(x) \mathrm{d} x\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int_0pi-x-fsin-x-mathrmd-xpi-int_0fracpi2-fsin-x-mathrmd-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int_0^\pi x f(\sin x) \mathrm{d} x=\pi \int_0^{\frac{\pi}{2}} f(\sin x) \mathrm{d} x,\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MA.Add01.%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA%E7%9A%84%E6%80%9D%E8%B7%AF%E5%92%8C%E6%8A%80%E5%B7%A7%EF%BC%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MA.Add01.奇奇怪怪的思路和技巧！
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MA.Review.01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MA.Review.01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_9" id="__nav_4_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MissingSemester
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    MissingSemester
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MissingSemester/Missing.01%20Shell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MissingSemester/Missing.02%20Bash/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bash
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MissingSemester/Missing.03%20Vim/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vim
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MissingSemester/Missing.04%20Data%20Wrangling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据整理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_10" id="__nav_4_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OperatingSystem
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    OperatingSystem
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OperatingSystem/CS130.01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OS and Architecture Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OperatingSystem/CS130.02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OS Services and Structures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OperatingSystem/CS130.Proj0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proj.0: 正式上机前的环境配置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_11" id="__nav_4_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SI100B
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SI100B
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SI100B/Git%20Guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BLOGS!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2023/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Categories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Categories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/esp32/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ESP32
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/others/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Others
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/postgresql/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PostgreSQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/si100b/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SI100B
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/servo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Servo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/shanghaitech/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ShanghaiTech
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/tmux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    tmux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    智能家居
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        积分表
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        补充不定积分
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        部分积分推导
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="部分积分推导">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#int-frac1x2a2-dxfrac1aarctan-fracxac-aa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \frac{1}{x^2+a^2} \, dx=\frac{1}{a}\arctan \frac{x}{a}+C\) "AA"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-frac1x2-a2-dxfrac12aln-left-fracx-axa-right-c-12a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \frac{1}{x^{2}-a^{2}} \, dx=\frac{1}{2a}\ln \left| \frac{x-a}{x+a} \right| +C\) &frac12;a ∓
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-frac1a2-x2-dxfrac12aln-left-fracxax-a-right-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \frac{1}{a^{2}-x^{2}} \, dx=\frac{1}{2a}\ln \left| \frac{x+a}{x-a} \right| +C\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-frac1sqrt-a2-x2-dxarcsinleft-fracxa-rightc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \frac{1}{\sqrt{ a^{2}-x^{2} }} \, dx=\arcsin\left( \frac{x}{a} \right)+C\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-frac1sqrt-x2pm-a2-dxtextcolorlightgray-int-sec-t-dt-lnleft-fracxa-fracsqrt-x2pm-a2-aright-c-b-c-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \frac{1}{\sqrt{ x^{2}\pm a^{2} }} \, dx\textcolor{lightgray}{ =\int \sec t \, dt }= \ln\left| \frac{x}{a} + \frac{\sqrt{ x^{2}\pm a^{2} }}{a}\right| + C\) ▲ (b + c) / a
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="\(\int \frac{1}{\sqrt{ x^{2}\pm a^{2} }} \, dx\textcolor{lightgray}{ =\int \sec t \, dt }= \ln\left| \frac{x}{a} + \frac{\sqrt{ x^{2}\pm a^{2} }}{a}\right| + C\) ▲ (b + c) / a">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#int-frac1sqrt-x2-a2-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \frac{1}{\sqrt{ x^{2} - a^{2} }} \, dx\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-frac1sqrt-x2-a2-dx_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \frac{1}{\sqrt{ x^{2} + a^{2} }} \, dx\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-tan-x-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \tan x\, dx\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-sec-x-dxlnsec-xtan-xc-10ten-sec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \sec x \, dx=\ln|\sec x+\tan x|+C\) 10'(ten sec)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-csc-x-dx-lncsc-xcot-xc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \csc x \, dx=-\ln|\csc x+\cot x|+C\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imnint-cos-mxsin-nx-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(I(m,n)=\int \cos ^{m}x\sin ^{n}x \, dx\)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="\(I(m,n)=\int \cos ^{m}x\sin ^{n}x \, dx\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reduction-formulae" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reduction Formulae
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-sec-n-x-d-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \sec ^n x d x\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        典题整理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="典题整理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        不定积分
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="不定积分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#int-dfracarctan-xx2x21-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \dfrac{\arctan x}{x^{2}(x^{2}+1)} \, dx\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-dfracxsin-xcos-x-1-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \dfrac{x+\sin x}{\cos x + 1} \, dx\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i_15int-mathrmexleft1-fracmathrme-xsqrtxright-mathrmd-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(I_{15}=\int \mathrm{e}^x\left(1-\frac{\mathrm{e}^{-x}}{\sqrt{x}}\right) \mathrm{d} x\).
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        凑微分法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="凑微分法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#int-fracmathrmd-x1x4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \frac{\mathrm{d} x}{1+x^4}\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iint-fracmathrmd-xsqrt20231x2023left1x2023right" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        求不定积分: \(I=\int \frac{\mathrm{d} x}{\sqrt[2023]{1+x^{2023}}\left(1+x^{2023}\right)}\).
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        换元积分法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="换元积分法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#int_1infty-frac1xsqrt-x-1-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int_{1}^{+\infty} \frac{1}{x\sqrt{ x-1 }} \, dx\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-fracsqrtx-1-arctan-sqrtx-1x-d-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int \frac{\sqrt{x-1} \arctan \sqrt{x-1}}{x} d x\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int_0fracpi4-sqrttan-x-mathrmd-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔴\(\int_0^{\frac{\pi}{4}} \sqrt{\tan x} \mathrm{~d} x\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        反向乘积求导公式与反向商的求导公式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="反向乘积求导公式与反向商的求导公式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        反向乘积的导数
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="反向乘积的导数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-intleftfrac1ln-xln-ln-xright-d-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        例1 求积分 \(\int\left(\frac{1}{\ln x}+\ln (\ln x)\right) d x\).
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        反向商的求导公式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="反向商的求导公式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-int-fracsin-2-xx-cos-x-sin-x2-d-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        例2 求积分 \(\int \frac{\sin ^2 x}{(x \cos x-\sin x)^2} d x\).
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        定积分
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="定积分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#int_-11-ex-cdot-arctan-ex-d-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int_{-1}^1 e^{|x|} \cdot \arctan e^x d x\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int_0fracpi2sqrttan-xmathrm-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int_0^{\frac{\pi}{2}}\sqrt{\tan x}{\mathrm d}x\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int_01-xarcsin-x-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int_{0}^{1} x\arcsin x \, dx\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        变上限积分及求导
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="变上限积分及求导">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lim-_x-rightarrow-0-frac1sin-3-x-int_0tan-x-arcsin-t2-mathrmd-t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\lim _{x \rightarrow 0} \frac{1}{\sin ^3 x} \int_0^{\tan x} \arcsin t^2 \mathrm{~d} t\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        结合 积分/中值定理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="结合 积分/中值定理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#text-1-lim-_n-rightarrow-infty-int_01-fracxn1x-mathrmd-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        求 \(\text {(1)} \lim _{n \rightarrow \infty} \int_0^1 \frac{x^n}{1+x} \mathrm{~d} x\),
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-lim-_n-rightarrow-infty-int_nnp-fracsin-xx-mathrmd-x-p-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        求 \({(2)} \lim _{n \rightarrow \infty} \int_n^{n+p} \frac{\sin x}{x} \mathrm{~d} x, p \text { 为自然数. }\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wallis-evenpie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        结合 Wallis公式 🥧EVENPIE~
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="结合 Wallis公式 🥧EVENPIE~">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#int_-fracpi2fracpi2-frac11mathrmex-cos-3-x-mathrmd-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \frac{1}{1+\mathrm{e}^x} \cos ^3 x \mathrm{~d} x\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        证明部分
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="证明部分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#int_ab-fx-gx-mathrmd-xfxi-int_ab-gx-mathrmd-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        积分第一中值公式 \(\int_a^b f(x) g(x) \mathrm{d} x=f(\xi) \int_a^b g(x) \mathrm{d} x\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int_0pi-x-fsin-x-mathrmd-xpi-int_0fracpi2-fsin-x-mathrmd-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\int_0^\pi x f(\sin x) \mathrm{d} x=\pi \int_0^{\frac{\pi}{2}} f(\sin x) \mathrm{d} x,\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+<div><p><img alt="../res/无标题.png" src="../../res/%E6%97%A0%E6%A0%87%E9%A2%98.png"></p>
+<h2 id="_1">积分表</h2>
+<ol>
+<li><span class="arithmatex">\(\displaystyle \int k \mathrm{~d} x=k x+C\quad\left(\int 0 \mathrm{~d} x=C\right)\)</span>;</li>
+<li><span class="arithmatex">\(\displaystyle \int x^\alpha \mathrm{d} x=\frac{1}{\alpha+1} x^{\alpha+1}+C \quad(\alpha \neq-1)\)</span>;<br><em>常用形式：</em><ul>
+<li><span class="arithmatex">\(\displaystyle \int x\mathrm d x=\frac{1}{2}x^{2}\)</span> </li>
+<li><span class="arithmatex">\(\displaystyle \int \sqrt{x} \mathrm d  x=\frac{2}{3} x^{\frac{3}{2}}+C\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int \frac{\mathrm d  x}{\sqrt{x}}=2 x^{\frac{1}{2}}+C=2 \sqrt{x}+C\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int \frac{\mathrm d  x}{x^2}=-x^{-1}+C=-\frac{1}{x}+C\)</span></li>
+</ul>
+</li>
+<li><span class="arithmatex">\(\displaystyle \int \frac{1}{x} \mathrm{~d} x=\ln \textcolor{orange}{ |x| }+C\)</span>;<ul>
+<li><strong><em>P.S.</em></strong> <span class="arithmatex">\(\ln x\)</span> 的定义域为 <span class="arithmatex">\(x&gt;0\)</span>, <span class="arithmatex">\(\frac{1}{x}\)</span> 的定义域为 <span class="arithmatex">\(x\neq 0\)</span> 故需要绝对值</li>
+</ul>
+</li>
+<li><span class="arithmatex">\(\displaystyle \int \frac1{ax+b}\mathrm dx=\frac{\ln|ax+b|}{a}+C\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int a^x \mathrm{~d} x=\frac{a^x}{\ln a}+C \quad(0&lt;a \neq 1)\)</span>;<ul>
+<li><strong><em>P.S.</em></strong> <span class="arithmatex">\((a^x)'=\ln a\cdot a^x\)</span></li>
+</ul>
+</li>
+<li><span class="arithmatex">\(\displaystyle \int \mathrm{e}^x \mathrm{~d} x=\mathrm{e}^x+C\)</span>;</li>
+<li><span class="arithmatex">\(\displaystyle \int \sin x \mathrm{~d} x=-\cos x+C\)</span>;</li>
+<li><span class="arithmatex">\(\displaystyle \int \cos x \mathrm{~d} x=\sin x+C\)</span>;</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle \int \sec^2 x \mathrm{~d} x=\tan x+C\)</span>;</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle \int \sec x \mathrm d x=\ln\left|\sec x+\tan x\right|+C\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle \int \csc ^2 x \mathrm{~d} x=-\cot x+C\)</span>;</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle \int \csc x \mathrm d x =-\ln|\csc x+\cot x|+C = \ln\left(\tan \frac{x}{2}\right)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle \int \frac{\mathrm{d} x}{a^2+x^2}=\frac{1}{a} \arctan \frac{x}{a}+C(a \neq 0)\)</span>;</p>
+<p><strong><em>P.S.</em></strong> <span class="arithmatex">\(\left(\frac{1}{a} \arctan \frac{x}{a}\right)^{\prime}=\frac{1}{a} \cdot \frac{1}{a} \frac{1}{1+\left(\frac{x}{a}\right)^2}=\frac{1}{a^2+x^2}\)</span></p>
+<ul>
+<li><span class="arithmatex">\(\displaystyle \int\frac{\mathrm dx}{1+x^{2}}=\arctan x+C\)</span></li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle \int \frac{\mathrm{d} x}{x^2-a^2}=\frac{1}{2 a} \ln \left|\frac{x-a}{x+a}\right|+C\quad(a \neq 0)\)</span>;</p>
+<ul>
+<li><span class="arithmatex">\(\displaystyle \int \frac{d x}{a^2-x^2}=\frac{1}{2 a} \ln \left|\frac{x+a}{x-a}\right|+C\)</span></li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle \int \frac{\mathrm{d} x}{\sqrt{a^2-x^2}}=\arcsin \frac{x}{a}+C(a&gt;0)\)</span>;</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle \int \frac{\mathrm{d} x}{\sqrt{x^2 \pm a^2}}=\ln \left|x+\sqrt{x^2 \pm a^2}\right|+C\)</span>.</p>
+</li>
+</ol>
+<h2 id="_2">补充不定积分</h2>
+<ul>
+<li><span class="arithmatex">\(\int \tan(x) \mathrm d x=\ln(\cos(x))\)</span></li>
+<li><span class="arithmatex">\(\int \sqrt{ x^{2}\pm a^{2} } \, dx=\frac{x}{2}\sqrt{ x^{2}\pm a^{2} }\pm \frac{a^{2}}{2}\ln \left| x+\sqrt{ x^{2}\pm a^{2} } \right|+C\)</span></li>
+<li><span class="arithmatex">\(\int \sqrt{ a^{2}-x^{2} } \, dx=\frac{x}{2} \sqrt{ a^{2}-x^{2} } +\frac{a^{2}}{2} \arcsin \frac{x}{a} + C\)</span></li>
+<li><span class="arithmatex">\(\textbf{Reduction Formula: }I(m,n)=\int \cos ^{m}x\sin ^{m}x \, dx=\dots\)</span>(递推)</li>
+<li><span class="arithmatex">\(\int \arctan x \, dx=-\frac{1}{2}\ln(x^{2}+1)+x\arctan(x)+C\)</span></li>
+</ul>
+<h2 id="_3">部分积分推导</h2>
+<h3 id="int-frac1x2a2-dxfrac1aarctan-fracxac-aa"><span class="arithmatex">\(\int \frac{1}{x^2+a^2} \, dx=\frac{1}{a}\arctan \frac{x}{a}+C\)</span> "AA"</h3>
+<blockquote>
+<p><strong><em>Tips</em></strong></p>
+<p><span class="arithmatex">\((\arctan x)'=\frac{1}{1+x^2}\)</span></p>
+<p><span class="arithmatex">\(\left(\textcolor{orange}{ \frac{1}{a} } \arctan \frac{x}{\textcolor{Cyan}{ a }}\right)^{\prime}=\textcolor{orange}{ \frac{1}{a} } \cdot \textcolor{Cyan}{ \frac{1}{a} } \frac{1}{1+\left(\frac{x}{a}\right)^2}=\frac{1}{a^2+x^2}\)</span></p>
+<p><strong><em>Solution</em></strong></p>
+<div class="arithmatex">\[
+\begin{flalign}
+&amp;\text{Assuming } a&gt;0\newline &amp;=\frac{1}{a^{2}}\int \frac{1}{1+\left( \frac{x}{a} \right)^{2} } \, dx \newline &amp;=\frac{1}{a}\int \dfrac{d\left( \frac{x}{a} \right)}{1+\left( \frac{x}{a} \right)^{2}}\newline &amp;=\frac{1}{a}\arctan \frac{x}{a}+C
+\end{flalign}
+\]</div>
+</blockquote>
+<h3 id="int-frac1x2-a2-dxfrac12aln-left-fracx-axa-right-c-12a"><span class="arithmatex">\(\int \frac{1}{x^{2}-a^{2}} \, dx=\frac{1}{2a}\ln \left| \frac{x-a}{x+a} \right| +C\)</span> ½a ∓</h3>
+<blockquote>
+<p><strong><em>Tips</em></strong></p>
+<div class="arithmatex">\[
+{\text{凑2a}\implies} \frac{1}{x-a}-\frac{1}{x+a}\implies \dfrac{x-a}{x+a}
+\]</div>
+<p><strong><em>Solution</em></strong></p>
+<div class="arithmatex">\[
+\begin{flalign}
+&amp;\text{Assuming } a\neq 0\newline &amp;= \int \dfrac{1}{(x+a)(x-a)} \, dx \newline &amp;= \frac{1}{2a}\left( \int \frac{1}{x-a} \, dx - \int \frac{1}{x+a} \, dx  \right)\newline &amp;=\frac{1}{2a}\left( \ln|x-a|-\ln|x+a| \right)+C\newline &amp;=\frac{1}{2a}\ln \left| \dfrac{x-a}{x+a} \right| +C
+\end{flalign}
+\]</div>
+</blockquote>
+<h3 id="int-frac1a2-x2-dxfrac12aln-left-fracxax-a-right-c"><span class="arithmatex">\(\int \frac{1}{a^{2}-x^{2}} \, dx=\frac{1}{2a}\ln \left| \frac{x+a}{x-a} \right| +C\)</span></h3>
+<blockquote>
+<p><strong><em>Solution</em></strong></p>
+<p>类似地</p>
+<div class="arithmatex">\[
+\begin{flalign}
+&amp;=-\int \frac{1}{x^{2}-a^{2}} \, dx\newline &amp;=-\frac{1}{2a}\ln \left| \dfrac{x-a}{x+a} \right| +C\newline &amp;=\frac{1}{2a}\ln \left| \dfrac{x+a}{x-a} \right| +C'
+\end{flalign}
+\]</div>
+</blockquote>
+<h3 id="int-frac1sqrt-a2-x2-dxarcsinleft-fracxa-rightc"><span class="arithmatex">\(\int \frac{1}{\sqrt{ a^{2}-x^{2} }} \, dx=\arcsin\left( \frac{x}{a} \right)+C\)</span></h3>
+<blockquote>
+<p><strong><em>Tips</em></strong></p>
+<p><span class="arithmatex">\((\arcsin x)'=\frac{1}{\sqrt{ 1-x^{2} }}\)</span></p>
+<p><span class="arithmatex">\(\textcolor{lightgray}{ (\arccos x)'=-\frac{1}{\sqrt{ 1-x^{2} }} }\)</span></p>
+<p><strong><em>Solution</em></strong>
+类似 <span class="arithmatex">\(\int \frac{1}{x^2+a^2} \, dx\)</span></p>
+<div class="arithmatex">\[
+\begin{flalign}\newline &amp;\text{Assuming } a&gt;0\newline &amp;\int \frac{1}{\sqrt{ a^{2}-x^{2} }}\newline &amp;= \frac{1}{a}\int \frac{1}{\sqrt{ 1-\left( \frac{x}{a} \right)^{2} }} \, dx\newline &amp;=\int \frac{1}{\sqrt{ 1-\left( \frac{x}{a} \right)^{2} }} \, d\left( \frac{x}{a} \right)\newline &amp;=\arcsin\left( \frac{x}{a} \right)+C
+\end{flalign}
+\]</div>
+</blockquote>
+<h3 id="int-frac1sqrt-x2pm-a2-dxtextcolorlightgray-int-sec-t-dt-lnleft-fracxa-fracsqrt-x2pm-a2-aright-c-b-c-a"><span class="arithmatex">\(\int \frac{1}{\sqrt{ x^{2}\pm a^{2} }} \, dx\textcolor{lightgray}{ =\int \sec t \, dt }= \ln\left| \frac{x}{a} + \frac{\sqrt{ x^{2}\pm a^{2} }}{a}\right| + C\)</span> ▲ (b + c) / a</h3>
+<h4 id="int-frac1sqrt-x2-a2-dx"><span class="arithmatex">\(\int \frac{1}{\sqrt{ x^{2} - a^{2} }} \, dx\)</span></h4>
+<blockquote>
+<p><strong><em>Tips</em></strong></p>
+<p><b class="md-tag">三角代换</b> </p>
+<p>对边：<span class="arithmatex">\(\sqrt{ x^{2}-a^{2} }\)</span>
+邻边：<span class="arithmatex">\(a\)</span>
+斜边：<span class="arithmatex">\(x\)</span></p>
+<p><strong><em>Solution</em></strong></p>
+<div class="arithmatex">\[
+\begin{flalign}
+&amp;\int \frac{1}{\sqrt{ x^{2}-a^{2} }} \, dx \newline &amp;\xlongequal{ x=a\sec t }\int \frac{1}{a\tan t} \, d\left( a\sec t \right) &amp; 0 &lt; t &lt; \frac{\pi}{2}\newline &amp;=\int \frac{1}{\tan t} t \, d\sec t\newline &amp;=\int \frac{1}{\tan t} \sec t\tan t\, dt \newline &amp;=\int \sec t \, dt \newline &amp;=\ln|\sec t+\tan t| + C\newline &amp;=\ln\left| \frac{x}{a} + \dfrac{\sqrt{ x^{2}-a^{2} }}{a}\right| + C &amp; \bigstar \text{ 还原}
+\end{flalign}
+\]</div>
+</blockquote>
+<h4 id="int-frac1sqrt-x2-a2-dx_1"><span class="arithmatex">\(\int \frac{1}{\sqrt{ x^{2} + a^{2} }} \, dx\)</span></h4>
+<blockquote>
+<p><strong><em>Tips</em></strong></p>
+<p><b class="md-tag">三角代换</b> </p>
+<p>对边：<span class="arithmatex">\(x\)</span>
+邻边：<span class="arithmatex">\(a\)</span>
+斜边：<span class="arithmatex">\(\sqrt{ x^{2}+a^{2} }\)</span></p>
+<p><strong><em>Solution</em></strong></p>
+<div class="arithmatex">\[
+\begin{flalign}
+&amp;\int \frac{1}{\sqrt{ x^{2} + a^{2} }} \, dx\newline &amp;\xlongequal{ x=a \tan t } \int \frac{1}{a\sec t} \, d(a\tan t)\newline &amp;=\int \frac{1}{\sec t}\sec ^{2}t \, dx \newline &amp;=\int \sec t \, dt \newline &amp;\text{同上}\newline &amp;=\ln\left| \frac{x}{a} + \dfrac{\sqrt{ x^{2}+a^{2} }}{a}\right| + C &amp; \bigstar \text{ 还原}
+\end{flalign}
+\]</div>
+<p><strong>综上</strong></p>
+<div class="arithmatex">\[
+\int \frac{1}{\textcolor{Cyan}{ \sqrt{ x^{2}\pm a^{2} } }} \, dx = \ln\left| \frac{x}{a} + \dfrac{\textcolor{Cyan}{ \sqrt{ x^{2}\pm a^{2} } }}{a}\right| + C
+\]</div>
+<p>三角形<strong>两个边比a相加</strong></p>
+</blockquote>
+<h3 id="int-tan-x-dx"><span class="arithmatex">\(\int \tan x\, dx\)</span></h3>
+<blockquote>
+<p><strong><em>Solution</em></strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp;=\int \dfrac{\textcolor{orange}{ \sin x }}{\cos x} \, dx\newline &amp;=\textcolor{orange}{ - }\int \frac{1}{\cos x} \, d\textcolor{orange}{ \cos x }\newline &amp;=-\ln \left|\cos x\right|+C
+\end{aligned}
+\]</div>
+</blockquote>
+<h3 id="int-sec-x-dxlnsec-xtan-xc-10ten-sec"><span class="arithmatex">\(\int \sec x \, dx=\ln|\sec x+\tan x|+C\)</span> 10'(ten sec)</h3>
+<blockquote>
+<p><strong><em>Solution.I</em></strong>
+最快，不自然</p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp;=\int \dfrac{\sec x \textcolor{orange}{ \cdot(\sec x+\tan x) }}{\textcolor{orange}{ \sec x+\tan x }} \, dx\newline \because~&amp;(\sec x + \tan x)'=\dfrac{\sin x}{\cos ^{2}x}+\frac{1}{\cos ^{2}x}=\sec x\cdot(\sec x+\tan x)\newline &amp;=\int \dfrac{d(\sec x+\tan x)}{\sec x+\tan x}\newline &amp;=\ln|\sec x+\tan x|+C
+\end{aligned}
+\]</div>
+<p><strong><em>Solution.II</em></strong>
+较快， <b class="md-tag">凑微分法</b> </p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp;=\int \dfrac{\cos x}{\cos ^{2} x} \, dx \newline &amp;=-\int \dfrac{d\sin x}{1-\sin ^{2}x} \, dx \newline &amp;=-\frac{1}{2}\ln\left( \frac{1+\sin x}{1-\sin x} \right)+C
+\end{aligned}
+\]</div>
+</blockquote>
+<h3 id="int-csc-x-dx-lncsc-xcot-xc"><span class="arithmatex">\(\int \csc x \, dx=-\ln|\csc x+\cot x|+C\)</span></h3>
+<blockquote>
+<p><strong><em>Solution.I</em></strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp;=\int \textcolor{orange}{ - }\dfrac{\csc x\textcolor{orange}{ \cdot-(\csc x+\cot x) }}{\textcolor{orange}{ \csc x+\cot x }} \, dx \newline \because~&amp;\left( \csc x+\cot x \right)'=-\csc x\cdot(\csc x+\cot x)\newline &amp;=-\int \dfrac{d(\csc x+\cot x)}{\csc x+\cot x} \, dx \newline &amp;=-\ln|\csc x+\cot x|+C\newline &amp;\textcolor{Gray}{ =-\ln \left| \tan \frac{x}{2} \right|  }
+\end{aligned}
+\]</div>
+<p><strong><em>Solution.II</em></strong></p>
+<p>同上，<span class="arithmatex">\(\displaystyle=-\frac{1}{2}\ln \left( \dfrac{1+\cos x}{1-\cos x} \right)\)</span></p>
+</blockquote>
+<h3 id="imnint-cos-mxsin-nx-dx"><span class="arithmatex">\(I(m,n)=\int \cos ^{m}x\sin ^{n}x \, dx\)</span></h3>
+<blockquote>
+<p><strong><em>Solution</em></strong>
+<b class="md-tag">分部积分法</b> + 递推构造</p>
+<div class="arithmatex">\[
+\begin{flalign}
+I(m,n)&amp;=-\frac{1}{m+1}\int \sin ^{\textcolor{orange}{ n-1 }}x \, d(\cos ^{\textcolor{orange}{ m+1 }}x)\newline &amp;=-\frac{1}{m+1}\left( \sin ^{n-1}x\cos ^{m+1}x-\int \cos ^{m+1}x \, d\sin ^{n-1}x  \right) \dots\text{分部积分}\newline &amp;=-\frac{1}{m+1}\sin ^{n-1}x\cos ^{m+1}x + \dfrac{n-1}{m+1}\int \sin ^{n-2}x \cos ^{m\textcolor{red}{ +2 }}x \, dx \newline &amp;=-\frac{1}{m+1}\sin ^{n-1}x\cos ^{m+1}x + \dfrac{n-1}{m+1}\sin ^{n-2}x\cos ^{m}x\textcolor{red}{ (1-\sin ^{2}x) }\,dx\newline &amp;=-\frac{1}{m+1}\sin ^{n-1}x\cos ^{m+1}x + \dfrac{n-1}{m+1}\sin ^{n-2}x\cos ^{m}x\,dx\\&amp;\qquad+\dfrac{1-n}{m+1}\int \sin ^{n}x\cos ^{m}x \, dx \newline \therefore~ \frac{m+n}{m+1}I(m,n)&amp;=-\frac{1}{m+1}\sin ^{n-1}x\cos ^{m+1}x+ \dfrac{n-1}{m+1}I(m,n-2)\newline \implies I(m,n)&amp;=-\frac{1}{m+n}\sin ^{n-1}x\cos ^{m+1}x+ \dfrac{n-1}{m+n}I(m,n-2)\quad(m\geq 0,n\geq 2)\newline \text{同理: } I(m,n)&amp;=-\frac{1}{m+n}\cos ^{m-1}x\sin ^{n+1}x+ \dfrac{m-1}{m+n}I(m-2,n)\quad(m\geq 2,n\geq 0)
+\end{flalign}
+\]</div>
+</blockquote>
+<h4 id="reduction-formulae">Reduction Formulae</h4>
+<p>The <strong>reduction formulae</strong> for the sine function and the cosine function to an unspecific (integer) degree are:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp; I_n=\int \sin ^n(a x) d x=\frac{-\sin ^{n-1}(a x) \cos (a x)}{a n}+\frac{n-1}{n} I_{n-2} \\
+&amp; J_n=\int \cos ^n(a x) d x=\frac{\sin (a x) \cos ^{n-1}(a x)}{a n}+\frac{n-1}{n} J_{n-2}
+\end{aligned}
+\]</div>
+<p>As a <strong>particular case</strong> of their products and quotients:</p>
+<div class="arithmatex">\[
+K_n=\int \tan ^n(a x) d x=\frac{\tan ^{n-1}(a x)}{a(n-1)}-K_{n-2}
+\]</div>
+<p><strong>Memorization</strong></p>
+<div class="arithmatex">\[
+I_{n}=\int \textcolor{orange}{ \sin } ^\textcolor{Cyan}{ n }(a x) d x=\frac{\textcolor{red}{ \mathbf{-} }\textcolor{orange}{ \sin } ^{\textcolor{Cyan}{ n-1 }}(a x) \cos (a x)}{\textcolor{Cyan}{ n } a}+\frac{\textcolor{Cyan}{ n-1 }}{\textcolor{Cyan}{ n }} I_{n-2}
+\]</div>
+<div class="arithmatex">\[
+J_n=\int \textcolor{orange}{ \cos } ^\textcolor{Cyan}{ n }(a x) d x=\frac{\textcolor{orange}{ \cos } ^{\textcolor{Cyan}{ n-1 }}(a x) \sin (a x)}{\textcolor{Cyan}{ n } a}+\frac{\textcolor{Cyan}{ n-1 }}{\textcolor{Cyan}{ n }} J_{n-2}
+\]</div>
+<h3 id="int-sec-n-x-d-x"><span class="arithmatex">\(\int \sec ^n x d x\)</span></h3>
+<blockquote>
+<p>Quiz 2 部分过程</p>
+</blockquote>
+<div class="arithmatex">\[
+\begin{aligned}
+I_n=\int \sec ^n x d x &amp; =\int \sec ^{n-2} x \sec ^2 x d x \\
+&amp; =\sec ^{n-2} \tan x-\int \tan x(n-2) \sec ^{n-3} x \tan x \sec x d x \\
+&amp; =\sec ^{n-2} \tan x-(n-2) \int \sec ^{n-2} x \tan ^2 x \\
+&amp; =\sec ^{n-2} \tan x-(n-2) \int \sec ^{n-2} x\left(\sec ^2 x-1\right) d x \\
+&amp; =\sec ^{n-2} \tan x-(n-2) \int \sec ^n x d x+(n-2) \int \sec ^{n-2} x d x
+\end{aligned}
+\]</div>
+<p>将右边 <span class="arithmatex">\((n-2) \int \sec ^n x d x\)</span> 移项到左边，我们得到
+$$
+(n-1) I_n=\sec ^{n-2} \tan x+(n-2) I_{n-2}
+$$</p>
+<p>也就是
+$$
+I_n=\frac{1}{n-1} \sec ^{n-2} \tan x+\frac{n-2}{n-1} I_{n-2}
+$$</p>
+<p>再由
+$$
+\int \sec x d x=\ln |\tan x+\sec x|+C
+$$</p>
+<p>和
+$$
+\int \sec ^2 x d x=\tan x+C
+$$</p>
+<p>就可以求出积分。例如</p>
+<hr>
+<h2 id="_4">典题整理</h2>
+<h3 id="_5">不定积分</h3>
+<h4 id="int-dfracarctan-xx2x21-dx"><span class="arithmatex">\(\int \dfrac{\arctan x}{x^{2}(x^{2}+1)} \, dx\)</span></h4>
+<blockquote>
+<p>来源: 作业题</p>
+<p><strong><em>Analysis</em></strong></p>
+<p><b class="md-tag">分部积分法</b> </p>
+<p><em>Hint</em>
+1. <strong>裂项</strong> <span class="arithmatex">\(\displaystyle \frac{1}{x^{2}(x^{2}+1)}=\frac{1}{x^{2}}-\frac{1}{x^{2}+1}\)</span> 
+2. <span class="arithmatex">\(\displaystyle \left( -\frac{1}{x}-\arctan x \right)'=\frac{1}{x^{2}}-\frac{1}{x^{2}+1}\)</span>
+3. <span class="arithmatex">\(\displaystyle \frac{1}{x^{3}+x}=\frac{(x^{2}+1)-\textcolor{Orange}{ x\cdot x }}{\textcolor{Orange}{ x(x^{2}+1) }}=\frac{1}{x}-\frac{x}{x^{2}+1}\)</span>
+4. <span class="arithmatex">\(\displaystyle \int \frac{x}{x^{2}+1} \, dx\implies \frac{1}{2}\int \frac{1}{x^{2}+1} \, d(x^{2}+1)\)</span></p>
+<p><strong><em>Solution</em></strong></p>
+<p><img alt="../res/4d7255c501ddd002282f09ee53725eeb.jpeg" src="../../res/4d7255c501ddd002282f09ee53725eeb.jpeg"></p>
+</blockquote>
+<h4 id="int-dfracxsin-xcos-x-1-dx"><span class="arithmatex">\(\int \dfrac{x+\sin x}{\cos x + 1} \, dx\)</span></h4>
+<blockquote>
+<p>来源: 作业题</p>
+<p><strong><em>Analysis</em></strong></p>
+<p><em>Hint</em>
+1. 分子加法：拆分
+2. <b class="md-tag">凑微分法</b> <span class="arithmatex">\(\left( \cos x+1 \right)'=\sin x\)</span>
+3. 分母 <span class="arithmatex">\(\cos x+1\)</span> =&gt; 二倍角/半角公式消成<strong>单一项</strong></p>
+<p><strong><em>Solution</em></strong></p>
+<p><img alt="../res/d772af544a78253f060658ff030dafbf.jpeg" src="../../res/d772af544a78253f060658ff030dafbf.jpeg"></p>
+</blockquote>
+<h4 id="i_15int-mathrmexleft1-fracmathrme-xsqrtxright-mathrmd-x"><span class="arithmatex">\(I_{15}=\int \mathrm{e}^x\left(1-\frac{\mathrm{e}^{-x}}{\sqrt{x}}\right) \mathrm{d} x\)</span>.</h4>
+<blockquote>
+<p>来源: <a href="https://zhuanlan.zhihu.com/p/671872512">微积分每日一题3-187：求不定积分基础26题第15题</a></p>
+<p><strong><em>Analysis</em></strong></p>
+<p>本题考查最基本的积分表运算</p>
+<p><strong><em>Solution</em></strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+I_{15} &amp; =\int \mathrm{e}^x\left(1-\frac{\mathrm{e}^{-x}}{\sqrt{x}}\right) \mathrm{d} x=\int\left(\mathrm{e}^x-\frac{\textcolor{orange}{ \mathrm{e}^x \cdot \mathrm{e}^{-x} }}{\sqrt{x}}\right) \mathrm{d} x \newline &amp; =\int \mathrm{e}^x \mathrm{~d} x-\int \frac{\textcolor{orange}{ 1 }}{\sqrt{x}} \mathrm{~d} x=\mathrm{e}^x-2 \int \frac{\mathrm{d} x}{2 \sqrt{x}} \newline &amp; =\mathrm{e}^x-2 \int \mathrm{d}(\sqrt{x})=\mathrm{e}^x-2 \sqrt{x}+C .
+\end{aligned}
+\]</div>
+<p><strong><em>Wrong Answer</em></strong></p>
+<p>$$
+\int e^{x} \, d \dfrac{e^{-x}}{\sqrt{ x }}\neq \int 1 \, d \frac{1}{\sqrt{ x }}
+$$
+不能在分式上挪 <span class="arithmatex">\(e^{x}\)</span> !</p>
+</blockquote>
+<hr>
+<h3 id="_6"><b class="md-tag">凑微分法</b></h3>
+<h4 id="int-fracmathrmd-x1x4"><span class="arithmatex">\(\int \frac{\mathrm{d} x}{1+x^4}\)</span></h4>
+<blockquote>
+<p>来源: 较难积分题.pdf</p>
+<p><strong><em>Analysis</em></strong></p>
+<p>运用 <b class="md-tag">添项</b> 和分式中经典的 <b class="md-tag">凑微分法</b> </p>
+<p><strong><em>Solution</em></strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+\int \frac{\mathrm{d} x}{1+x^4} &amp; =\frac{1}{2} \int \frac{\left(1+x^2\right)-\left(x^2-1\right)}{1+x^4} \mathrm{~d} x \quad\dots\text{经典添项}\\&amp;=\frac{1}{2} \int \frac{1+x^2}{1+x^4} \mathrm{~d} x-\frac{1}{2} \int \frac{x^2-1}{1+x^4} \mathrm{~d} x \newline &amp; =\frac{1}{2} \int \frac{1+\frac{1}{x^2}}{x^2+\frac{1}{x^2}} \mathrm{~d} x-\frac{1}{2} \int \frac{1-\frac{1}{x^2}}{x^2+\frac{1}{x^2}} \mathrm{~d} x\quad\dots\text{经典凑微分}\\&amp;=\frac{1}{2} \int \frac{\mathrm{d}\left(x-\frac{1}{x}\right)}{x^2+\frac{1}{x^2}}-\frac{1}{2} \int \frac{\mathrm{d}\left(x+\frac{1}{x}\right)}{x^2+\frac{1}{x^2}} \newline &amp; =\frac{1}{2} \int \frac{\mathrm{d}\left(x-\frac{1}{x}\right)}{\left(x-\frac{1}{x}\right)^2+2}-\frac{1}{2} \int \frac{\mathrm{d}\left(x+\frac{1}{x}\right)}{\left(x+\frac{1}{x}\right)^2-2} \newline &amp; =\frac{1}{2 \sqrt{2}} \arctan \frac{x-\frac{1}{x}}{\sqrt{2}}-\frac{1}{4 \sqrt{2}} \ln \left|\frac{x+\frac{1}{x}-\sqrt{2}}{x+\frac{1}{x}+\sqrt{2}}\right|+C \newline &amp; =\frac{\sqrt{2}}{4} \arctan \frac{x^2-1}{\sqrt{2} x}-\frac{\sqrt{2}}{8} \ln \left|\frac{x^2-\sqrt{2} x+1}{x^2+\sqrt{2} x+1}\right|+C .
+\end{aligned}
+\]</div>
+</blockquote>
+<h4 id="iint-fracmathrmd-xsqrt20231x2023left1x2023right">求不定积分: <span class="arithmatex">\(I=\int \frac{\mathrm{d} x}{\sqrt[2023]{1+x^{2023}}\left(1+x^{2023}\right)}\)</span>.</h4>
+<blockquote>
+<p><a href="https://zhuanlan.zhihu.com/p/644614130">微积分每日一题3-109：不定积分凑微分法练习</a></p>
+<p><strong><em>Analysis</em></strong></p>
+<p>利用 <b class="md-tag">凑微分法</b> 即可求解.</p>
+<p><strong><em>Solution</em></strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+I &amp; =\int \frac{\mathrm{d} x}{\sqrt[2023]{1+x^{2023}}\left(1+x^{2023}\right)}=\int \frac{\mathrm{d} x}{\left(1+x^{2023}\right)^{\frac{1}{2023}} \cdot\left(1+x^{2023}\right)} \newline &amp; =\int \frac{\mathrm{d} x}{\left(1+x^{2023}\right)^{\frac{1}{2023}+1}}=\int \frac{\mathrm{d} x}{\left[\textcolor{orange}{ x^{2023} }\left(\frac{1}{x^{2023}}+1\right)\right]^{\frac{2024}{2023}}} \newline &amp; =\int \frac{\mathrm{d} x}{\left(1+x^{-2023}\right)^{\frac{2024}{2023}} \cdot x^{2024}}=\int \frac{x^{-2024}}{\left(1+x^{-2023}\right)^{\frac{2024}{2023}} \mathrm{~d} x} \newline &amp; =\int\left(-\frac{1}{2023}\right) \frac{1}{\left(1+x^{-2023}\right)^{\frac{2024}{2023}} \mathrm{~d}\left(x^{-2023}\right)} \newline &amp; =-\frac{1}{2023} \int\left(1+x^{-2023}\right)^{-\frac{2024}{2023}} \mathrm{~d}\left(1+x^{-2023}\right) \newline &amp; =\frac{u=1+x^{-2023}}{-1}-\frac{1}{2023} \int u^{-\frac{2024}{2023}} \mathrm{~d} u \newline &amp; =-\frac{1}{2023} \cdot \frac{1}{-\frac{2024}{2023}+1} \cdot u^{-\frac{2024}{2023}+1}+C \newline &amp; =-\frac{1}{2023 \cdot\left(1-\frac{2024}{2023}\right)} \cdot u^{-\frac{1}{2023}}+C \newline &amp; =-\frac{1}{2023-2024} \cdot\left(1+x^{-2023}\right)^{-\frac{1}{2023}}+C \newline &amp; =-(-1) \cdot\left(1+x^{-2023}\right)^{-\frac{1}{2023}}+C \newline &amp; =\left(1+x^{-2023}\right)^{-\frac{1}{2023}}+C .
+\end{aligned}
+\]</div>
+</blockquote>
+<hr>
+<h3 id="_7"><b class="md-tag">换元积分法</b></h3>
+<h4 id="int_1infty-frac1xsqrt-x-1-dx"><span class="arithmatex">\(\int_{1}^{+\infty} \frac{1}{x\sqrt{ x-1 }} \, dx\)</span></h4>
+<blockquote>
+<p>来源: Chap 5.4 3.(1)</p>
+<p><strong><em>Solution</em></strong></p>
+<div class="arithmatex">\[
+\begin{flalign}
+&amp;\xlongequal{ t=\sqrt{ x-1 } } \int_{0}^{+\infty} \dfrac{1}{(t^{2}+1)t} \, d(t^{2}+1) \newline &amp;=\int_{0}^{+\infty} \frac{1}{t^{2}+1} \, dt \newline &amp;=2\arctan \sqrt{ x-1 }
+\end{flalign}
+\]</div>
+</blockquote>
+<h4 id="int-fracsqrtx-1-arctan-sqrtx-1x-d-x"><span class="arithmatex">\(\int \frac{\sqrt{x-1} \arctan \sqrt{x-1}}{x} d x\)</span></h4>
+<blockquote>
+<p>来源: 作业题</p>
+<p><strong><em>Solution</em></strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp; \int \frac{\sqrt{x-1} \arctan \sqrt{x-1}}{x} d x \newline &amp; \text { 设 } u=\sqrt{x-1} \text {, 则 } x=u^2+1, d x=2 u d u \newline &amp; \text { 原式 }=\int \frac{u \arctan u}{u^2+1} \cdot 2 u d u \newline &amp; =2 \int \frac{\textcolor{orange}{ u^2 } \arctan u}{\textcolor{orange}{ u^2+1 }} d u \newline &amp; =2 \int \arctan u d u-2 \int \frac{\arctan u}{u^2+1} d u \newline &amp; =2 u \arctan u-2 \int \frac{u}{u^2+1} d u-2 \int \arctan u d(\arctan u) \newline &amp; =2 u \arctan u-\int \frac{1}{u^2+1} d\left(u^2\right)-(\arctan u)^2 \newline &amp; =2 u \arctan u-\ln \left(u^2+1\right)-(\arctan u)^2+c \newline &amp; =2 \sqrt{x-1} \arctan \sqrt{x-1}-(\arctan \sqrt{x-1})^2-\ln x+c
+\end{aligned}
+\]</div>
+</blockquote>
+<h4 id="int_0fracpi4-sqrttan-x-mathrmd-x">🔴<span class="arithmatex">\(\int_0^{\frac{\pi}{4}} \sqrt{\tan x} \mathrm{~d} x\)</span></h4>
+<blockquote>
+<p>Chap 5.1 P190 22.(9)</p>
+<p><strong><em>Solution</em></strong> <b class="md-tag">换元积分法</b> </p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp;\xlongequal{t=\tan x} \int_0^1 \sqrt{t} d \arctan t\newline &amp;\xlongequal{m=\sqrt{t}} \int_0^1 m d \arctan m^2\newline &amp; =\int_0^1 \frac{2 m^2}{1+m^4} d m \newline &amp; =\int_0^1 \frac{m^2-1}{1+m^4} d m+\int_0^1 \frac{m^2+1}{1+m^{\varphi}} d m\newline &amp; =\int_0^1 \frac{1-\frac{1}{m^2}}{m^2+\frac{1}{m^2}} d m+\int_0^1 \frac{1+\frac{1}{m^2}}{m^2+\frac{1}{m^2}} d m\newline &amp; =\int_0^1 \frac{d\left(m+\frac{1}{m}\right)}{m^2+\frac{1}{m^2}}+\int_0^1 \frac{d\left(m-\frac{1}{m}\right)}{m^2+\frac{1}{m^2}}\newline &amp; =\int_0^1 \frac{d\left(m+\frac{1}{m}\right)}{\left(m+\frac{1}{m}\right)^2-2}+\int_0^1 \frac{d\left(m-\frac{1}{m}\right)}{\left(m-\frac{1}{m}\right)^2+2}\newline &amp; =\left.\frac{1}{2 \sqrt{2}} \ln \left|\frac{m+\frac{1}{m}-\sqrt{2}}{m+\frac{1}{m}+\sqrt{2}}\right|\right|_0 ^1+\left.\frac{1}{\sqrt{2}} \arctan \frac{m-\frac{1}{m}}{\sqrt{2}}\right|_0 ^1\newline \because~ &amp;\lim _{m \rightarrow 0^{+}}\left(1-\frac{2 \sqrt{2}}{m+\frac{1}{m}+\sqrt{2}}\right)=1-\lim _{m \rightarrow 0^{+}} \frac{2 \sqrt{2} m}{m^2+\sqrt{2} m+1}=1 \newline &amp; \lim _{m \rightarrow 0^{+}}\left(m-\frac{1}{m}\right) \frac{0}{=} \lim _{m \rightarrow 0^{+}} m-\lim _{m \rightarrow 0^{+}} \frac{1}{m}=-\infty \newline \therefore~ &amp;= \frac{1}{2 \sqrt{2}}\left(\ln \frac{2-\sqrt{2}}{2+\sqrt{2}}-0\right)+\frac{1}{\sqrt{2}}(\arctan 0-\arctan -\infty) \newline &amp;= \frac{1}{2 \sqrt{2}} \ln (3-2 \sqrt{2})+\frac{1}{\sqrt{2}}\left(0+\frac{\pi}{2}\right) \newline &amp;= \frac{\sqrt{2}}{2} \ln (\sqrt{2}-1)+\frac{\sqrt{2} \pi}{4} \newline &amp; \approx 0.4875
+\end{aligned}
+\]</div>
+</blockquote>
+<hr>
+<h3 id="_8">反向乘积求导公式与反向商的求导公式</h3>
+<blockquote>
+<p>来自：<a href="https://www.sudoedu.com/blog/%e4%bd%a0%e6%89%80%e4%b8%8d%e7%9f%a5%e9%81%93%e7%9a%84%e7%a7%af%e5%88%86%e6%b3%95%ef%bc%88%e4%b8%89%ef%bc%89%ef%bc%9a%e5%8f%8d%e5%90%91%e4%b9%98%e7%a7%af%e6%b1%82%e5%af%bc%e5%85%ac%e5%bc%8f%e4%b8%8e/">SUDO Edu</a></p>
+</blockquote>
+<h4 id="_9">反向乘积的导数</h4>
+<p>我们知道，两个函数的乘积的导数为
+$$
+(f(x) \cdot g(x))<sup _prime="\prime">{\prime}=f</sup>(x)
+$$}(x) \cdot g(x)+f(x) \cdot g^{\prime</p>
+<p>所以
+$$
+\int f^{\prime}(x) \cdot g(x)+f(x) \cdot g^{\prime}(x) d x=f(x) \cdot g(x)+C
+$$</p>
+<h5 id="1-intleftfrac1ln-xln-ln-xright-d-x">例1 求积分 <span class="arithmatex">\(\int\left(\frac{1}{\ln x}+\ln (\ln x)\right) d x\)</span>.</h5>
+<p>解: 分开来算，这两个积分都算不出来。但仔细观察， <span class="arithmatex">\((\ln (\ln x))^{\prime}=\frac{1}{x \ln x}\)</span> ，与第一项差了一个因子 <span class="arithmatex">\(\frac{1}{x}\)</span> ，所以将 <span class="arithmatex">\(\ln (\ln x)\)</span> 乘以 <span class="arithmatex">\(x\)</span> ，再求导，正好了被积分函数，所以
+$$
+\int\left(\frac{1}{\ln x}+\ln (\ln x)\right) d x=\int[x \ln (\ln x)]^{\prime} d x=x \ln (\ln x)+C
+$$</p>
+<h4 id="_10">反向商的求导公式</h4>
+<p>商的求导公式为
+$$
+\left(\frac{f(x)}{g(x)}\right)<sup _prime="\prime">{\prime}=\frac{f</sup>(x) g(x)-f(x) g<sup>{\prime}(x)}{g</sup>2(x)}
+$$</p>
+<p>所以
+$$
+\int \frac{f^{\prime}(x) g(x)-f(x) g<sup>{\prime}(x)}{g</sup>2(x)}=\frac{f(x)}{g(x)}+C
+$$</p>
+<p>如果一个被积分函数的分母为一个函数的平方，我们可以通过商的求导公式凑出 <span class="arithmatex">\(f(x)\)</span> ，然后利用反向商的求导公式求出积分。</p>
+<h5 id="2-int-fracsin-2-xx-cos-x-sin-x2-d-x">例2 求积分 <span class="arithmatex">\(\int \frac{\sin ^2 x}{(x \cos x-\sin x)^2} d x\)</span>.</h5>
+<p>解: 因为分母是一个函数的平方，看起来还有点复杂，我们来“凑”出一个商的求导公式。因为分母为 <span class="arithmatex">\((x \cos x-\sin x)^2\)</span> ，所以令 <span class="arithmatex">\(g(x)=x \cos x-\sin x ， g^{\prime}(x)=\cos x-x \sin x-\cos x=-x \sin x\)</span> ，
+$$
+\begin{aligned}
+f^{\prime}(x) g(x)-f(x) g^{\prime}(x) &amp; =f^{\prime}(x) g(x)-f(x) g^{\prime}(x) \
+&amp; =f^{\prime}(x) \cdot(x \cos x-\sin x)-f(x) \cdot(-x \sin x) \
+&amp; =f^{\prime}(x) \cdot x \cdot \cos x-f^{\prime}(x) \sin x+f(x) \cdot x \cdot \sin x \
+&amp; =\sin ^2 x
+\end{aligned}
+$$</p>
+<p>因为右边只有 <span class="arithmatex">\(\sin ^2 x\)</span> ，一个直观的猜想是 <span class="arithmatex">\(-f^{\prime}(x) \sin x=\sin ^2 x\)</span> ，也就是 <span class="arithmatex">\(f(x)=\cos x\)</span> ，而另外两项为 0 。将 <span class="arithmatex">\(f(x)=\cos x\)</span> 代入上式，
+$$
+f^{\prime}(x) \cdot x \cdot \cos x+f(x) \cdot x \cdot \sin x=-\sin x \cdot x \cdot \cos x+\cos x \cdot x \cdot \sin x=0
+$$</p>
+<p>所以，原积分为
+$$
+\int \frac{\sin ^2 x}{(x \cos x-\sin x)^2} d x=\int\left(\frac{\cos x}{x \cos x-\sin x}\right)^{\prime} d x=\frac{\cos x}{x \cos x-\sin x}+C
+$$</p>
+<h4 id="_11">练习题</h4>
+<p>最后，给出几个习题供有兴趣的同学们练习。
+求积分
+(1) <span class="arithmatex">\(\int\left(x \sec ^2 x+\tan x\right) d x\)</span>
+(2) <span class="arithmatex">\(\int x^x(\ln x+1) d x\)</span>
+(3) <span class="arithmatex">\(\int e^{\sin x}\left(x^2 \cos x+2 x\right) d x\)</span>
+(4) <span class="arithmatex">\(\int \frac{\ln x}{x^2(1-\ln x)^2} d x\)</span>
+(5) <span class="arithmatex">\(\int \frac{\sin x-x \cos x-\cos }{\sin ^2 x}\)</span></p>
+<hr>
+<h3 id="_12">定积分</h3>
+<h4 id="int_-11-ex-cdot-arctan-ex-d-x"><span class="arithmatex">\(\int_{-1}^1 e^{|x|} \cdot \arctan e^x d x\)</span></h4>
+<blockquote>
+<p><strong><em>Solution</em></strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp; (13) \int_{-1}^1 e^{|x|} \cdot \arctan e^x d x ; \newline = &amp; \int_{-1}^0 e^x \arctan x e^x d x+\int_0^1 e^x \arctan e^x d x \quad\dots\text{分离去绝对值}\newline = &amp; \int_{-1}^0 e^{-x}\left(\frac{\pi}{2}-\arctan e^{-x} d x\right)+\int_0^1 e^x \arctan e^x d x \newline = &amp; \frac{\pi}{2} \int_{-1}^0 e^{-x} d x-\int_{-1}^0 e^{-x} \arctan e^{-x} d x+\int_0^1 e^x \arctan e^x d x \newline = &amp; \frac{\pi}{2} \cdot(e-1)+\int_{-1}^0 \arctan e^{-x} d\left(e^{-x}\right)+\int_0^1 \arctan e^x d\left(e^x\right) . \newline = &amp; \frac{\pi}{2}(e-1)
+\end{aligned}
+\]</div>
+</blockquote>
+<h4 id="int_0fracpi2sqrttan-xmathrm-dx"><span class="arithmatex">\(\int_0^{\frac{\pi}{2}}\sqrt{\tan x}{\mathrm d}x\)</span></h4>
+<blockquote>
+<p><strong><em>Solution</em></strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+\int_0^{\frac{\pi}{2}}\sqrt{\tan x}{\mathrm d}x&amp;=2\left(\int_0^1+\int_1^{+\infty}\right)\frac{x^2}{1+x^4}{\mathrm d}x\newline &amp;=2\int_0^1\frac{x^2}{1+x^4}{\mathrm d}x+2\int_0^{1}\frac{1}{1+x^4}{\mathrm d}x\newline &amp;=2\int_0^1 \frac{{\mathrm d}\left(x-\frac{1}{x}\right)}{\left(x-\frac{1}{x}\right)^2+2}\newline &amp;=2\int_{-\infty}^0\frac{{\mathrm d}x}{x^2+2}\newline &amp;=\frac{\pi}{\sqrt{2}}.
+\end{aligned}
+\]</div>
+</blockquote>
+<h4 id="int_01-xarcsin-x-dx"><span class="arithmatex">\(\int_{0}^{1} x\arcsin x \, dx\)</span></h4>
+<blockquote>
+<p><strong><em>Analysis</em></strong></p>
+<p><b class="md-tag">分部积分法</b>  + <b class="md-tag">三角代换</b> </p>
+<p><strong><em>Solution</em></strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp; u=\arcsin x \quad v^{\prime}=x \newline &amp; u^{\prime}=\frac{1}{\sqrt{1-x^2}} \quad v=\frac{x^2}{2} \newline &amp; \int x \arcsin x d x=\frac{x^2}{2} \arcsin x-\frac{1}{2} \int \frac{x^2}{\sqrt{1-x^2}} d x \text {. } \\ \newline &amp;\textcolor{Orange}{\textbf {第二类换元 }} \newline &amp;\text { 故 } x=\sin t . \Rightarrow d x=\cos t d t \newline &amp;\qquad\left(t=\arcsin x\right), \quad x \in[0,1] \Rightarrow t \in\left[0, \frac{\pi}{2}\right] \\ \newline &amp; \int \frac{x^2}{\sqrt{1-x^2}} d x \newline &amp;\xlongequal{ x=\sin t }\int \dfrac{\sin ^{2}t}{\cos t} \, d\sin t \newline &amp; =\int \sin ^2 t d t\newline &amp;=\int \left( \frac{1}{2}-\frac{1}{2} \cos 2 t \right) \,d t\newline &amp; =\frac{1}{2} t-\frac{\sin 2 t}{4}+C \newline \therefore~ &amp; \int x \arcsin x d x\newline &amp;=\left.\frac{x^2}{2} \arcsin x\right|_0 ^1-\left.\frac{1}{2}\left[\frac{1}{2} t-\frac{\sin 2 t}{4}\right]\right|_0 ^{\pi/2} \newline &amp; =\frac{\pi}{4}-\frac{1}{2}\left(\frac{\pi}{4}-0\right) \text {. } \newline &amp; =\frac{\pi}{8} \newline &amp;
+\end{aligned}
+\]</div>
+</blockquote>
+<hr>
+<h3 id="_13">变上限积分及求导</h3>
+<h4 id="lim-_x-rightarrow-0-frac1sin-3-x-int_0tan-x-arcsin-t2-mathrmd-t"><span class="arithmatex">\(\lim _{x \rightarrow 0} \frac{1}{\sin ^3 x} \int_0^{\tan x} \arcsin t^2 \mathrm{~d} t\)</span></h4>
+<blockquote>
+<p><strong><em>Solution</em></strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp; =\lim _{x \rightarrow \infty} \frac{\int_0^{\textcolor{Cyan}{ \tan x }} \arcsin t^2 d t}{\sin ^3 x} \newline &amp; =\lim _{x \rightarrow 0} \frac{\arcsin \left(\textcolor{Cyan}{ \tan ^2 x }\right)}{3 \sin ^2 x \cos ^2 x \textcolor{Cyan}{ \cos ^2 x }} \newline &amp; =\lim _{x \rightarrow 0} \frac{\arcsin x}{3 x^2 \cos ^3 x} \newline &amp; =\lim _{x \rightarrow-\infty} \frac{x^2}{3 x^2} \newline &amp; =\frac{1}{3} \newline &amp;
+\end{aligned}
+\]</div>
+</blockquote>
+<hr>
+<h3 id="_14">结合 <b class="md-tag">积分/中值定理</b></h3>
+<div class="admonition theorem">
+<p class="admonition-title">积分/中值定理 </p>
+<p>设 <span class="arithmatex">\(f \in C[a, b]\)</span>, 则 <span class="arithmatex">\(\exists \xi \in[a, b]\)</span> 使得</p>
+<div class="arithmatex">\[
+\int_{a}^{b} f(x) \mathrm{d} x=f(\xi)(b-a)
+\]</div>
+</div>
+<div class="admonition corollary">
+<p class="admonition-title">积分/中值定理/推广 AKA.积分第一中值公式</p>
+<div class="arithmatex">\[
+\displaystyle\int_{a}^{b} f(x)g(x) \, dx =f(\xi)\int_{a}^{b} g(x) \, dx ,~\xi \in[a,b]
+\]</div>
+</div>
+<h4 id="text-1-lim-_n-rightarrow-infty-int_01-fracxn1x-mathrmd-x">求 <span class="arithmatex">\(\text {(1)} \lim _{n \rightarrow \infty} \int_0^1 \frac{x^n}{1+x} \mathrm{~d} x\)</span>,</h4>
+<blockquote>
+<p><strong><em>Analysis</em></strong></p>
+<p><b class="md-tag">积分/中值定理/推广</b> </p>
+<p><strong><em>Solution</em></strong></p>
+<p>(1) 由积分中值定理推广 <span class="arithmatex">\(\int_a^b f(x) g(x) \mathrm{d} x=f(\xi) \int_a^b g(x) \mathrm{d} x\)</span> 可知</p>
+<div class="arithmatex">\[
+\int_0^1 \textcolor{orange}{ \frac{1}{1+x} }\cdot x^n \mathrm{~d} x=\textcolor{orange}{ \frac{1}{1+\xi} } \int_0^1 x^n \mathrm{~d} x, \quad 0 \leqslant \xi \leqslant 1 .
+\]</div>
+<p>又</p>
+<div class="arithmatex">\[
+\lim _{n \rightarrow \infty} \int_0^1 x^n \mathrm{~d} x=\lim _{n \rightarrow \infty} \frac{1}{n+1}=0 \text { 且 } \frac{1}{2} \leqslant \frac{1}{1+\xi} \leqslant 1,
+\]</div>
+<p>故</p>
+<div class="arithmatex">\[
+\lim _{n \rightarrow \infty} \int_0^1 \frac{x^n}{1+x} \mathrm{~d} x=0
+\]</div>
+</blockquote>
+<h4 id="2-lim-_n-rightarrow-infty-int_nnp-fracsin-xx-mathrmd-x-p-text">求 <span class="arithmatex">\({(2)} \lim _{n \rightarrow \infty} \int_n^{n+p} \frac{\sin x}{x} \mathrm{~d} x, p \text { 为自然数. }\)</span></h4>
+<blockquote>
+<p><strong><em>Solution</em></strong></p>
+<p>（2）利用积分中值定理.
+设 <span class="arithmatex">\(f(x)=\frac{\sin x}{x}\)</span>, 显然 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\([n, n+p]\)</span> 上连续, 由积分中值定理得</p>
+<div class="arithmatex">\[
+\int_n^{n+p} \frac{\sin x}{x} \mathrm{~d} x=\frac{\sin \xi}{\xi} \cdot p, \xi \in[n, n+p],
+\]</div>
+<p>当 <span class="arithmatex">\(n \rightarrow \infty\)</span> 时, <span class="arithmatex">\(\xi \rightarrow \infty\)</span>, 而 <span class="arithmatex">\(|\sin \xi| \leqslant 1\)</span>, 故</p>
+<div class="arithmatex">\[
+\lim _{n \rightarrow \infty} \int_n^{n+p} \frac{\sin x}{x} \mathrm{~d} x=\lim _{\xi \rightarrow \infty} \frac{\sin \xi}{\xi} \cdot p=0 .
+\]</div>
+</blockquote>
+<hr>
+<h3 id="wallis-evenpie">结合 <b class="md-tag">Wallis公式</b>  🥧EVENPIE~</h3>
+<div class="admonition formula">
+<p class="admonition-title">Wallis 公式</p>
+<div class="arithmatex">\[
+In=\begin{cases}
+\dfrac{n-1}{n}\cdot \dfrac{n-3}{n-2} \cdot \dots \cdot \frac{1}{2}I_{0}=\dfrac{(n-1)!!}{n!!}\cdot \dfrac{\pi}{2},&amp; n\text{ is even} \newline \dfrac{n-1}{n}\cdot \dfrac{n-3}{n-2} \cdot \dots \cdot \frac{1}{2}I_{1}=\dfrac{(n-1)!!}{n!!},&amp; n\text{ is odd}\end{cases}
+\]</div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>例16 证明 <b class="md-tag">Wallis公式</b></p>
+</div>
+<blockquote>
+<p><strong><em>Proof</em></strong></p>
+<div class="arithmatex">\[
+\begin{flalign}
+In&amp;=-\int_{0}^{\pi/2} \sin ^{n-1}x \, d\cos x\newline &amp;=-\sin ^{n-1}x \cos x\Big|_{ 0 }^{ \pi/2 }+(n-1)\int_{0}^{\pi/2} \cos ^{2}x \sin ^{n-2}x \, dx  \newline &amp;=(n-1)\int_{0}^{\pi/2} \sin ^{n-2}x(1-\sin ^{2}x) \, dx \newline &amp;=(n-1)(I_{n-2}-I_{n})&amp;
+\end{flalign}
+\]</div>
+<div class="arithmatex">\[
+\begin{flalign}
+\implies In&amp;=\dfrac{n-1}{n}I_{n-2},~\text{其中 } I_{0}=\frac{\pi}{2},~I_{1}=\int_{0}^{\pi/2} \sin x \, dx =1&amp;\newline \implies In&amp;=\begin{cases}
+\dfrac{n-1}{n}\cdot \dfrac{n-3}{n-2} \cdot \dots \cdot \frac{1}{2}I_{0}=\dfrac{(n-1)!!}{n!!}\cdot \dfrac{\pi}{2},&amp; n\text{ is even} \newline \dfrac{n-1}{n}\cdot \dfrac{n-3}{n-2} \cdot \dots \cdot \frac{1}{2}I_{1}=\dfrac{(n-1)!!}{n!!}\cdot 1,&amp; n\text{ is odd}\end{cases}
+\end{flalign}
+\]</div>
+<p><strong><em>P.S.</em></strong> <span class="arithmatex">\(!!\)</span> - 双阶乘</p>
+</blockquote>
+<h4 id="int_-fracpi2fracpi2-frac11mathrmex-cos-3-x-mathrmd-x"><span class="arithmatex">\(\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \frac{1}{1+\mathrm{e}^x} \cos ^3 x \mathrm{~d} x\)</span></h4>
+<blockquote>
+<p><strong><em>Solution</em></strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp; \Rightarrow \quad f(-x)=\frac{1}{1+e^{-x}} \cos ^3 x=\frac{e^x}{e^{x+1}} \cos ^3 x \newline &amp; \textcolor{red}{ \therefore f(-x)+f(x)=\cos ^3 x \text {. } } \newline &amp; \therefore \text{原式}=\frac{1}{2} \times 2 \int_0^{\frac{\pi}{2}} \cos ^3 x=\frac{2 ! !}{3 ! !}=\frac{2}{3 \times 1}: \frac{2}{3} \quad \text { (Wallis) } \newline &amp;
+\end{aligned}
+\]</div>
+</blockquote>
+<hr>
+<h3 id="_15">证明部分</h3>
+<h4 id="int_ab-fx-gx-mathrmd-xfxi-int_ab-gx-mathrmd-x">积分第一中值公式 <span class="arithmatex">\(\int_a^b f(x) g(x) \mathrm{d} x=f(\xi) \int_a^b g(x) \mathrm{d} x\)</span></h4>
+<blockquote>
+<p>作业题</p>
+</blockquote>
+<div class="admonition question">
+<p>证明 (积分第一中值公式) 若 <span class="arithmatex">\(f(x)\)</span> 是 <span class="arithmatex">\([a, b]\)</span> 上的连续函数, <span class="arithmatex">\(g(x)\)</span> 是 <span class="arithmatex">\([a, b]\)</span> 上的非负可积函数, 则存在 <span class="arithmatex">\(\xi \in[a, b]\)</span>, 使得
+$$
+\int_a^b f(x) g(x) \mathrm{d} x=f(\xi) \int_a^b g(x) \mathrm{d} x .
+$$</p>
+</div>
+<blockquote>
+<p><strong><em>Proof</em></strong></p>
+<p>记 <span class="arithmatex">\(f([a, b])=[c, d]\)</span>, 易知 <mark><span class="arithmatex">\(f\)</span>有界</mark>
+$$
+c g(x) \leqslant f(x) g(x) \leqslant d g(x), \text { a. e. } x \in[a, b] .
+$$</p>
+<p>将上式积分, 我们有
+$$
+c \int_a^b g(x) \mathrm{d} x \leqslant \int_a^b f(x) g(x) \mathrm{d} x \leqslant d \int_a^b g(x) \mathrm{d} x .
+$$</p>
+<p>若 <span class="arithmatex">\(I=\int_a^b g(x) \mathrm{d} x&gt;0\)</span>, 则用它来除上式两端可得
+$$
+c \leqslant \frac{\int_a^b f(x) g(x) \mathrm{d} x}{I} \leqslant d .
+$$</p>
+<p>由 <span class="arithmatex">\(f(x)\)</span> 的 <b class="md-tag">闭区间连续函数介值性</b> 可知, 存在 <span class="arithmatex">\(\xi \in[a, b]\)</span>, 使得
+$$
+f(\xi)=\frac{\int_a^b f(x) g(x) \mathrm{d} x}{\int_a^b g(x) \mathrm{d} x} .
+$$</p>
+<p>此即 (5.14) 式.
+若 <span class="arithmatex">\(I=0\)</span>, 则 <span class="arithmatex">\(g(x)=0\)</span>, a. e. <span class="arithmatex">\(x \in[a, b]\)</span>, 从而 (5.14) 式两端皆为零. 此时 <span class="arithmatex">\(\xi\)</span> 可任意地选取.</p>
+</blockquote>
+<h4 id="int_0pi-x-fsin-x-mathrmd-xpi-int_0fracpi2-fsin-x-mathrmd-x"><span class="arithmatex">\(\int_0^\pi x f(\sin x) \mathrm{d} x=\pi \int_0^{\frac{\pi}{2}} f(\sin x) \mathrm{d} x,\)</span></h4>
+<div class="admonition question">
+<ol>
+<li>设 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\([0,1]\)</span> 上连续, 证明:
+$$
+\int_0^\pi x f(\sin x) \mathrm{d} x=\pi \int_0^{\frac{\pi}{2}} f(\sin x) \mathrm{d} x,
+$$</li>
+</ol>
+<p>并用这一结果计算 <span class="arithmatex">\(\int_0^\pi \frac{x \sin x}{1+\cos ^2 x} \mathrm{~d} x\)</span>.</p>
+</div>
+<blockquote>
+<p><strong><em>Solution</em></strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text { Let } x&amp; =\pi-u \Rightarrow \sin x=\sin u \newline \text { LHS }&amp; =\int_\pi^0(\pi-u) f(\sin u) d(\pi-u) \newline &amp; =\int_0^\pi(\pi-u) f(\sin u) d u \newline &amp; =\pi \int_0^\pi f(\sin u) d u-\int_0^\pi u f(\sin u) d u \newline &amp; \Rightarrow 2 \int_0^\pi x f(\sin x) d x=\pi \int_0^\pi f(\sin u) d u \newline &amp; \because \sin x \text { 关于 } x=\frac{\pi}{2} \text { 对称 } \newline &amp; \therefore \int_0^{\pi / 2} f(\sin (u)) d u=\int_{\pi / 2}^\pi f(\sin (u) d u \newline \int_0^\pi x f(\sin x) d x&amp; =\frac{\pi}{2} \int_0^\pi f(\sin u) d u \newline &amp; =\frac{\pi}{2}\left(\int_0^{\pi / 2} f(\sin u) d u+\int_{\pi / 2}^\pi f(\sin u) d u\right) \newline &amp; =2 \int_0^{\pi / 2} f(\sin u) d u \newline &amp;
+\end{aligned}
+\]</div>
+</blockquote></div>
+
+    
+      
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="January 9, 2026 09:51:57 CST">January 9, 2026 09:51:57</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+    
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../LinearAlgebra/LA.Review/" class="md-footer__link md-footer__link--prev" aria-label="Previous: LA.Review">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                LA.Review
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../MA.Add01.%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA%E7%9A%84%E6%80%9D%E8%B7%AF%E5%92%8C%E6%8A%80%E5%B7%A7%EF%BC%81/" class="md-footer__link md-footer__link--next" aria-label="Next: MA.Add01.奇奇怪怪的思路和技巧！">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                MA.Add01.奇奇怪怪的思路和技巧！
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/HeZeBang" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.zhihu.com/people/ZAMBAR" target="_blank" rel="noopener" title="www.zhihu.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M170.5 148.1v217.5h23.4l7.7 26.4 42-26.4h49.5V148.1H170.4zM268.3 342h-27.9l-27.9 17.5-5.1-17.5h-11.9V171.7h72.8zm-118.5-94.3H97.5c1.7-27.1 2.2-51.6 2.2-73.5h51.2s2-22.6-8.6-22.3H53.8c3.5-13.1 7.9-26.7 13.1-40.7 0 0-24.1 0-32.3 21.6-3.4 8.9-13.2 43.1-30.7 78.1 5.9-.6 25.4-1.2 36.8-22.2 2.1-5.9 2.5-6.7 5.1-14.5h28.9c0 10.5-1.2 66.9-1.7 73.4H20.7c-11.7 0-15.6 23.6-15.6 23.6h65.6c-4.4 49.9-28 91.9-70.8 125.1 20.5 5.9 40.9-.9 51-9.9 0 0 23-20.9 35.6-69.3l54 64.9s7.9-26.9-1.2-40c-7.6-8.9-28.1-33.1-36.8-41.8L87.9 312c4.4-14 7-27.6 7.9-40.7h61.6s-.1-23.6-7.6-23.6m412-1.6c20.8-25.6 45-58.6 45-58.6s-18.6-14.8-27.4-4.1c-6 8.2-36.8 48.2-36.8 48.2l19.2 14.4zm-150-59.1c-9-8.2-25.9 2.1-25.9 2.1s39.5 55 41.1 57.4l19.5-13.7s-25.7-37.6-34.7-45.9zM640 258.4c-19.8 0-130.9.9-131.1.9v-101q7.2 0 22.8-1.2c40.9-2.4 70.1-4 87.8-4.8 0 0 12.2-27.2-.6-33.4-3.1-1.2-23.2 4.6-23.2 4.6s-165.2 16.5-232.4 18c1.6 8.8 7.6 17.1 15.8 19.6 13.3 3.5 22.7 1.7 49.2.9 24.8-1.6 43.7-2.4 56.5-2.4v99.8H351.3s2.8 22.3 25.5 22.9h107.9v70.9c0 14-11.2 22-24.5 21.1-14.1.1-26.1-1.1-41.7-1.8 2 4 6.3 14.4 19.3 21.8 9.9 4.8 16.2 6.6 26 6.6 29.6 0 45.7-17.3 44.9-45.3v-73.3h122.4c9.7 0 8.7-23.8 8.7-23.8z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://space.bilibili.com/156494172" target="_blank" rel="noopener" title="space.bilibili.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92c-26.4-.8-48.2-9.8-65.3-27.2S.7 396.5 0 368.2V169.8c.8-26 9.7-47.6 26.7-65.7C43.8 87.8 65.5 78.8 92 78h29.4L96 52.2c-5.7-5.7-8.6-13-8.6-21.8S90.3 14.3 96 8.6 109 0 117.9 0s16.1 2.9 21.9 8.6L213.1 78h88l74.5-69.4C381.7 2.9 389.2 0 398 0s16.1 2.9 21.9 8.6c5.7 5.7 8.6 13 8.6 21.8s-2.9 16.1-8.6 21.8L394.6 78h29.3c26.4.8 48 9.8 64.7 26.1m-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96c-9.6.4-17.4 3.7-23.6 9.8-6.1 6.1-9.4 13.9-9.8 23.5v194.4c0 9.2 3.3 17 9.8 23.5s14.4 9.8 23.6 9.8h320.4c9.2 0 17-3.3 23.3-9.8s9.7-14.3 10.1-23.5zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5s-17.5-3.2-23.6-9.5-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2s13.2-9.6 23.3-10c9.2.4 17 3.7 23.3 10m191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2s-14 9.5-23.6 9.5-17.4-3.2-23.6-9.5c-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2s14.1-9.6 23.3-10c9.2.4 17 3.7 23.3 10"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:<email-address>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M536.4-26.3c9.8-3.5 20.6-1 28 6.3s9.8 18.2 6.3 28l-178 496.9c-5 13.9-18.1 23.1-32.8 23.1-14.2 0-27-8.6-32.3-21.7l-64.2-158c-4.5-11-2.5-23.6 5.2-32.6l94.5-112.4c5.1-6.1 4.7-15-.9-20.6s-14.6-6-20.6-.9l-112.4 94.3c-9.1 7.6-21.6 9.6-32.6 5.2L38.1 216.8c-13.1-5.3-21.7-18.1-21.7-32.3 0-14.7 9.2-27.8 23.1-32.8z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.top", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+    
+  </body>
+</html>

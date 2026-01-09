@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title></title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+	<link rel="stylesheet" href="plugin/chalkboard/style.css">
+
+
+
+    <script defer src="dist/fontawesome/all.min.js"></script>
+
+	<script type="text/javascript">
+		var forgetPop = true;
+		function onPopState(event) {
+			if(forgetPop){
+				forgetPop = false;
+			} else {
+				parent.postMessage(event.target.location.href, "app://obsidian.md");
+			}
+        }
+		window.onpopstate = onPopState;
+		window.onmessage = event => {
+			if(event.data == "reload"){
+				window.document.location.reload();
+			}
+			forgetPop = true;
+		}
+
+		function fitElements(){
+			const itemsToFit = document.getElementsByClassName('fitText');
+			for (const item in itemsToFit) {
+				if (Object.hasOwnProperty.call(itemsToFit, item)) {
+					var element = itemsToFit[item];
+					fitElement(element,1, 1000);
+					element.classList.remove('fitText');
+				}
+			}
+		}
+
+		function fitElement(element, start, end){
+
+			let size = (end + start) / 2;
+			element.style.fontSize = `${size}px`;
+
+			if(Math.abs(start - end) < 1){
+				while(element.scrollHeight > element.offsetHeight){
+					size--;
+					element.style.fontSize = `${size}px`;
+				}
+				return;
+			}
+
+			if(element.scrollHeight > element.offsetHeight){
+				fitElement(element, start, size);
+			} else {
+				fitElement(element, size, end);
+			}		
+		}
+
+
+		document.onreadystatechange = () => {
+			fitElements();
+			if (document.readyState === 'complete') {
+				if (window.location.href.indexOf("?export") != -1){
+					parent.postMessage(event.target.location.href, "app://obsidian.md");
+				}
+				if (window.location.href.indexOf("print-pdf") != -1){
+					let stateCheck = setInterval(() => {
+						clearInterval(stateCheck);
+						window.print();
+					}, 250);
+				}
+			}
+	};
+
+
+        </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# 计算机教育中缺失的一课
+
+## SI100+ 特别版
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## 推荐阅读（也是灵感来源）
+
+[你缺失的那门计算机课](https://www.criwits.top/missing/) 新手向，计算机快速上手
+
+[MIT: Missing Semester](https://missing-semester-cn.github.io/) 进阶向，需要配置好 Bash 环境
+</div></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## 计算机基本知识
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## 计算机的硬件结构
+
+- 计算机的基本任务流是：输入，处理，输出 
+- **中央处理器（CPU）**：常见桌面平台处理器有 Intel Core, AMD Ryzen，他们负责**处理**数据
+- **“内存”（RAM，随机访问存储器）**\*：用来**临时存储**待处理的数据，台式机内存通常为条状，故称内存条
+- **外存（外部存储器）**：用来**永久存储**数据，例如：硬盘，U盘等
+- **显卡（GPU）**：主要负责图形的处理，和 CPU 有着逻辑的根本区别，当前也流行用于 AI 训练
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## 计算机是如何运行起来的？
+
+- 最简单而抽象的模型是图灵机（图灵完备）
+- 埃兰·图灵提出，认为可以模拟一切人类运算
+- 图灵机的结构是，一根无限长的纸带（存储数据），一个读写头（模拟人的阅读与书写），一个简单而确定的规则（模拟人的思考），一个寄存器（存储当前状态）
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### 图灵机的有趣例子
+
+```txt []
+假设你拿到一张纸，上面写着“不要看下面一行”
+你阅读到这个文字，然后往下看了一行
+你发现写着“你被骗了”，悔恨的你擦掉了它，在这一行写下“我被骗了 TwT”
+你决定记住这个惨痛的教训，下次看到这行字就立马结束阅读
+你再往下看了一行，发现写着“不要看下面一行”
+结束了
+```
+
+以上规则我们可以略作修改地抽象为
+
+```txt []
+如果读到“不要看下面一行”，且未受骗
+-> 不写数据，仍未受骗，向下看一行
+如果读到“不要看下面一行”，且已受骗
+-> 停止
+如果读到“你被骗了”，且未受骗
+-> 写下“我被骗了 TwT”，标为已受骗，向下看一行
+如果读到“你被骗了”，且已受骗
+-> 不可能被骗两次，抛出错误
+```
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### 图灵机的有趣例子
+
+```txt [1-2]
+如果读到“不要看下面一行”，且未受骗
+-> 不写数据，仍未受骗，向下看一行
+如果读到“不要看下面一行”，且已受骗
+-> 停止
+如果读到“你被骗了”，且未受骗
+-> 写下“我被骗了 TwT”，标为已受骗，向下看一行
+如果读到“你被骗了”，且已受骗
+-> 不可能被骗两次，抛出错误
+```
+
+```[1|2]
+不要看下面一行
+你被骗了
+不要看下面一行
+你被骗了
+```
+
+```
+当前状态：没被骗
+```
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### 图灵机的有趣例子
+
+```txt [5-6]
+如果读到“不要看下面一行”，且未受骗
+-> 不写数据，仍未受骗，向下看一行
+如果读到“不要看下面一行”，且已受骗
+-> 停止
+如果读到“你被骗了”，且未受骗
+-> 写下“我被骗了 TwT”，标为已受骗，向下看一行
+如果读到“你被骗了”，且已受骗
+-> 不可能被骗两次，抛出错误
+```
+
+```[2|3]
+不要看下面一行
+我被骗了 TwT
+不要看下面一行
+你被骗了
+```
+
+```
+当前状态：被骗了
+```
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### 图灵机的有趣例子
+
+```txt [3-4]
+如果读到“不要看下面一行”，且未受骗
+-> 不写数据，仍未受骗，向下看一行
+如果读到“不要看下面一行”，且已受骗
+-> 停止
+如果读到“你被骗了”，且未受骗
+-> 写下“我被骗了 TwT”，标为已受骗，向下看一行
+如果读到“你被骗了”，且已受骗
+-> 不可能被骗两次，抛出错误
+```
+
+```[3|0]
+不要看下面一行
+我被骗了 TwT
+不要看下面一行
+你被骗了
+```
+
+```
+当前状态：被骗了
+```
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### 从图灵机到编程
+
+- 纸带 => 要处理的数据
+- 规则 => 我们要编写的程序
+- 虚拟的规则 => 代码文件 + 编译器
+</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## 从硬到软：操作系统和软件
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### 操作系统
+
+- Windows / MacOS / Linux / FreeBSD / ... 都是桌面端操作系统
+- Android (AOSP) / iOS / HarmonyOS NEXT / ... 都是移动端的操作系统
+- 操作系统是软件的载体，是一套复杂的底层“软件”
+- 操作系统提供了相对统一的“接口”，让不同的硬件能够运行同一个程序
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### 程序与“快捷方式”
+
+- 当下的程序大多是一个复杂而庞大的整体，拥有一个“入口”和多个运行所需要的依赖
+- 躺在你桌面的只是一个“路牌”，告诉你的操作系统，这个程序的“入口”在哪里
+- 所以拷贝快捷方式就相当于搬走一个路牌，换一个地方（电脑）当然找不到的
+
+<img src="https://www.criwits.top/missing/file-and-file-management/Link.png#center" alt="快捷方式示意图|700" style="width: 700px; object-fit: fill">
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### 文件：内容的具体形式
+
+<split even>
+
+- 当前大多数系统都是依靠“后缀名”来区分类型
+- 文件本质上的名字是 `文件名.后缀名`
+- 打开后缀名，可以防止你遭受“图标”的欺骗
+- `txt`: 文本文件; `exe`: Windows 可执行程序; `doc/docx`: Word 文件 etc.
+
+<img src="https://www.criwits.top/missing/file-and-file-management/Windows_11_set_full_filename.png#center" alt="扩展名打开" style="object-fit: scale-down">
+
+
+</split>
+</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## 工欲善其事，必先利其器
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### VSCode，其实就是“记事本”
+
+- VSCode 是一个**代码编辑器**，本质上就是一个花里胡哨的“多功能记事本”
+- VSCode 有一系列插件来扩展功能，虽然它**不能编译代码**，但是可以自动调用已有的程序
+- 轻量的 VSCode 配上丰富的插件，可以媲美 IDE
+- IDE: 集成开发环境，通常更笨重，但集成度更好
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### 终端：神秘的黑客工具？
+
+<split even>
+
+- 尝试打开终端，输入 `echo Hello, World` 并回车
+- 终端是最原始，但是效率上限最高的交互方式
+- 终端是交互式的，输入完**一句**指令，立马就能执行并得到结果
+
+1. 使用 `cd` 命令可以浏览不同目录，空格用来区分参数
+2. 按下 'Tab' 可以补全
+3. 某些程序可以直接在终端运行
+4. VSCode 在“运行”代码的时候，会弹出终端并自动帮你输入命令来运行你的代码
+
+</split>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### 虚拟机：不关机就能体验不同系统
+
+- 虚拟机区别于实体机，所有的硬件都是“虚拟”出来的，大多数情况是与你的系统完全隔离的
+- 虚拟机可以以极低的代价让你体验不同的系统（推荐试试 Ubuntu），也可以用于软件测试
+- 常见的虚拟机软件有 VMWare / Virtual Box
+- 感兴趣的可以去b站、油管等搜索高播放的视频
+
+> 另：[Docker](https://csdiy.wiki/必学工具/Docker), [WSL](https://learn.microsoft.com/zh-cn/windows/wsl/install) 也用到了虚拟化技术，感兴趣的可以自行搜索
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### VPN：不等于翻墙
+
+- VPN 常见的真正用途类似”远程办公“，让你在任何地方都能接入“公司的内部网络”
+- 上科大有[自己的 VPN](https://vpn.shanghaitech.edu.cn)，连上去也是为了访问仅供校内访问的资源
+- 翻墙的原理好比连上了不知道在何处的“公司”
+
+<div class="callout callout-color5">
+<div class="callout-title">
+<div class="callout-icon">
+
+<i class="fas fa-exclamation-triangle" ></i>
+
+
+</div>
+<div class="callout-title-inner">
+
+Warning
+
+</div>
+</div>
+<div class="callout-content">
+
+翻墙两个字出现在这里纯属二进制 bit 的随意组合，与本人毫无关系。
+
+</div>
+</div>
+</div></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Thanks for listening 
+
+<small>
+
+一些注释
+
+1. \* 准确的说，内存是内部存储器的简称，实际上分为许多类型，而且不止在内存条中，RAM 只是其中最广为人知的一部分，这里为了简单并未展开，~~详情请选 CS110 计算机体系结构（x~~
+
+</small>
+</div></script></section></div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+	<script src="plugin/mermaid/mermaid.js"></script>
+	<script src="plugin/chart/chart.min.js"></script>
+	<script src="plugin/chart/plugin.js"></script>
+	<script src="plugin/menu/menu.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+	<script src="plugin/chalkboard/plugin.js"></script>
+	<script src="plugin/elapsed-time-bar/elapsed-time-bar.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+	  function isLight(color) {
+		let hex = color.replace('#', '');
+
+		// convert #fff => #ffffff
+		if(hex.length == 3){
+			hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+		}
+
+		const c_r = parseInt(hex.substr(0, 2), 16);
+		const c_g = parseInt(hex.substr(2, 2), 16);
+		const c_b = parseInt(hex.substr(4, 2), 16);
+		const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
+		return brightness > 155;
+	}
+
+	var bgColor = getComputedStyle(document.documentElement).getPropertyValue('--r-background-color').trim();
+	var isLight = isLight(bgColor);
+
+	if(isLight){
+		document.body.classList.add('has-light-background');
+	} else {
+		document.body.classList.add('has-dark-background');
+	}
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath.MathJax3,
+		  RevealMermaid,
+		  RevealChart,
+		  RevealCustomControls,
+		  RevealMenu,
+		  RevealChalkboard, 
+		  ElapsedTimeBar
+        ],
+
+
+    	allottedTime: 108000 * 1000,
+
+		mathjax3: {
+			mathjax: 'plugin/math/mathjax/tex-mml-chtml.js',
+		},
+		markdown: {
+		  gfm: true,
+		  mangle: true,
+		  pedantic: false,
+		  smartLists: false,
+		  smartypants: false,
+		},
+
+		mermaid: {
+			theme: isLight ? 'default' : 'dark',
+		},
+
+		customcontrols: {
+			controls: [
+				{ icon: '<i class="fa fa-pen-square"></i>',
+				title: 'Toggle chalkboard (B)',
+				action: 'RevealChalkboard.toggleChalkboard();'
+				},
+				{ icon: '<i class="fa fa-pen"></i>',
+				title: 'Toggle notes canvas (C)',
+				action: 'RevealChalkboard.toggleNotesCanvas();'
+				},
+			]
+		},
+		menu: {
+			loadIcons: false
+		}
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"width":960,"height":700,"margin":0.04,"controls":true,"progress":true,"slideNumber":"true","transition":"slide","transitionSpeed":"default"}, queryOptions);
+    </script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+
+  <!-- created with Advanced Slides -->
+</html>
