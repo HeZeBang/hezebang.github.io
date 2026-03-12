@@ -51,14 +51,14 @@ export const siteConfig: SiteConfig = {
 
 	// Favicon 配置
 	favicon: [
-		{
-			// 图标文件路径
-			src: "/favicon/favicon.ico",
-			// 可选，指定主题 'light' | 'dark'
-			// theme: "light",
-			// 可选，图标大小
-			// sizes: "32x32",
-		},
+		// {
+		// 	// 图标文件路径
+		// 	src: "/favicon/favicon.png",
+		// 	// 可选，指定主题 'light' | 'dark'
+		// 	// theme: "light",
+		// 	// 可选，图标大小
+		// 	// sizes: "32x32",
+		// },
 	],
 
 	// 导航栏配置
