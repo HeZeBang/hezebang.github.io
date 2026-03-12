@@ -4,6 +4,7 @@ published: 2026-03-13
 pinned: false
 description: "年前买了一个荣耀 MagicBook Art 14，搭载了遥遥领先的全域压感触控板。为了日后切换 Linux 适配驱动，我尝试将它的接口逆向出来"
 tags: ["荣耀", "触控板", "驱动", "逆向", "硬件"]
+image: ./cover.png
 category: 逆向
 ---
 
