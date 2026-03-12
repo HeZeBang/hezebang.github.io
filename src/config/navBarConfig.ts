@@ -51,17 +51,7 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 
 			// 关于页面
 			LinkPreset.About,
-		],
-	});
-
-	// 自定义导航栏链接,并且支持多级菜单
-	links.push({
-		name: "链接",
-		url: "/links/",
-		icon: "material-symbols:link",
-
-		// 子菜单
-		children: [
+			
 			{
 				name: "GitHub",
 				url: "https://github.com/HeZeBang/",
@@ -75,13 +65,43 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 				icon: "fa7-brands:linkedin",
 			},
 			{
-				name: "Email",
-				icon: "fa7-solid:envelope",
+				name: "Telegram",
+				icon: "fa7-brands:telegram",
 				external: true,
-				url: "mailto:zambar@163.com",
-			}
+				url: "https://t.me/zambar_dev#",
+			},
+
 		],
 	});
+
+	// 自定义导航栏链接,并且支持多级菜单
+	// links.push({
+	// 	name: "链接",
+	// 	url: "/links/",
+	// 	icon: "material-symbols:link",
+
+	// 	// 子菜单
+	// 	children: [
+	// 		{
+	// 			name: "GitHub",
+	// 			url: "https://github.com/HeZeBang/",
+	// 			external: true,
+	// 			icon: "fa7-brands:github",
+	// 		},
+	// 		{
+	// 			name: "LinkedIn",
+	// 			url: "https://www.linkedin.com/in/hezambar/",
+	// 			external: true,
+	// 			icon: "fa7-brands:linkedin",
+	// 		},
+	// 		{
+	// 			name: "Email",
+	// 			icon: "fa7-solid:envelope",
+	// 			external: true,
+	// 			url: "mailto:zambar@163.com",
+	// 		}
+	// 	],
+	// });
 
 	// 仅返回链接，其它导航搜索相关配置在模块顶层常量中独立导出
 	return { links } as NavBarConfig;

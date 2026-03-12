@@ -34,6 +34,18 @@ export const profileConfig: ProfileConfig = {
 			showName: false,
 		},
 		{
+			name: "Telegram",
+			icon: "fa7-brands:telegram",
+			url: "https://t.me/zambar_dev#",
+			showName: false,
+		},
+		{
+			name: "LinkedIn",
+			icon: "fa7-brands:linkedin",
+			url: "https://www.linkedin.com/in/hezambar/",
+			showName: false,
+		},
+		{
 			name: "RSS",
 			icon: "fa7-solid:rss",
 			url: "/rss/",
