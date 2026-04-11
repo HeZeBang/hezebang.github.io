@@ -4,6 +4,10 @@
 
 如果你也对 **高性能计算** / **计算机体系结构** 感兴趣，或者你也喜欢 VOCALOID / 双子，那真是太好了！
 
+## 我的简历
+
+- [Resume (English, Typst)](https://typst.app/project/r8gP7quK68PLHWBcb3TMTv)
+- [LinkedIn](https://www.linkedin.com/in/hezambar/)
 ## 我的项目
 
 如果你感兴趣，可以来我的仓库转转！
