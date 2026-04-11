@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
-const SPEC_DIR = path.resolve(ROOT, "src/content/spec");
+const SPEC_DIR = path.resolve(ROOT, "typst");
 const INPUT = path.join(SPEC_DIR, "resume.typ");
 const OUT_DIR = path.resolve(ROOT, "public/resume");
 
