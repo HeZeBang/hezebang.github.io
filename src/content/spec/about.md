@@ -34,3 +34,9 @@
 ::github{repo="CuteLeaf/Firefly"}
 
 ::github{repo="saicaca/fuwari"}
+
+---
+
+## 简历 / Resume
+
+::typst{src="resume"}

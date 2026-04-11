@@ -440,3 +440,92 @@ a.card-github.fetch-error
     width: 32px
     height: 32px
     font-size: 16px
+
+// Typst Document 预览组件
+.card-typst
+  display: flex
+  flex-direction: column
+  gap: 0.75rem
+  margin: 0.75rem 0
+
+.typst-scroll-container
+  background: white
+  border-radius: var(--radius-large)
+  overflow-y: auto
+  max-height: 420px
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1)
+  border: 1px solid var(--line-divider)
+
+  &::-webkit-scrollbar
+    width: 6px
+
+  &::-webkit-scrollbar-track
+    background: transparent
+
+  &::-webkit-scrollbar-thumb
+    background: rgba(0, 0, 0, 0.2)
+    border-radius: 3px
+
+    &:hover
+      background: rgba(0, 0, 0, 0.35)
+
+.typst-svg-img
+  width: 100%
+  height: auto
+  display: block
+
+.typst-actions
+  display: flex
+  align-items: center
+  gap: 0.75rem
+
+.typst-download-btn
+  display: inline-flex
+  align-items: center
+  gap: 0.4rem
+  padding: 0.45rem 1rem
+  border-radius: 0.375rem
+  font-size: 0.875rem
+  font-weight: 500
+  color: white !important
+  background: var(--primary)
+  text-decoration: none !important
+  transition: opacity 0.15s ease
+
+  &:hover
+    opacity: 0.85
+
+  svg
+    flex-shrink: 0
+
+.typst-copy-btn
+  display: inline-flex
+  align-items: center
+  gap: 0.4rem
+  padding: 0.45rem 1rem
+  border-radius: 0.375rem
+  font-size: 0.875rem
+  font-weight: 500
+  color: var(--primary) !important
+  background: transparent
+  border: 1px solid var(--primary)
+  text-decoration: none !important
+  transition: opacity 0.15s ease
+  cursor: pointer
+
+  &:hover
+    opacity: 0.75
+
+  svg
+    flex-shrink: 0
+
+.typst-not-available
+  color: var(--tw-prose-body)
+  opacity: 0.6
+  font-size: 0.875rem
+  font-style: italic
+  padding: 1rem 0
+
+@media (max-width: 768px)
+  .typst-scroll-container
+    max-height: 320px
