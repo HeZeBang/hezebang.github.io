@@ -4,26 +4,33 @@
 
 如果你也对 **高性能计算** / **计算机体系结构** 感兴趣，或者你也喜欢 VOCALOID / 双子，那真是太好了！
 
-## 我的简历
+---
+
+## 简历 / Resume
+
+::typst{src="resume"}
 
 - [Resume (English, Typst)](https://typst.app/project/r8gP7quK68PLHWBcb3TMTv)
 - [LinkedIn](https://www.linkedin.com/in/hezambar/)
+
+---
+
 ## 我的项目
 
 如果你感兴趣，可以来我的仓库转转！
 
 - **TrackMaker** - 基于声学的网络传输
-    ::github{repo="HeZeBang/TrackMaker-rs"}
+  ::github{repo="HeZeBang/TrackMaker-rs"}
 - **DrawingPlace** - 给 GeekPie 制作的新年绘板
-    ::github{repo="HeZeBang/DrawingPlace"}
+  ::github{repo="HeZeBang/DrawingPlace"}
 - **HollyDDL** - ShanghaiTech 聚合 deadline 查询平台
-    ::github{repo="HeZeBang/HollyDDL"}
+  ::github{repo="HeZeBang/HollyDDL"}
 - **NextGenAI** - 为 ShanghaiTech GenAI 量身定制的 LLM 前端美化项目
-    ::github{repo="HeZeBang/next-genai"}
+  ::github{repo="HeZeBang/next-genai"}
 - **MaiMai Portable NFC** - 用你的手机 NFC 模拟舞萌刷卡登录！
-    ::github{repo="HeZeBang/MaiMaiPortableNFC"}
+  ::github{repo="HeZeBang/MaiMaiPortableNFC"}
 - **Venus for CS110** - 为计算机体系结构课添加诸多功能的 VSCode Venus 插件
-    ::github{repo="HeZeBang/vscode-riscv-venus"}
+  ::github{repo="HeZeBang/vscode-riscv-venus"}
 
 ---
 
@@ -34,9 +41,3 @@
 ::github{repo="CuteLeaf/Firefly"}
 
 ::github{repo="saicaca/fuwari"}
-
----
-
-## 简历 / Resume
-
-::typst{src="resume"}
