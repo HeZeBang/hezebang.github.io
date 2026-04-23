@@ -5,7 +5,7 @@ pinned: false
 description: "新版 WakeUp 课程表被百度招安后，多了一堆垃圾功能和广告，安装包大小也飙升到 30MB。逆向之后开发了这个工具站……"
 tags: ["生活", "大学", "WakeUp", "逆向", "安卓"]
 image: ./142630089_p0.jpg
-category: Linux
+category: 逆向
 ---
 
 # 开发动机
