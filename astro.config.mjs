@@ -1,5 +1,6 @@
 import sitemap from "@astrojs/sitemap";
 import svelte from "@astrojs/svelte";
+import vercel from "@astrojs/vercel";
 import tailwindcss from "@tailwindcss/vite";
 import { pluginCollapsibleSections } from "@expressive-code/plugin-collapsible-sections";
 import { pluginLineNumbers } from "@expressive-code/plugin-line-numbers";
@@ -47,6 +48,14 @@ export default defineConfig({
 		// 全局响应式布局
 		experimentalLayout: "constrained",
 	},
+
+	// Vercel deployment configuration
+	output: "static",
+	adapter: vercel({
+		webAnalytics: {
+			enabled: true,
+		},
+	}),
 
 	integrations: [
 		swup({

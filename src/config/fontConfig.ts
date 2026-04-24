@@ -39,8 +39,6 @@ export const fontConfig = {
 			family: "Inter",
 			display: "swap" as const,
 		},
-
-
 	},
 
 	// 全局字体回退
