@@ -51,7 +51,7 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 
 			// 关于页面
 			LinkPreset.About,
-			
+
 			{
 				name: "GitHub",
 				url: "https://github.com/HeZeBang/",
@@ -70,7 +70,6 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 				external: true,
 				url: "https://t.me/zambar_dev#",
 			},
-
 		],
 	});
 

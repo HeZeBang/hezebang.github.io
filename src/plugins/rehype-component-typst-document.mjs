@@ -1,7 +1,8 @@
 /// <reference types="mdast" />
-import { h } from "hastscript";
+
 import fs from "node:fs";
 import path from "node:path";
+import { h } from "hastscript";
 
 /**
  * Creates a Typst Document preview component.

@@ -16,15 +16,10 @@ export const siteConfig: SiteConfig = {
 	site_url: "https://zambar.dev",
 
 	// 站点描述
-	description:
-		"欢迎来到糌粑_ZAMBAR的博客",
+	description: "欢迎来到糌粑_ZAMBAR的博客",
 
 	// 站点关键词
-	keywords: [
-		"ZAMBAR",
-		"糌粑",
-		"博客",
-	],
+	keywords: ["ZAMBAR", "糌粑", "博客"],
 
 	// 主题色
 	themeColor: {
