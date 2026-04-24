@@ -157,7 +157,7 @@ export const siteConfig: SiteConfig = {
 		// Google Analytics ID
 		googleAnalyticsId: "",
 		// Microsoft Clarity ID
-		microsoftClarityId: "wgjelnmfqw",
+		microsoftClarityId: "",
 	},
 
 	// 图像优化及响应式配置
